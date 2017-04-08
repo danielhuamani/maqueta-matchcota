@@ -1,0 +1,20 @@
+.menu {
+  position: fixed;
+  width: 105px;
+  height: 100%;
+  background: #fff;
+  top: 0;
+  left: 0;
+  text-align: center;
+  padding-top: 45px;
+}
+.menu .btn_menu {
+  font-size: 14px;
+  font-family: 'GothamRounded-Book';
+  color: #00b2e2;
+}
+.menu .btn_menu .icon-menu {
+  margin-bottom: 12px;
+  font-size: 28px;
+  color: #00b2e2;
+}

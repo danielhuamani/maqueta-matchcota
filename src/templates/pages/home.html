@@ -1,0 +1,50 @@
+{% extends "../common/base.html" %}
+{% block content %}
+
+<section class="left_menu">
+	<div class="home_banner_slider_list">
+		<div class="home_banner_slider_list__item" style="background-image:url('{{STATIC_URL}}img/banner.png')">
+
+		</div>
+	</div>
+</section>
+
+
+{% endblock content %}
+{% block js %}
+	<script src="{{STATIC_URL}}js/jquery.bxslider.min.js"></script>
+	<script>
+
+		$(document).ready(function(){
+/*
+
+			$('.container_slider__list').bxSlider({
+				mode: 'fade',
+				adaptiveHeight: true,
+				auto: true,
+				pause: '5000',
+				pager: true,
+				controls: false,
+
+
+				onSliderLoad: function(currentIndex) {
+						$('.container_slider__list').children().eq(currentIndex).addClass('active');
+
+					},
+					onSlideBefore: function($slideElement){
+					  setTimeout( function(){
+
+						  $slideElement.addClass('active');
+
+					  },500);
+					  $('.container_slider__list').children().removeClass('active');
+
+					}
+			});*/
+
+
+		});
+
+	</script>
+
+{% endblock js %}
