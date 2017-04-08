@@ -4,7 +4,31 @@
   left: 105px;
   z-index: 2;
   right: 0;
+  top: 25px;
   margin: auto;
+}
+.header__logo_links {
+  display: flex;
+  justify-content: space-between;
+}
+.header__logo_links figure {
+  margin: 0;
+  margin-left: 35px;
+}
+.header__logo_links nav {
+  margin-top: 20px;
+  margin-right: 60px;
+}
+.header__logo_links nav ul {
+  display: flex;
+}
+.header__logo_links nav ul li a.adopta {
+  background: #ff4304;
+}
+.header__logo_links nav ul li a {
+  font-size: 19px;
+  padding: 15px 12px;
+  color: #fff;
 }
 .menu {
   position: fixed;
@@ -17,7 +41,8 @@
   padding-top: 45px;
 }
 .menu .btn_menu {
-  font-size: 14px;
+  font-size: 16px;
+  cursor: pointer;
   font-family: 'GothamRounded-Book';
   color: #00b2e2;
 }
