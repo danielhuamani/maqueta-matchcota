@@ -22,20 +22,20 @@
 		<header class="header">
 
 	<div class="header__logo_links">
-		<figure class="header__logo">
+		<a href="" class="header__logo">
 
 			<img src="/static/img/logo_celeste.png" alt="">
-		</figure>
+		</a>
 		<nav>
 			<ul>
 				<li>
-					<a href="" class="adopta">Adopta</a>
+					<a href="" class="adopta"> <i class="icon-11"></i> Adopta</a>
 				</li>
 				<li>
-					<a href="">Apadrina</a>
+					<a href="" class="apadrina"> <i class="icon-12"></i> Apadrina</a>
 				</li>
 				<li>
-					<a href="">Dona</a>
+					<a href="" class="donar"> <i class="icon-13"></i> Dona</a>
 				</li>
 			</ul>
 		</nav>
@@ -45,14 +45,58 @@
 		<div class="page">
 			
 
-<section class="left_menu">
-	<div class="home_banner_slider_list">
-		<div class="home_banner_slider_list__item" style="background-image:url('/static/img/banner.png')">
-
+<section class="home_banner left_menu">
+	<figure class="juguete">
+		<img src="/static/img/juguete1.png" alt="" class="img_res">
+	</figure>
+	<div class="home_banner__slider_list">
+		<div class="home_banner__slider_list__item" style="background-image:url('/static/img/banner.png')">
+			<div class="content content_banner">
+				<h2>ADOPTAR ES <span class="cuv_naran">amar</span></h2>
+				<div class="text">
+					DA UN HOGAR A UNA MASCOTA ABANDONADA
+				</div>
+			</div>
+		</div>
+		<div class="home_banner__slider_list__item" style="background-image:url('/static/img/banner.png')">
+			<div class="content content_banner">
+				<h2>ADOPTAR ES <span class="cuv_naran">amar</span></h2>
+				<div class="text">
+					DA UN HOGAR A UNA MASCOTA ABANDONADA
+				</div>
+			</div>
+		</div>
+		<div class="home_banner__slider_list__item" style="background-image:url('/static/img/banner.png')">
+			<div class="content content_banner">
+				<h2>ADOPTAR ES <span class="cuv_naran">amar</span></h2>
+				<div class="text">
+					DA UN HOGAR A UNA MASCOTA ABANDONADA
+				</div>
+			</div>
 		</div>
 	</div>
 </section>
+<section class="home_mascotas">
+	<div class="container--large">
+		<div class="title_section title_section--celeste">
+			<h2 class="">
+				TU matchcota ideal
+			</h2>
 
+		</div>
+		<div class="list_mascotas">
+			<div class="list_mascotas__mascota ">
+				<h3 class="list_mascotas__title">CORAJE</h3>
+				<figure class="list_mascotas__image">
+					<img src="/static/img/mascota1.png" alt="" width="274" height="295">
+				</figure>
+				<div class="list_mascotas__etiqueta">
+					<h4>Edad: 1 año y 6 meses</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
 
 
 
@@ -71,19 +115,19 @@
 	<script>
 
 		$(document).ready(function(){
-/*
 
-			$('.container_slider__list').bxSlider({
+
+			$('.home_banner__slider_list').bxSlider({
 				mode: 'fade',
 				adaptiveHeight: true,
 				auto: true,
-				pause: '5000',
-				pager: true,
+				pause: '22600',
+				pager: false,
 				controls: false,
 
 
 				onSliderLoad: function(currentIndex) {
-						$('.container_slider__list').children().eq(currentIndex).addClass('active');
+						$('.home_banner__slider_list').children().eq(currentIndex).addClass('active');
 
 					},
 					onSlideBefore: function($slideElement){
@@ -92,10 +136,10 @@
 						  $slideElement.addClass('active');
 
 					  },500);
-					  $('.container_slider__list').children().removeClass('active');
+					  $('.home_banner__slider_list').children().removeClass('active');
 
 					}
-			});*/
+			});
 
 
 		});

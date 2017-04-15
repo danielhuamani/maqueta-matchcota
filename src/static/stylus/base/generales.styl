@@ -5,7 +5,36 @@ a
 	width 96%
 	max-width 1200px
 	margin auto
+.container--large
+	max-width 1800px
+.title_section
+	h2
+		font-size 35px
+		font-family f_ventura_m
+		text-align center
+		position relative
+		display inline-block
+.title_section--celeste
+	text-align center
+	h2
 
+		color c_celeste
+		&:after
+			content ""
+			position absolute
+			bottom 0
+			right -40px
+			background-image url("../img/flechitasleft.png")
+			width 26px
+			height 48px
+		&:before
+			content ""
+			position absolute
+			bottom -10px
+			left -40px
+			background-image url("../img/flechitasright.png")
+			width 26px
+			height 48px
 .d-flex
 	display flex
 
@@ -13,7 +42,27 @@ a
 	display block
 	width 100%
 	height auto
-
+.content_banner
+	position relative
+	z-index 150
+	display flex
+	justify-content center
+	align-items center
+	flex-direction column
+	height 100%
+	h2
+		font-size 58px
+		font-family f_ventura_m
+		color c_white
+		span.cuv_naran
+			color c_narana_ad
+		span
+			font-family f_kaushan_r
+			font-size 78px
+	.text
+		font-size 26px
+		font-family f_ventura_m
+		color c_white
 .page
 	width calc(100% - 105px)
 	margin-left 105px

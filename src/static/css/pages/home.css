@@ -1,13 +1,47 @@
-.home_banner_slider_list__item {
+.home_banner {
+  position: relative;
+}
+.home_banner .juguete {
+  position: absolute;
+  bottom: -110px;
+  right: 120px;
+  width: 150px;
+  z-index: 200;
+  height: 159px;
+}
+.home_banner .juguete:before {
+  content: "";
+  background-image: url("../img/juguete_left.png");
+  width: 17px;
+  height: 28px;
+  position: absolute;
+  right: 145px;
+  bottom: 75px;
+}
+.home_banner .juguete:after {
+  content: "";
+  background-image: url("../img/juguete_right.png");
+  width: 20px;
+  height: 26px;
+  position: absolute;
+  right: -5px;
+  bottom: 30px;
+}
+.home_banner .home_banner__slider_list__item {
+  text-align: center;
   width: 100%;
   height: 650px;
   background-size: cover;
   background-position: center center;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.home_banner_slider_list__item:after {
+.home_banner .home_banner__slider_list__item:after {
   content: "";
   width: 100%;
+  top: 0;
   height: 100%;
   position: absolute;
   left: 0;
@@ -15,4 +49,8 @@
   margin: 0;
   background-image: url("../img/capa_banner.png");
   background-position: center center;
+  z-index: 100;
+}
+.home_mascotas {
+  margin-top: 35px;
 }

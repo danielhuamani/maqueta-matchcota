@@ -553,6 +553,40 @@ a {
   max-width: 1200px;
   margin: auto;
 }
+.container--large {
+  max-width: 1800px;
+}
+.title_section h2 {
+  font-size: 35px;
+  font-family: 'ventura_eddingmedium';
+  text-align: center;
+  position: relative;
+  display: inline-block;
+}
+.title_section--celeste {
+  text-align: center;
+}
+.title_section--celeste h2 {
+  color: #00b2e2;
+}
+.title_section--celeste h2:after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: -40px;
+  background-image: url("../img/flechitasleft.png");
+  width: 26px;
+  height: 48px;
+}
+.title_section--celeste h2:before {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: -40px;
+  background-image: url("../img/flechitasright.png");
+  width: 26px;
+  height: 48px;
+}
 .d-flex {
   display: -webkit-box;
   display: -moz-box;
@@ -565,6 +599,52 @@ a {
   display: block;
   width: 100%;
   height: auto;
+}
+.content_banner {
+  position: relative;
+  z-index: 150;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -moz-box-orient: vertical;
+  -o-box-orient: vertical;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  height: 100%;
+}
+.content_banner h2 {
+  font-size: 58px;
+  font-family: 'ventura_eddingmedium';
+  color: #fff;
+}
+.content_banner h2 span.cuv_naran {
+  color: #ff4304;
+}
+.content_banner h2 span {
+  font-family: 'kaushan_scriptregular';
+  font-size: 78px;
+}
+.content_banner .text {
+  font-size: 26px;
+  font-family: 'ventura_eddingmedium';
+  color: #fff;
 }
 .page {
   width: calc(100% - 105px);
@@ -846,7 +926,7 @@ a {
   position: absolute;
   width: calc(100% - 105px);
   left: 105px;
-  z-index: 2;
+  z-index: 200;
   right: 0;
   top: 25px;
   margin: auto;
@@ -865,7 +945,7 @@ a {
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
-.header__logo_links figure {
+.header__logo_links >a {
   margin: 0;
   margin-left: 35px;
 }
@@ -881,13 +961,23 @@ a {
   display: box;
   display: flex;
 }
+.header__logo_links nav ul li a.donar {
+  background: #ff9971;
+}
+.header__logo_links nav ul li a.apadrina {
+  background: #ff7444;
+}
 .header__logo_links nav ul li a.adopta {
   background: #ff4304;
 }
 .header__logo_links nav ul li a {
   font-size: 19px;
   padding: 15px 12px;
+  font-family: 'ventura_eddingmedium';
   color: #fff;
+}
+.header__logo_links nav ul li a i {
+  margin-right: 5px;
 }
 .menu {
   position: fixed;
@@ -898,6 +988,7 @@ a {
   left: 0;
   text-align: center;
   padding-top: 45px;
+  border-right: 1px solid #d0d0d0;
 }
 .menu .btn_menu {
   font-size: 16px;
@@ -910,7 +1001,37 @@ a {
   font-size: 28px;
   color: #00b2e2;
 }
-.home_banner_slider_list__item {
+.home_banner {
+  position: relative;
+}
+.home_banner .juguete {
+  position: absolute;
+  bottom: -110px;
+  right: 120px;
+  width: 150px;
+  z-index: 200;
+  height: 159px;
+}
+.home_banner .juguete:before {
+  content: "";
+  background-image: url("../img/juguete_left.png");
+  width: 17px;
+  height: 28px;
+  position: absolute;
+  right: 145px;
+  bottom: 75px;
+}
+.home_banner .juguete:after {
+  content: "";
+  background-image: url("../img/juguete_right.png");
+  width: 20px;
+  height: 26px;
+  position: absolute;
+  right: -5px;
+  bottom: 30px;
+}
+.home_banner .home_banner__slider_list__item {
+  text-align: center;
   width: 100%;
   height: 650px;
   -webkit-background-size: cover;
@@ -918,10 +1039,29 @@ a {
   background-size: cover;
   background-position: center center;
   position: relative;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
 }
-.home_banner_slider_list__item:after {
+.home_banner .home_banner__slider_list__item:after {
   content: "";
   width: 100%;
+  top: 0;
   height: 100%;
   position: absolute;
   left: 0;
@@ -929,6 +1069,10 @@ a {
   margin: 0;
   background-image: url("../img/capa_banner.png");
   background-position: center center;
+  z-index: 100;
+}
+.home_mascotas {
+  margin-top: 35px;
 }
 .nosotros_nuestra_historia {
   margin-top: 70px;

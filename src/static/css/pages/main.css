@@ -2,7 +2,7 @@
   position: absolute;
   width: calc(100% - 105px);
   left: 105px;
-  z-index: 2;
+  z-index: 200;
   right: 0;
   top: 25px;
   margin: auto;
@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
 }
-.header__logo_links figure {
+.header__logo_links >a {
   margin: 0;
   margin-left: 35px;
 }
@@ -22,13 +22,23 @@
 .header__logo_links nav ul {
   display: flex;
 }
+.header__logo_links nav ul li a.donar {
+  background: #ff9971;
+}
+.header__logo_links nav ul li a.apadrina {
+  background: #ff7444;
+}
 .header__logo_links nav ul li a.adopta {
   background: #ff4304;
 }
 .header__logo_links nav ul li a {
   font-size: 19px;
   padding: 15px 12px;
+  font-family: 'ventura_eddingmedium';
   color: #fff;
+}
+.header__logo_links nav ul li a i {
+  margin-right: 5px;
 }
 .menu {
   position: fixed;
@@ -39,6 +49,7 @@
   left: 0;
   text-align: center;
   padding-top: 45px;
+  border-right: 1px solid #d0d0d0;
 }
 .menu .btn_menu {
   font-size: 16px;
@@ -51,16 +62,50 @@
   font-size: 28px;
   color: #00b2e2;
 }
-.home_banner_slider_list__item {
+.home_banner {
+  position: relative;
+}
+.home_banner .juguete {
+  position: absolute;
+  bottom: -110px;
+  right: 120px;
+  width: 150px;
+  z-index: 200;
+  height: 159px;
+}
+.home_banner .juguete:before {
+  content: "";
+  background-image: url("../img/juguete_left.png");
+  width: 17px;
+  height: 28px;
+  position: absolute;
+  right: 145px;
+  bottom: 75px;
+}
+.home_banner .juguete:after {
+  content: "";
+  background-image: url("../img/juguete_right.png");
+  width: 20px;
+  height: 26px;
+  position: absolute;
+  right: -5px;
+  bottom: 30px;
+}
+.home_banner .home_banner__slider_list__item {
+  text-align: center;
   width: 100%;
   height: 650px;
   background-size: cover;
   background-position: center center;
   position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
-.home_banner_slider_list__item:after {
+.home_banner .home_banner__slider_list__item:after {
   content: "";
   width: 100%;
+  top: 0;
   height: 100%;
   position: absolute;
   left: 0;
@@ -68,6 +113,10 @@
   margin: 0;
   background-image: url("../img/capa_banner.png");
   background-position: center center;
+  z-index: 100;
+}
+.home_mascotas {
+  margin-top: 35px;
 }
 .nosotros_nuestra_historia {
   margin-top: 70px;

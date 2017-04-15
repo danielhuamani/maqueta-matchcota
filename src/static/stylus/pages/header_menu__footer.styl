@@ -5,7 +5,7 @@
     position absolute
     width calc(100% - 105px)
     left 105px
-    z-index 2
+    z-index 200
     right 0
     top 25px
     margin auto
@@ -13,7 +13,7 @@
         display flex
 
         justify-content space-between
-        figure
+        >a
             margin 0
             margin-left 35px
         nav
@@ -22,13 +22,20 @@
             ul
                 display flex
                 li
+                    a.donar
+                        background c_narana_do
+                    a.apadrina
+                        background c_narana_ap
                     a.adopta
                         background c_narana_ad
 
                     a
                         font-size 19px
                         padding 15px 12px
+                        font-family f_ventura_m
                         color c_white
+                        i
+                            margin-right 5px
 
 .menu
     position fixed
@@ -39,6 +46,7 @@
     left 0
     text-align center
     padding-top 45px
+    border-right 1px solid #D0D0D0
     .btn_menu
         font-size 16px
         cursor pointer

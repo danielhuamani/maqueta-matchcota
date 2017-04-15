@@ -2,7 +2,7 @@
   position: absolute;
   width: calc(100% - 105px);
   left: 105px;
-  z-index: 2;
+  z-index: 200;
   right: 0;
   top: 25px;
   margin: auto;
@@ -11,7 +11,7 @@
   display: flex;
   justify-content: space-between;
 }
-.header__logo_links figure {
+.header__logo_links >a {
   margin: 0;
   margin-left: 35px;
 }
@@ -22,13 +22,23 @@
 .header__logo_links nav ul {
   display: flex;
 }
+.header__logo_links nav ul li a.donar {
+  background: #ff9971;
+}
+.header__logo_links nav ul li a.apadrina {
+  background: #ff7444;
+}
 .header__logo_links nav ul li a.adopta {
   background: #ff4304;
 }
 .header__logo_links nav ul li a {
   font-size: 19px;
   padding: 15px 12px;
+  font-family: 'ventura_eddingmedium';
   color: #fff;
+}
+.header__logo_links nav ul li a i {
+  margin-right: 5px;
 }
 .menu {
   position: fixed;
@@ -39,6 +49,7 @@
   left: 0;
   text-align: center;
   padding-top: 45px;
+  border-right: 1px solid #d0d0d0;
 }
 .menu .btn_menu {
   font-size: 16px;
