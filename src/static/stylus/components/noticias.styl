@@ -1,0 +1,244 @@
+
+.listado_noticias
+    display flex
+    flex-wrap wrap
+    &__noticia
+        margin 2px 2px
+
+    &__noticia:nth-child(2), &__noticia:nth-child(4)
+        flex-direction column
+        background c_amarillo
+        transition .3s ease all
+        border-left 1px solid c_amarillo
+        border-right 1px solid c_amarillo
+        border-bottom 1px solid c_amarillo
+        border-top 1px solid c_amarillo
+        .descripcion
+            transition .3s ease all
+            &:after
+
+                content ""
+                transition .3s ease all
+                top -32px
+                border-top 16px solid transparent !important
+                border-bottom 16px solid c_amarillo
+                width 0
+                position absolute
+                left 0
+                right 0
+                margin auto
+        &:hover
+            border-left 1px solid c_amarillo
+            border-right 1px solid c_amarillo
+            border-bottom 1px solid c_amarillo
+            background c_white !important
+            .descripcion
+                background c_white !important
+                &:after
+                    bottom -32px
+                    border-bottom 16px solid transparent !important
+                    border-top 16px solid transparent
+
+                h3
+                    color c_amarillo
+                h4
+                    color c_amarillo
+                p
+                    color c_amarillo
+    &__noticia:nth-child(3n)
+        flex-direction column-reverse
+        background c_celeste
+        transition .3s ease all
+        border-left 1px solid transparent
+        border-right 1px solid transparent
+        border-bottom 1px solid transparent
+        .descripcion
+            &:after
+                content ""
+                width 0
+                position absolute
+                left 0
+                right 0
+                margin auto
+                bottom -32px
+                border-top 16px solid c_celeste
+                border-bottom 16px solid transparent !important
+
+
+        &:hover
+            border-left 1px solid c_celeste
+            border-right 1px solid c_celeste
+            border-bottom 1px solid c_celeste
+            border-top 1px solid c_celeste
+            background c_white
+            .descripcion
+                &:after
+                    border-top 16px solid transparent !important
+                    border-bottom 16px solid transparent
+                h3
+                    color c_celeste
+                h4
+                    color c_celeste
+                p
+                    color c_celeste
+    &__noticia:nth-child(2n), &__noticia:nth-child(3n)
+        width 228px
+        display flex
+        figure
+            width 228px
+            height 204px
+            margin 0
+        .descripcion
+            background transparent !important
+            display block !important
+            position relative
+            box-sizing border-box
+            padding 30px 10px 10px 10px
+            &:after
+                transition .3s ease all
+                border-left 16px solid transparent
+                border-right 16px solid transparent
+            h3
+                color c_white
+                font-family f_ventura_m
+                font-size 18px
+
+            h4
+                color c_white
+                font-size 18px
+                font-family f_gothan_m
+                margin 0
+            p
+                color c_white
+                font-size 18px
+                font-family f_gothan_l
+
+    &__noticia, &__noticia:nth-child(5)
+        position relative
+        display block
+        width 430px
+        height 410px
+        figure
+            width 430px
+            height 410px
+            margin 0
+        .descripcion
+            display none
+            flex-direction column
+            padding 0px 30px
+            box-sizing border-box
+            justify-content flex-end
+            position absolute
+            left 0
+            top 0
+            width 100%
+            height 100%
+            background rgba(0,0,0,0.5)
+
+            h3
+                color c_white
+                font-family f_ventura_m
+                font-size 20px
+            h4
+                color c_white
+                font-size 18px
+                font-family f_gothan_m
+                margin 0
+            p
+                color c_white
+                font-size 18px
+                font-family f_gothan_l
+        &:hover
+            .descripcion
+                display flex
+                animation fadeEffect 0.5s
+/*
+   &__noticia_small--bottom
+        flex-direction column-reverse
+        &:hover
+            .descripcion
+                &:after
+                    top -32px
+                    border-top 16px solid transparent
+                    border-bottom 16px solid transparent
+        .descripcion
+            &:after
+
+                bottom -32px
+                border-bottom 16px solid transparent !important
+                border-top 16px solid transparent
+
+    &__noticia_small--top
+        flex-direction column
+        &:hover
+            .descripcion
+                &:after
+                    top -32px
+                    border-top 16px solid transparent
+                    border-bottom 16px solid transparent
+        .descripcion
+            &:after
+
+                top -32px
+                border-top 16px solid transparent !important
+                border-bottom 16px solid c_amarillo
+    &__noticia_small--celeste
+        background c_celeste
+        transition .3s ease all
+        border-left 1px solid transparent
+        border-right 1px solid transparent
+        border-bottom 1px solid transparent
+        .descripcion
+            &:after
+                content ""
+                width 0
+                position absolute
+                border-top 16px solid c_celeste
+                border-bottom 16px solid c_celeste
+                left 0
+                right 0
+                margin auto
+        &:hover
+            border-left 1px solid c_celeste
+            border-right 1px solid c_celeste
+            border-bottom 1px solid c_celeste
+            border-top 1px solid c_celeste
+            background c_white
+            .descripcion
+                h3
+                    color c_celeste
+                h4
+                    color c_celeste
+                p
+                    color c_celeste
+    &__noticia_small--amarillo
+        background c_amarillo
+        transition .3s ease all
+        border-left 1px solid c_amarillo
+        border-right 1px solid c_amarillo
+        border-bottom 1px solid c_amarillo
+        border-top 1px solid c_celeste
+        .descripcion
+            &:after
+                border-top 16px solid c_amarillo
+                border-bottom 16px solid c_amarillo
+                content ""
+                width 0
+                position absolute
+
+                left 0
+                right 0
+                margin auto
+
+        &:hover
+            border-left 1px solid c_amarillo
+            border-right 1px solid c_amarillo
+            border-bottom 1px solid c_amarillo
+            background c_white
+            .descripcion
+                h3
+                    color c_amarillo
+                h4
+                    color c_amarillo
+                p
+                    color c_amarillo*/
