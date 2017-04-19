@@ -40,20 +40,95 @@
 			</h2>
 
 		</div>
-		<div class="list_mascotas">
-			<div class="list_mascotas__mascota ">
-				<h3 class="list_mascotas__title">CORAJE</h3>
+		<div class="list_mascotas home_mascotas__list_mascotas">
+			<a href="" class="list_mascotas__mascota list_mascotas__mascota--amarillo">
+				<h3 class="list_mascotas__title">CORAJE <i class="icon-mascotas-04 icon-fem"></i></h3>
 				<figure class="list_mascotas__image">
-					<img src="{{STATIC_URL}}img/mascota1.png" alt="" width="274" height="295">
+					<img class="img_res" src="{{STATIC_URL}}img/mascota3.png" alt="" width="274" height="295">
 				</figure>
 				<div class="list_mascotas__etiqueta">
 					<h4>Edad: 1 año y 6 meses</h4>
 				</div>
+			</a>
+			<a href="" class="list_mascotas__mascota list_mascotas__mascota--celeste">
+				<h3 class="list_mascotas__title">CORAJE <i class="icon-mascotas-04 icon-fem"></i></h3>
+				<figure class="list_mascotas__image">
+					<img class="img_res" src="{{STATIC_URL}}img/mascota2.png" alt="" width="274" height="295">
+				</figure>
+				<div class="list_mascotas__etiqueta">
+					<h4>Edad: 1 año y 6 meses</h4>
+				</div>
+			</a>
+			<a href="" class="list_mascotas__mascota list_mascotas__mascota--plomo">
+				<h3 class="list_mascotas__title">CORAJE <i class="icon-mascotas-03 icon-masc"></i></h3>
+				<figure class="list_mascotas__image">
+					<img class="img_res" src="{{STATIC_URL}}img/mascota1.png" alt="" width="274" height="295">
+				</figure>
+				<div class="list_mascotas__etiqueta">
+					<h4>Edad: 1 año y 6 meses</h4>
+				</div>
+			</a>
+			<a href="" class="list_mascotas__mascota list_mascotas__mascota--amarillo">
+				<h3 class="list_mascotas__title">CORAJE <i class="icon-mascotas-04 icon-fem"></i></h3>
+				<figure class="list_mascotas__image">
+					<img class="img_res" src="{{STATIC_URL}}img/mascota2.png" alt="" width="274" height="295">
+				</figure>
+				<div class="list_mascotas__etiqueta">
+					<h4>Edad: 1 año y 6 meses</h4>
+				</div>
+			</a>
+			<a href="" class="list_mascotas__mascota list_mascotas__mascota--plomo">
+				<h3 class="list_mascotas__title">CORAJE <i class="icon-mascotas-03 icon-masc"></i></h3>
+				<figure class="list_mascotas__image">
+					<img class="img_res" src="{{STATIC_URL}}img/mascota1.png" alt="" width="274" height="295">
+				</figure>
+				<div class="list_mascotas__etiqueta">
+					<h4>Edad: 1 año y 6 meses</h4>
+				</div>
+			</a>
+		</div>
+
+	</div>
+</section>
+<section class="home_conoce_mascota">
+	<div class="container">
+		<h3 class="home_conoce_mascota__title">
+			<i class="icon-22"></i>CONOCE MÁS matchcota AQUÍ
+		</h3>
+	</div>
+	<div class="full_container">
+		<div class="container">
+			<div class="bloque_test_1">
+				<div class="title">
+					<h4>Historias</h4>
+					<h3>para enmarcar</h3>
+				</div>
+				<figure>
+					<img src="{{STATIC_URL}}img/bloque_1.png" alt="" width="237" height="240">
+				</figure>
 			</div>
 		</div>
 	</div>
 </section>
-
+<div class="home_siempre_informados">
+	<div class="container">
+		<div class="title">
+			<h2>SIEMPRE <span>INFORMADOS</span></h2>
+		</div>
+		<div class="listado_noticias">
+			<a href="" class="listado_noticias__noticia_large">
+				<figure>
+					<img src="{{STATIC_URL}}img/noticia_1.png" alt="" class="img_res" width="430" height="410">
+				</figure>
+				<div class="descripcion">
+					<h3>31 Octubre 2016</h3>
+					<h4>Halloween y mascotas: </h4>
+					<p>Las mascotas fueron la sensación en Halloween.</p>
+				</div>
+			</a>
+		</div>
+	</div>
+</div>
 {% endblock content %}
 {% block js %}
 	<script src="{{STATIC_URL}}js/jquery.bxslider.min.js"></script>
