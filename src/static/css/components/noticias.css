@@ -1,0 +1,287 @@
+.listado_noticias {
+  display: flex;
+  flex-wrap: wrap;
+}
+.listado_noticias__noticia {
+  margin: 2px 2px;
+}
+.listado_noticias__noticia:nth-child(2),
+.listado_noticias__noticia:nth-child(4) {
+  flex-direction: column;
+  background: c_amarillo;
+  transition: 0.3s ease all;
+  border-left: 1px solid c_amarillo;
+  border-right: 1px solid c_amarillo;
+  border-bottom: 1px solid c_amarillo;
+  border-top: 1px solid c_amarillo;
+}
+.listado_noticias__noticia:nth-child(2) .descripcion,
+.listado_noticias__noticia:nth-child(4) .descripcion {
+  transition: 0.3s ease all;
+}
+.listado_noticias__noticia:nth-child(2) .descripcion:after,
+.listado_noticias__noticia:nth-child(4) .descripcion:after {
+  content: "";
+  transition: 0.3s ease all;
+  top: -32px;
+  border-top: 16px solid transparent !important;
+  border-bottom: 16px solid c_amarillo;
+  width: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+.listado_noticias__noticia:nth-child(2):hover,
+.listado_noticias__noticia:nth-child(4):hover {
+  border-left: 1px solid c_amarillo;
+  border-right: 1px solid c_amarillo;
+  border-bottom: 1px solid c_amarillo;
+  background: c_white !important;
+}
+.listado_noticias__noticia:nth-child(2):hover .descripcion,
+.listado_noticias__noticia:nth-child(4):hover .descripcion {
+  background: c_white !important;
+}
+.listado_noticias__noticia:nth-child(2):hover .descripcion:after,
+.listado_noticias__noticia:nth-child(4):hover .descripcion:after {
+  bottom: -32px;
+  border-bottom: 16px solid transparent !important;
+  border-top: 16px solid transparent;
+}
+.listado_noticias__noticia:nth-child(2):hover .descripcion h3,
+.listado_noticias__noticia:nth-child(4):hover .descripcion h3 {
+  color: c_amarillo;
+}
+.listado_noticias__noticia:nth-child(2):hover .descripcion h4,
+.listado_noticias__noticia:nth-child(4):hover .descripcion h4 {
+  color: c_amarillo;
+}
+.listado_noticias__noticia:nth-child(2):hover .descripcion p,
+.listado_noticias__noticia:nth-child(4):hover .descripcion p {
+  color: c_amarillo;
+}
+.listado_noticias__noticia:nth-child(3n) {
+  flex-direction: column-reverse;
+  background: c_celeste;
+  transition: 0.3s ease all;
+  border-left: 1px solid transparent;
+  border-right: 1px solid transparent;
+  border-bottom: 1px solid transparent;
+}
+.listado_noticias__noticia:nth-child(3n) .descripcion:after {
+  content: "";
+  width: 0;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: auto;
+  bottom: -32px;
+  border-top: 16px solid c_celeste;
+  border-bottom: 16px solid transparent !important;
+}
+.listado_noticias__noticia:nth-child(3n):hover {
+  border-left: 1px solid c_celeste;
+  border-right: 1px solid c_celeste;
+  border-bottom: 1px solid c_celeste;
+  border-top: 1px solid c_celeste;
+  background: c_white;
+}
+.listado_noticias__noticia:nth-child(3n):hover .descripcion:after {
+  border-top: 16px solid transparent !important;
+  border-bottom: 16px solid transparent;
+}
+.listado_noticias__noticia:nth-child(3n):hover .descripcion h3 {
+  color: c_celeste;
+}
+.listado_noticias__noticia:nth-child(3n):hover .descripcion h4 {
+  color: c_celeste;
+}
+.listado_noticias__noticia:nth-child(3n):hover .descripcion p {
+  color: c_celeste;
+}
+.listado_noticias__noticia:nth-child(2n),
+.listado_noticias__noticia:nth-child(3n) {
+  width: 228px;
+  display: flex;
+}
+.listado_noticias__noticia:nth-child(2n) figure,
+.listado_noticias__noticia:nth-child(3n) figure {
+  width: 228px;
+  height: 204px;
+  margin: 0;
+}
+.listado_noticias__noticia:nth-child(2n) .descripcion,
+.listado_noticias__noticia:nth-child(3n) .descripcion {
+  background: transparent !important;
+  display: block !important;
+  position: relative;
+  box-sizing: border-box;
+  padding: 30px 10px 10px 10px;
+}
+.listado_noticias__noticia:nth-child(2n) .descripcion:after,
+.listado_noticias__noticia:nth-child(3n) .descripcion:after {
+  transition: 0.3s ease all;
+  border-left: 16px solid transparent;
+  border-right: 16px solid transparent;
+}
+.listado_noticias__noticia:nth-child(2n) .descripcion h3,
+.listado_noticias__noticia:nth-child(3n) .descripcion h3 {
+  color: c_white;
+  font-family: f_ventura_m;
+  font-size: 18px;
+}
+.listado_noticias__noticia:nth-child(2n) .descripcion h4,
+.listado_noticias__noticia:nth-child(3n) .descripcion h4 {
+  color: c_white;
+  font-size: 18px;
+  font-family: f_gothan_m;
+  margin: 0;
+}
+.listado_noticias__noticia:nth-child(2n) .descripcion p,
+.listado_noticias__noticia:nth-child(3n) .descripcion p {
+  color: c_white;
+  font-size: 18px;
+  font-family: f_gothan_l;
+}
+.listado_noticias__noticia,
+.listado_noticias__noticia:nth-child(5) {
+  position: relative;
+  display: block;
+  width: 430px;
+  height: 410px;
+}
+.listado_noticias__noticia figure,
+.listado_noticias__noticia:nth-child(5) figure {
+  width: 430px;
+  height: 410px;
+  margin: 0;
+}
+.listado_noticias__noticia .descripcion,
+.listado_noticias__noticia:nth-child(5) .descripcion {
+  display: none;
+  flex-direction: column;
+  padding: 0px 30px;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5);
+}
+.listado_noticias__noticia .descripcion h3,
+.listado_noticias__noticia:nth-child(5) .descripcion h3 {
+  color: c_white;
+  font-family: f_ventura_m;
+  font-size: 20px;
+}
+.listado_noticias__noticia .descripcion h4,
+.listado_noticias__noticia:nth-child(5) .descripcion h4 {
+  color: c_white;
+  font-size: 18px;
+  font-family: f_gothan_m;
+  margin: 0;
+}
+.listado_noticias__noticia .descripcion p,
+.listado_noticias__noticia:nth-child(5) .descripcion p {
+  color: c_white;
+  font-size: 18px;
+  font-family: f_gothan_l;
+}
+.listado_noticias__noticia:hover .descripcion,
+.listado_noticias__noticia:nth-child(5):hover .descripcion {
+  display: flex;
+  animation: fadeEffect 0.5s;
+}
+/*
+   &__noticia_small--bottom
+        flex-direction column-reverse
+        &:hover
+            .descripcion
+                &:after
+                    top -32px
+                    border-top 16px solid transparent
+                    border-bottom 16px solid transparent
+        .descripcion
+            &:after
+
+                bottom -32px
+                border-bottom 16px solid transparent !important
+                border-top 16px solid transparent
+
+    &__noticia_small--top
+        flex-direction column
+        &:hover
+            .descripcion
+                &:after
+                    top -32px
+                    border-top 16px solid transparent
+                    border-bottom 16px solid transparent
+        .descripcion
+            &:after
+
+                top -32px
+                border-top 16px solid transparent !important
+                border-bottom 16px solid c_amarillo
+    &__noticia_small--celeste
+        background c_celeste
+        transition .3s ease all
+        border-left 1px solid transparent
+        border-right 1px solid transparent
+        border-bottom 1px solid transparent
+        .descripcion
+            &:after
+                content ""
+                width 0
+                position absolute
+                border-top 16px solid c_celeste
+                border-bottom 16px solid c_celeste
+                left 0
+                right 0
+                margin auto
+        &:hover
+            border-left 1px solid c_celeste
+            border-right 1px solid c_celeste
+            border-bottom 1px solid c_celeste
+            border-top 1px solid c_celeste
+            background c_white
+            .descripcion
+                h3
+                    color c_celeste
+                h4
+                    color c_celeste
+                p
+                    color c_celeste
+    &__noticia_small--amarillo
+        background c_amarillo
+        transition .3s ease all
+        border-left 1px solid c_amarillo
+        border-right 1px solid c_amarillo
+        border-bottom 1px solid c_amarillo
+        border-top 1px solid c_celeste
+        .descripcion
+            &:after
+                border-top 16px solid c_amarillo
+                border-bottom 16px solid c_amarillo
+                content ""
+                width 0
+                position absolute
+
+                left 0
+                right 0
+                margin auto
+
+        &:hover
+            border-left 1px solid c_amarillo
+            border-right 1px solid c_amarillo
+            border-bottom 1px solid c_amarillo
+            background c_white
+            .descripcion
+                h3
+                    color c_amarillo
+                h4
+                    color c_amarillo
+                p
+                    color c_amarillo*/

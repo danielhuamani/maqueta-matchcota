@@ -91,6 +91,17 @@
 .home_siempre_informados {
   margin-top: 40px;
 }
+.home_siempre_informados .ver_mas_noticias {
+  color: c_plomo_os;
+  margin-top: 40px;
+  text-align: center;
+  display: block;
+  font-family: f_ventura_m;
+  font-size: 25px;
+}
+.home_siempre_informados .home_listado_noticias {
+  margin-top: 40px;
+}
 .home_siempre_informados .title {
   text-align: center;
 }
@@ -113,6 +124,7 @@
   top: -35px;
   right: -40px;
 }
+<<<<<<< HEAD
 .home_siempre_informados .listado_noticias__noticia_large {
   position: relative;
   display: block;
@@ -159,3 +171,5 @@
   transition: 0.5s ease all;
 >>>>>>> 5580eacbac85bd0cb75040966b6a88f83f73cf49
 }
+=======
+>>>>>>> 56a5c1ae6234d1d922af1752692aac484f400011
