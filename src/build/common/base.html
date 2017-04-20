@@ -48,13 +48,127 @@
 			
 
 		</div>
-		
+		<footer>
+	<div class="footer_top">
+		<div class="container container--small">
+			<div class="facebook_bloque">
+				<div class="facebook_image">
+					<figure>
+						<img src="/static/img/footer_mascota.png" width="220" height="274" alt="">
+					</figure>
+				</div>
+				<div class="facebook">
+					<h3 class="facebook__title">FACEBOOK</h3>
+					<div class="facebook__slider">
+						<div class="facebook__slider__item">
+							<div class="item">
+
+								<ul>
+									<li class="msg">
+										<span class="icon-27"></span>
+										300
+									</li>
+									<li class="compartido">
+										<span class="icon-01"></span>
+										200
+									</li>
+									<li class="me_gusta">
+										<span class="icon-17"></span>
+										100
+									</li>
+								</ul>
+								<figure>
+									<img src="/static/img/face_img.png" width="193" height="162" alt="">
+								</figure>
+							</div>
+						</div>
+											<div class="facebook__slider__item">
+							<div class="item">
+
+								<ul>
+									<li class="msg">
+										<span class="icon-27"></span>
+										300
+									</li>
+									<li class="compartido">
+										<span class="icon-01"></span>
+										200
+									</li>
+									<li class="me_gusta">
+										<span class="icon-17"></span>
+										100
+									</li>
+								</ul>
+								<figure>
+									<img src="/static/img/face_img.png" width="193" height="162" alt="">
+								</figure>
+							</div>
+						</div>
+											<div class="facebook__slider__item">
+							<div class="item">
+
+								<ul>
+									<li class="msg">
+										<span class="icon-27"></span>
+										300
+									</li>
+									<li class="compartido">
+										<span class="icon-01"></span>
+										200
+									</li>
+									<li class="me_gusta">
+										<span class="icon-17"></span>
+										100
+									</li>
+								</ul>
+								<figure>
+									<img src="/static/img/face_img.png" width="193" height="162" alt="">
+								</figure>
+							</div>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="footer-bottom"></div>
+</footer>
+
 	</div>
 	<script src="/static/js/jquery1.8.3.min.js"></script>
+	<script src="/static/js/jquery.bxslider.min.js"></script>
 	<script src="/static/js/main.js"></script>
 	<script>
 	jQuery(document).ready(function($) {
+		$('.facebook__slider').bxSlider({
+				mode: 'fade',
+				adaptiveHeight: false,
+				auto: true,
+				pause: '22600',
+				pager: false,
+				controls: false,
+				minSlides: 1,
+			    maxSlides: 5,
+			    moveSlides: 1,
+			    slideWidth: 305,
+			    controls: true,
+			    slideMargin: 10,
 
+				onSliderLoad: function(currentIndex) {
+						$('.facebook__slider').children().eq(currentIndex).addClass('active');
+
+					},
+					onSlideBefore: function($slideElement){
+					  setTimeout( function(){
+
+						  $slideElement.addClass('active');
+
+					  },500);
+					  $('.facebook__slider').children().removeClass('active');
+
+					}
+			});
 	});
 	</script>
 	

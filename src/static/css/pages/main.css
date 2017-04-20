@@ -62,6 +62,74 @@
   font-size: 28px;
   color: #00b2e2;
 }
+footer {
+  width: calc(100% - 106px);
+  margin-left: 106px;
+  margin-top: 40px;
+}
+footer .footer_top {
+  padding-bottom: 20px;
+  background: #00b2e2;
+}
+footer .footer_top .facebook_bloque {
+  max-width: 380px;
+}
+footer .footer_top .facebook_image img {
+  display: block;
+}
+footer .footer_top .facebook {
+  background: #ebe7e2;
+  padding: 20px 25px 25px 50px;
+  box-sizing: border-box;
+}
+footer .footer_top .facebook__title {
+  font-size: 36px;
+  color: #00b2e2;
+  font-family: 'ventura_eddingmedium';
+}
+footer .footer_top .facebook .bx-wrapper {
+  margin: auto;
+  position: relative;
+}
+footer .footer_top .facebook .bx-wrapper .bx-controls {
+  position: absolute;
+  left: 10px;
+  top: 20px;
+  z-index: 200;
+}
+footer .footer_top .facebook__slider {
+  margin-top: 20px;
+}
+footer .footer_top .facebook__slider__item {
+  display: flex;
+}
+footer .footer_top .facebook__slider__item .item {
+  display: flex;
+}
+footer .footer_top .facebook__slider__item ul {
+  margin-top: 40px;
+}
+footer .footer_top .facebook__slider__item ul li.compartido {
+  margin-left: 10px;
+}
+footer .footer_top .facebook__slider__item ul li.me_gusta {
+  margin-left: 20px;
+}
+footer .footer_top .facebook__slider__item ul li {
+  font-size: 18px;
+  font-family: 'ventura_eddingmedium';
+  margin-bottom: 10px;
+  display: inline-block;
+}
+footer .footer_top .facebook__slider__item ul li span {
+  display: inline-block;
+  border-radius: 50%;
+  color: #00b2e2;
+  background: #fff;
+  padding: 6px;
+  font-size: 16px;
+  margin-right: 5px;
+}
 .home_banner {
   position: relative;
 }
@@ -161,6 +229,9 @@
   font-family: 'ventura_eddingmedium';
   font-size: 25px;
 }
+.home_siempre_informados .ver_mas_noticias i {
+  margin-right: 10px;
+}
 .home_siempre_informados .home_listado_noticias {
   margin-top: 40px;
 }
@@ -185,6 +256,64 @@
   position: absolute;
   top: -35px;
   right: -40px;
+}
+.home_nuestro_aliados {
+  margin-top: 60px;
+}
+.home_nuestro_aliados .bx-wrapper {
+  margin: auto;
+  position: relative;
+}
+.home_nuestro_aliados .bx-wrapper .bx-controls .bx-prev {
+  position: absolute;
+  left: -50px;
+  top: 40px;
+  width: 35px;
+  height: 12px;
+  background-image: url("../img/flecha_naranja.png");
+  display: block;
+}
+.home_nuestro_aliados .bx-wrapper .bx-controls .bx-next {
+  position: absolute;
+  right: -40px;
+  top: 40px;
+  width: 35px;
+  height: 12px;
+  background-image: url("../img/flecha_celeste.png");
+  display: block;
+}
+.home_nuestro_aliados .bx-wrapper .listado_aliados__item img {
+  filter: grayscale(100%);
+  margin: auto;
+  display: block;
+  transition: 0.3s ease all;
+}
+.home_nuestro_aliados .bx-wrapper .listado_aliados__item:hover img {
+  filter: grayscale(0%);
+}
+.home_nuestro_aliados .title_colores {
+  margin-bottom: 70px;
+}
+.home_nuestro_aliados .title_colores h2 {
+  position: relative;
+}
+.home_nuestro_aliados .title_colores h2:after {
+  content: "";
+  background-image: url("../img/rayas_celeste.png");
+  width: 9px;
+  height: 10px;
+  position: absolute;
+  left: -12px;
+  top: -7px;
+}
+.home_nuestro_aliados .title_colores h2:before {
+  content: "";
+  background-image: url("../img/rayas_naranja.png");
+  width: 9px;
+  height: 10px;
+  position: absolute;
+  right: -12px;
+  bottom: -7px;
 }
 .nosotros_nuestra_historia {
   margin-top: 70px;

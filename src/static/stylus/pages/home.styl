@@ -88,6 +88,8 @@
         display block
         font-family f_ventura_m
         font-size 25px
+        i
+            margin-right 10px
     .home_listado_noticias
         margin-top 40px
     .title
@@ -110,3 +112,56 @@
                 top -35px
                 right -40px
 
+.home_nuestro_aliados
+    margin-top 60px
+    .bx-wrapper
+        margin auto
+        position relative
+        .bx-controls
+            .bx-prev
+                position absolute
+                left -50px
+                top 40px
+                width 35px
+                height 12px
+                background-image url("../img/flecha_naranja.png")
+                display block
+            .bx-next
+                position absolute
+                right -40px
+                top 40px
+                width 35px
+                height 12px
+                background-image url("../img/flecha_celeste.png")
+                display block
+        .listado_aliados
+            &__item
+                img
+                    filter grayscale(100%)
+                    margin auto
+                    display block
+                    transition 0.3s ease all
+                &:hover
+                    img
+                        filter grayscale(0%)
+
+    .title_colores
+        margin-bottom 70px
+        h2
+            position relative
+            &:after
+                content ""
+                background-image url("../img/rayas_celeste.png")
+                width 9px
+                height 10px
+                position absolute
+                left -12px
+                top -7px
+            &:before
+                content ""
+                background-image url("../img/rayas_naranja.png")
+                width 9px
+                height 10px
+                position absolute
+                right -12px
+                bottom -7px
