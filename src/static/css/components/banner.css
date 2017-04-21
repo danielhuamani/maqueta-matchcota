@@ -1,0 +1,32 @@
+.banner_gral .banner {
+  width: 100%;
+  height: 310px;
+  background-size: cover;
+  position: relative;
+}
+.banner_gral .banner:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-image: url("../img/capa_slider.png");
+  width: 100%;
+  height: 100%;
+}
+.banner_gral .banner__title {
+  position: relative;
+  z-index: 100;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.banner_gral .banner__title h2 {
+  color: c_white;
+  font-size: 58px;
+  font-family: f_ventura_m;
+}
+.banner_gral .banner__title h2 span {
+  font-family: f_kaushan_r;
+  font-size: 78px;
+}
