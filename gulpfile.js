@@ -70,7 +70,7 @@ gulp.task('templates', function() {
 
 
 });
-/*gulp.task('templates_blocks', function() {
+gulp.task('templates_blocks', function() {
 
   return gulp.src(directorio.jade_blocks)
     .pipe(plumber())
@@ -81,7 +81,7 @@ gulp.task('templates', function() {
     .pipe(connect.reload());
 
 
-});*/
+});
 gulp.task('watch', function() {
 
   gulp.watch('src/static/stylus/*.styl', ['stylus']),
@@ -104,5 +104,5 @@ gulp.task('connect', function() {
     }
   });
 });
-gulp.task('default', ['stylus', 'templates', 'stylus_blocks','watch', 'connect']);
+gulp.task('default', ['stylus', 'templates','watch', 'connect']);
 //creacioon  del server para el livereload
