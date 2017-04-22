@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="stylesheet" type="text/css" href="/static/css/main.css">
+
+
+
+</head>
+<body class="">
+	<div class="wrapper">
+		
+<section class="menu">
+	<div class="btn_menu">
+		<div class="icon-menu"></div>
+		MENÚ
+	</div>
+</section>
+
+		<header class="header">
+
+	<div class="header__logo_links">
+		<a href="" class="header__logo">
+
+			<img src="/static/img/logo_celeste.png" alt="">
+		</a>
+		<nav>
+			<ul>
+				<li>
+					<a href="" class="adopta"> <i class="icon-11"></i> Adopta</a>
+				</li>
+				<li>
+					<a href="" class="apadrina"> <i class="icon-12"></i> Apadrina</a>
+				</li>
+				<li>
+					<a href="" class="donar"> <i class="icon-13"></i> Dona</a>
+				</li>
+			</ul>
+		</nav>
+	</div>
+</header>
+
+		<div class="page">
+			
+
+<section class="home_banner left_menu">
+	<figure class="juguete">
+		<img src="/static/img/juguete1.png" alt="" class="img_res">
+	</figure>
+	<div class="home_banner__slider_list">
+		<div class="home_banner__slider_list__item" style="background-image:url('/static/img/banner.png')">
+			<div class="content content_banner">
+				<h2>ADOPTAR ES <span class="cuv_naran">amar</span></h2>
+				<div class="text">
+					DA UN HOGAR A UNA MASCOTA ABANDONADA
+				</div>
+			</div>
+		</div>
+		<div class="home_banner__slider_list__item" style="background-image:url('/static/img/banner.png')">
+			<div class="content content_banner">
+				<h2>ADOPTAR ES <span class="cuv_naran">amar</span></h2>
+				<div class="text">
+					DA UN HOGAR A UNA MASCOTA ABANDONADA
+				</div>
+			</div>
+		</div>
+		<div class="home_banner__slider_list__item" style="background-image:url('/static/img/banner.png')">
+			<div class="content content_banner">
+				<h2>ADOPTAR ES <span class="cuv_naran">amar</span></h2>
+				<div class="text">
+					DA UN HOGAR A UNA MASCOTA ABANDONADA
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="home_mascotas">
+	<div class="container--large">
+		<div class="title_section title_section--celeste">
+			<h2 class="">
+				TU matchcota ideal
+			</h2>
+
+		</div>
+		<div class="list_mascotas">
+			<div class="list_mascotas__mascota ">
+				<h3 class="list_mascotas__title">CORAJE</h3>
+				<figure class="list_mascotas__image">
+					<img src="/static/img/mascota1.png" alt="" width="274" height="295">
+				</figure>
+				<div class="list_mascotas__etiqueta">
+					<h4>Edad: 1 año y 6 meses</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+
+
+
+		</div>
+		
+	</div>
+	<script src="/static/js/jquery1.8.3.min.js"></script>
+	<script src="/static/js/main.js"></script>
+	<script>
+	jQuery(document).ready(function($) {
+
+	});
+	</script>
+	
+	<script src="/static/js/jquery.bxslider.min.js"></script>
+	<script>
+
+		$(document).ready(function(){
+
+
+			$('.home_banner__slider_list').bxSlider({
+				mode: 'fade',
+				adaptiveHeight: true,
+				auto: true,
+				pause: '22600',
+				pager: false,
+				controls: false,
+
+
+				onSliderLoad: function(currentIndex) {
+						$('.home_banner__slider_list').children().eq(currentIndex).addClass('active');
+
+					},
+					onSlideBefore: function($slideElement){
+					  setTimeout( function(){
+
+						  $slideElement.addClass('active');
+
+					  },500);
+					  $('.home_banner__slider_list').children().removeClass('active');
+
+					}
+			});
+
+
+		});
+
+	</script>
+
+
+</body>
+</html>
