@@ -1705,7 +1705,6 @@ a {
 footer {
   width: calc(100% - 106px);
   margin-left: 106px;
-  margin-top: 40px;
 }
 footer .container {
   display: -webkit-box;
@@ -2059,19 +2058,6 @@ footer .footer_top .facebook__slider__item ul li span {
   background-image: url("../img/flecha_celeste.png");
   display: block;
 }
-.home_nuestro_aliados .bx-wrapper .listado_aliados__item img {
-  filter: grayscale(100%);
-  margin: auto;
-  display: block;
-  -webkit-transition: 0.3s ease all;
-  -moz-transition: 0.3s ease all;
-  -o-transition: 0.3s ease all;
-  -ms-transition: 0.3s ease all;
-  transition: 0.3s ease all;
-}
-.home_nuestro_aliados .bx-wrapper .listado_aliados__item:hover img {
-  filter: grayscale(0%);
-}
 .home_nuestro_aliados .title_colores {
   margin-bottom: 70px;
 }
@@ -2095,6 +2081,19 @@ footer .footer_top .facebook__slider__item ul li span {
   position: absolute;
   right: -12px;
   bottom: -7px;
+}
+.listado_aliados__item img {
+  filter: grayscale(100%);
+  margin: auto;
+  display: block;
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+  -ms-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+}
+.listado_aliados__item:hover img {
+  filter: grayscale(0%);
 }
 .nosotros_matchota_ideal {
   margin-top: 50px;
@@ -2487,6 +2486,56 @@ footer .footer_top .facebook__slider__item ul li span {
   text-align: center;
   margin: auto;
   min-width: 200px;
+  display: block;
+}
+.nosotros_socios_estrategicos {
+  margin-top: 35px;
+}
+.nosotros_socios_estrategicos .container .title_colores {
+  margin-bottom: 70px;
+}
+.nosotros_socios_estrategicos .container .title_colores h2 {
+  position: relative;
+}
+.nosotros_socios_estrategicos .container .title_colores h2:after {
+  content: "";
+  background-image: url("../img/rayas_celeste.png");
+  width: 9px;
+  height: 10px;
+  position: absolute;
+  left: -12px;
+  top: -7px;
+}
+.nosotros_socios_estrategicos .container .title_colores h2:before {
+  content: "";
+  background-image: url("../img/rayas_naranja.png");
+  width: 9px;
+  height: 10px;
+  position: absolute;
+  right: -12px;
+  bottom: -7px;
+}
+.nosotros_socios_estrategicos .container .bx-wrapper {
+  margin: auto;
+  margin-top: 50px;
+  position: relative;
+}
+.nosotros_socios_estrategicos .container .bx-wrapper .bx-controls .bx-prev {
+  position: absolute;
+  left: -50px;
+  top: 40px;
+  width: 35px;
+  height: 12px;
+  background-image: url("../img/flecha_naranja.png");
+  display: block;
+}
+.nosotros_socios_estrategicos .container .bx-wrapper .bx-controls .bx-next {
+  position: absolute;
+  right: -40px;
+  top: 40px;
+  width: 35px;
+  height: 12px;
+  background-image: url("../img/flecha_celeste.png");
   display: block;
 }
 @media screen and (max-width: 1200px) {

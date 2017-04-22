@@ -281,7 +281,33 @@
 		</div>
 	</div>
 </section>
-section.
+<section class="nosotros_socios_estrategicos">
+	<div class="container">
+		<div class="title title_colores">
+			<h2 class="celeste">Socios Estratégicos </h2>
+		</div>
+		<div class="listado_aliados listado_aliados_nosotros">
+			<figure class="listado_aliados__item">
+				<img src="/static/img/nos_soc_1.png" alt="" >
+			</figure>
+			<figure class="listado_aliados__item">
+				<img src="/static/img/nos_soc_2.png" alt="" >
+			</figure>
+			<figure class="listado_aliados__item">
+				<img src="/static/img/nos_soc_3.png" alt="">
+			</figure>
+			<figure class="listado_aliados__item">
+				<img src="/static/img/nos_soc_4.png" alt="">
+			</figure>
+			<figure class="listado_aliados__item">
+				<img src="/static/img/nos_soc_1.png" alt="">
+			</figure>
+			<figure class="listado_aliados__item">
+				<img src="/static/img/nos_soc_2.png" alt="">
+			</figure>
+		</div>
+	</div>
+</section>
 
 
 		</div>
@@ -437,6 +463,28 @@ section.
 	});
 	</script>
 	
+<script>
+	jQuery(document).ready(function($) {
+			$('.listado_aliados').bxSlider({
+
+				adaptiveHeight: false,
+				auto: true,
+				pause: '22600',
+				pager: false,
+				controls: false,
+				minSlides: 1,
+			    maxSlides: 5,
+			    moveSlides: 1,
+			    slideWidth: 135,
+			    controls: true,
+			    slideMargin: 30,
+			    nextText: '',
+				prevText: '',
+
+			});
+
+	});
+</script>
 
 </body>
 </html>
