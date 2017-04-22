@@ -6,6 +6,9 @@ a {
   max-width: 1200px;
   margin: auto;
 }
+.container--r-small {
+  max-width: 1200px;
+}
 .container--small {
   max-width: 1100px;
 }

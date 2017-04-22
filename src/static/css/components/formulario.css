@@ -1,0 +1,155 @@
+.container_formulario {
+  display: flex;
+  background: c_formulario;
+  justify-content: center;
+}
+.container_formulario .cnt-image {
+  background-image: url("../img/nosotros_fondo.png");
+  background-size: cover;
+  width: 50%;
+  padding-right: 30px;
+}
+.container_formulario .cnt-image .text {
+  color: c_celeste;
+  font-family: f_kaushan_r;
+  font-size: 80px;
+  text-align: center;
+}
+.container_formulario .cnt-image figure {
+  margin-top: -65px;
+  max-width: 713px;
+}
+.container_formulario .cnt-formulario {
+  width: 50%;
+  padding-left: 60px;
+  padding-bottom: 45px;
+}
+.container_formulario .cnt-formulario .formulario {
+  margin-top: 60px;
+  max-width: 800px;
+  padding-right: 40px;
+}
+.container_formulario .cnt-formulario .formulario h2 {
+  color: c_celeste;
+  font-size: 35px;
+  text-align: center;
+  font-family: f_ventura_m;
+  margin-bottom: 20px;
+}
+.container_formulario .cnt-formulario .formulario p {
+  font-size: 15px;
+  font-family: f_gothan_l;
+  color: c_plomo_os;
+}
+.container_formulario .cnt-formulario .formulario form .grid_botton {
+  display: flex;
+  justify-content: center;
+  margin-top: 30px;
+}
+.container_formulario .cnt-formulario .formulario form .grid_botton a {
+  min-width: 230px;
+  text-align: center;
+  margin: 0px 30px;
+}
+.container_formulario .cnt-formulario .formulario form .text {
+  margin-top: 40px;
+  font-size: 15px;
+  font-family: f_gothan_l;
+  color: c_plomo_os;
+  margin-bottom: 36px;
+}
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input {
+  display: flex;
+  width: 100%;
+  margin-bottom: 35px;
+}
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input {
+  width: 100%;
+  position: relative;
+}
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input textarea {
+  height: 20px;
+}
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-family: f_gothan_l;
+  font-size: 15px;
+  width: 100%;
+  color: c_plomo_os;
+  transition: 0.3s ease all;
+}
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input input,
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input textarea {
+  width: 100%;
+  color: c_plomo_os;
+  position: relative;
+  border: none;
+  font-size: 15px;
+  border-bottom: 2px solid c_plomo_os;
+  background: transparent;
+}
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input:after {
+  content: "";
+  width: 0%;
+  position: absolute;
+  border-bottom: 2px solid c_celeste;
+  left: 0;
+  height: 1px;
+  bottom: 0;
+  transition: 1s ease all;
+}
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input-m {
+  width: 50%;
+}
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input-m:first-child {
+  margin-right: 40px;
+}
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input-active label {
+  top: -20px;
+}
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input-active:after {
+  width: 100%;
+}
+@media screen and (max-width: 1500px) {
+  .container_formulario .cnt-image figure {
+    max-width: 500px;
+  }
+  .container_formulario .cnt-formulario {
+    padding-bottom: 20px;
+  }
+  .container_formulario .cnt-formulario .formulario {
+    margin-top: 30px;
+    max-width: 550px;
+  }
+  .container_formulario .cnt-formulario .formulario form .grid_botton {
+    margin-top: 20px;
+  }
+  .container_formulario .cnt-formulario .formulario form .grid_botton a {
+    min-width: 200px;
+    margin: 0px 20px;
+    font-size: 22px;
+  }
+  .container_formulario .cnt-formulario .formulario form .text {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
+  .container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input {
+    margin-bottom: 27px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container_formulario .cnt-image {
+    width: 40%;
+    display: none;
+  }
+  .container_formulario .cnt-formulario {
+    width: 90%;
+    padding-left: 0;
+  }
+  .container_formulario .cnt-formulario .formulario {
+    padding-right: 0;
+    max-width: 100%;
+  }
+}
