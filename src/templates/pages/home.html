@@ -110,7 +110,7 @@
 		</div>
 	</div>
 </section>
-<div class="home_siempre_informados">
+<section class="home_siempre_informados">
 	<div class="container">
 		<div class="title">
 			<h2>SIEMPRE <span>INFORMADOS</span></h2>
@@ -126,7 +126,7 @@
 					<p>Las mascotas fueron la sensación en Halloween.</p>
 				</div>
 			</a>
-			<a href="" class="listado_noticias__noticia listado_noticias__noticia_small listado_noticias__noticia_small--top listado_noticias__noticia_small--amarillo">
+			<a href="" class="listado_noticias__noticia ">
 				<figure>
 					<img src="{{STATIC_URL}}img/noticia_small_1.png" alt="" class="img_res" width="228" height="204">
 				</figure>
@@ -136,7 +136,7 @@
 					<p>Las mascotas fueron la sensación en Halloween.</p>
 				</div>
 			</a>
-			<a href="" class="listado_noticias__noticia listado_noticias__noticia_small listado_noticias__noticia_small--bottom  listado_noticias__noticia_small--celeste">
+			<a href="" class="listado_noticias__noticia ">
 				<figure>
 					<img src="{{STATIC_URL}}img/noticia_2.png" alt="" class="img_res" width="228" height="204">
 				</figure>
@@ -146,7 +146,7 @@
 					<p>Las mascotas fueron la sensación en Halloween.</p>
 				</div>
 			</a>
-			<a href="" class="listado_noticias__noticia listado_noticias__noticia_small listado_noticias__noticia_small--top listado_noticias__noticia_small--amarillo">
+			<a href="" class="listado_noticias__noticia ">
 				<figure>
 					<img src="{{STATIC_URL}}img/noticia_small_1.png" alt="" class="img_res" width="228" height="204">
 				</figure>
@@ -166,7 +166,7 @@
 					<p>Las mascotas fueron la sensación en Halloween.</p>
 				</div>
 			</a>
-			<a href="" class="listado_noticias__noticia listado_noticias__noticia_small listado_noticias__noticia_small--bottom  listado_noticias__noticia_small--celeste">
+			<a href="" class="listado_noticias__noticia ">
 				<figure>
 					<img src="{{STATIC_URL}}img/noticia_2.png" alt="" class="img_res" width="228" height="204">
 				</figure>
@@ -181,10 +181,37 @@
 			<i class="icon-24"></i> Ver más noticias
 		</a>
 	</div>
-</div>
+</section>
+<section class="home_nuestro_aliados">
+	<div class="container">
+		<div class="title title_colores">
+			<h2 class="celeste"> NUESTROS  <span class="naranja">ALIADOS</span></h2>
+		</div>
+		<div class="listado_aliados">
+			<figure class="listado_aliados__item">
+				<img src="{{STATIC_URL}}img/instinto.png" alt="" width="205" height="91">
+			</figure>
+			<figure class="listado_aliados__item">
+				<img src="{{STATIC_URL}}img/voz_animal.png" alt="" >
+			</figure>
+			<figure class="listado_aliados__item">
+				<img src="{{STATIC_URL}}img/vet.png" alt="">
+			</figure>
+			<figure class="listado_aliados__item">
+				<img src="{{STATIC_URL}}img/guau.png" alt="">
+			</figure>
+			<figure class="listado_aliados__item">
+				<img src="{{STATIC_URL}}img/voz_animal.png" alt="">
+			</figure>
+			<figure class="listado_aliados__item">
+				<img src="{{STATIC_URL}}img/4patas.png" alt="">
+			</figure>
+		</div>
+	</div>
+</section>
 {% endblock content %}
 {% block js %}
-	<script src="{{STATIC_URL}}js/jquery.bxslider.min.js"></script>
+
 	<script>
 
 		$(document).ready(function(){
@@ -212,6 +239,23 @@
 					  $('.home_banner__slider_list').children().removeClass('active');
 
 					}
+			});
+			$('.listado_aliados').bxSlider({
+
+				adaptiveHeight: false,
+				auto: true,
+				pause: '22600',
+				pager: false,
+				controls: false,
+				minSlides: 1,
+			    maxSlides: 5,
+			    moveSlides: 1,
+			    slideWidth: 205,
+			    controls: true,
+			    slideMargin: 10,
+			    nextText: '',
+				prevText: '',
+
 			});
 
 

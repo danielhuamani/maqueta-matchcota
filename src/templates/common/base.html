@@ -22,10 +22,40 @@
 		{% include "./footer.html" %}
 	</div>
 	<script src="{{STATIC_URL}}js/jquery1.8.3.min.js"></script>
+	<script src="{{STATIC_URL}}js/jquery.bxslider.min.js"></script>
 	<script src="{{STATIC_URL}}js/main.js"></script>
 	<script>
 	jQuery(document).ready(function($) {
+		$('.facebook__slider').bxSlider({
+				mode: 'fade',
+				adaptiveHeight: false,
+				auto: true,
+				pause: '22600',
+				pager: false,
+				controls: false,
+				minSlides: 1,
+			    maxSlides: 5,
+			    moveSlides: 1,
+			    slideWidth: 305,
+			    controls: true,
+			    slideMargin: 10,
+			    nextText: '',
+				prevText: '',
 
+				onSliderLoad: function(currentIndex) {
+						$('.facebook__slider').children().eq(currentIndex).addClass('active');
+
+					},
+					onSlideBefore: function($slideElement){
+					  setTimeout( function(){
+
+						  $slideElement.addClass('active');
+
+					  },500);
+					  $('.facebook__slider').children().removeClass('active');
+
+					}
+			});
 	});
 	</script>
 	{% block js %}

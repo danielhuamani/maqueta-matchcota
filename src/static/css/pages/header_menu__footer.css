@@ -40,25 +40,286 @@
 .header__logo_links nav ul li a i {
   margin-right: 5px;
 }
-.menu {
-  position: fixed;
-  width: 105px;
-  height: 100%;
+.container_menu {
   background: #fff;
+}
+.container_menu .overlay {
+  background: rgba(0,0,0,0.7);
+  width: 100%;
+  height: 100%;
+}
+.container_menu .menu_block--active {
+  left: 0px !important;
+}
+.container_menu .menu_block {
+  position: fixed;
+  width: 490px;
+  transition: 0.5s ease all;
+  height: 100%;
   top: 0;
-  left: 0;
+  left: -490px;
+  background: #fff;
   text-align: center;
   padding-top: 45px;
   border-right: 1px solid #d0d0d0;
+  z-index: 300;
 }
-.menu .btn_menu {
+.container_menu .menu_block .menu {
+  position: relative;
+}
+.container_menu .menu_block .menu .icon-close {
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
+  top: 0;
+  display: inline-block;
+  color: #00b2e2;
+  font-size: 28px;
+  border: 1px solid #00b2e2;
+}
+.container_menu .menu_block .menu .links_pop {
+  display: flex;
+  justify-content: center;
+  margin-top: 40px;
+  position: relative;
+}
+.container_menu .menu_block .menu .links_pop:after {
+  content: "";
+  width: 80px;
+  height: 8px;
+  background: #00b2e2;
+  position: absolute;
+  left: 0;
+  margin: auto;
+  right: 0;
+  bottom: -40px;
+}
+.container_menu .menu_block .menu .links_pop a.donar i {
+  background: #ff9971;
+}
+.container_menu .menu_block .menu .links_pop a.apadrina i {
+  background: #ff7444;
+}
+.container_menu .menu_block .menu .links_pop a.adopta i {
+  background: #ff4304;
+}
+.container_menu .menu_block .menu .links_pop a {
+  margin: 0px 10px;
+}
+.container_menu .menu_block .menu .links_pop a i {
+  display: inline-block;
+  padding: 10px;
+  color: #fff;
+  font-size: 32px;
+  border-radius: 50%;
+}
+.container_menu .menu_block .menu .links_pop a span {
+  display: block;
+  margin-top: 5px;
+  font-size: 19px;
+  font-family: 'ventura_eddingmedium';
+  color: #ff4304;
+}
+.container_menu .menu_block .menu nav {
+  margin-top: 40px;
+}
+.container_menu .menu_block .menu nav ul li {
+  margin-bottom: 20px;
+}
+.container_menu .menu_block .menu nav ul li a.active,
+.container_menu .menu_block .menu nav ul li a:hover {
+  border-bottom: 2px solid #00b2e2;
+}
+.container_menu .menu_block .menu nav ul li a {
+  padding: 0px 20px;
+  color: #00b2e2;
+  font-size: 30px;
+  font-family: 'GothamRounded-Book';
+  border-bottom: 2px solid transparent;
+}
+.container_menu .link_menu--active {
+  left: 0 !important;
+}
+.container_menu .link_menu {
+  position: fixed;
+  transition: 0.5s ease all;
+  width: 105px;
+  height: 100%;
+  top: 0;
+  left: -105px;
+  background: #fff;
+  text-align: center;
+  padding-top: 45px;
+  border-right: 1px solid #d0d0d0;
+  z-index: 300;
+}
+.container_menu .btn_menu {
   font-size: 16px;
   cursor: pointer;
   font-family: 'GothamRounded-Book';
   color: #00b2e2;
 }
-.menu .btn_menu .icon-menu {
+.container_menu .btn_menu .icon-menu {
   margin-bottom: 12px;
   font-size: 28px;
   color: #00b2e2;
 }
+footer {
+  width: calc(100% - 106px);
+  margin-left: 106px;
+  margin-top: 40px;
+}
+footer .container {
+  display: flex;
+  justify-content: space-between;
+}
+footer .footer-bottom {
+  padding: 15px 0;
+}
+footer .footer-bottom span {
+  margin: 0;
+  font-size: 13px;
+  font-family: 'DINPro-Light';
+  color: #88858d;
+}
+footer .footer-bottom a {
+  margin: 0;
+  font-size: 13px;
+  font-family: 'DINPro-Light';
+  color: #88858d;
+}
+footer .footer-bottom a span.staff {
+  font-family: 'arialregular';
+}
+footer .footer-bottom a span.digital {
+  font-family: 'arialbold';
+  position: relative;
+  padding-right: 12px;
+}
+footer .footer-bottom a span.digital:after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 0;
+  width: 11px;
+  height: 10px;
+  background-image: url("../img/staff.png");
+}
+footer .footer_top {
+  background-image: url("../img/footer_back.png");
+  padding-top: 100px;
+  background-size: cover;
+}
+footer .footer_top__contacto {
+  max-width: 380px;
+  margin-top: 50px;
+  text-align: right;
+}
+footer .footer_top__contacto h3 {
+  margin-bottom: 3px;
+  color: #fff;
+  font-size: 24px;
+  font-family: 'ventura_eddingmedium';
+}
+footer .footer_top__contacto .links {
+  margin-top: 20px;
+}
+footer .footer_top__contacto .links a.informacion {
+  font-size: 35px;
+  font-family: 'ventura_eddingmedium';
+}
+footer .footer_top__contacto .links a.informacion span {
+  font-size: 24px;
+}
+footer .footer_top__contacto .links a {
+  color: #fff;
+  display: block;
+  margin-top: 10px;
+  font-size: 14px;
+  font-family: 'GothamRounded-Light';
+}
+footer .footer_top__contacto .links a span {
+  margin-right: 6px;
+}
+footer .footer_top .facebook_bloque {
+  padding-bottom: 20px;
+  width: 380px;
+  padding-left: 160px;
+  position: relative;
+}
+footer .footer_top .facebook_image {
+  bottom: 0;
+  left: 0;
+  position: absolute;
+}
+footer .footer_top .facebook_image img {
+  display: block;
+}
+footer .footer_top .facebook {
+  background: #ebe7e2;
+  padding: 20px 25px 25px 50px;
+  box-sizing: border-box;
+}
+footer .footer_top .facebook__title {
+  font-size: 36px;
+  color: #00b2e2;
+  font-family: 'ventura_eddingmedium';
+}
+footer .footer_top .facebook .bx-wrapper {
+  margin: auto;
+  position: relative;
+}
+footer .footer_top .facebook .bx-wrapper .bx-controls {
+  position: absolute;
+  left: 15px;
+  top: 20px;
+  z-index: 200;
+}
+footer .footer_top .facebook .bx-wrapper .bx-controls .bx-prev {
+  background-image: url("../img/footer_flecha_left.png");
+  width: 12px;
+  height: 22px;
+  display: inline-block;
+}
+footer .footer_top .facebook .bx-wrapper .bx-controls .bx-next {
+  background-image: url("../img/footer_flecha_right.png");
+  width: 12px;
+  height: 22px;
+  margin-left: 15px;
+  display: inline-block;
+}
+footer .footer_top .facebook__slider {
+  margin-top: 20px;
+}
+footer .footer_top .facebook__slider__item {
+  display: flex;
+}
+footer .footer_top .facebook__slider__item .item {
+  display: flex;
+}
+footer .footer_top .facebook__slider__item ul {
+  margin-top: 40px;
+}
+footer .footer_top .facebook__slider__item ul li.compartido {
+  margin-left: 10px;
+}
+footer .footer_top .facebook__slider__item ul li.me_gusta {
+  margin-left: 20px;
+}
+footer .footer_top .facebook__slider__item ul li {
+  font-size: 18px;
+  font-family: 'ventura_eddingmedium';
+  margin-bottom: 10px;
+  display: inline-block;
+}
+footer .footer_top .facebook__slider__item ul li span {
+  display: inline-block;
+  border-radius: 50%;
+  color: #00b2e2;
+  background: #fff;
+  padding: 6px;
+  font-size: 16px;
+  margin-right: 5px;
+}
+/*
+@media screen and (max-width 480px)*/

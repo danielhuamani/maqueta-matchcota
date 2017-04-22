@@ -6,6 +6,9 @@ a {
   max-width: 1200px;
   margin: auto;
 }
+.container--small {
+  max-width: 1100px;
+}
 .container--large {
   max-width: 1800px;
 }
@@ -15,6 +18,19 @@ a {
   text-align: center;
   position: relative;
   display: inline-block;
+}
+.title_colores {
+  text-align: center;
+}
+.title_colores h2.celeste {
+  display: inline-block;
+  font-size: 35px;
+  color: c_celeste;
+  position: relative;
+  font-family: f_ventura_m;
+}
+.title_colores h2.celeste span.naranja {
+  color: c_narana_ad;
 }
 .title_section--celeste {
   text-align: center;

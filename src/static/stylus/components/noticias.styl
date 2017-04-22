@@ -4,15 +4,15 @@
     flex-wrap wrap
     &__noticia
         margin 2px 2px
-
+        border-left 1px solid transparent
     &__noticia:nth-child(2), &__noticia:nth-child(4)
         flex-direction column
         background c_amarillo
         transition .3s ease all
-        border-left 1px solid c_amarillo
-        border-right 1px solid c_amarillo
-        border-bottom 1px solid c_amarillo
-        border-top 1px solid c_amarillo
+        border-left 1px solid transparent
+        border-right 1px solid transparent
+        border-bottom 1px solid transparent
+        border-top 1px solid transparent
         .descripcion
             transition .3s ease all
             &:after
@@ -31,6 +31,7 @@
             border-left 1px solid c_amarillo
             border-right 1px solid c_amarillo
             border-bottom 1px solid c_amarillo
+            border-top 1px solid c_amarillo
             background c_white !important
             .descripcion
                 background c_white !important
@@ -52,6 +53,7 @@
         border-left 1px solid transparent
         border-right 1px solid transparent
         border-bottom 1px solid transparent
+        border-top 1px solid transparent
         .descripcion
             &:after
                 content ""
