@@ -668,6 +668,47 @@ a {
 }
 .wrapper {
   position: relative;
+/* WebKit */
+/* Firefox 18- */
+/* Firefox 19+ */
+/* IE 10+ */
+}
+.wrapper::-webkit-input-placeholder {
+  color: ;
+  famyli: ;
+}
+.wrapper:-moz-placeholder {
+  color: ;
+  famyli: ;
+}
+.wrapper::-moz-placeholder {
+  color: ;
+  famyli: ;
+}
+.wrapper:-ms-input-placeholder {
+  color: ;
+  famyli: ;
+}
+.wrapper ::-webkit-input-placeholder {
+  color: color;
+  font-family: famyli;
+}
+.wrapper :-moz-placeholder {
+  color: color;
+  font-family: famyli;
+}
+.wrapper ::-moz-placeholder {
+  color: color;
+  font-family: famyli;
+}
+.wrapper :-ms-input-placeholder {
+  color: color;
+  font-family: famyli;
+}
+p {
+  font-family: 'GothamRounded-Light';
+  font-size: 14px;
+  color: #8d8b8b;
 }
 @-moz-keyframes fadeEffect {
   from {
@@ -2063,6 +2104,111 @@ footer .footer_top .facebook__slider__item ul li span {
   right: -12px;
   bottom: -7px;
 }
+.noticias-detail {
+  padding: 2.5em 0;
+  height: auto;
+  overflow: hidden;
+}
+.noticias-detail .title {
+  text-align: center;
+  margin-bottom: 2.5em;
+  padding: 2em 0 0;
+}
+.noticias-detail .title h2 {
+  display: inline-block;
+  font-size: 35px;
+  color: #ff4304;
+  position: relative;
+  font-family: 'ventura_eddingmedium';
+  color: #00b2e2;
+}
+.noticias-detail .title h2:after {
+  content: "";
+  background-image: url("../img/nosotros_inf.png");
+  width: 33px;
+  height: 34px;
+  position: absolute;
+  top: -35px;
+  right: -40px;
+}
+.noticias-detail .content-detail .image {
+  width: 50%;
+  float: left;
+  padding: 0 5% 0 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.noticias-detail .content-detail .image img {
+  float: right;
+}
+.noticias-detail .content-detail .detail {
+  width: 50%;
+  float: right;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+.noticias-detail .content-detail .detail .date {
+  color: #5d5d5d;
+  font-size: 25px;
+  font-family: 'ventura_eddingmedium';
+  display: block;
+  margin-bottom: 1em;
+}
+.noticias-detail .content-detail .detail h3 {
+  color: #00b2e2;
+  font-size: 30px;
+  font-family: 'ventura_eddingmedium';
+  margin-bottom: 1em;
+}
+.noticias-detail .view-more {
+  clear: both;
+  padding: 1.5em 0 1.5em;
+}
+.noticias-detail .view-more .ver_mas_noticias {
+  color: #5d5d5d;
+  margin-top: 40px;
+  margin-left: 20%;
+  text-align: left;
+  display: block;
+  font-family: 'ventura_eddingmedium';
+  font-size: 25px;
+}
+.noticias-detail .view-more .ver_mas_noticias i {
+  margin-right: 10px;
+}
+.cnt-share {
+  text-align: center;
+  padding-top: 1em;
+}
+.cnt-share .share-item {
+  border: 1px solid #00b2e2;
+  border-radius: 10px;
+  color: #00b2e2;
+  display: inline-block;
+  padding: 0.5em 1.5em;
+}
+.cnt-share .share-item span.text {
+  float: left;
+  margin-top: 0.65em;
+  font-weight: 500;
+  font-family: 'GothamRounded-Medium';
+}
+.cnt-share .share-item i.icon {
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  color: #fff;
+  display: inline-block;
+  font-size: 25px;
+  margin-left: 1em;
+}
+.cnt-share .share-item.share-fb i.icon {
+  background: #3c598b;
+  color: #fff;
+}
 .contacto .container {
   display: -webkit-box;
   display: -moz-box;
@@ -2133,26 +2279,22 @@ footer .footer_top .facebook__slider__item ul li span {
 .contacto__cnt_formulario form .cnt-input .input {
   width: 50%;
   margin: 7px 5px;
-/* WebKit */
-/* Firefox 18- */
-/* Firefox 19+ */
-/* IE 10+ */
 }
-.contacto__cnt_formulario form .cnt-input .input ::-webkit-input-placeholder {
-  color: #c7c7c7;
-  font-family: f_lato_r;
+.contacto__cnt_formulario form .cnt-input .input::-webkit-input-placeholder {
+  (((#c7c7c7))): ;
+  f_lato_r: ;
 }
-.contacto__cnt_formulario form .cnt-input .input :-moz-placeholder {
-  color: #c7c7c7;
-  font-family: f_lato_r;
+.contacto__cnt_formulario form .cnt-input .input:-moz-placeholder {
+  (((#c7c7c7))): ;
+  f_lato_r: ;
 }
-.contacto__cnt_formulario form .cnt-input .input ::-moz-placeholder {
-  color: #c7c7c7;
-  font-family: f_lato_r;
+.contacto__cnt_formulario form .cnt-input .input::-moz-placeholder {
+  (((#c7c7c7))): ;
+  f_lato_r: ;
 }
-.contacto__cnt_formulario form .cnt-input .input :-ms-input-placeholder {
-  color: #c7c7c7;
-  font-family: f_lato_r;
+.contacto__cnt_formulario form .cnt-input .input:-ms-input-placeholder {
+  (((#c7c7c7))): ;
+  f_lato_r: ;
 }
 .contacto__cnt_formulario form .cnt-input .input input,
 .contacto__cnt_formulario form .cnt-input .input select,
