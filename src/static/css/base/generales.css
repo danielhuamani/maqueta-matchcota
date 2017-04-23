@@ -99,6 +99,31 @@ a {
 }
 .wrapper {
   position: relative;
+/* WebKit */
+/* Firefox 18- */
+/* Firefox 19+ */
+/* IE 10+ */
+}
+.wrapper ::-webkit-input-placeholder {
+  color: color;
+  font-family: famyli;
+}
+.wrapper :-moz-placeholder {
+  color: color;
+  font-family: famyli;
+}
+.wrapper ::-moz-placeholder {
+  color: color;
+  font-family: famyli;
+}
+.wrapper :-ms-input-placeholder {
+  color: color;
+  font-family: famyli;
+}
+p {
+  font-family: f_gothan_l;
+  font-size: 14px;
+  color: c_plomo_p;
 }
 @-moz-keyframes fadeEffect {
   from {
