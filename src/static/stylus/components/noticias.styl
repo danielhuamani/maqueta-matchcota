@@ -1,11 +1,54 @@
+.home_listado_noticias
+    .listado_noticias__noticia:first-child, .listado_noticias__noticia:nth-child(5)
+        position relative
+        display block
+        width 462px
+        height 410px
+        figure
+            width 462px
+            height 410px
+            margin 0
+        .descripcion
+            display none
+            flex-direction column
+            padding 0px 30px
+            box-sizing border-box
+            justify-content flex-end
+            position absolute
+            left 0
+            top 0
+            width 100%
+            height 100%
+            background rgba(0,0,0,0.5) !important
+
+            h3
+                color c_white !important
+                font-family f_ventura_m
+                font-size 20px
+            h4
+                color c_white !important
+                font-size 18px
+                font-family f_gothan_m
+                margin 0
+            p
+                color c_white !important
+                font-size 18px
+                font-family f_gothan_l
+            &:after
+                display none
+        &:hover
+            .descripcion
+                display flex
+                animation fadeEffect 0.5s
 
 .listado_noticias
     display flex
+    justify-content center
     flex-wrap wrap
     &__noticia
         margin 2px 2px
         border-left 1px solid transparent
-    &__noticia:nth-child(2), &__noticia:nth-child(4)
+    &__noticia:nth-child(odd)
         flex-direction column
         background c_amarillo
         transition .3s ease all
@@ -32,12 +75,12 @@
             border-right 1px solid c_amarillo
             border-bottom 1px solid c_amarillo
             border-top 1px solid c_amarillo
-            background c_white !important
+            background c_white
             .descripcion
-                background c_white !important
+                background c_white
                 &:after
-                    bottom -32px
-                    border-bottom 16px solid transparent !important
+
+                    border-bottom 16px solid c_white !important
                     border-top 16px solid transparent
 
                 h3
@@ -46,7 +89,7 @@
                     color c_amarillo
                 p
                     color c_amarillo
-    &__noticia:nth-child(3n)
+    &__noticia:nth-child(even)
         flex-direction column-reverse
         background c_celeste
         transition .3s ease all
@@ -75,24 +118,26 @@
             background c_white
             .descripcion
                 &:after
-                    border-top 16px solid transparent !important
-                    border-bottom 16px solid transparent
+                    border-top 16px solid c_white !important
+                    border-bottom 16px solid transparent !important
                 h3
                     color c_celeste
                 h4
                     color c_celeste
                 p
                     color c_celeste
-    &__noticia:nth-child(2n), &__noticia:nth-child(3n)
+    &__noticia:nth-child(odd), &__noticia:nth-child(even)
         width 228px
         display flex
         figure
             width 228px
             height 204px
             margin 0
+            img
+                height 100%
         .descripcion
             background transparent !important
-            display block !important
+            display block
             position relative
             box-sizing border-box
             padding 30px 10px 10px 10px
@@ -115,7 +160,7 @@
                 font-size 18px
                 font-family f_gothan_l
 
-    &__noticia, &__noticia:nth-child(5)
+    &__noticia, &__noticia:nth-child(10n)
         position relative
         display block
         width 430px
@@ -129,7 +174,7 @@
             flex-direction column
             padding 0px 30px
             box-sizing border-box
-            justify-content flex-end
+
             position absolute
             left 0
             top 0
@@ -150,6 +195,49 @@
                 color c_white
                 font-size 18px
                 font-family f_gothan_l
+        &:hover
+            .descripcion
+                display flex
+                animation fadeEffect 0.5s
+.noticias_listado
+    .listado_noticias__noticia:first-child, .listado_noticias__noticia:nth-child(10n),
+        .listado_noticias__noticia_large
+        position relative
+        display block
+        width 462px
+        height 410px
+        figure
+            width 462px
+            height 410px
+            margin 0
+        .descripcion
+            display none
+            flex-direction column
+            padding 0px 30px
+            box-sizing border-box
+            justify-content flex-end
+            position absolute
+            left 0
+            top 0
+            width 100%
+            height 100%
+            background rgba(0,0,0,0.5) !important
+
+            h3
+                color c_white !important
+                font-family f_ventura_m
+                font-size 20px
+            h4
+                color c_white !important
+                font-size 18px
+                font-family f_gothan_m
+                margin 0
+            p
+                color c_white !important
+                font-size 18px
+                font-family f_gothan_l
+            &:after
+                display none
         &:hover
             .descripcion
                 display flex
