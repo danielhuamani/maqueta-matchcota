@@ -150,15 +150,6 @@
   background-image: url("../img/flecha_celeste.png");
   display: block;
 }
-.home_nuestro_aliados .bx-wrapper .listado_aliados__item img {
-  filter: grayscale(100%);
-  margin: auto;
-  display: block;
-  transition: 0.3s ease all;
-}
-.home_nuestro_aliados .bx-wrapper .listado_aliados__item:hover img {
-  filter: grayscale(0%);
-}
 .home_nuestro_aliados .title_colores {
   margin-bottom: 70px;
 }
@@ -182,4 +173,13 @@
   position: absolute;
   right: -12px;
   bottom: -7px;
+}
+.listado_aliados__item img {
+  filter: grayscale(100%);
+  margin: auto;
+  display: block;
+  transition: 0.3s ease all;
+}
+.listado_aliados__item:hover img {
+  filter: grayscale(0%);
 }

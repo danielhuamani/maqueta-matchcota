@@ -14,4 +14,14 @@ jQuery(document).ready(function($) {
 		$(".link_menu").addClass('link_menu--active')
 
 	});
+	$( ".cnt-input input, .cnt-input textarea" ).focusin(function() {
+			console.log("ndasda")
+			$(this).parent().addClass('input-active');
+	});
+
+	$( ".cnt-input input, .cnt-input textarea" ).focusout(function() {
+		if ($(this).val() === "") {
+			$(this).parent().removeClass('input-active');
+		};
+	});
 });
