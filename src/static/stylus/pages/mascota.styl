@@ -1,0 +1,63 @@
+.mascota_categorias
+    margin-top 65px
+    margin-bottom 65px
+    .text
+        font-family f_gothan_l
+        font-size  16px
+        color c_plomo_os
+        max-width 600px
+        margin auto
+        text-align center
+    .list_categorias
+        margin-top 40px
+
+        ul
+            justify-content center
+            display flex
+            li
+                margin 0px 20px
+                a
+                    display block
+                    text-align center
+                    min-width 180px
+                    color c_white
+                    background c_celeste
+                    padding 8px 12px
+                    border-radius 4px
+                    font-size 24px
+                    font-family f_ventura_m
+                    position relative
+                    border-left 8px solid c_celeste
+                    border-right 8px solid c_celeste
+                    &:before
+                        content ""
+                        opacity 0
+                        position absolute
+                        transition 0.3s ease all
+                        left 0px
+                        top 10px
+                        width 13px
+                        height 25px
+                        background-image url("../img/categoria_left.png")
+                        display block
+                    &:after
+                        content ""
+                        opacity 0
+                        position absolute
+                        right 0px
+                        top 7px
+                        width 13px
+                        height 25px
+                        transition 0.3s ease all
+                        background-image url("../img/categoria_right.png")
+                        display block
+
+            li:hover, li.active
+                a:after
+                    opacity 1
+                a:before
+                    opacity 1
+
+.list_mascotas
+    flex-wrap wrap
+
