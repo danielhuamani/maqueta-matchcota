@@ -904,7 +904,6 @@ footer .footer_top .facebook__slider__item ul li span {
     min-width: 150px;
   }
 }
-<<<<<<< HEAD
 .cnt-testimonios .title {
   text-align: center;
   margin-bottom: 2.5em;
@@ -977,7 +976,7 @@ footer .footer_top .facebook__slider__item ul li span {
   float: right;
   box-sizing: border-box;
 img
-=======
+}
 .noticias_listado {
   margin-top: 45px;
 }
@@ -1001,7 +1000,6 @@ img
   position: absolute;
   right: -45px;
   top: -20px;
->>>>>>> 940408a3881862472d3f7ba0aeae53bd7a81cb50
 }
 .noticias-detail {
   padding: 2.5em 0;
