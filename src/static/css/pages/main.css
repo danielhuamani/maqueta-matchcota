@@ -904,6 +904,79 @@ footer .footer_top .facebook__slider__item ul li span {
     min-width: 150px;
   }
 }
+.cnt-testimonios .title {
+  text-align: center;
+  margin-bottom: 2.5em;
+  padding: 2em 0 0;
+}
+.cnt-testimonios .title h2 {
+  display: inline-block;
+  font-size: 35px;
+  color: #ff4304;
+  position: relative;
+  font-family: 'ventura_eddingmedium';
+  color: #ff7444;
+}
+.cnt-testimonios .title h2:after {
+  content: "";
+  background-image: url("../img/nosotros_inf.png");
+  width: 33px;
+  height: 34px;
+  position: absolute;
+  top: -35px;
+  right: -40px;
+}
+.cnt-testimonios .content-testimonios .picture {
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #a9a9ac;
+  border-bottom: 2px solid #a9a9ac;
+  display: inline-block;
+  box-shadow: 6px 6px 20px 1px #b9bbbe;
+}
+.cnt-testimonios .content-testimonios .picture .inner__picture {
+  border-top: 14px solid #dbdbdb;
+  border-left: 14px solid #d1d1d1;
+  border-right: 14px solid #e6e6e6;
+  border-bottom: 14px solid #d5d7d9;
+  display: block;
+}
+.cnt-testimonios .content-testimonios .picture .inner__picture img {
+  border-top: 2px solid #b9bbbe;
+  border-left: 2px solid #b9bbbe;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  display: block;
+}
+.slide-testimonios .item-slider-testimonios {
+  height: auto;
+  overflow: hidden;
+}
+.slide-testimonios .item-slider-testimonios .detail {
+  width: 50%;
+  float: left;
+  padding: 5% 5% 0 2.5%;
+  box-sizing: border-box;
+}
+.slide-testimonios .item-slider-testimonios .detail .date {
+  color: #5d5d5d;
+  font-size: 25px;
+  font-family: 'ventura_eddingmedium';
+  display: block;
+  margin-bottom: 1em;
+}
+.slide-testimonios .item-slider-testimonios .detail h3 {
+  color: #00b2e2;
+  font-size: 30px;
+  font-family: 'ventura_eddingmedium';
+  margin-bottom: 1em;
+}
+.slide-testimonios .item-slider-testimonios .image {
+  width: 50%;
+  float: right;
+  box-sizing: border-box;
+img
+}
 .noticias-detail {
   padding: 2.5em 0;
   height: auto;
@@ -965,7 +1038,7 @@ footer .footer_top .facebook__slider__item ul li span {
 .noticias-detail .view-more .ver_mas_noticias {
   color: #5d5d5d;
   margin-top: 40px;
-  margin-left: 20%;
+  margin-left: 15%;
   text-align: left;
   display: block;
   font-family: 'ventura_eddingmedium';
@@ -973,6 +1046,17 @@ footer .footer_top .facebook__slider__item ul li span {
 }
 .noticias-detail .view-more .ver_mas_noticias i {
   margin-right: 10px;
+}
+.noticias-detail .view-more .ver_mas_noticias .arrow {
+  width: 36px;
+  height: 12px;
+  display: inline-block;
+  position: relative;
+  top: -3px;
+}
+.noticias-detail .view-more .ver_mas_noticias .arrow.left {
+  background-image: url("../img/flecha_ploma_left.png");
+  margin-right: 2em;
 }
 .cnt-share {
   text-align: center;
