@@ -16,6 +16,9 @@ a {
 .container--large {
   max-width: 1800px;
 }
+.container--r-large {
+  max-width: 1900px;
+}
 .title_section h2 {
   font-size: 35px;
   font-family: f_ventura_m;

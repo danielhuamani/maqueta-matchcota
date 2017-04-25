@@ -1,4 +1,4 @@
-.home_listado_noticias
+/*.home_listado_noticias
     .listado_noticias__noticia:first-child, .listado_noticias__noticia:nth-child(5)
         position relative
         display block
@@ -40,11 +40,13 @@
             .descripcion
                 display flex
                 animation fadeEffect 0.5s
-
+*/
 .listado_noticias
     display flex
     justify-content center
     flex-wrap wrap
+
+
     &__noticia
         margin 2px 2px
         border-left 1px solid transparent
@@ -98,6 +100,7 @@
         border-bottom 1px solid transparent
         border-top 1px solid transparent
         .descripcion
+            transition .3s ease all
             &:after
                 content ""
                 width 0
@@ -136,7 +139,7 @@
             img
                 height 100%
         .descripcion
-            background transparent !important
+            background transparent
             display block
             position relative
             box-sizing border-box
@@ -181,6 +184,7 @@
             width 100%
             height 100%
             background rgba(0,0,0,0.5)
+            animation fadeEffect 0.5s !important
 
             h3
                 color c_white
@@ -198,10 +202,51 @@
         &:hover
             .descripcion
                 display flex
-                animation fadeEffect 0.5s
+
+    &__noticia_large
+        position relative !important
+        display block !important
+        width 462px !important
+        height 410px !important
+        figure
+            width 462px !important
+            height 410px !important
+            margin 0 !important
+        .descripcion
+            display none !important
+            flex-direction column !important
+            padding 0px 30px !important
+            box-sizing border-box !important
+            justify-content flex-end !important
+            position absolute !important
+            left 0 !important
+            top 0 !important
+            width 100% !important
+            height 100% !important
+            background rgba(0,0,0,0.5) !important
+            animation fadeEffect 0.5s !important
+
+            h3
+                color c_white !important
+                font-family f_ventura_m !important
+                font-size 20px !important
+            h4
+                color c_white !important
+                font-size 18px
+                font-family f_gothan_m
+                margin 0
+            p
+                color c_white !important
+                font-size 18px
+                font-family f_gothan_l
+            &:after
+                display none !important
+                animation fadeEffect 0.5s !important
+        &:hover
+            .descripcion
+                display flex !important
 .noticias_listado
-    .listado_noticias__noticia:first-child, .listado_noticias__noticia:nth-child(10n),
-        .listado_noticias__noticia_large
+    .listado_noticias__noticia_large
         position relative
         display block
         width 462px
@@ -222,6 +267,7 @@
             width 100%
             height 100%
             background rgba(0,0,0,0.5) !important
+            animation fadeEffect 0.5s
 
             h3
                 color c_white !important
@@ -241,7 +287,7 @@
         &:hover
             .descripcion
                 display flex
-                animation fadeEffect 0.5s
+
 /*
    &__noticia_small--bottom
         flex-direction column-reverse
