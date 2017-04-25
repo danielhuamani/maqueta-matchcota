@@ -1066,7 +1066,134 @@ footer .footer_top .facebook__slider__item ul li span {
     min-width: 150px;
   }
 }
-<<<<<<< HEAD
+.cnt-testimonios .title {
+  text-align: center;
+  margin-bottom: 2.5em;
+  padding: 2em 0 0;
+}
+.cnt-testimonios .title h2 {
+  display: inline-block;
+  font-size: 35px;
+  color: #ff4304;
+  position: relative;
+  font-family: 'ventura_eddingmedium';
+  color: #ff7444;
+}
+.cnt-testimonios .title h2:after {
+  content: "";
+  width: 33px;
+  height: 34px;
+  position: absolute;
+  top: -35px;
+  right: -40px;
+}
+.cnt-testimonios .content-testimonios {
+  padding: 0 5em;
+  display: block;
+}
+.cnt-testimonios .content-testimonios .picture-border {
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #a9a9ac;
+  border-bottom: 2px solid #a9a9ac;
+  display: inline-block;
+  box-shadow: 6px 6px 20px 1px #b9bbbe;
+}
+.cnt-testimonios .content-testimonios .picture-border .inner__picture {
+  border-top: 14px solid #dbdbdb;
+  border-left: 14px solid #d1d1d1;
+  border-right: 14px solid #e6e6e6;
+  border-bottom: 14px solid #d5d7d9;
+  display: block;
+}
+.cnt-testimonios .content-testimonios .picture-border .inner__picture img {
+  border-top: 2px solid #b9bbbe;
+  border-left: 2px solid #b9bbbe;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  display: block;
+}
+.bx-wrapper {
+  margin: auto;
+  position: relative;
+}
+.bx-wrapper .bx-controls a {
+  position: absolute;
+  top: 50%;
+  margin-top: -24px;
+  width: 48px;
+  height: 48px;
+  display: block;
+  text-align: center;
+  line-height: 48px;
+  border: 1px solid #00b2e2;
+  border-radius: 100% 100%;
+  color: #00b2e2;
+  font-size: 20px;
+}
+.bx-wrapper .bx-controls a.bx-prev {
+  left: -5em;
+}
+.bx-wrapper .bx-controls a.bx-next {
+  right: -5em;
+}
+.bx-wrapper .bx-controls a:hover {
+  background: #00b2e2;
+  color: #fff;
+}
+.slide-testimonios .item-slider-testimonios {
+  height: auto;
+  overflow: hidden;
+}
+.slide-testimonios .item-slider-testimonios .detail {
+  width: 50%;
+  float: left;
+  padding: 5% 5% 0 2.5%;
+  box-sizing: border-box;
+}
+.slide-testimonios .item-slider-testimonios .detail .date {
+  color: #5d5d5d;
+  font-size: 25px;
+  font-family: 'ventura_eddingmedium';
+  display: block;
+  margin-bottom: 1em;
+}
+.slide-testimonios .item-slider-testimonios .detail h3 {
+  color: #00b2e2;
+  font-size: 30px;
+  font-family: 'ventura_eddingmedium';
+  margin-bottom: 1em;
+}
+.slide-testimonios .item-slider-testimonios .image {
+  width: 50%;
+  float: right;
+  box-sizing: border-box;
+img
+}
+.noticias_listado {
+  margin-top: 45px;
+}
+.noticias_listado .title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+.noticias_listado .title h3 {
+  margin: 0;
+  color: #ff4304;
+  font-size: 50px;
+  font-family: 'ventura_eddingmedium';
+  display: inline-block;
+  position: relative;
+}
+.noticias_listado .title h3:before {
+  content: "";
+  background-image: url("../img/noticias_title.png");
+  width: 39px;
+  height: 40px;
+  position: absolute;
+  right: -45px;
+  top: -20px;
+}
 .matchcota-detalle {
   margin-top: 50px;
 }
@@ -1138,103 +1265,6 @@ footer .footer_top .facebook__slider__item ul li span {
   .nosotros_formulario .btn--nosotros {
     width: 100%;
   }
-=======
-.cnt-testimonios .title {
-  text-align: center;
-  margin-bottom: 2.5em;
-  padding: 2em 0 0;
-}
-.cnt-testimonios .title h2 {
-  display: inline-block;
-  font-size: 35px;
-  color: #ff4304;
-  position: relative;
-  font-family: 'ventura_eddingmedium';
-  color: #ff7444;
-}
-.cnt-testimonios .title h2:after {
-  content: "";
-  background-image: url("../img/nosotros_inf.png");
-  width: 33px;
-  height: 34px;
-  position: absolute;
-  top: -35px;
-  right: -40px;
-}
-.cnt-testimonios .content-testimonios .picture {
-  border-top: 2px solid #fff;
-  border-left: 2px solid #fff;
-  border-right: 2px solid #a9a9ac;
-  border-bottom: 2px solid #a9a9ac;
-  display: inline-block;
-  box-shadow: 6px 6px 20px 1px #b9bbbe;
-}
-.cnt-testimonios .content-testimonios .picture .inner__picture {
-  border-top: 14px solid #dbdbdb;
-  border-left: 14px solid #d1d1d1;
-  border-right: 14px solid #e6e6e6;
-  border-bottom: 14px solid #d5d7d9;
-  display: block;
-}
-.cnt-testimonios .content-testimonios .picture .inner__picture img {
-  border-top: 2px solid #b9bbbe;
-  border-left: 2px solid #b9bbbe;
-  border-right: 2px solid #fff;
-  border-bottom: 2px solid #fff;
-  display: block;
-}
-.slide-testimonios .item-slider-testimonios {
-  height: auto;
-  overflow: hidden;
-}
-.slide-testimonios .item-slider-testimonios .detail {
-  width: 50%;
-  float: left;
-  padding: 5% 5% 0 2.5%;
-  box-sizing: border-box;
-}
-.slide-testimonios .item-slider-testimonios .detail .date {
-  color: #5d5d5d;
-  font-size: 25px;
-  font-family: 'ventura_eddingmedium';
-  display: block;
-  margin-bottom: 1em;
-}
-.slide-testimonios .item-slider-testimonios .detail h3 {
-  color: #00b2e2;
-  font-size: 30px;
-  font-family: 'ventura_eddingmedium';
-  margin-bottom: 1em;
-}
-.slide-testimonios .item-slider-testimonios .image {
-  width: 50%;
-  float: right;
-  box-sizing: border-box;
-img
-}
-.noticias_listado {
-  margin-top: 45px;
-}
-.noticias_listado .title {
-  text-align: center;
-  margin-bottom: 45px;
-}
-.noticias_listado .title h3 {
-  margin: 0;
-  color: #ff4304;
-  font-size: 50px;
-  font-family: 'ventura_eddingmedium';
-  display: inline-block;
-  position: relative;
-}
-.noticias_listado .title h3:before {
-  content: "";
-  background-image: url("../img/noticias_title.png");
-  width: 39px;
-  height: 40px;
-  position: absolute;
-  right: -45px;
-  top: -20px;
 }
 .noticias-detail {
   padding: 2.5em 0;
@@ -1347,7 +1377,6 @@ img
 .cnt-share .share-item.share-fb i.icon {
   background: #3c598b;
   color: #fff;
->>>>>>> 79b0be3f29288c59d77cdbe72232acadd0ca0b64
 }
 .contacto .container {
   display: flex;
