@@ -305,8 +305,21 @@
   padding: 30px 5px 0px 5px;
   position: relative;
   transition: 0.3s ease all;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.list_mascotas__mascota figure {
+  margin: 0;
+}
+.list_mascotas__mascota figure img {
+  width: 100%;
+  height: auto;
+  display: block;
 }
 .list_mascotas__title {
+  height: 100%;
   font-size: 30px;
   font-family: f_ventura_m;
 }
@@ -357,6 +370,41 @@
   width: 10px;
   height: 10px;
   border-radius: 50%;
+}
+@media screen and (max-width: 1500px) {
+  .list_mascotas__mascota {
+    width: 205px;
+  }
+  .list_mascotas__mascota figure {
+    width: 190px;
+  }
+  .list_mascotas__mascota figure img {
+    width: 100%;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .list_mascotas__mascota {
+    width: 285px;
+  }
+  .list_mascotas__mascota figure {
+    width: 260px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .list_mascotas__mascota {
+    width: 265px;
+  }
+  .list_mascotas__mascota figure {
+    width: 240px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .list_mascotas__mascota {
+    width: 215px;
+  }
+  .list_mascotas__mascota figure {
+    width: 200px;
+  }
 }
 .home_listado_noticias .listado_noticias__noticia:first-child,
 .home_listado_noticias .listado_noticias__noticia:nth-child(5) {

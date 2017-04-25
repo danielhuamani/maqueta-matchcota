@@ -2,18 +2,27 @@
   position: absolute;
   width: calc(100% - 105px);
   left: 105px;
-  z-index: 200;
+  z-index: 195;
   right: 0;
   top: 25px;
   margin: auto;
 }
+.header__logo {
+  position: fixed;
+  top: 25px;
+  left: 140px;
+  margin: 0;
+}
+.header__logo .logo {
+  animation: fadeEffect 0.3s;
+}
+.header__logo .logo_none {
+  display: none;
+  height: 0;
+}
 .header__logo_links {
   display: flex;
-  justify-content: space-between;
-}
-.header__logo_links >a {
-  margin: 0;
-  margin-left: 35px;
+  justify-content: flex-end;
 }
 .header__logo_links nav {
   margin-top: 20px;
@@ -32,6 +41,7 @@
   background: #ff4304;
 }
 .header__logo_links nav ul li a {
+  transition: 0.3s ease all;
   font-size: 19px;
   padding: 15px 12px;
   font-family: 'ventura_eddingmedium';
@@ -43,7 +53,16 @@
 .container_menu {
   background: #fff;
 }
+.container_menu .overlay--active {
+  display: block !important;
+}
 .container_menu .overlay {
+  display: none;
+  position: fixed;
+  left: 0;
+  animation: fadeEffect 0.5s;
+  top: 0;
+  z-index: 198;
   background: rgba(0,0,0,0.7);
   width: 100%;
   height: 100%;
@@ -71,7 +90,7 @@
   position: absolute;
   right: 30px;
   cursor: pointer;
-  top: 0;
+  top: -20px;
   display: inline-block;
   color: #00b2e2;
   font-size: 28px;
@@ -152,6 +171,7 @@
   padding-top: 45px;
   border-right: 1px solid #d0d0d0;
   z-index: 300;
+  cursor: pointer;
 }
 .container_menu .btn_menu {
   font-size: 16px;
@@ -320,13 +340,114 @@ footer .footer_top .facebook__slider__item ul li span {
   font-size: 16px;
   margin-right: 5px;
 }
+@media screen and (max-width: 1500px) {
+  .container_menu .menu_block {
+    width: 300px;
+  }
+  .container_menu .menu_block .menu figure {
+    width: 190px;
+  }
+  .container_menu .menu_block .menu figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .container_menu .menu_block .menu .icon-close {
+    right: 15px;
+  }
+  .container_menu .menu_block .menu nav ul li a {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container_menu .menu_block .menu figure {
+    width: 180px;
+  }
+  .container_menu .menu_block .menu nav ul li {
+    margin-bottom: 10px;
+  }
+  .container_menu .menu_block .menu nav ul li a {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container_menu .menu_block {
+    width: 250px;
+  }
+  .container_menu .menu_block .menu figure {
+    width: 150px;
+  }
+  .container_menu .menu_block .menu nav {
+    margin-top: 20px;
+  }
+  .container_menu .menu_block .menu nav ul li a {
+    font-size: 20px;
+  }
+  .header {
+    width: 100%;
+    left: 0;
+  }
+  .header__logo_links {
+    justify-content: flex-end;
+  }
+  .header__logo_links nav {
+    display: none;
+  }
+  .header__logo_links >a {
+    left: inherit;
+    right: 30px;
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+  }
+  .container_menu .link_menu--active {
+    left: 10px !important;
+  }
+  .container_menu .link_menu {
+    height: auto;
+    padding: 15px 0;
+    margin-top: 20px;
+    width: 50px;
+    border-bottom: 1px solid #d0d0d0;
+  }
+  .container_menu .link_menu .btn_menu .icon-menu {
+    margin-bottom: 0;
+  }
+  .container_menu .link_menu .btn_menu span {
+    display: none;
+  }
+}
 .home_banner {
   position: relative;
+}
+.home_banner .arrow_scroll {
+  position: absolute;
+  right: 60px;
+  bottom: 30px;
+  z-index: 195;
+  cursor: pointer;
+  height: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.home_banner .arrow_scroll span {
+  background-image: url("../img/flecha_bottom.png");
+  width: 12px;
+  height: 35px;
+  display: block;
+  animation: key_arrow_scroll 1.2s infinite;
+}
+.home_banner .arrow_scroll h3 {
+  margin-top: 15px;
+  font-size: 13px;
+  font-family: 'GothamRounded-Book';
+  color: #fff;
 }
 .home_banner .juguete {
   position: absolute;
   bottom: -110px;
-  right: 120px;
+  right: 200px;
   width: 150px;
   z-index: 200;
   height: 159px;
@@ -338,7 +459,7 @@ footer .footer_top .facebook__slider__item ul li span {
   height: 28px;
   position: absolute;
   right: 145px;
-  bottom: 75px;
+  bottom: 78px;
 }
 .home_banner .juguete:after {
   content: "";
@@ -374,7 +495,7 @@ footer .footer_top .facebook__slider__item ul li span {
   z-index: 100;
 }
 .home_mascotas {
-  margin-top: 38px;
+  padding-top: 38px;
   margin-bottom: 20px;
 }
 .home_mascotas__list_mascotas {
@@ -504,6 +625,47 @@ footer .footer_top .facebook__slider__item ul li span {
 }
 .listado_aliados__item:hover img {
   filter: grayscale(0%);
+}
+@media screen and (max-width: 1500px) {
+  .home_banner .juguete {
+    right: 120px;
+  }
+  .home_banner .home_banner__slider_list__item {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .home_banner .juguete {
+    bottom: -115px;
+    width: 120px;
+  }
+  .home_banner .juguete:before {
+    bottom: 85px;
+    right: 115px;
+  }
+  .home_banner .juguete:after {
+    bottom: 45px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .home_banner .juguete {
+    display: none;
+  }
+  .home_banner .home_banner__slider_list__item {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home_banner .arrow_scroll {
+    left: 0;
+    right: 0;
+    display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  .home_banner .home_banner__slider_list__item {
+    height: 360px;
+  }
 }
 .nosotros_matchota_ideal {
   margin-top: 50px;

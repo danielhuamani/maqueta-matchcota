@@ -2,6 +2,14 @@
 {% block content %}
 
 <section class="home_banner left_menu">
+	<a href="#home_mascotas" class="arrow_scroll">
+		<span>
+
+		</span>
+		<h3>
+			SCROLL DOWN
+		</h3>
+	</a>
 	<figure class="juguete">
 		<img src="{{STATIC_URL}}img/juguete1.png" alt="" class="img_res">
 	</figure>
@@ -32,9 +40,9 @@
 		</div>
 	</div>
 </section>
-<section class="home_mascotas">
-	<div class="container--large">
-		<div class="title_section title_section--celeste">
+<section class="home_mascotas" id="home_mascotas">
+	<div class="container--large container">
+		<div class="title_section home_mascotas--title title_section--celeste">
 			<h2 class="">
 				TU matchcota ideal
 			</h2>
@@ -44,7 +52,7 @@
 			<a href="" class="list_mascotas__mascota list_mascotas__mascota--amarillo">
 				<h3 class="list_mascotas__title">CORAJE <i class="icon-mascotas-04 icon-fem"></i></h3>
 				<figure class="list_mascotas__image">
-					<img class="img_res" src="{{STATIC_URL}}img/mascota3.png" alt="" width="274" height="295">
+					<img class="" src="{{STATIC_URL}}img/mascota3.png" alt="" width="274" height="295">
 				</figure>
 				<div class="list_mascotas__etiqueta">
 					<h4>Edad: 1 año y 6 meses</h4>
@@ -53,7 +61,7 @@
 			<a href="" class="list_mascotas__mascota list_mascotas__mascota--celeste">
 				<h3 class="list_mascotas__title">CORAJE <i class="icon-mascotas-04 icon-fem"></i></h3>
 				<figure class="list_mascotas__image">
-					<img class="img_res" src="{{STATIC_URL}}img/mascota2.png" alt="" width="274" height="295">
+					<img class="" src="{{STATIC_URL}}img/mascota2.png"  alt="" width="274" height="295">
 				</figure>
 				<div class="list_mascotas__etiqueta">
 					<h4>Edad: 1 año y 6 meses</h4>
@@ -62,7 +70,7 @@
 			<a href="" class="list_mascotas__mascota list_mascotas__mascota--plomo">
 				<h3 class="list_mascotas__title">CORAJE <i class="icon-mascotas-03 icon-masc"></i></h3>
 				<figure class="list_mascotas__image">
-					<img class="img_res" src="{{STATIC_URL}}img/mascota1.png" alt="" width="274" height="295">
+					<img class="" src="{{STATIC_URL}}img/mascota1.png" alt="" width="274" height="295">
 				</figure>
 				<div class="list_mascotas__etiqueta">
 					<h4>Edad: 1 año y 6 meses</h4>
@@ -71,7 +79,7 @@
 			<a href="" class="list_mascotas__mascota list_mascotas__mascota--amarillo">
 				<h3 class="list_mascotas__title">CORAJE <i class="icon-mascotas-04 icon-fem"></i></h3>
 				<figure class="list_mascotas__image">
-					<img class="img_res" src="{{STATIC_URL}}img/mascota2.png" alt="" width="274" height="295">
+					<img class="" src="{{STATIC_URL}}img/mascota2.png" alt="" width="274" height="295">
 				</figure>
 				<div class="list_mascotas__etiqueta">
 					<h4>Edad: 1 año y 6 meses</h4>
@@ -80,7 +88,7 @@
 			<a href="" class="list_mascotas__mascota list_mascotas__mascota--plomo">
 				<h3 class="list_mascotas__title">CORAJE <i class="icon-mascotas-03 icon-masc"></i></h3>
 				<figure class="list_mascotas__image">
-					<img class="img_res" src="{{STATIC_URL}}img/mascota1.png" alt="" width="274" height="295">
+					<img class="" src="{{STATIC_URL}}img/mascota1.png" alt="" width="274" height="295">
 				</figure>
 				<div class="list_mascotas__etiqueta">
 					<h4>Edad: 1 año y 6 meses</h4>
@@ -258,9 +266,143 @@
 
 			});
 
+			$(window).scroll(function(){
+                var window_top = $(window).scrollTop();
+
+                if(window_top>720) {
+		  			$(".cnt-beneficios .facebook").addClass('facebook-fixed')
+		  		}
+            });
+
+            $(".arrow_scroll").click(function(evn){
+                evn.preventDefault();
+
+                $('html,body').scrollTo(this.hash, this.hash);
+            });
+
+            /*$(window).scroll(function(){
+                var windowPos = $(window).scrollTop();
+                var windowHeight = $(window).height();
+                var docHeight = $(document).height();
+                console.log(windowPos)
+            });*/
+
 
 		});
+		$.scrollTo = $.fn.scrollTo = function(x, y, options){
+            if (!(this instanceof $)) return $.fn.scrollTo.apply($('html, body'), arguments);
 
+            options = $.extend({}, {
+                gap: {
+                    x: 0,
+                    y: 0
+                },
+                animation: {
+                    easing: 'swing',
+                    duration: 1000,
+                    complete: $.noop,
+                    step: $.noop
+                }
+            }, options);
+
+            return this.each(function(){
+                var elem = $(this);
+                elem.stop().animate({
+                    scrollLeft: !isNaN(Number(x)) ? x : $(y).offset().left + options.gap.x,
+                    scrollTop: !isNaN(Number(y)) ? y : $(y).offset().top  + options.gap.y
+                }, options.animation);
+            });
+        };
+
+		var mql = [window.matchMedia("(max-width: 1500px)"), window.matchMedia("(max-width: 960px)"), window.matchMedia("(max-width: 480px)")];
+		for (var i=0; i<mql.length; i++){
+			widthChange(mql[i]) // call action function explicitly at run time
+			mql[i].addListener(widthChange); // call action function whenever each media query is triggered
+		}
+		var media_ = ""
+		function widthChange(mq){
+			console.log(mq.media)
+
+
+			$(window).scroll(function(){
+                var window_top = $(window).scrollTop();
+                console.log(mq.matches)
+                console.log(mq.media)
+                if (mq.matches) {
+
+                	media_ = mq.media
+
+
+                };
+
+
+                switch(media_) {
+                	case "(max-width: 480px)":
+                		if (window_top >= 270) {
+			            	$(".logo_celeste").removeClass('logo_none')
+			            	$(".logo_blanco").addClass('logo_none')
+			        	}else{
+
+		                	$(".logo_celeste").addClass('logo_none')
+			            	$(".logo_blanco").removeClass('logo_none')
+			        	}
+			            if (window_top >= 360) {
+		                	$(".title_section").addClass('home_mascotas--title--active')
+		                }else{
+		                	$(".title_section").removeClass('home_mascotas--title--active')
+		                };
+			        break;
+			        case "(max-width: 960px)":
+			        	if (window_top >= 310) {
+			            	$(".logo_celeste").removeClass('logo_none')
+			            	$(".logo_blanco").addClass('logo_none')
+			        	}else{
+
+		                	$(".logo_celeste").addClass('logo_none')
+			            	$(".logo_blanco").removeClass('logo_none')
+			        	}
+			            if (window_top >= 400) {
+		                	$(".title_section").addClass('home_mascotas--title--active')
+		                }else{
+		                	$(".title_section").removeClass('home_mascotas--title--active')
+		                };
+			        break;
+			        case "(max-width: 1500px)":
+			        	if (window_top >= 410) {
+			            	$(".logo_celeste").removeClass('logo_none')
+			            	$(".logo_blanco").addClass('logo_none')
+			        	}else{
+
+		                	$(".logo_celeste").addClass('logo_none')
+			            	$(".logo_blanco").removeClass('logo_none')
+			        	}
+			        	if (window_top >= 500) {
+		                	$(".title_section").addClass('home_mascotas--title--active')
+		                }else{
+		                	$(".title_section").removeClass('home_mascotas--title--active')
+		                };
+			        break;
+
+			        default:
+			        	if (window_top >= 560) {
+			            	$(".logo_celeste").removeClass('logo_none')
+			            	$(".logo_blanco").addClass('logo_none')
+			        	}else{
+
+		                	$(".logo_celeste").addClass('logo_none')
+			            	$(".logo_blanco").removeClass('logo_none')
+			        	}
+			        	if (window_top >= 650) {
+		                	$(".title_section").addClass('home_mascotas--title--active')
+		                }else{
+		                	$(".title_section").removeClass('home_mascotas--title--active')
+		                };
+			    }
+
+            });
+
+
+		}
 	</script>
 
 {% endblock js %}

@@ -1,137 +1,170 @@
 .list_mascotas
-	display flex
+    display flex
 
-	&__mascota--celeste
-		&:hover
-			background c_celeste
-			.list_mascotas__title
-				color c_white
-			.list_mascotas__etiqueta
-				h4
-					color c_white
-					background c_white
+    &__mascota--celeste
+        &:hover
+            background c_celeste
+            .list_mascotas__title
+                color c_white
+            .list_mascotas__etiqueta
+                h4
+                    color c_white
+                    background c_white
 
-					&:before
-						opacity 1
-						color c_celeste
-					&:after
-						background c_celeste
-		.list_mascotas__title
-			color c_celeste
-		.list_mascotas__etiqueta
-			h4
-				background c_celeste
-				color c_white
-
-
-				&:after
-					background c_white
-	&__mascota--amarillo
-		&:hover
-			background c_amarillo
-			.list_mascotas__title
-				color c_white
-			.list_mascotas__etiqueta
-				h4
-					color c_white
-					background c_white
-
-					&:before
-						opacity 1
-						color c_amarillo
-					&:after
-						background c_amarillo
-		.list_mascotas__title
-			color c_amarillo
-		.list_mascotas__etiqueta
-			h4
-				background c_amarillo
-				color c_white
+                    &:before
+                        opacity 1
+                        color c_celeste
+                    &:after
+                        background c_celeste
+        .list_mascotas__title
+            color c_celeste
+        .list_mascotas__etiqueta
+            h4
+                background c_celeste
+                color c_white
 
 
-				&:after
-					background c_white
-	&__mascota--plomo
-		&:hover
-			background c_plomo
-			.list_mascotas__title
-				color c_white
-			.list_mascotas__etiqueta
-				h4
-					color c_white
-					background c_white
+                &:after
+                    background c_white
+    &__mascota--amarillo
+        &:hover
+            background c_amarillo
+            .list_mascotas__title
+                color c_white
+            .list_mascotas__etiqueta
+                h4
+                    color c_white
+                    background c_white
 
-					&:before
-						opacity 1
-						color c_plomo
-					&:after
-						background c_plomo
-		.list_mascotas__title
-			color c_plomo
-		.list_mascotas__etiqueta
-			h4
-				background c_plomo
-				color c_white
-
-
-				&:after
-					background c_white
-	&__mascota
-		text-align center
-		width 340px
-		box-sizing border-box
-		padding 30px 5px 0px 5px
-		position relative
-		transition .3s ease all
-	&__title
-		font-size 30px
-		font-family f_ventura_m
-	&__etiqueta
-		position absolute
-		left 0
-		margin auto
-		right 0
-		bottom 10px
-		align-items center
-		justify-content center
-		display flex
-
-		text-align left
-		h4
-			box-sizing border-box
-			padding 15px 20px 15px 35px
-			width 78%
-			margin-bottom 15px
-			font-size 14px
-			font-family f_gothan_b
-			margin 0
-			position relative
-			z-index 2
-			transition .3s ease all
-			&:before
-				content "ADÓPTA A TU MEJOR AMIGO"
-				transition .3s ease all
-				position absolute
-				z-index 3
-				left 34px
-				top 14px
-				bottom 0
-				padding-right 20px
-				margin auto
-				opacity 0
-
-			&:after
-				content ""
-				transition .3s ease all
-				left 8px
-				top 0px
-				bottom 0
-				margin auto
-				position absolute
-				z-index  2
-				width 10px
-				height 10px
-				border-radius 50%
+                    &:before
+                        opacity 1
+                        color c_amarillo
+                    &:after
+                        background c_amarillo
+        .list_mascotas__title
+            color c_amarillo
+        .list_mascotas__etiqueta
+            h4
+                background c_amarillo
+                color c_white
 
 
+                &:after
+                    background c_white
+    &__mascota--plomo
+        &:hover
+            background c_plomo
+            .list_mascotas__title
+                color c_white
+            .list_mascotas__etiqueta
+                h4
+                    color c_white
+                    background c_white
 
+                    &:before
+                        opacity 1
+                        color c_plomo
+                    &:after
+                        background c_plomo
+        .list_mascotas__title
+            color c_plomo
+        .list_mascotas__etiqueta
+            h4
+                background c_plomo
+                color c_white
+
+
+                &:after
+                    background c_white
+    &__mascota
+        text-align center
+        width 340px
+        box-sizing border-box
+        padding 30px 5px 0px 5px
+
+        position relative
+        transition .3s ease all
+        display flex
+        flex-direction column
+        align-items center
+        justify-content center
+        figure
+            margin 0
+            img
+                width 100%
+                height auto
+                display block
+    &__title
+        height 100%
+        font-size 30px
+        font-family f_ventura_m
+    &__etiqueta
+        position absolute
+        left 0
+        margin auto
+        right 0
+        bottom 10px
+        align-items center
+        justify-content center
+        display flex
+
+        text-align left
+        h4
+            box-sizing border-box
+            padding 15px 20px 15px 35px
+            width 78%
+            margin-bottom 15px
+            font-size 14px
+            font-family f_gothan_b
+            margin 0
+            position relative
+            z-index 2
+            transition .3s ease all
+            &:before
+                content "ADÓPTA A TU MEJOR AMIGO"
+                transition .3s ease all
+                position absolute
+                z-index 3
+                left 34px
+                top 14px
+                bottom 0
+                padding-right 20px
+                margin auto
+                opacity 0
+
+            &:after
+                content ""
+                transition .3s ease all
+                left 8px
+                top 0px
+                bottom 0
+                margin auto
+                position absolute
+                z-index  2
+                width 10px
+                height 10px
+                border-radius 50%
+
+@media screen and (max-width 1500px)
+    .list_mascotas__mascota
+        width 205px
+        figure
+            width 190px
+            img
+                width 100%
+@media screen and (max-width 1200px)
+    .list_mascotas__mascota
+        width 285px
+        figure
+            width 260px
+
+@media screen and (max-width 1024px)
+    .list_mascotas__mascota
+        width 265px
+        figure
+            width 240px
+@media screen and (max-width 768px)
+    .list_mascotas__mascota
+        width 215px
+        figure
+            width 200px
