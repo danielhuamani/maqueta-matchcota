@@ -269,3 +269,47 @@ p {
     margin-top: 0px;
   }
 }
+@-moz-keyframes key_arrow_mas {
+  0% {
+    margin-left: 5px;
+  }
+  50% {
+    margin-left: 15px;
+  }
+  100% {
+    margin-left: 5px;
+  }
+}
+@-webkit-keyframes key_arrow_mas {
+  0% {
+    margin-left: 5px;
+  }
+  50% {
+    margin-left: 15px;
+  }
+  100% {
+    margin-left: 5px;
+  }
+}
+@-o-keyframes key_arrow_mas {
+  0% {
+    margin-left: 5px;
+  }
+  50% {
+    margin-left: 15px;
+  }
+  100% {
+    margin-left: 5px;
+  }
+}
+@keyframes key_arrow_mas {
+  0% {
+    margin-left: 5px;
+  }
+  50% {
+    margin-left: 15px;
+  }
+  100% {
+    margin-left: 5px;
+  }
+}

@@ -188,21 +188,18 @@
   font-size: 18px;
   font-family: f_gothan_l;
 }
-.listado_noticias__noticia,
-.listado_noticias__noticia:nth-child(10n) {
+.listado_noticias__noticia {
   position: relative;
   display: block;
   width: 430px;
   height: 410px;
 }
-.listado_noticias__noticia figure,
-.listado_noticias__noticia:nth-child(10n) figure {
+.listado_noticias__noticia figure {
   width: 430px;
   height: 410px;
   margin: 0;
 }
-.listado_noticias__noticia .descripcion,
-.listado_noticias__noticia:nth-child(10n) .descripcion {
+.listado_noticias__noticia .descripcion {
   display: none;
   flex-direction: column;
   padding: 0px 30px;
@@ -215,27 +212,23 @@
   background: rgba(0,0,0,0.5);
   animation: fadeEffect 0.5s !important;
 }
-.listado_noticias__noticia .descripcion h3,
-.listado_noticias__noticia:nth-child(10n) .descripcion h3 {
+.listado_noticias__noticia .descripcion h3 {
   color: c_white;
   font-family: f_ventura_m;
   font-size: 20px;
 }
-.listado_noticias__noticia .descripcion h4,
-.listado_noticias__noticia:nth-child(10n) .descripcion h4 {
+.listado_noticias__noticia .descripcion h4 {
   color: c_white;
   font-size: 18px;
   font-family: f_gothan_m;
   margin: 0;
 }
-.listado_noticias__noticia .descripcion p,
-.listado_noticias__noticia:nth-child(10n) .descripcion p {
+.listado_noticias__noticia .descripcion p {
   color: c_white;
   font-size: 18px;
   font-family: f_gothan_l;
 }
-.listado_noticias__noticia:hover .descripcion,
-.listado_noticias__noticia:nth-child(10n):hover .descripcion {
+.listado_noticias__noticia:hover .descripcion {
   display: flex;
 }
 .listado_noticias__noticia_large {
@@ -333,6 +326,8 @@
 .noticias_listado .listado_noticias__noticia_large:hover .descripcion {
   display: flex;
 }
+/*@media screen and (max-width 768px)
+    .listado_noticias__noticia_large*/
 /*
    &__noticia_small--bottom
         flex-direction column-reverse

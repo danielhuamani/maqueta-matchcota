@@ -97,7 +97,7 @@
 			</h3>
 		</div>
 		<div class="listado_noticias ">
-			<a href="" class="listado_noticias__noticia listado_noticias__noticia_large">
+			<a href="" class="listado_noticias__noticia listado_noticias__noticia_large large">
 				<figure>
 					<img src="/static/img/noticia_1.png" alt="" class="img_res" width="430" height="410">
 				</figure>
@@ -137,7 +137,7 @@
 					<p>Las mascotas fueron la sensación en Halloween.</p>
 				</div>
 			</a>
-			<a href="" class="listado_noticias__noticia listado_noticias__noticia_large">
+			<a href="" class="listado_noticias__noticia listado_noticias__noticia_large large">
 				<figure>
 					<img src="/static/img/noticia_1.png" alt="" class="img_res" width="430" height="410">
 				</figure>
@@ -188,7 +188,7 @@
 					<p>Las mascotas fueron la sensación en Halloween.</p>
 				</div>
 			</a>
-			<a href="" class="listado_noticias__noticia listado_noticias__noticia_large">
+			<a href="" class="listado_noticias__noticia listado_noticias__noticia_large large">
 				<figure>
 					<img src="/static/img/noticia_1.png" alt="" class="img_res" width="430" height="410">
 				</figure>
@@ -238,7 +238,7 @@
 					<p>Las mascotas fueron la sensación en Halloween.</p>
 				</div>
 			</a>
-			<a href="" class="listado_noticias__noticia listado_noticias__noticia_large">
+			<a href="" class="listado_noticias__noticia listado_noticias__noticia_large large">
 				<figure>
 					<img src="/static/img/noticia_1.png" alt="" class="img_res" width="430" height="410">
 				</figure>
@@ -288,7 +288,7 @@
 					<p>Las mascotas fueron la sensación en Halloween.</p>
 				</div>
 			</a>
-			<a href="" class="listado_noticias__noticia listado_noticias__noticia_large">
+			<a href="" class="listado_noticias__noticia listado_noticias__noticia_large large">
 				<figure>
 					<img src="/static/img/noticia_1.png" alt="" class="img_res" width="430" height="410">
 				</figure>
@@ -466,7 +466,21 @@
 	});
 	</script>
 	
+<script src="/static/js/banner.js"></script>
 <script>
+	var mql_n = window.matchMedia("(max-width: 768px)");
+
+		widthChangeNoticia(mql_n)
+		mql_n.addListener(widthChangeNoticia);
+		function widthChangeNoticia(mq){
+			console.log(mq.media)
+			if(mq.matches){
+				$(".listado_noticias .large").removeClass('listado_noticias__noticia_large')
+			}else{
+				$(".listado_noticias .large").addClass('listado_noticias__noticia_large')
+			}
+
+        }
 
 </script>
 
