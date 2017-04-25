@@ -434,7 +434,7 @@
 				mode: 'fade',
 				adaptiveHeight: false,
 				auto: true,
-				pause: '22600',
+				pause: '222600',
 				pager: false,
 				controls: false,
 				minSlides: 1,
@@ -447,18 +447,15 @@
 				prevText: '',
 
 				onSliderLoad: function(currentIndex) {
-						$('.facebook__slider').children().eq(currentIndex).addClass('active');
+					$('.facebook__slider').children().eq(currentIndex).addClass('active');
+				},
+				onSlideBefore: function($slideElement){
+				  setTimeout( function(){
+					  $slideElement.addClass('active');
+				  },500);
+				  $('.facebook__slider').children().removeClass('active');
 
-					},
-					onSlideBefore: function($slideElement){
-					  setTimeout( function(){
-
-						  $slideElement.addClass('active');
-
-					  },500);
-					  $('.facebook__slider').children().removeClass('active');
-
-					}
+				}
 			});
 	});
 	</script>

@@ -399,6 +399,22 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 768px) {
+  footer .footer_top {
+    padding-bottom: 10px;
+    padding-top: 140px;
+  }
+  footer .footer_top .facebook_bloque {
+    padding-bottom: 0px;
+  }
+  footer .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footer_top__contacto {
+    margin-top: 40px;
+    text-align: center;
+  }
   .container_menu .menu_block {
     width: 250px;
   }
@@ -447,5 +463,30 @@ footer .footer_top .facebook__slider__item ul li span {
   footer {
     width: 100%;
     margin-left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer .footer_top .facebook .bx-wrapper .bx-viewport {
+    height: 170px !important;
+  }
+  footer .footer_top .facebook_bloque {
+    width: 290px;
+  }
+  footer .footer_top .facebook__slider__item {
+    width: 260px !important;
+  }
+  footer .footer_top .facebook__slider__item ul {
+    margin-right: 10px;
+  }
+  footer .footer_top .facebook__slider__item ul li {
+    display: block;
+  }
+  footer .footer_top .facebook__slider__item .item figure {
+    width: 150px;
+  }
+  footer .footer_top .facebook__slider__item .item figure img {
+    width: 100%;
+    height: auto;
+    display: block;
   }
 }
