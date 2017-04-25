@@ -1,6 +1,6 @@
 a
     margin 0
-
+    outline none
 .container
     width 96%
     max-width 1200px
@@ -29,6 +29,7 @@ a
         font-family f_ventura_m
         span.naranja
             color c_narana_ad
+
 .title_section--celeste
     text-align center
     h2
@@ -38,18 +39,29 @@ a
             content ""
             position absolute
             bottom 0
-            right -40px
+            left calc(100% + 15px)
             background-image url("../img/flechitasleft.png")
-            width 26px
+            width 0px
             height 48px
+            transition .3s ease all
         &:before
             content ""
             position absolute
             bottom -10px
-            left -40px
+            right calc(100% + 15px)
             background-image url("../img/flechitasright.png")
-            width 26px
+            width 0px
+            transition .3s ease all
             height 48px
+.home_mascotas--title--active
+    h2
+
+        &:after
+
+            width 26px !important
+        &:before
+            width 26px !important
+
 .d-flex
     display flex
 
@@ -61,6 +73,7 @@ a
     position relative
     z-index 150
     display flex
+    padding 0px 15px
     justify-content center
     align-items center
     flex-direction column
@@ -83,13 +96,17 @@ a
     margin-left 105px
 .wrapper
     position relative
-placeholder(color,famyli)
+    placeholder(color,famyli)
     ::-webkit-input-placeholder { color: color; font-family: famyli; } /* WebKit */
     :-moz-placeholder { color: color; font-family: famyli; } /* Firefox 18- */
     ::-moz-placeholder { color: color; font-family: famyli; } /* Firefox 19+ */
     :-ms-input-placeholder { color: color; font-family: famyli; } /* IE 10+ */
 
 
+p
+  font-family f_gothan_l
+  font-size 14px
+  color c_plomo_p
 
 @keyframes fadeEffect {
     from {opacity: 0;}
@@ -100,3 +117,29 @@ placeholder(color,famyli)
     from {opacity: 1;}
     to {opacity: 0;}
 }
+
+@keyframes key_arrow_scroll {
+    0% {margin-top: 0;}
+    50% {margin-top: 10px;}
+    100% {margin-top: 0px;}
+}
+
+@media screen and (max-width 768px)
+    .page
+        width 100%
+        margin auto
+    .title_section
+        h2
+            font-size 28px
+    .content_banner
+        h2
+            font-size 36px
+        span.cuv_naran
+            font-size 52px
+@media screen and (max-width 480px)
+
+    .content_banner
+        h2
+            font-size 30px
+        span.cuv_naran
+            font-size 46px

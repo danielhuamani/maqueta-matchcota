@@ -2,18 +2,27 @@
   position: absolute;
   width: calc(100% - 105px);
   left: 105px;
-  z-index: 200;
+  z-index: 195;
   right: 0;
   top: 25px;
   margin: auto;
 }
+.header__logo {
+  position: fixed;
+  top: 25px;
+  left: 140px;
+  margin: 0;
+}
+.header__logo .logo {
+  animation: fadeEffect 0.3s;
+}
+.header__logo .logo_none {
+  display: none;
+  height: 0;
+}
 .header__logo_links {
   display: flex;
-  justify-content: space-between;
-}
-.header__logo_links >a {
-  margin: 0;
-  margin-left: 35px;
+  justify-content: flex-end;
 }
 .header__logo_links nav {
   margin-top: 20px;
@@ -32,6 +41,7 @@
   background: #ff4304;
 }
 .header__logo_links nav ul li a {
+  transition: 0.3s ease all;
   font-size: 19px;
   padding: 15px 12px;
   font-family: 'ventura_eddingmedium';
@@ -43,7 +53,16 @@
 .container_menu {
   background: #fff;
 }
+.container_menu .overlay--active {
+  display: block !important;
+}
 .container_menu .overlay {
+  display: none;
+  position: fixed;
+  left: 0;
+  animation: fadeEffect 0.5s;
+  top: 0;
+  z-index: 198;
   background: rgba(0,0,0,0.7);
   width: 100%;
   height: 100%;
@@ -71,7 +90,7 @@
   position: absolute;
   right: 30px;
   cursor: pointer;
-  top: 0;
+  top: -20px;
   display: inline-block;
   color: #00b2e2;
   font-size: 28px;
@@ -152,6 +171,7 @@
   padding-top: 45px;
   border-right: 1px solid #d0d0d0;
   z-index: 300;
+  cursor: pointer;
 }
 .container_menu .btn_menu {
   font-size: 16px;
@@ -320,13 +340,114 @@ footer .footer_top .facebook__slider__item ul li span {
   font-size: 16px;
   margin-right: 5px;
 }
+@media screen and (max-width: 1500px) {
+  .container_menu .menu_block {
+    width: 300px;
+  }
+  .container_menu .menu_block .menu figure {
+    width: 190px;
+  }
+  .container_menu .menu_block .menu figure img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+  .container_menu .menu_block .menu .icon-close {
+    right: 15px;
+  }
+  .container_menu .menu_block .menu nav ul li a {
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .container_menu .menu_block .menu figure {
+    width: 180px;
+  }
+  .container_menu .menu_block .menu nav ul li {
+    margin-bottom: 10px;
+  }
+  .container_menu .menu_block .menu nav ul li a {
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .container_menu .menu_block {
+    width: 250px;
+  }
+  .container_menu .menu_block .menu figure {
+    width: 150px;
+  }
+  .container_menu .menu_block .menu nav {
+    margin-top: 20px;
+  }
+  .container_menu .menu_block .menu nav ul li a {
+    font-size: 20px;
+  }
+  .header {
+    width: 100%;
+    left: 0;
+  }
+  .header__logo_links {
+    justify-content: flex-end;
+  }
+  .header__logo_links nav {
+    display: none;
+  }
+  .header__logo_links >a {
+    left: inherit;
+    right: 30px;
+    margin: auto;
+    display: inline-block;
+    text-align: center;
+  }
+  .container_menu .link_menu--active {
+    left: 10px !important;
+  }
+  .container_menu .link_menu {
+    height: auto;
+    padding: 15px 0;
+    margin-top: 20px;
+    width: 50px;
+    border-bottom: 1px solid #d0d0d0;
+  }
+  .container_menu .link_menu .btn_menu .icon-menu {
+    margin-bottom: 0;
+  }
+  .container_menu .link_menu .btn_menu span {
+    display: none;
+  }
+}
 .home_banner {
   position: relative;
+}
+.home_banner .arrow_scroll {
+  position: absolute;
+  right: 60px;
+  bottom: 30px;
+  z-index: 195;
+  cursor: pointer;
+  height: 85px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.home_banner .arrow_scroll span {
+  background-image: url("../img/flecha_bottom.png");
+  width: 12px;
+  height: 35px;
+  display: block;
+  animation: key_arrow_scroll 1.2s infinite;
+}
+.home_banner .arrow_scroll h3 {
+  margin-top: 15px;
+  font-size: 13px;
+  font-family: 'GothamRounded-Book';
+  color: #fff;
 }
 .home_banner .juguete {
   position: absolute;
   bottom: -110px;
-  right: 120px;
+  right: 200px;
   width: 150px;
   z-index: 200;
   height: 159px;
@@ -338,7 +459,7 @@ footer .footer_top .facebook__slider__item ul li span {
   height: 28px;
   position: absolute;
   right: 145px;
-  bottom: 75px;
+  bottom: 78px;
 }
 .home_banner .juguete:after {
   content: "";
@@ -374,7 +495,7 @@ footer .footer_top .facebook__slider__item ul li span {
   z-index: 100;
 }
 .home_mascotas {
-  margin-top: 38px;
+  padding-top: 38px;
   margin-bottom: 20px;
 }
 .home_mascotas__list_mascotas {
@@ -504,6 +625,47 @@ footer .footer_top .facebook__slider__item ul li span {
 }
 .listado_aliados__item:hover img {
   filter: grayscale(0%);
+}
+@media screen and (max-width: 1500px) {
+  .home_banner .juguete {
+    right: 120px;
+  }
+  .home_banner .home_banner__slider_list__item {
+    height: 500px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .home_banner .juguete {
+    bottom: -115px;
+    width: 120px;
+  }
+  .home_banner .juguete:before {
+    bottom: 85px;
+    right: 115px;
+  }
+  .home_banner .juguete:after {
+    bottom: 45px;
+  }
+}
+@media screen and (max-width: 960px) {
+  .home_banner .juguete {
+    display: none;
+  }
+  .home_banner .home_banner__slider_list__item {
+    height: 400px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home_banner .arrow_scroll {
+    left: 0;
+    right: 0;
+    display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  .home_banner .home_banner__slider_list__item {
+    height: 360px;
+  }
 }
 .nosotros_matchota_ideal {
   margin-top: 50px;
@@ -904,6 +1066,7 @@ footer .footer_top .facebook__slider__item ul li span {
     min-width: 150px;
   }
 }
+<<<<<<< HEAD
 .matchcota-detalle {
   margin-top: 50px;
 }
@@ -975,6 +1138,216 @@ footer .footer_top .facebook__slider__item ul li span {
   .nosotros_formulario .btn--nosotros {
     width: 100%;
   }
+=======
+.cnt-testimonios .title {
+  text-align: center;
+  margin-bottom: 2.5em;
+  padding: 2em 0 0;
+}
+.cnt-testimonios .title h2 {
+  display: inline-block;
+  font-size: 35px;
+  color: #ff4304;
+  position: relative;
+  font-family: 'ventura_eddingmedium';
+  color: #ff7444;
+}
+.cnt-testimonios .title h2:after {
+  content: "";
+  background-image: url("../img/nosotros_inf.png");
+  width: 33px;
+  height: 34px;
+  position: absolute;
+  top: -35px;
+  right: -40px;
+}
+.cnt-testimonios .content-testimonios .picture {
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #a9a9ac;
+  border-bottom: 2px solid #a9a9ac;
+  display: inline-block;
+  box-shadow: 6px 6px 20px 1px #b9bbbe;
+}
+.cnt-testimonios .content-testimonios .picture .inner__picture {
+  border-top: 14px solid #dbdbdb;
+  border-left: 14px solid #d1d1d1;
+  border-right: 14px solid #e6e6e6;
+  border-bottom: 14px solid #d5d7d9;
+  display: block;
+}
+.cnt-testimonios .content-testimonios .picture .inner__picture img {
+  border-top: 2px solid #b9bbbe;
+  border-left: 2px solid #b9bbbe;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  display: block;
+}
+.slide-testimonios .item-slider-testimonios {
+  height: auto;
+  overflow: hidden;
+}
+.slide-testimonios .item-slider-testimonios .detail {
+  width: 50%;
+  float: left;
+  padding: 5% 5% 0 2.5%;
+  box-sizing: border-box;
+}
+.slide-testimonios .item-slider-testimonios .detail .date {
+  color: #5d5d5d;
+  font-size: 25px;
+  font-family: 'ventura_eddingmedium';
+  display: block;
+  margin-bottom: 1em;
+}
+.slide-testimonios .item-slider-testimonios .detail h3 {
+  color: #00b2e2;
+  font-size: 30px;
+  font-family: 'ventura_eddingmedium';
+  margin-bottom: 1em;
+}
+.slide-testimonios .item-slider-testimonios .image {
+  width: 50%;
+  float: right;
+  box-sizing: border-box;
+img
+}
+.noticias_listado {
+  margin-top: 45px;
+}
+.noticias_listado .title {
+  text-align: center;
+  margin-bottom: 45px;
+}
+.noticias_listado .title h3 {
+  margin: 0;
+  color: #ff4304;
+  font-size: 50px;
+  font-family: 'ventura_eddingmedium';
+  display: inline-block;
+  position: relative;
+}
+.noticias_listado .title h3:before {
+  content: "";
+  background-image: url("../img/noticias_title.png");
+  width: 39px;
+  height: 40px;
+  position: absolute;
+  right: -45px;
+  top: -20px;
+}
+.noticias-detail {
+  padding: 2.5em 0;
+  height: auto;
+  overflow: hidden;
+}
+.noticias-detail .title {
+  text-align: center;
+  margin-bottom: 2.5em;
+  padding: 2em 0 0;
+}
+.noticias-detail .title h2 {
+  display: inline-block;
+  font-size: 35px;
+  color: #ff4304;
+  position: relative;
+  font-family: 'ventura_eddingmedium';
+  color: #00b2e2;
+}
+.noticias-detail .title h2:after {
+  content: "";
+  background-image: url("../img/nosotros_inf.png");
+  width: 33px;
+  height: 34px;
+  position: absolute;
+  top: -35px;
+  right: -40px;
+}
+.noticias-detail .content-detail .image {
+  width: 50%;
+  float: left;
+  padding: 0 5% 0 0;
+  box-sizing: border-box;
+}
+.noticias-detail .content-detail .image img {
+  float: right;
+}
+.noticias-detail .content-detail .detail {
+  width: 50%;
+  float: right;
+  box-sizing: border-box;
+}
+.noticias-detail .content-detail .detail .date {
+  color: #5d5d5d;
+  font-size: 25px;
+  font-family: 'ventura_eddingmedium';
+  display: block;
+  margin-bottom: 1em;
+}
+.noticias-detail .content-detail .detail h3 {
+  color: #00b2e2;
+  font-size: 30px;
+  font-family: 'ventura_eddingmedium';
+  margin-bottom: 1em;
+}
+.noticias-detail .view-more {
+  clear: both;
+  padding: 1.5em 0 1.5em;
+}
+.noticias-detail .view-more .ver_mas_noticias {
+  color: #5d5d5d;
+  margin-top: 40px;
+  margin-left: 15%;
+  text-align: left;
+  display: block;
+  font-family: 'ventura_eddingmedium';
+  font-size: 25px;
+}
+.noticias-detail .view-more .ver_mas_noticias i {
+  margin-right: 10px;
+}
+.noticias-detail .view-more .ver_mas_noticias .arrow {
+  width: 36px;
+  height: 12px;
+  display: inline-block;
+  position: relative;
+  top: -3px;
+}
+.noticias-detail .view-more .ver_mas_noticias .arrow.left {
+  background-image: url("../img/flecha_ploma_left.png");
+  margin-right: 2em;
+}
+.cnt-share {
+  text-align: center;
+  padding-top: 1em;
+}
+.cnt-share .share-item {
+  border: 1px solid #00b2e2;
+  border-radius: 10px;
+  color: #00b2e2;
+  display: inline-block;
+  padding: 0.5em 1.5em;
+}
+.cnt-share .share-item span.text {
+  float: left;
+  margin-top: 0.65em;
+  font-weight: 500;
+  font-family: 'GothamRounded-Medium';
+}
+.cnt-share .share-item i.icon {
+  border-radius: 100%;
+  height: 40px;
+  width: 40px;
+  line-height: 40px;
+  color: #fff;
+  display: inline-block;
+  font-size: 25px;
+  margin-left: 1em;
+}
+.cnt-share .share-item.share-fb i.icon {
+  background: #3c598b;
+  color: #fff;
+>>>>>>> 79b0be3f29288c59d77cdbe72232acadd0ca0b64
 }
 .contacto .container {
   display: flex;
@@ -1103,4 +1476,75 @@ footer .footer_top .facebook__slider__item ul li span {
     width: 100%;
     margin: 5px 0px;
   }
+}
+.mascota_categorias {
+  margin-top: 65px;
+  margin-bottom: 65px;
+}
+.mascota_categorias .text {
+  font-family: 'GothamRounded-Light';
+  font-size: 16px;
+  color: #5d5d5d;
+  max-width: 600px;
+  margin: auto;
+  text-align: center;
+}
+.mascota_categorias .list_categorias {
+  margin-top: 40px;
+}
+.mascota_categorias .list_categorias ul {
+  justify-content: center;
+  display: flex;
+}
+.mascota_categorias .list_categorias ul li {
+  margin: 0px 20px;
+}
+.mascota_categorias .list_categorias ul li a {
+  display: block;
+  text-align: center;
+  min-width: 180px;
+  color: #fff;
+  background: #00b2e2;
+  padding: 8px 12px;
+  border-radius: 4px;
+  font-size: 24px;
+  font-family: 'ventura_eddingmedium';
+  position: relative;
+  border-left: 8px solid #00b2e2;
+  border-right: 8px solid #00b2e2;
+}
+.mascota_categorias .list_categorias ul li a:before {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  transition: 0.3s ease all;
+  left: 0px;
+  top: 10px;
+  width: 13px;
+  height: 25px;
+  background-image: url("../img/categoria_left.png");
+  display: block;
+}
+.mascota_categorias .list_categorias ul li a:after {
+  content: "";
+  opacity: 0;
+  position: absolute;
+  right: 0px;
+  top: 7px;
+  width: 13px;
+  height: 25px;
+  transition: 0.3s ease all;
+  background-image: url("../img/categoria_right.png");
+  display: block;
+}
+.mascota_categorias .list_categorias ul li:hover a:after,
+.mascota_categorias .list_categorias ul li.active a:after {
+  opacity: 1;
+}
+.mascota_categorias .list_categorias ul li:hover a:before,
+.mascota_categorias .list_categorias ul li.active a:before {
+  opacity: 1;
+}
+.list_mascotas {
+  flex-wrap: wrap;
 }
