@@ -1,28 +1,38 @@
 .banner_gral
-	.banner
-		width 100%
-		height 310px
-		background-size cover
-		position relative
-		&:after
-			content ""
-			position absolute
-			left 0
-			top 0
-			background-image url("../img/capa_slider.png")
-			width 100%
-			height 100%
-		&__title
-			position relative
-			z-index 100
-			height 100%
-			display flex
-			justify-content center
-			align-items center
-			h2
-				color c_white
-				font-size  58px
-				font-family f_ventura_m
-				span
-					font-family f_kaushan_r
-					font-size 78px
+    .banner
+        width 100%
+        height 310px
+        background-size cover
+        position relative
+        &:after
+            content ""
+            position absolute
+            left 0
+            top 0
+            background-image url("../img/capa_slider.png")
+            width 100%
+            height 100%
+        &__title
+            position relative
+            z-index 100
+            height 100%
+            display flex
+            justify-content center
+            align-items center
+            h2
+                text-align center
+                margin 0
+                color c_white
+                font-size  58px
+                font-family f_ventura_m
+                span
+                    font-family f_kaushan_r
+                    font-size 78px
+@media screen and (max-width 960px)
+    .banner_gral .banner__title
+        padding 0px 20px
+
+        h2
+            font-size 42px
+            span
+                font-size 56px

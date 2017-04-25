@@ -119,12 +119,12 @@
 	</div>
 </section>
 <section class="home_siempre_informados">
-	<div class="container">
+	<div class="container container--r-large">
 		<div class="title">
 			<h2>SIEMPRE <span>INFORMADOS</span></h2>
 		</div>
 		<div class="listado_noticias home_listado_noticias">
-			<a href="" class="listado_noticias__noticia listado_noticias__noticia_large">
+			<a href="" class="listado_noticias__noticia_large listado_noticias__noticia large">
 				<figure>
 					<img src="{{STATIC_URL}}img/noticia_1.png" alt="" class="img_res" width="430" height="410">
 				</figure>
@@ -164,7 +164,7 @@
 					<p>Las mascotas fueron la sensación en Halloween.</p>
 				</div>
 			</a>
-			<a href="" class="listado_noticias__noticia listado_noticias__noticia_large">
+			<a href="" class="listado_noticias__noticia listado_noticias__noticia_large large">
 				<figure>
 					<img src="{{STATIC_URL}}img/noticia_1.png" alt="" class="img_res" width="430" height="410">
 				</figure>
@@ -185,8 +185,8 @@
 				</div>
 			</a>
 		</div>
-		<a href="" class="ver_mas_noticias">
-			<i class="icon-24"></i> Ver más noticias
+		<a href="noticias.html" class="ver_mas_noticias">
+			<i class="icon-24"></i> Ver más noticias <span ></span>
 		</a>
 	</div>
 </section>
@@ -329,13 +329,9 @@
                 console.log(mq.matches)
                 console.log(mq.media)
                 if (mq.matches) {
-
                 	media_ = mq.media
 
-
                 };
-
-
                 switch(media_) {
                 	case "(max-width: 480px)":
                 		if (window_top >= 270) {
@@ -403,6 +399,22 @@
 
 
 		}
+		var mql_n = window.matchMedia("(max-width: 768px)");
+
+		widthChangeNoticia(mql_n)
+		mql_n.addListener(widthChangeNoticia);
+		function widthChangeNoticia(mq){
+			console.log(mq.media)
+			if(mq.matches){
+				$(".listado_noticias .large").removeClass('listado_noticias__noticia_large')
+			}else{
+				$(".listado_noticias .large").addClass('listado_noticias__noticia_large')
+			}
+
+        }
+
+
+
 	</script>
 
 {% endblock js %}

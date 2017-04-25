@@ -111,6 +111,15 @@
         font-size 25px
         i
             margin-right 10px
+        span
+            width 55px
+            height 11px
+            display inline-block
+            animation key_arrow_mas 1.2s infinite
+            margin-bottom 4px
+            background-repeat no-repeat
+            background-image url("../img/ver_mas_noticias.png")
+
     .home_listado_noticias
         margin-top 40px
     .title
@@ -193,6 +202,14 @@
             right 120px
         .home_banner__slider_list__item
             height 500px
+    .home_siempre_informados
+        .container--r-large
+            max-width 1000px
+
+@media screen and (max-width 1300px)
+    .home_nuestro_aliados .bx-wrapper
+        max-width 860px !important
+
 @media screen and (max-width 1200px)
 
     .home_banner
@@ -204,6 +221,15 @@
                 right 115px
             &:after
                 bottom 45px
+@media screen and (max-width 1100px)
+    .home_nuestro_aliados .bx-wrapper
+        max-width 540px !important
+        figure
+            width 170px !important
+            img
+                display block
+                width 100%
+                height auto
 @media screen and (max-width 960px)
 
 
@@ -218,8 +244,13 @@
         left 0
         right 0
         display block
+        text-align center
+    .home_nuestro_aliados .bx-wrapper
+        max-width 360px !important
 @media screen and (max-width 480px)
 
     .home_banner
         .home_banner__slider_list__item
             height 360px
+    .home_nuestro_aliados .bx-wrapper
+        max-width 180px !important

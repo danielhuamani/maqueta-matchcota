@@ -22,6 +22,8 @@
   align-items: center;
 }
 .banner_gral .banner__title h2 {
+  text-align: center;
+  margin: 0;
   color: c_white;
   font-size: 58px;
   font-family: f_ventura_m;
@@ -29,4 +31,15 @@
 .banner_gral .banner__title h2 span {
   font-family: f_kaushan_r;
   font-size: 78px;
+}
+@media screen and (max-width: 960px) {
+  .banner_gral .banner__title {
+    padding: 0px 20px;
+  }
+  .banner_gral .banner__title h2 {
+    font-size: 42px;
+  }
+  .banner_gral .banner__title h2 span {
+    font-size: 56px;
+  }
 }

@@ -16,6 +16,9 @@ a {
 .container--large {
   max-width: 1800px;
 }
+.container--r-large {
+  max-width: 1900px;
+}
 .title_section h2 {
   font-size: 35px;
   font-family: f_ventura_m;
@@ -134,6 +137,28 @@ p {
   font-family: f_gothan_l;
   font-size: 14px;
   color: c_plomo_p;
+}
+.picture-border {
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  border-right: 2px solid #a9a9ac;
+  border-bottom: 2px solid #a9a9ac;
+  display: inline-block;
+  box-shadow: 6px 6px 20px 1px #b9bbbe;
+}
+.picture-border .inner__picture {
+  border-top: 14px solid #dbdbdb;
+  border-left: 14px solid #d1d1d1;
+  border-right: 14px solid #e6e6e6;
+  border-bottom: 14px solid #d5d7d9;
+  display: block;
+}
+.picture-border .inner__picture img {
+  border-top: 2px solid #b9bbbe;
+  border-left: 2px solid #b9bbbe;
+  border-right: 2px solid #fff;
+  border-bottom: 2px solid #fff;
+  display: block;
 }
 @media screen and (max-width: 768px) {
   .page {
@@ -264,5 +289,49 @@ p {
   }
   100% {
     margin-top: 0px;
+  }
+}
+@-moz-keyframes key_arrow_mas {
+  0% {
+    margin-left: 5px;
+  }
+  50% {
+    margin-left: 15px;
+  }
+  100% {
+    margin-left: 5px;
+  }
+}
+@-webkit-keyframes key_arrow_mas {
+  0% {
+    margin-left: 5px;
+  }
+  50% {
+    margin-left: 15px;
+  }
+  100% {
+    margin-left: 5px;
+  }
+}
+@-o-keyframes key_arrow_mas {
+  0% {
+    margin-left: 5px;
+  }
+  50% {
+    margin-left: 15px;
+  }
+  100% {
+    margin-left: 5px;
+  }
+}
+@keyframes key_arrow_mas {
+  0% {
+    margin-left: 5px;
+  }
+  50% {
+    margin-left: 15px;
+  }
+  100% {
+    margin-left: 5px;
   }
 }
