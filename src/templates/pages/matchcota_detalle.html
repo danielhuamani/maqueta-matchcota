@@ -1,0 +1,162 @@
+{% extends "../common/base.html" %}
+{% block content %}
+
+<section class="banner_gral">
+	<div class="banner" style="background-image: url({{STATIC_URL}}img/interna.png)">
+		<div class="banner__title">
+			<h2>ADOPTAR ES <span class="cuv_naran">amar</span></h2>
+		</div>
+	</div>
+</section>
+<section class="matchcota-detalle">
+	<div class="container">
+		<div class="preview-img">
+			<a href="#">
+				CONOCE MÁS MASCOTAS AQUI
+			</a>
+			<div class="main-img">
+				<img src="{{STATIC_URL}}img/mascota1.png" alt="">
+			</div>
+			<ul class="list-thumbnails">
+				<li>
+					<a href="#" point-src="{{STATIC_URL}}img/mascota1.png">
+						<img src="{{STATIC_URL}}img/mascota1.png" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="#" point-src="{{STATIC_URL}}img/mascota2.png">
+						<img src="{{STATIC_URL}}img/mascota2.png" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="#" point-src="{{STATIC_URL}}img/mascota3.png">
+						<img src="{{STATIC_URL}}img/mascota3.png" alt="">
+					</a>
+				</li>
+				<li>
+					<a href="#" point-src="{{STATIC_URL}}img/mascota4.png">
+						<img src="{{STATIC_URL}}img/mascota4.png" alt="">
+					</a>
+				</li>
+			</ul>
+		</div>
+		<div class="cnt-descripcion">
+			<div class="title">
+				<h1>
+					Chispa
+				</h1>
+				<a href="#">
+					Compartir
+				</a>
+			</div>
+			<ul class="acordeon">
+				<li class="active" id="info-general">
+					<h3 class="title">
+						<a href="#info-general">
+							info general
+						</a>
+					</h3>
+					<div class="text-content">
+						<h2>
+							<strong>
+								Historia: 
+							</strong>
+						</h2>
+						<p>
+							Chispa fue rescatada en enero de 2016 mientras buscaba entre bolsas de basura algo de comida, al lado de la Carretera Panamericana Sur. 
+						</p>
+					</div>
+				</li>
+				<li id="caracteristicas-fisicas">
+					<h3 class="title">
+						<a href="#caracteristicas-fisicas">
+							caracteristicas fisicas
+						</a>
+					</h3>
+					<div class="text-content">
+						texto
+					</div>
+				</li>
+				<li id="salud">
+					<h3 class="title">
+						<a href="#salud">
+							salud
+						</a>
+					</h3>
+					<div class="text-content">
+						texto
+					</div>
+				</li>
+				<li id="me-relaciono">
+					<h3 class="title">
+						<a href="#me-relaciono">
+							me relaciono
+						</a>
+					</h3>
+					<div class="text-content">
+						texto
+					</div>
+				</li>
+				<li id="comportamiento">
+					<h3 class="title">
+						<a href="#comportamiento">
+							Titulo
+						</a>
+					</h3>
+					<div class="text-content">
+						comportamiento
+					</div>
+				</li>
+				<li id="comentarios-adicional">
+					<h3 class="title">
+						<a href="#comentarios-adicional">
+							comentarios adicional
+						</a>
+					</h3>
+					<div class="text-content">
+						texto
+					</div>
+				</li>
+			</ul>
+			<a href="#">
+				ADOPTAR
+			</a>
+		</div>
+	</div>
+</section>
+{% endblock content %}
+{% block js %}
+<script>
+	jQuery(document).ready(function($) {
+		$('.listado_aliados').bxSlider({
+			adaptiveHeight: false,
+			auto: true,
+			pause: '22600',
+			pager: false,
+			controls: false,
+			minSlides: 1,
+		    maxSlides: 5,
+		    moveSlides: 1,
+		    slideWidth: 135,
+		    controls: true,
+		    slideMargin: 30,
+		    nextText: '',
+			prevText: '',
+		});
+		function changeImage() {
+			$downImg = $(this).attr("point-src");
+			console.log($downImg);
+			$(".main-img img").attr("src", $downImg);
+		}
+		function changeAcordonState() {
+			$href = $(this).attr("href");
+			console.log($href);
+			$(".acordeon li").removeClass("active");
+			$($href).addClass("active");
+		}
+		$( ".list-thumbnails li a" ).on( "click", changeImage );
+		$( ".acordeon a" ).on( "click", changeAcordonState );
+
+	});
+</script>
+{% endblock js %}
