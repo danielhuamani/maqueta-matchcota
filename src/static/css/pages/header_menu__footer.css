@@ -466,27 +466,16 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 480px) {
+  footer .footer_top__contacto .links a.informacion {
+    font-size: 30px;
+  }
+  footer .footer_top {
+    padding-top: 40px;
+  }
   footer .footer_top .facebook .bx-wrapper .bx-viewport {
     height: 170px !important;
   }
   footer .footer_top .facebook_bloque {
-    width: 290px;
-  }
-  footer .footer_top .facebook__slider__item {
-    width: 260px !important;
-  }
-  footer .footer_top .facebook__slider__item ul {
-    margin-right: 10px;
-  }
-  footer .footer_top .facebook__slider__item ul li {
-    display: block;
-  }
-  footer .footer_top .facebook__slider__item .item figure {
-    width: 150px;
-  }
-  footer .footer_top .facebook__slider__item .item figure img {
-    width: 100%;
-    height: auto;
-    display: block;
+    display: none;
   }
 }

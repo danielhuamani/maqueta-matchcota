@@ -298,7 +298,86 @@
 	</div>
 </section>
 
+			<section class="container_formulario pop_up pop_up_dona">
+				<div class="cnt-image">
+					<div class="image">
 
+						<div class="text">
+							Dona
+						</div>
+						<figure>
+							<img src="/static/img/img_dona.png" width="713" height="490" alt="" class="img_res">
+						</figure>
+					</div>
+				</div>
+				<div class="cnt-formulario">
+					<div class="formulario">
+						<h2>
+							DONA AL PROYECTO
+						</h2>
+						<div class="cuentas">
+							<div class="cuenta cuentas__ahorro">
+								<h4>Cuenta de Ahorros BCP:</h4>
+								<h3>194-33308352-0-98</h3>
+							</div>
+							<div class="cuenta cuentas__ruc">
+								<h4>RUC:</h4>
+								<h3>20600564260</h3>
+							</div>
+							<div class="cuenta cuentas__interbancario">
+								<h4>Cuenta Interbancaria:</h4>
+								<h3>002 194 1333308352098 95</h3>
+							</div>
+						</div>
+						<form action="">
+							<div class="text">
+								Si ya realizaste una donación déjanos aquí tus datos y adjunta el voucher del depósito para poderte enviar una postal digital como agradecimiento:
+							</div>
+
+
+							<div class="cnt-form">
+								<div class="cnt-input">
+									<div class="input input input-m">
+										<label for="">Nombre y Apellido:</label>
+										<input type="text">
+									</div>
+									<div class="input input-m">
+										<label for="">Distrito:</label>
+										<input type="text">
+									</div>
+								</div>
+								<div class="cnt-input">
+									<div class="input input-m">
+										<label for="">DNI:</label>
+										<input type="text">
+									</div>
+									<div class="input input-m">
+										<label for="">Célular:</label>
+										<input type="text">
+									</div>
+								</div>
+								<div class="cnt-input">
+									<div class="input input-m">
+										<label for="">Correo Electronico:</label>
+										<input type="text">
+									</div>
+									<div class="input input-m">
+										<label for="">Confirmación de Correo Electronico:</label>
+										<input type="text">
+									</div>
+								</div>
+								<div class="cnt-input adjuntar">
+									<label for="adjuntar">Adjuntar Voucher</label>
+									<input type="file" name="adjuntar" id="adjuntar">
+								</div>
+								<button class="btn btn--form btn--nosotros btn--pop">
+									ENVIAR
+								</button>
+							</div>
+						</form>
+					</div>
+				</div>
+			</section>
 		</div>
 		<footer>
 	<div class="footer_top">
@@ -414,6 +493,7 @@
 </footer>
 
 	</div>
+
 	<script src="/static/js/jquery1.8.3.min.js"></script>
 	<script src="/static/js/jquery.bxslider.min.js"></script>
 	<script src="/static/js/main.js"></script>
@@ -629,7 +709,7 @@
 
 
 		}
-		var mql_n = window.matchMedia("(max-width: 768px)");
+		var mql_n = window.matchMedia("(max-width: 960px)");
 
 		widthChangeNoticia(mql_n)
 		mql_n.addListener(widthChangeNoticia);

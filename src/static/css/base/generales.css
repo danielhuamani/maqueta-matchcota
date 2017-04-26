@@ -161,6 +161,13 @@ p {
   display: block;
 }
 @media screen and (max-width: 768px) {
+  .title_colores h2.celeste {
+    font-size: 30px;
+  }
+  .title_colores h2.celeste:after,
+  .title_colores h2.celeste:before {
+    display: none;
+  }
   .page {
     width: 100%;
     margin: auto;

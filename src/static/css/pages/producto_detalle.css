@@ -65,8 +65,6 @@
 .matchcota-detalle .container .cnt-descripcion .acordeon li.active .text-content {
   height: auto !important;
 }
-@media screen and (max-width: 1200px) {
-  .nosotros_formulario .btn--nosotros {
-    width: 100%;
-  }
-}
+/*@media screen and (max-width 1200px)
+    .nosotros_formulario .btn--nosotros
+        width  100%*/
