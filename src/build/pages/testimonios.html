@@ -105,7 +105,7 @@
               </p>
             </div>
             <div class="image">
-              <div class="picture">
+              <div class="picture picture-border">
                 <div class="inner__picture">
                   <img src="/static/img/img_testimonios.jpg" alt="">
                 </div>
@@ -122,7 +122,7 @@
               </p>
             </div>
             <div class="image">
-              <div class="picture">
+              <div class="picture picture-border">
                 <div class="inner__picture">
                   <img src="/static/img/img_testimonios.jpg" alt="">
                 </div>
@@ -139,7 +139,7 @@
               </p>
             </div>
             <div class="image">
-              <div class="picture">
+              <div class="picture picture-border">
                 <div class="inner__picture">
                   <img src="/static/img/img_testimonios.jpg" alt="">
                 </div>
@@ -277,7 +277,7 @@
 				mode: 'fade',
 				adaptiveHeight: false,
 				auto: true,
-				pause: '22600',
+				pause: '222600',
 				pager: false,
 				controls: false,
 				minSlides: 1,
@@ -290,18 +290,15 @@
 				prevText: '',
 
 				onSliderLoad: function(currentIndex) {
-						$('.facebook__slider').children().eq(currentIndex).addClass('active');
+					$('.facebook__slider').children().eq(currentIndex).addClass('active');
+				},
+				onSlideBefore: function($slideElement){
+				  setTimeout( function(){
+					  $slideElement.addClass('active');
+				  },500);
+				  $('.facebook__slider').children().removeClass('active');
 
-					},
-					onSlideBefore: function($slideElement){
-					  setTimeout( function(){
-
-						  $slideElement.addClass('active');
-
-					  },500);
-					  $('.facebook__slider').children().removeClass('active');
-
-					}
+				}
 			});
 	});
 	</script>
@@ -317,10 +314,10 @@
 				auto: true,
 				pause: '2000',
 				pager: false,
-				controls: false,
+				controls: true,
 			
-			  nextText: '',
-				prevText: '',
+			  nextText: '<i class="icon icon-26"></i>',
+				prevText: '<i class="icon icon-25"></i>',
 
 			});
 

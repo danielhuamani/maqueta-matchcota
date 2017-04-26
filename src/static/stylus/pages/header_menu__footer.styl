@@ -340,9 +340,23 @@ footer
             padding 20px 15px 25px 15px
         .facebook_bloque
             padding-left 0
+
         .facebook_image
             display none
 @media screen and (max-width 768px)
+    footer
+        .footer_top
+            padding-bottom 10px
+            padding-top 140px
+            .facebook_bloque
+                padding-bottom 0px
+        .container
+            flex-direction column
+            justify-content center
+            align-items center
+        .footer_top__contacto
+            margin-top 40px
+            text-align center
     .container_menu .menu_block
         width 250px
         .menu
@@ -385,3 +399,25 @@ footer
     footer
         width 100%
         margin-left 0
+
+@media screen and (max-width 480px)
+    footer .footer_top
+        .facebook .bx-wrapper
+            .bx-viewport
+                height 170px !important
+
+        .facebook_bloque
+            width 290px
+        .facebook__slider__item
+            width 260px !important
+            ul
+                margin-right 10px
+                li
+                    display block
+            .item
+                figure
+                    width 150px
+                    img
+                        width 100%
+                        height auto
+                        display block

@@ -13,34 +13,43 @@
 }
 .cnt-testimonios .title h2:after {
   content: "";
-  background-image: url("../img/nosotros_inf.png");
   width: 33px;
   height: 34px;
   position: absolute;
   top: -35px;
   right: -40px;
 }
-.cnt-testimonios .content-testimonios .picture {
-  border-top: 2px solid #fff;
-  border-left: 2px solid #fff;
-  border-right: 2px solid #a9a9ac;
-  border-bottom: 2px solid #a9a9ac;
-  display: inline-block;
-  box-shadow: 6px 6px 20px 1px #b9bbbe;
-}
-.cnt-testimonios .content-testimonios .picture .inner__picture {
-  border-top: 14px solid #dbdbdb;
-  border-left: 14px solid #d1d1d1;
-  border-right: 14px solid #e6e6e6;
-  border-bottom: 14px solid #d5d7d9;
+.cnt-testimonios .content-testimonios {
+  padding: 0 5em;
   display: block;
 }
-.cnt-testimonios .content-testimonios .picture .inner__picture img {
-  border-top: 2px solid #b9bbbe;
-  border-left: 2px solid #b9bbbe;
-  border-right: 2px solid #fff;
-  border-bottom: 2px solid #fff;
+.cnt-testimonios .bx-wrapper {
+  margin: auto;
+  position: relative;
+}
+.cnt-testimonios .bx-wrapper .bx-controls a {
+  position: absolute;
+  top: 50%;
+  margin-top: -24px;
+  width: 48px;
+  height: 48px;
   display: block;
+  text-align: center;
+  line-height: 48px;
+  border: 1px solid c_celeste;
+  border-radius: 100% 100%;
+  color: c_celeste;
+  font-size: 20px;
+}
+.cnt-testimonios .bx-wrapper .bx-controls a.bx-prev {
+  left: -5em;
+}
+.cnt-testimonios .bx-wrapper .bx-controls a.bx-next {
+  right: -5em;
+}
+.cnt-testimonios .bx-wrapper .bx-controls a:hover {
+  background: c_celeste;
+  color: #fff;
 }
 .slide-testimonios .item-slider-testimonios {
   height: auto;
