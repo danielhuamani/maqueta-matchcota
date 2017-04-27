@@ -163,6 +163,8 @@ p {
   border-bottom: 2px solid #a9a9ac;
   display: inline-block;
   box-shadow: 6px 6px 20px 1px #b9bbbe;
+  position: relative;
+  z-index: 3;
 }
 .picture-border .inner__picture {
   border-top: 14px solid #dbdbdb;

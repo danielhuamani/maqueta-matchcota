@@ -549,6 +549,7 @@ footer .footer_top .facebook__slider__item ul li span {
 .home_mascotas__list_mascotas {
   justify-content: center;
   margin-top: 38px;
+  margin-bottom: 38px;
 }
 .home_conoce_mascota {
   margin-top: 60px;
@@ -563,22 +564,92 @@ footer .footer_top .facebook__slider__item ul li span {
   margin-right: 10px;
 }
 .home_conoce_mascota .full_container {
-  background-image: url("../img/ad.png");
-  background-size: cover;
+  background-color: #e5e5e5;
+  padding: 1em 0 4em;
+  transform: skew(0deg, 2.5deg);
 }
-.home_conoce_mascota .full_container .bloque_test_1 .title h4 {
+.home_conoce_mascota .full_container .container {
+  transform: skew(0deg, -2.5deg);
+  min-height: 480px;
+  position: relative;
+}
+.home_conoce_mascota .full_container .container .title {
+  width: 100%;
+  max-width: 250px;
+  text-align: center;
+  margin-bottom: 3em;
+}
+.home_conoce_mascota .full_container .container .title h4 {
+  display: block;
   font-size: 35px;
+  color: #ff4304;
+  position: relative;
+  font-family: 'ventura_eddingmedium';
   color: #00b2e2;
 }
-.home_conoce_mascota .full_container .bloque_test_1 figure {
-  padding: 27px 29px 15px 30px;
-  background-image: url("../img/bac_blo_1.png");
-  width: 237px;
-  height: 240px;
+.home_conoce_mascota .full_container .container .title h3 {
+  display: block;
+  font-size: 44px;
+  color: #ff4304;
+  position: relative;
+  font-family: 'ventura_eddingmedium';
+  color: #ff7444;
+}
+.home_conoce_mascota .full_container .bloque_picture {
+  position: absolute;
+}
+.home_conoce_mascota .full_container .bloque_picture figure {
   margin: 0;
 }
+.home_conoce_mascota .full_container .bloque_picture .text {
+  color: #c7c7c7;
+  font-size: 65px;
+  font-family: 'kaushan_scriptregular';
+  position: absolute;
+  z-index: 2;
+}
+.home_conoce_mascota .full_container .bloque_picture.bloque_1 {
+  position: relative;
+  display: inline-block;
+}
+.home_conoce_mascota .full_container .bloque_picture.bloque_1 .text {
+  left: -115px;
+  bottom: -60px;
+}
+.home_conoce_mascota .full_container .bloque_picture.bloque_2 {
+  display: inline-block;
+  left: 28%;
+  top: 2%;
+}
+.home_conoce_mascota .full_container .bloque_picture.bloque_2 .text {
+  left: -40px;
+  bottom: -60px;
+}
+.home_conoce_mascota .full_container .bloque_picture.bloque_3 {
+  display: inline-block;
+  left: 26%;
+  top: 65%;
+}
+.home_conoce_mascota .full_container .bloque_picture.bloque_3 .text {
+  right: -270px;
+  top: 20px;
+}
+.home_conoce_mascota .full_container .bloque_picture.bloque_4 {
+  display: inline-block;
+  left: 45%;
+  top: 20%;
+}
+.home_conoce_mascota .full_container .bloque_picture.bloque_4 .text {
+  top: -90px;
+  right: -34px;
+}
+.home_conoce_mascota .full_container .bloque_picture.bloque_5 {
+  display: inline-block;
+  right: 0;
+  top: -10%;
+}
 .home_siempre_informados {
-  margin-top: 40px;
+  margin-top: 5em;
 }
 .home_siempre_informados .ver_mas_noticias {
   color: #5d5d5d;
