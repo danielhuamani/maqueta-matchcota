@@ -267,6 +267,12 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .home_siempre_informados .title h2 {
+    font-size: 30px;
+  }
+  .home_siempre_informados .title h2:after {
+    display: none;
+  }
   .home_banner .arrow_scroll {
     left: 0;
     right: 0;

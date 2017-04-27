@@ -165,7 +165,7 @@
 }
 .listado_noticias__noticia:nth-child(odd) .descripcion:after,
 .listado_noticias__noticia:nth-child(even) .descripcion:after {
-  transition: 0.3s ease all;
+  animation: fadeEffect 0.5s !important;
   border-left: 16px solid transparent;
   border-right: 16px solid transparent;
 }

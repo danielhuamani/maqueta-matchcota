@@ -14,8 +14,9 @@
         ul
             justify-content center
             display flex
+            flex-wrap wrap
             li
-                margin 0px 20px
+                margin 10px 20px
                 a
                     display block
                     text-align center
@@ -60,4 +61,6 @@
 
 .list_mascotas
     flex-wrap wrap
-
+@media screen and (max-width 1500px)
+    .mascota_categorias .list_categorias ul li a
+        min-width 175px

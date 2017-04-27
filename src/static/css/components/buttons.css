@@ -7,23 +7,28 @@
 .btn--light-white {
   padding: 8px 22px;
   color: c_celeste;
-  border: 3px solid c_white;
+  border: 1px solid c_white;
 }
 .btn--light-white:hover {
   background: c_white;
+  color: c_celeste;
+  border: 1px solid c_celeste;
 }
 .btn--light-white-active {
   background: c_white;
+  color: c_celeste;
+  border: 1px solid c_celeste;
 }
 .btn--form {
   color: c_white;
-  border: 3px solid c_celeste;
+  border: 1px solid c_celeste;
   background: c_celeste;
   padding: 8px 22px;
 }
 .btn--form:hover {
-  border: 3px solid c_white;
-  background: transparent;
+  background: c_white;
+  color: c_celeste;
+  border: 1px solid c_celeste;
 }
 @media screen and (max-width: 1500px) {
 }

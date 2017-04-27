@@ -53,20 +53,6 @@
 .container_menu {
   background: #fff;
 }
-.container_menu .overlay--active {
-  display: block !important;
-}
-.container_menu .overlay {
-  display: none;
-  position: fixed;
-  left: 0;
-  animation: fadeEffect 0.5s;
-  top: 0;
-  z-index: 198;
-  background: rgba(0,0,0,0.7);
-  width: 100%;
-  height: 100%;
-}
 .container_menu .menu_block--active {
   left: 0px !important;
 }
@@ -399,6 +385,22 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 768px) {
+  footer .footer_top {
+    padding-bottom: 10px;
+    padding-top: 140px;
+  }
+  footer .footer_top .facebook_bloque {
+    padding-bottom: 0px;
+  }
+  footer .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footer_top__contacto {
+    margin-top: 40px;
+    text-align: center;
+  }
   .container_menu .menu_block {
     width: 250px;
   }
@@ -447,6 +449,20 @@ footer .footer_top .facebook__slider__item ul li span {
   footer {
     width: 100%;
     margin-left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer .footer_top__contacto .links a.informacion {
+    font-size: 30px;
+  }
+  footer .footer_top {
+    padding-top: 40px;
+  }
+  footer .footer_top .facebook .bx-wrapper .bx-viewport {
+    height: 170px !important;
+  }
+  footer .footer_top .facebook_bloque {
+    display: none;
   }
 }
 .home_banner {
@@ -718,6 +734,12 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 768px) {
+  .home_siempre_informados .title h2 {
+    font-size: 30px;
+  }
+  .home_siempre_informados .title h2:after {
+    display: none;
+  }
   .home_banner .arrow_scroll {
     left: 0;
     right: 0;
@@ -742,15 +764,25 @@ footer .footer_top .facebook__slider__item ul li span {
 .nosotros_matchota_ideal .container {
   display: flex;
   justify-content: center;
+  align-items: flex-end;
+}
+.nosotros_matchota_ideal .container figure.active-img {
+  bottom: 0px !important;
 }
 .nosotros_matchota_ideal .container figure {
+  position: relative;
+  left: 0;
+  bottom: -360px;
+  transition: 1s ease all;
+  z-index: 20;
   width: 357px;
   margin: 0;
-  margin-right: 90px;
 }
 .nosotros_matchota_ideal .container .cnt-descripcion {
+  margin-left: 90px;
   max-width: 520px;
   margin-top: 60px;
+  margin-bottom: 30px;
 }
 .nosotros_matchota_ideal .container .cnt-descripcion h2 {
   position: relative;
@@ -788,6 +820,8 @@ footer .footer_top .facebook__slider__item ul li span {
   color: #5d5d5d;
 }
 .nosotros_comillas {
+  position: relative;
+  z-index: 30;
   background: #ffb718;
 }
 .nosotros_comillas .descripcion {
@@ -815,6 +849,10 @@ footer .footer_top .facebook__slider__item ul li span {
   position: absolute;
   right: 0;
   bottom: 0;
+}
+.cnt-mision-vision {
+  position: relative;
+  z-index: 30;
 }
 .cnt-mision-vision .container {
   width: 100%;
@@ -868,6 +906,7 @@ footer .footer_top .facebook__slider__item ul li span {
 }
 .nosotros_linea_tiempo {
   padding-top: 50px;
+  background-image: url("../img/fondo_cuadricula.png");
 }
 .nosotros_linea_tiempo .container {
   display: flex;
@@ -893,6 +932,7 @@ footer .footer_top .facebook__slider__item ul li span {
 .nosotros_linea_tiempo .container .cnt_linea_tiempo {
   margin-top: 80px;
   display: flex;
+  justify-content: center;
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_1 {
   padding-right: 110px;
@@ -907,7 +947,12 @@ footer .footer_top .facebook__slider__item ul li span {
   right: 0;
   top: 0;
 }
+.nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_1 .b_1_figure_active {
+  opacity: 1;
+}
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_1 figure {
+  opacity: 0;
+  transition: 0.5s ease all;
   margin-bottom: 7px;
   text-align: center;
 }
@@ -1056,6 +1101,16 @@ footer .footer_top .facebook__slider__item ul li span {
   margin-left: 100px;
   position: relative;
 }
+.nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_7:after {
+  content: "";
+  background-image: url("../img/corazon.png");
+  width: 73px;
+  height: 70px;
+  position: absolute;
+  left: 63px;
+  top: -30px;
+  animation: key_scale 1.5s infinite;
+}
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_7 h3:last-child {
   margin-left: 50px;
   bottom: -40px;
@@ -1063,7 +1118,7 @@ footer .footer_top .facebook__slider__item ul li span {
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_7 h3 {
   position: absolute;
-  left: 0;
+  left: -30px;
   top: -40px;
   margin: 0;
   color: #656564;
@@ -1130,9 +1185,86 @@ footer .footer_top .facebook__slider__item ul li span {
   display: block;
 }
 @media screen and (max-width: 1200px) {
+  .cnt-mision-vision .container figure {
+    display: none;
+  }
+  .cnt-mision-vision .container .mision_vision .descripcion {
+    padding: 0px 10px;
+    max-width: 100%;
+  }
+  .cnt-mision-vision .container .mision_vision {
+    width: 50%;
+  }
   .nosotros_formulario .btn--nosotros {
     font-size: 18px;
     min-width: 150px;
+  }
+  .nosotros_matchota_ideal .container .cnt-descripcion .descripcion {
+    font-size: 18px;
+  }
+  .nosotros_socios_estrategicos .container .bx-wrapper {
+    max-width: 660px !important;
+  }
+}
+@media screen and (max-width: 960px) {
+  .nosotros_matchota_ideal .container .cnt-descripcion .descripcion {
+    margin-top: 20px;
+  }
+  .nosotros_socios_estrategicos .container .title_colores {
+    margin-bottom: 50px;
+  }
+  .nosotros_socios_estrategicos .container .bx-wrapper {
+    max-width: 495px !important;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .nosotros_socios_estrategicos .container .bx-wrapper {
+    max-width: 330px !important;
+  }
+  .nosotros_matchota_ideal .container {
+    text-align: center;
+  }
+  .nosotros_matchota_ideal .container .cnt-descripcion {
+    margin-left: 0;
+    margin-top: 0;
+  }
+  .nosotros_matchota_ideal .container .cnt-descripcion .descripcion {
+    padding: 0 10px;
+    text-align: left;
+  }
+  .nosotros_comillas .descripcion {
+    padding: 30px 20px;
+  }
+  .nosotros_comillas .descripcion:after,
+  .nosotros_comillas .descripcion:before {
+    display: none;
+  }
+  .nosotros_matchota_ideal .container figure {
+    display: none;
+  }
+  .cnt-mision-vision .container {
+    flex-wrap: wrap;
+  }
+  .cnt-mision-vision .container .mision_vision {
+    border-bottom: 1px solid #fff;
+    border-left: none;
+    width: 100%;
+    padding: 20px 0px;
+  }
+  .cnt-mision-vision .container .mision_vision .descripcion {
+    padding: 0px 20px;
+  }
+  .cnt-mision-vision .container .mision_vision .icon-mision {
+    margin-bottom: 20px;
+  }
+  .cnt-mision-vision .container .mision_vision h2 {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .nosotros_socios_estrategicos .container .bx-wrapper {
+    max-width: 165px !important;
   }
 }
 .cnt-testimonios .title {
@@ -1308,11 +1440,6 @@ img
 .matchcota-detalle .container .cnt-descripcion .acordeon li.active .text-content {
   height: auto !important;
 }
-@media screen and (max-width: 1200px) {
-  .nosotros_formulario .btn--nosotros {
-    width: 100%;
-  }
-}
 .noticias-detail {
   padding: 2.5em 0;
   height: auto;
@@ -1425,134 +1552,6 @@ img
   background: #3c598b;
   color: #fff;
 }
-.contacto .container {
-  display: flex;
-}
-.contacto__datos_img {
-  width: 40%;
-  position: relative;
-  margin-right: 50px;
-  margin-top: -50px;
-  z-index: 140;
-}
-.contacto__datos {
-  background: c_main;
-  padding: 60px;
-}
-.contacto__datos h3 {
-  color: #fff;
-  font-family: f_lato_bl;
-  font-size: 24px;
-  margin: 0px;
-  text-align: center;
-}
-.contacto__datos ul {
-  margin-top: 30px;
-}
-.contacto__datos ul li,
-.contacto__datos ul a {
-  font-size: 16px;
-  font-family: f_roboto_r;
-  color: #fff;
-}
-.contacto__cnt_formulario {
-  margin-top: 50px;
-  width: 60%;
-}
-.contacto__cnt_formulario h3 {
-  text-align: center;
-  font-size: 24px;
-  font-family: f_lato_bl;
-  color: c_main;
-}
-.contacto__cnt_formulario form {
-  overflow: hidden;
-  margin-top: 30px;
-  max-width: 400px;
-  margin-left: 0;
-}
-.contacto__cnt_formulario form .btn--contacto {
-  padding: 10px 35px;
-  text-align: right;
-  float: right;
-}
-.contacto__cnt_formulario form .cnt-input {
-  display: flex;
-}
-.contacto__cnt_formulario form .cnt-input .input:first-child {
-  margin-left: 0;
-}
-.contacto__cnt_formulario form .cnt-input .input {
-  width: 50%;
-  margin: 7px 5px;
-}
-.contacto__cnt_formulario form .cnt-input .input input,
-.contacto__cnt_formulario form .cnt-input .input select,
-.contacto__cnt_formulario form .cnt-input .input textarea {
-  width: 100%;
-  box-sizing: border-box;
-  height: 40px;
-  padding: 5px 10px;
-  border: 1px solid #d5d5d5;
-  color: #c7c7c7;
-  border-radius: 8px;
-  font-family: f_lato_r;
-  font-size: 14px;
-}
-.contacto__cnt_formulario form .cnt-input .input textarea {
-  width: 100%;
-  height: 100px;
-}
-.contacto__cnt_formulario form .cnt-input .input--area {
-  width: 100%;
-}
-@media screen and (max-width: 768px) {
-  .container--small {
-    flex-direction: column;
-    margin-bottom: 20px;
-    margin-top: 20px;
-  }
-  .contacto__datos {
-    padding: 10px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    flex-direction: column;
-    align-items: center;
-  }
-  .contacto__datos h3 {
-    width: 100%;
-    margin-bottom: 20px;
-  }
-  .contacto__datos ul {
-    margin: 0;
-    margin-bottom: 10px;
-    max-width: 300px;
-  }
-  .contacto__datos_img {
-    margin-top: 0px;
-    margin-right: 0;
-    width: 100%;
-  }
-  .contacto__datos_img figure {
-    display: none;
-  }
-  .contacto__cnt_formulario {
-    width: 100%;
-  }
-  .contacto__cnt_formulario form {
-    max-width: 100%;
-  }
-}
-@media screen and (max-width: 768px) {
-  .contacto__cnt_formulario form .cnt-input {
-    flex-wrap: wrap;
-  }
-  .contacto__cnt_formulario form .cnt-input .input {
-    width: 100%;
-    margin: 5px 0px;
-  }
-}
 .mascota_categorias {
   margin-top: 65px;
   margin-bottom: 65px;
@@ -1571,9 +1570,10 @@ img
 .mascota_categorias .list_categorias ul {
   justify-content: center;
   display: flex;
+  flex-wrap: wrap;
 }
 .mascota_categorias .list_categorias ul li {
-  margin: 0px 20px;
+  margin: 10px 20px;
 }
 .mascota_categorias .list_categorias ul li a {
   display: block;
@@ -1623,4 +1623,9 @@ img
 }
 .list_mascotas {
   flex-wrap: wrap;
+}
+@media screen and (max-width: 1500px) {
+  .mascota_categorias .list_categorias ul li a {
+    min-width: 175px;
+  }
 }

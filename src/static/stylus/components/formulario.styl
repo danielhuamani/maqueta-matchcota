@@ -1,137 +1,311 @@
 .container_formulario
-	display flex
-	background c_formulario
-	justify-content center
-	.cnt-image
-		background-image url("../img/nosotros_fondo.png")
-		background-size cover
-		width 50%
-		padding-right 30px
-		.text
-			color c_celeste
-			font-family f_kaushan_r
-			font-size 80px
-			text-align center
+    display flex
+    background c_formulario
+    justify-content center
+    .cnt-image
+        background-image url("../img/nosotros_fondo_t.png")
+        background-size cover
+        width 45%
+        padding-right 30px
+        .image
+            height 100%
+            float right
+            max-width 713px
+            margin-right 60px
+            display flex
+            align-items flex-end
+            flex-direction column
+            justify-content flex-end
+        .text
+            color c_celeste
+            font-family f_kaushan_r
+            font-size 85px
+            width 100%
+            text-align center
+            margin-bottom -60px
 
-		figure
-			margin-top -65px
-			max-width 713px
-	.cnt-formulario
-		width 50%
-		padding-left 60px
-		padding-bottom 45px
-		.formulario
-			margin-top 60px
-			max-width 800px
-			padding-right 40px
-			h2
-				color c_celeste
-				font-size 35px
-				text-align center
-				font-family f_ventura_m
-				margin-bottom 20px
-			p
-				font-size 15px
-				font-family f_gothan_l
-				color c_plomo_os
-			form
-				.grid_botton
-					display flex
-					justify-content center
-					margin-top 30px
-					a
-						min-width 230px
-						text-align center
-						margin 0px 30px
-				.text
-					margin-top 40px
-					font-size 15px
-					font-family f_gothan_l
-					color c_plomo_os
-					margin-bottom 36px
-				.cnt-form
+        figure
+            margin 0
+            max-width 713px
+    .cnt-formulario
+        width 55%
+        padding-left 60px
+        padding-bottom 45px
+        .formulario
+            margin-top 60px
+            max-width 900px
+            padding-right 40px
+            .cuentas
+                margin-bottom 20px
+                display flex
+                justify-content space-between
+                .cuenta
+                    margin 0px 5px 10px 0px
+                h4
+                    color c_plomo_os
+                    font-size 16px
+                    text-align center
+                h3
+                    color c_celeste
+                    font-family f_ventura_m
+                    font-size 24px
+                    margin-bottom 0
+            h2
+                color c_celeste
+                font-size 35px
+                text-align center
+                font-family f_ventura_m
+                margin-bottom 20px
+            p
+                font-size 15px
+                font-family f_gothan_l
+                color c_plomo_os
+            form
+                .btn--pop
 
-					.cnt-input
-						display flex
-						width 100%
-						margin-bottom 35px
+                    display block
+                    text-align center
+                    margin auto
+                    min-width 200px
+                .grid_botton
+                    display flex
+                    justify-content center
+                    margin-top 30px
+                    a
+                        min-width 230px
+                        text-align center
+                        margin 0px 30px
+                .text
+                    margin-top 40px
+                    font-size 15px
+                    font-family f_gothan_l
+                    color c_plomo_os
+                    margin-bottom 36px
+                .cnt-form
 
-						.input
-							width 100%
-							position relative
-							textarea
-								height 20px
-							label
-								position absolute
-								top 0
-								left 0
-								font-family f_gothan_l
-								font-size 15px
-								width 100%
-								color c_plomo_os
-								transition .3s ease all
-							input, textarea
-								width 100%
-								color c_plomo_os
-								position relative
-								border none
-								font-size 15px
-								border-bottom 2px solid c_plomo_os
-								background transparent
-							&:after
-								content ""
-								width 0%
-								position absolute
-								border-bottom 2px solid c_celeste
-								left 0
-								height 1px
-								bottom 0
-								transition 1s ease all
-						.input-m
-							width 50%
-						.input-m:first-child
-							margin-right 40px
+                    .cnt-input
+                        display flex
+                        width 100%
+                        margin-bottom 35px
 
-						.input-active
-							label
+                        .input
+                            width 100%
+                            position relative
+                            textarea
+                                height 20px
+                            label
+                                position absolute
+                                top 0
+                                left 0
+                                font-family f_gothan_l
+                                font-size 15px
+                                width 100%
+                                color c_plomo_os
+                                transition .3s ease all
+                            input, textarea
+                                width 100%
+                                color c_plomo_os
+                                position relative
+                                border none
+                                font-size 15px
+                                border-bottom 2px solid c_plomo_os
+                                background transparent
+                            &:after
+                                content ""
+                                width 0%
+                                position absolute
+                                border-bottom 2px solid c_celeste
+                                left 0
+                                height 1px
+                                bottom 0
+                                transition 1s ease all
+                        .input-m
+                            width 50%
+                        .input-m:first-child
+                            margin-right 40px
 
-								top -20px
-							&:after
-								width 100%
+                        .input-active
+                            label
+
+                                top -20px
+                            &:after
+                                width 100%
+                    .descargar
+                        color c_celeste
+                        text-align center
+                        width 100%
+                    .cnt-input--adjuntar
+                        padding 5px 0px
+                        margin-bottom 20px !important
+                        width 100%
+                        margin auto
+                        font-size 15px
+                        font-family f_ventura_m
+                        color c_celeste
+                        background c_white
+                        position relative
+                        cursor pointer
+                        input
+                            cursor pointer
+                            position absolute
+                            left 0
+                            top 0
+                            width 100%
+                            opacity 0
+                    /*.cnt-input-descargar
+                        margin-bottom 10px !important*/
+.cnt_pop_up_none
+    display none
+    transition .5s ease all
+    animation fadeEffect .5s ease
+.cnt_pop_up_apadrina
+    .pop_up
+        height 700px
+.cnt_pop_up_dona
+    .pop_up
+        height 600px
+.cnt_pop_up
+    height 100%
+    align-items center
+    transition .5s ease all
+    animation fadeEffect .5s ease
+    .pop_up
+        background c_formulario
+        width 100%
+        display flex
+        align-items center
+        justify-content center
+        .close
+            position absolute
+            right 30px
+            cursor pointer
+            top -30px
+            .icon-close
+                display inline-block
+                color c_celeste
+                font-size 28px
+                border 1px solid c_celeste
+    .cnt-image
+        width 40%
+        height 100%
+
+        box-sizing border-box
+    .cnt-formulario
+        height 100%
+        box-sizing border-box
+        width 60%
+        background c_formulario
+        .formulario
+            position relative
+.cnt_pop_up
+    position fixed
+    width 100%
+    top 0
+    left 0px
+    background transparent
+    z-index 330
+@media screen and (max-width 1800px)
+    .cnt_pop_up_apadrina
+        .pop_up
+            height 550px
+        .cnt-image
+            background-position -100px center !important
+            figure
+                width 400px
+            .image
+                margin-right 80px
+    .container_formulario .cnt-image
+        background-size cover
+        background-repeat no-repeat
+        background-position -188px center
+
 @media screen and (max-width 1500px)
-	.container_formulario
-		.cnt-image
+    .cnt_pop_up_adopta .cnt-image figure
+        max-width 415px !important
+    .cnt_pop_up_dona .pop_up
+        height 515px
+    .container_formulario .cnt-image .image
+        margin-right 10px
+    .container_formulario
+        .cnt-image
+            background c_white
+            background-position -185px center
+            figure
+                max-width 500px
+        .cnt-formulario
+            padding-bottom 20px
+            padding-top 20px
+            .formulario
+                margin-top 30px
+                max-width 650px
+                form
+                    .grid_botton
+                        margin-top 20px
+                        a
+                            min-width 200px
+                            margin 0px 20px
+                            font-size 22px
 
-			figure
-				max-width 500px
-		.cnt-formulario
-			padding-bottom 20px
-			.formulario
-				margin-top 30px
-				max-width 550px
-				form
-					.grid_botton
-						margin-top 20px
-						a
-							min-width 200px
-							margin 0px 20px
-							font-size 22px
-					.text
-						margin-top 30px
-						margin-bottom 30px
+                    .text
+                        margin-top 30px
+                        margin-bottom 30px
+                    .text-archivo
+                        margin-bottom 10px
+                        margin-top 0px
 
 
-					.cnt-form .cnt-input
-						margin-bottom 27px
+                    .cnt-form .cnt-input
+                        margin-bottom 27px
+                        .input label
+                            font-size 14px
+
 @media screen and (max-width 1200px)
-	.container_formulario
-		.cnt-image
-			width 40%
-			display none
-		.cnt-formulario
-			width 90%
-			padding-left 0
-			.formulario
-				padding-right 0
-				max-width 100%
+    .cnt_pop_up .cnt-formulario
+        padding 15px 30px !important
+    .cnt_pop_up_apadrina .pop_up
+        height 420px
+    .container_formulario
+        .cnt-image
+            width 40%
+            display none
+        .cnt-formulario
+            width 90%
+            padding-left 0
+            .formulario
+                padding-right 0
+                max-width 100%
+                form
+                    .text
+                        margin-top 10px
 
+@media screen and (max-width 768px)
+    .cnt_pop_up_dona, .cnt_pop_up_apadrina, .cnt_pop_up_adopta
+        .pop_up
+            overflow-y scroll
+            height 400px
+            .btn--pop
+                margin-bottom 15px !important
+    .cnt_pop_up .cnt-formulario
+        padding 15px 0px !important
+    .container_formulario .cnt-formulario .formulario
+        .cuentas
+            margin-bottom 20px
+            flex-direction column
+            flex-wrap wrap
+            text-align center
+        form .grid_botton
+            flex-wrap wrap
+            .btn
+                margin-bottom 15px
+
+@media screen and (max-width 480px)
+    .cnt_pop_up .pop_up .close
+        right 0px
+        top -35px
+    .container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input
+            flex-wrap wrap
+            .input-m:first-child
+                margin-bottom 27px
+            .input-m:first-child, .input-m
+                margin-right 0
+                width 100%

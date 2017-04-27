@@ -3,13 +3,22 @@
     .container
         display flex
         justify-content center
+        align-items flex-end
+        figure.active-img
+            bottom 0px !important
         figure
+            position relative
+            left 0
+            bottom -360px
+            transition 1s ease all
+            z-index 20
             width 357px
             margin 0
-            margin-right 90px
         .cnt-descripcion
+            margin-left 90px
             max-width 520px
             margin-top 60px
+            margin-bottom 30px
             h2
                 position relative
                 font-size 28px
@@ -42,6 +51,8 @@
                 font-family f_gothan_l
                 color c_plomo_os
 .nosotros_comillas
+    position relative
+    z-index 30
     background c_amarillo
     .descripcion
         position relative
@@ -68,10 +79,14 @@
             bottom 0
 
 .cnt-mision-vision
+    position relative
+    z-index 30
+
     .container
         width 100%
         display flex
         justify-content space-between
+
         figure
             width 34%
             margin 0
@@ -115,6 +130,7 @@
 .nosotros_linea_tiempo
     padding-top 50px
 
+    background-image url("../img/fondo_cuadricula.png")
     .container
         display flex
         justify-content center
@@ -136,6 +152,7 @@
         .cnt_linea_tiempo
             margin-top 80px
             display flex
+            justify-content center
             .bloque_1
                 padding-right 110px
                 position relative
@@ -147,7 +164,11 @@
                     position absolute
                     right 0
                     top 0
+                .b_1_figure_active
+                    opacity 1
                 figure
+                    opacity 0
+                    transition 0.5s ease all
                     margin-bottom 7px
                     text-align center
                 h3
@@ -277,13 +298,22 @@
             .bloque_7
                 margin-left 100px
                 position relative
+                &:after
+                    content ""
+                    background-image url("../img/corazon.png")
+                    width 73px
+                    height 70px
+                    position absolute
+                    left 63px
+                    top -30px
+                    animation key_scale 1.5s infinite
                 h3:last-child
                     margin-left 50px
                     bottom -40px
                     top inherit
                 h3
                     position absolute
-                    left 0
+                    left -30px
                     top -40px
                     margin 0
                     color c_nosotros
@@ -341,6 +371,64 @@
                     background-image url("../img/flecha_celeste.png")
                     display block
 @media screen and (max-width 1200px)
+    .cnt-mision-vision .container figure
+        display none
+    .cnt-mision-vision .container .mision_vision .descripcion
+        padding 0px 10px
+        max-width 100%
+    .cnt-mision-vision .container .mision_vision
+        width 50%
+
     .nosotros_formulario .btn--nosotros
         font-size 18px
         min-width 150px
+    .nosotros_matchota_ideal .container
+        .cnt-descripcion .descripcion
+            font-size 18px
+    .nosotros_socios_estrategicos .container .bx-wrapper
+        max-width 660px !important
+@media screen and (max-width 960px)
+
+    .nosotros_matchota_ideal .container
+        .cnt-descripcion .descripcion
+            margin-top 20px
+    .nosotros_socios_estrategicos .container
+        .title_colores
+            margin-bottom 50px
+        .bx-wrapper
+            max-width 495px !important
+            margin-top 20px
+@media screen and (max-width 768px)
+    .nosotros_socios_estrategicos .container .bx-wrapper
+        max-width 330px !important
+    .nosotros_matchota_ideal .container
+        text-align center
+        .cnt-descripcion
+            margin-left 0
+            margin-top 0
+            .descripcion
+                padding 0 10px
+                text-align left
+
+    .nosotros_comillas .descripcion
+        padding 30px 20px
+        &:after, &:before
+            display none
+    .nosotros_matchota_ideal .container figure
+        display none
+    .cnt-mision-vision .container
+        flex-wrap wrap
+        .mision_vision
+            border-bottom 1px solid c_white
+            border-left none
+            width 100%
+            padding 20px 0px
+            .descripcion
+                padding 0px 20px
+            .icon-mision
+                margin-bottom 20px
+            h2
+                margin-bottom 20px
+@media screen and (max-width 480px)
+    .nosotros_socios_estrategicos .container .bx-wrapper
+        max-width 165px !important

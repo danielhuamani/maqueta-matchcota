@@ -53,20 +53,6 @@
 .container_menu {
   background: #fff;
 }
-.container_menu .overlay--active {
-  display: block !important;
-}
-.container_menu .overlay {
-  display: none;
-  position: fixed;
-  left: 0;
-  animation: fadeEffect 0.5s;
-  top: 0;
-  z-index: 198;
-  background: rgba(0,0,0,0.7);
-  width: 100%;
-  height: 100%;
-}
 .container_menu .menu_block--active {
   left: 0px !important;
 }
@@ -399,6 +385,22 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 768px) {
+  footer .footer_top {
+    padding-bottom: 10px;
+    padding-top: 140px;
+  }
+  footer .footer_top .facebook_bloque {
+    padding-bottom: 0px;
+  }
+  footer .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footer_top__contacto {
+    margin-top: 40px;
+    text-align: center;
+  }
   .container_menu .menu_block {
     width: 250px;
   }
@@ -447,5 +449,19 @@ footer .footer_top .facebook__slider__item ul li span {
   footer {
     width: 100%;
     margin-left: 0;
+  }
+}
+@media screen and (max-width: 480px) {
+  footer .footer_top__contacto .links a.informacion {
+    font-size: 30px;
+  }
+  footer .footer_top {
+    padding-top: 40px;
+  }
+  footer .footer_top .facebook .bx-wrapper .bx-viewport {
+    height: 170px !important;
+  }
+  footer .footer_top .facebook_bloque {
+    display: none;
   }
 }

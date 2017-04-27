@@ -7,23 +7,28 @@
 .btn--light-white {
   padding: 8px 22px;
   color: c_celeste;
-  border: 3px solid c_white;
+  border: 1px solid c_white;
 }
 .btn--light-white:hover {
   background: c_white;
+  color: c_celeste;
+  border: 1px solid c_celeste;
 }
 .btn--light-white-active {
   background: c_white;
+  color: c_celeste;
+  border: 1px solid c_celeste;
 }
 .btn--form {
   color: c_white;
-  border: 3px solid c_celeste;
+  border: 1px solid c_celeste;
   background: c_celeste;
   padding: 8px 22px;
 }
 .btn--form:hover {
-  border: 3px solid c_white;
-  background: transparent;
+  background: c_white;
+  color: c_celeste;
+  border: 1px solid c_celeste;
 }
 @media screen and (max-width: 1500px) {
 }
@@ -33,30 +38,61 @@
   justify-content: center;
 }
 .container_formulario .cnt-image {
-  background-image: url("../img/nosotros_fondo.png");
+  background-image: url("../img/nosotros_fondo_t.png");
   background-size: cover;
-  width: 50%;
+  width: 45%;
   padding-right: 30px;
+}
+.container_formulario .cnt-image .image {
+  height: 100%;
+  float: right;
+  max-width: 713px;
+  margin-right: 60px;
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 .container_formulario .cnt-image .text {
   color: c_celeste;
   font-family: f_kaushan_r;
-  font-size: 80px;
+  font-size: 85px;
+  width: 100%;
   text-align: center;
+  margin-bottom: -60px;
 }
 .container_formulario .cnt-image figure {
-  margin-top: -65px;
+  margin: 0;
   max-width: 713px;
 }
 .container_formulario .cnt-formulario {
-  width: 50%;
+  width: 55%;
   padding-left: 60px;
   padding-bottom: 45px;
 }
 .container_formulario .cnt-formulario .formulario {
   margin-top: 60px;
-  max-width: 800px;
+  max-width: 900px;
   padding-right: 40px;
+}
+.container_formulario .cnt-formulario .formulario .cuentas {
+  margin-bottom: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+.container_formulario .cnt-formulario .formulario .cuentas .cuenta {
+  margin: 0px 5px 10px 0px;
+}
+.container_formulario .cnt-formulario .formulario .cuentas h4 {
+  color: c_plomo_os;
+  font-size: 16px;
+  text-align: center;
+}
+.container_formulario .cnt-formulario .formulario .cuentas h3 {
+  color: c_celeste;
+  font-family: f_ventura_m;
+  font-size: 24px;
+  margin-bottom: 0;
 }
 .container_formulario .cnt-formulario .formulario h2 {
   color: c_celeste;
@@ -69,6 +105,12 @@
   font-size: 15px;
   font-family: f_gothan_l;
   color: c_plomo_os;
+}
+.container_formulario .cnt-formulario .formulario form .btn--pop {
+  display: block;
+  text-align: center;
+  margin: auto;
+  min-width: 200px;
 }
 .container_formulario .cnt-formulario .formulario form .grid_botton {
   display: flex;
@@ -141,16 +183,132 @@
 .container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input-active:after {
   width: 100%;
 }
+.container_formulario .cnt-formulario .formulario form .cnt-form .descargar {
+  color: c_celeste;
+  text-align: center;
+  width: 100%;
+}
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input--adjuntar {
+  padding: 5px 0px;
+  margin-bottom: 20px !important;
+  width: 100%;
+  margin: auto;
+  font-size: 15px;
+  font-family: f_ventura_m;
+  color: c_celeste;
+  background: c_white;
+  position: relative;
+  cursor: pointer;
+}
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input--adjuntar input {
+  cursor: pointer;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+}
+.cnt_pop_up_none {
+  display: none;
+  transition: 0.5s ease all;
+  animation: fadeEffect 0.5s ease;
+}
+.cnt_pop_up_apadrina .pop_up {
+  height: 700px;
+}
+.cnt_pop_up_dona .pop_up {
+  height: 600px;
+}
+.cnt_pop_up {
+  height: 100%;
+  align-items: center;
+  transition: 0.5s ease all;
+  animation: fadeEffect 0.5s ease;
+}
+.cnt_pop_up .pop_up {
+  background: c_formulario;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.cnt_pop_up .pop_up .close {
+  position: absolute;
+  right: 30px;
+  cursor: pointer;
+  top: -30px;
+}
+.cnt_pop_up .pop_up .close .icon-close {
+  display: inline-block;
+  color: c_celeste;
+  font-size: 28px;
+  border: 1px solid c_celeste;
+}
+.cnt_pop_up .cnt-image {
+  width: 40%;
+  height: 100%;
+  box-sizing: border-box;
+}
+.cnt_pop_up .cnt-formulario {
+  height: 100%;
+  box-sizing: border-box;
+  width: 60%;
+  background: c_formulario;
+}
+.cnt_pop_up .cnt-formulario .formulario {
+  position: relative;
+}
+.cnt_pop_up {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0px;
+  background: transparent;
+  z-index: 330;
+}
+@media screen and (max-width: 1800px) {
+  .cnt_pop_up_apadrina .pop_up {
+    height: 550px;
+  }
+  .cnt_pop_up_apadrina .cnt-image {
+    background-position: -100px center !important;
+  }
+  .cnt_pop_up_apadrina .cnt-image figure {
+    width: 400px;
+  }
+  .cnt_pop_up_apadrina .cnt-image .image {
+    margin-right: 80px;
+  }
+  .container_formulario .cnt-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: -188px center;
+  }
+}
 @media screen and (max-width: 1500px) {
+  .cnt_pop_up_adopta .cnt-image figure {
+    max-width: 415px !important;
+  }
+  .cnt_pop_up_dona .pop_up {
+    height: 515px;
+  }
+  .container_formulario .cnt-image .image {
+    margin-right: 10px;
+  }
+  .container_formulario .cnt-image {
+    background: c_white;
+    background-position: -185px center;
+  }
   .container_formulario .cnt-image figure {
     max-width: 500px;
   }
   .container_formulario .cnt-formulario {
     padding-bottom: 20px;
+    padding-top: 20px;
   }
   .container_formulario .cnt-formulario .formulario {
     margin-top: 30px;
-    max-width: 550px;
+    max-width: 650px;
   }
   .container_formulario .cnt-formulario .formulario form .grid_botton {
     margin-top: 20px;
@@ -164,11 +322,24 @@
     margin-top: 30px;
     margin-bottom: 30px;
   }
+  .container_formulario .cnt-formulario .formulario form .text-archivo {
+    margin-bottom: 10px;
+    margin-top: 0px;
+  }
   .container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input {
     margin-bottom: 27px;
   }
+  .container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input label {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 1200px) {
+  .cnt_pop_up .cnt-formulario {
+    padding: 15px 30px !important;
+  }
+  .cnt_pop_up_apadrina .pop_up {
+    height: 420px;
+  }
   .container_formulario .cnt-image {
     width: 40%;
     display: none;
@@ -180,6 +351,54 @@
   .container_formulario .cnt-formulario .formulario {
     padding-right: 0;
     max-width: 100%;
+  }
+  .container_formulario .cnt-formulario .formulario form .text {
+    margin-top: 10px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .cnt_pop_up_dona .pop_up,
+  .cnt_pop_up_apadrina .pop_up,
+  .cnt_pop_up_adopta .pop_up {
+    overflow-y: scroll;
+    height: 400px;
+  }
+  .cnt_pop_up_dona .pop_up .btn--pop,
+  .cnt_pop_up_apadrina .pop_up .btn--pop,
+  .cnt_pop_up_adopta .pop_up .btn--pop {
+    margin-bottom: 15px !important;
+  }
+  .cnt_pop_up .cnt-formulario {
+    padding: 15px 0px !important;
+  }
+  .container_formulario .cnt-formulario .formulario .cuentas {
+    margin-bottom: 20px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    text-align: center;
+  }
+  .container_formulario .cnt-formulario .formulario form .grid_botton {
+    flex-wrap: wrap;
+  }
+  .container_formulario .cnt-formulario .formulario form .grid_botton .btn {
+    margin-bottom: 15px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .cnt_pop_up .pop_up .close {
+    right: 0px;
+    top: -35px;
+  }
+  .container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input {
+    flex-wrap: wrap;
+  }
+  .container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input-m:first-child {
+    margin-bottom: 27px;
+  }
+  .container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input-m:first-child,
+  .container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input-m {
+    margin-right: 0;
+    width: 100%;
   }
 }
 .banner_gral .banner {
@@ -258,7 +477,10 @@
   background: c_white;
 }
 .list_mascotas__mascota--amarillo:hover {
-  background: c_amarillo;
+  background-image: url("../img/back_amarillo.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .list_mascotas__mascota--amarillo:hover .list_mascotas__title {
   color: c_white;
@@ -285,7 +507,10 @@
   background: c_white;
 }
 .list_mascotas__mascota--plomo:hover {
-  background: c_plomo;
+  background-image: url("../img/back_plomo.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .list_mascotas__mascota--plomo:hover .list_mascotas__title {
   color: c_white;
@@ -543,7 +768,7 @@
 }
 .listado_noticias__noticia:nth-child(odd) .descripcion:after,
 .listado_noticias__noticia:nth-child(even) .descripcion:after {
-  transition: 0.3s ease all;
+  animation: fadeEffect 0.5s !important;
   border-left: 16px solid transparent;
   border-right: 16px solid transparent;
 }

@@ -26,4 +26,29 @@ jQuery(document).ready(function($) {
 			$(this).parent().removeClass('input-active');
 		};
 	});
+	$(".cnt_pop_up .pop_up .close").click(function(event) {
+		/* Act on the event */
+	   event.preventDefault();
+	   $(".cnt_pop_up").addClass('cnt_pop_up_none')
+	   $(".overlay").removeClass('overlay--active-pop')
+	});
+	$(".adopta_pop").click(function(event) {
+		/* Act on the event */
+		event.preventDefault();
+		$(".overlay").addClass('overlay--active-pop')
+		$(".cnt_pop_up_adopta").removeClass('cnt_pop_up_none')
+	});
+
+	$(".apadrina_pop").click(function(event) {
+		/* Act on the event */
+		event.preventDefault();
+		$(".overlay").addClass('overlay--active-pop')
+		$(".cnt_pop_up_apadrina").removeClass('cnt_pop_up_none')
+	});
+	$(".donar_pop").click(function(event) {
+		/* Act on the event */
+		event.preventDefault();
+		$(".overlay").addClass('overlay--active-pop')
+		$(".cnt_pop_up_dona").removeClass('cnt_pop_up_none')
+	});
 });
