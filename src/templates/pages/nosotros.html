@@ -120,7 +120,7 @@
 					!SUMA
 				</h3>
 				<figure>
-					<img class="" src="{{STATIC_URL}}img/nos_ani_12.png" alt="">
+					<img class="" src="{{STATIC_URL}}img/perro.png" alt="">
 				</figure>
 				<h3>
 					A TU VIDA!
@@ -258,6 +258,12 @@
 		  			$(".nosotros_matchota_ideal .container figure").addClass('active-img')
 		  		}else{
 		  			$(".nosotros_matchota_ideal .container figure").removeClass('active-img')
+		  		}
+		  		console.log(window_top)
+		  		if (window_top>850) {
+		  			$(".bloque_1 figure").addClass('b_1_figure_active')
+		  		}else{
+					$(".bloque_1 figure").removeClass('b_1_figure_active')
 		  		}
             });
 	});
