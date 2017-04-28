@@ -134,7 +134,7 @@
 	</div>
 </section>
 <section class="nosotros_linea_tiempo">
-	<div class="container container--large">
+	<div class="container container--r-large">
 		<h2>
 			En Matchcota puedes adoptar  <span>a tu mascota ideal</span>
 		</h2>
@@ -753,10 +753,20 @@
 		  			$(".nosotros_matchota_ideal .container figure").removeClass('active-img')
 		  		}
 		  		console.log(window_top)
-		  		if (window_top>900) {
-		  			$(".bloque_1 figure").addClass('b_1_figure_active')
+		  		if (window_top>920) {
+		  			$(".bloque_1").addClass('b_1_active')
+		  			$(".bloque_2").addClass('b_2_active')
+		  			$(".bloque_3").addClass('b_3_active')
+		  			$(".bloque_4").addClass('b_4_active')
+		  			$(".bloque_5").addClass('b_5_active')
+		  			$(".bloque_6").addClass('b_6_active')
 		  		}else{
-					$(".bloque_1 figure").removeClass('b_1_figure_active')
+					$(".bloque_1").removeClass('b_1_active')
+					$(".bloque_2").removeClass('b_2_active')
+					$(".bloque_3").removeClass('b_3_active')
+					$(".bloque_4").removeClass('b_4_active')
+					$(".bloque_5").removeClass('b_5_active')
+					$(".bloque_6").removeClass('b_6_active')
 		  		}
             });
 	});

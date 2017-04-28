@@ -129,7 +129,7 @@
 
 .nosotros_linea_tiempo
     padding-top 50px
-
+    padding-bottom 120px
     background-image url("../img/fondo_cuadricula.png")
     .container
         display flex
@@ -153,9 +153,12 @@
             margin-top 80px
             display flex
             justify-content center
+
             .bloque_1
                 padding-right 110px
                 position relative
+                opacity 0
+                transition 0.3s ease all
                 &:after
                     content ""
                     width 106px
@@ -164,11 +167,9 @@
                     position absolute
                     right 0
                     top 0
-                .b_1_figure_active
-                    opacity 1
-                figure
                     opacity 0
-                    transition 0.5s ease all
+                figure
+
                     margin-bottom 7px
                     text-align center
                 h3
@@ -179,6 +180,10 @@
                     width 200px
                     span
                         color c_celeste
+            .b_1_active
+                opacity 1
+                &:after
+                    opacity 1
             .bloque_2
                 margin-left 15px
                 padding-right 20px
@@ -187,6 +192,8 @@
                     position relative
                     margin-left 10px
                     padding-right 20px
+                    opacity 0
+                    transition .8s ease all
                     &:after
                         content ""
                         position absolute
@@ -195,17 +202,20 @@
                         background-image url("../img/nos_ani_5.png")
                         width 80px
                         height 85px
+
+                        transition .3s ease all
                 .descripcion
                     padding-right 120px
                     position relative
                     &:after
                         content ""
                         position absolute
-                        right 0
+                        left 80px
                         top 0
-                        width 106px
+                        width 0px
                         height 64px
                         background-image url("../img/nos_ani_3.png")
+                        transition 0.8s ease all
 
                     ul
 
@@ -214,7 +224,12 @@
                             font-size 13px
                             font-family f_gothan_l
                             color c_nosotros
-
+            .b_2_active
+                figure
+                    opacity 1
+                .descripcion
+                    &:after
+                        width 106px
             .bloque_3
                 margin-left 15px
 
@@ -228,6 +243,8 @@
                     font-family f_kaushan_r
                     text-shadow: 2px 0 0 c_nosotros, -2px 0 0 c_nosotros, 0 2px 0 c_nosotros, 0 -2px 0 c_nosotros, 1px 1px c_nosotros, -1px -1px 0 c_nosotros, 1px -1px 0 c_nosotros, -1px 1px 0 c_nosotros;
                     position relative
+                    transition 0.5s ease all
+                    transform scale(0.5)
                     &:after
                         content ""
                         background-image url("../img/nos_ani_7.png")
@@ -236,10 +253,16 @@
                         position absolute
                         bottom -40px
                         right -50px
+            .b_3_active
+                h3
+                    transform scale(1)
+
             .bloque_4
                 margin-left 60px
                 position relative
                 width 110px
+                opacity 0
+                transition 1s ease all
                 &:after
                     content ""
                     position absolute
@@ -257,8 +280,12 @@
                     font-family f_ventura_m
                     margin 0px
                     width 110px
+            .b_4_active
+                opacity 1
             .bloque_5
                 margin-left 80px
+                opacity 0
+                transition 0.8s ease all
                 figure
                     text-align center
                     margin-top 10px
@@ -277,9 +304,13 @@
                     font-family f_ventura_m
                     margin 0
                     width 120px
+            .b_5_active
+                opacity 1
             .bloque_6
                 margin-left 50px
                 position relative
+                opacity 0
+                transition 0.8s ease all
                 &:after
                     content ""
                     position absolute
@@ -295,6 +326,8 @@
                     color c_nosotros
                     font-family f_ventura_m
                     font-size 30px
+            .b_6_active
+                opacity 1
             .bloque_7
                 margin-left 100px
                 position relative
@@ -320,7 +353,7 @@
                     font-family f_ventura_m
                     font-size 38px
 .nosotros_formulario
-    margin-top 80px
+
     .btn--nosotros
         text-align center
         margin auto
