@@ -609,6 +609,16 @@
   height: 10px;
   border-radius: 50%;
 }
+@media screen and (max-width: 1900px) {
+  .list_mascotas__mascota {
+    width: 325px;
+  }
+}
+@media screen and (max-width: 1800px) {
+  .list_mascotas__mascota {
+    width: 310px;
+  }
+}
 @media screen and (max-width: 1500px) {
   .list_mascotas__mascota {
     width: 205px;

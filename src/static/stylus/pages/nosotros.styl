@@ -202,7 +202,6 @@
                         background-image url("../img/nos_ani_5.png")
                         width 80px
                         height 85px
-
                         transition .3s ease all
                 .descripcion
                     padding-right 120px
@@ -328,7 +327,10 @@
                     font-size 30px
             .b_6_active
                 opacity 1
+
             .bloque_7
+                opacity 0
+                transition 0.8s ease all
                 margin-left 100px
                 position relative
                 &:after
@@ -352,6 +354,8 @@
                     color c_nosotros
                     font-family f_ventura_m
                     font-size 38px
+            .b_7_active
+                opacity 1
 .nosotros_formulario
 
     .btn--nosotros
@@ -403,6 +407,149 @@
                     height 12px
                     background-image url("../img/flecha_celeste.png")
                     display block
+@media screen and (max-width 1800px)
+    .nosotros_linea_tiempo .container .cnt_linea_tiempo
+        .bloque_1
+            padding-right 80px
+            &:after
+                width 80px
+                background-size contain
+                background-repeat no-repeat
+            h3
+                font-size 20px
+                width inherit
+            figure
+                margin auto
+                width 160px
+        .bloque_2
+            padding-right 10px
+            figure
+                &:after
+                    right -15px
+            .descripcion
+                &:after
+
+                    background-size contain
+                    background-repeat no-repeat
+                ul li
+                    margin-bottom 3px
+        .b_2_active
+            .descripcion
+                &:after
+                    width 90px
+        .bloque_3
+            margin 0
+
+        .bloque_4
+            &:after
+                width 90px
+                background-size contain
+                background-repeat no-repeat
+                top -35px
+                right -60px
+            figure
+                width 60px
+                img
+                    display block
+                    width 100%
+                    height auto
+            h3
+                font-size 20px
+        .bloque_5
+            margin-left 40px
+            figure
+                &:after
+                    right -50px
+        .bloque_6
+            margin-left 30px
+            figure
+                width 105px
+                img
+                    display block
+                    width 100%
+                    height auto
+        .bloque_7
+            &:after
+                background-size contain
+                background-repeat no-repeat
+                width 55px
+                top -30px
+                left 63px
+            h3:last-child
+                bottom -25px
+            figure
+                width 180px
+                img
+                    display block
+                    width 100%
+                    height auto
+@media screen and (max-width 1500px)
+    .nosotros_linea_tiempo .container .cnt_linea_tiempo
+        .bloque_1
+            padding-right 60px
+            &:after
+                width 60px
+            figure
+                width 140px
+            h3
+                font-size 18px
+        .bloque_2
+            margin-left 10px
+            padding-right 0px
+            figure
+                width 90px
+                img
+                    display block
+                    width 100%
+                    height auto
+                &:after
+                    right -55px
+        .bloque_3
+            h3
+                font-size 28px
+                &:after
+                    bottom -70px
+                    background-size contain
+                    background-repeat no-repeat
+                    width 70px
+        .bloque_4
+            margin-left 45px
+            text-align center
+            h3
+                font-size 18px
+            &:after
+                width 80px
+                right -40px
+        .bloque_5
+            margin-left 10px
+            figure:after
+                background-size contain
+                background-repeat no-repeat
+                width 90px
+                right -35px
+        .bloque_6
+            &:after
+                background-size contain
+                background-repeat no-repeat
+        .bloque_7
+            figure
+                width 150px
+            &:after
+                width 45px
+                top -15px
+                left 50px
+            h3:last-child
+                bottom -10px
+@media screen and (max-width 1300px)
+    .nosotros_linea_tiempo .container .cnt_linea_tiempo
+        max-width 750px
+        margin auto
+        margin-top 60px
+        flex-wrap wrap
+        .bloque_4:after
+            display none
+        .bloque_5, .bloque_6, .bloque_7
+            margin-top 40px
 @media screen and (max-width 1200px)
     .cnt-mision-vision .container figure
         display none
@@ -421,7 +568,30 @@
     .nosotros_socios_estrategicos .container .bx-wrapper
         max-width 660px !important
 @media screen and (max-width 960px)
-
+    .nosotros_linea_tiempo .container .cnt_linea_tiempo
+        max-width 600px
+        .bloque_7
+            margin-top 80px
+            h3:last-child
+                bottom -45px
+        .bloque_6:after
+            display none
+        .bloque_4
+            margin-top 60px
+            margin-right 60px
+            margin-left 10px
+            figure
+                position relative
+                &:after
+                    content ""
+                    width 106px
+                    position absolute
+                    top -60px
+                    right -110px
+                    height 51px
+                    background-image url("../img/nos_ani_2.png")
+        .bloque_3 h3:after
+            display none
     .nosotros_matchota_ideal .container
         .cnt-descripcion .descripcion
             margin-top 20px
@@ -432,6 +602,22 @@
             max-width 495px !important
             margin-top 20px
 @media screen and (max-width 768px)
+    .nosotros_linea_tiempo
+        max-width 490px
+        .container .cnt_linea_tiempo
+            .bloque_2 figure:after
+                display none
+            .bloque_3
+                margin-top 30px
+            .bloque_5 figure:after
+                display none
+            .container
+                h2
+                    font-size 26px
+                    span
+                        font-size 30px
+        .cnt_linea_tiempo .bloque_3
+            margin-top 30px
     .nosotros_socios_estrategicos .container .bx-wrapper
         max-width 330px !important
     .nosotros_matchota_ideal .container
@@ -442,7 +628,6 @@
             .descripcion
                 padding 0 10px
                 text-align left
-
     .nosotros_comillas .descripcion
         padding 30px 20px
         &:after, &:before
@@ -463,5 +648,59 @@
             h2
                 margin-bottom 20px
 @media screen and (max-width 480px)
+    .nosotros_linea_tiempo
+        padding-bottom 50px
+        .container
+            h2
+                font-size 22px
+                span
+                    font-size 22px
+                    margin 0
+                    margin-left 5px
+            .cnt_linea_tiempo
+                flex-direction column
+
+                .bloque_1
+                    margin-bottom 20px
+                    padding 0
+                    &:after
+                        display none
+                .bloque_2
+                    margin 0
+                    margin-bottom 20px
+                    figure
+
+                        margin auto
+                        margin-top 20px
+                        padding 0
+                .bloque_3
+                    margin 0
+                    margin-bottom 20px
+                    h3
+                        margin 0
+                        text-align center
+                .bloque_4
+                    margin auto
+                    margin-bottom 20px
+                    figure:after
+                        display none
+
+                .bloque_5
+                    margin auto
+                    margin-bottom 20px
+                    text-align center
+                .bloque_6
+                    margin auto
+                    margin-bottom 20px
+                    text-align center
+                .bloque_7
+                    margin auto
+                    margin-top 30px
+                    margin-bottom 20px
+
+    .nosotros_linea_tiempo
+        max-width 490px
+
+
     .nosotros_socios_estrategicos .container .bx-wrapper
         max-width 165px !important

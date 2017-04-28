@@ -3,7 +3,7 @@ a {
   outline: none;
 }
 .container {
-  width: 96%;
+  width: 98%;
   max-width: 1200px;
   margin: auto;
 }
@@ -179,6 +179,11 @@ p {
   border-right: 2px solid #fff;
   border-bottom: 2px solid #fff;
   display: block;
+}
+@media screen and (max-width: 1500px) {
+  .container {
+    width: 96%;
+  }
 }
 @media screen and (max-width: 768px) {
   .title_colores h2.celeste {

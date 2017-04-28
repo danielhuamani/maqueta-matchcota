@@ -19,7 +19,7 @@
         right -40px
   .content-testimonios
     padding 0 5em
-    display block    
+    display block
   .bx-wrapper
     margin auto
     position relative
@@ -37,14 +37,14 @@
         border-radius: 100% 100%
         color c_celeste
         font-size 20px
-        &.bx-prev        
-          left -5em
+        &.bx-prev
+          left -4em
         &.bx-next
           right -5em
         &:hover
           background c_celeste
           color #fff
-.slide-testimonios  
+.slide-testimonios
   .item-slider-testimonios
     height auto
     overflow hidden
@@ -66,7 +66,56 @@
         margin-bottom 1em
     .image
       width 50%
-      float right      
+      float right
       box-sizing border-box
       img
-    
+
+@media screen and (max-width 1500px)
+  .cnt-testimonios .bx-wrapper
+    .bx-controls
+      a.bx-next
+        right -3em
+      a.bx-prev
+        left -3em
+  .picture-border .inner__picture
+    width 100%
+    box-sizing border-box
+    img
+      display block
+      width 100%
+      height auto
+@media screen and (max-width 960px)
+  .cnt-testimonios .title
+    margin-bottom 1em
+  .slide-testimonios .item-slider-testimonios
+    display flex
+    flex-direction column
+    .detail
+      width 100%
+      h3
+        text-align center
+    .image
+      width 80%
+      margin auto
+@media screen and (max-width 768px)
+  .slide-testimonios .item-slider-testimonios
+    .image
+      width 100%
+  .cnt-testimonios .content-testimonios
+    padding 0 3em
+  .cnt-testimonios .bx-wrapper .bx-controls
+    a.bx-next, a.bx-prev
+      width 40px
+      height 40px
+    a.bx-next
+      right -2.5em
+      i
+        font-size: 16px;
+        margin-top: 13px;
+        display: block;
+     a.bx-prev
+       left -2.5em
+       i
+        font-size: 16px;
+        margin-top: 13px;
+        display: block;
