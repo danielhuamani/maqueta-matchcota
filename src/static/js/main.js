@@ -51,4 +51,13 @@ jQuery(document).ready(function($) {
 		$(".overlay").addClass('overlay--active-pop')
 		$(".cnt_pop_up_dona").removeClass('cnt_pop_up_none')
 	});
+	$(".btn-tab").click(function(event) {
+		/* Act on the event */
+		event.preventDefault();
+		var data_tab = $(this).data("id");
+		$(".btn-tab").removeClass('btn--light-white-active')
+		$(this).addClass('btn--light-white-active')
+		$(".tab").addClass('tab_none')
+		$(data_tab).removeClass('tab_none')
+	});
 });

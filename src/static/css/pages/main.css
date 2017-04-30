@@ -565,6 +565,44 @@ footer .footer_top .facebook__slider__item ul li span {
 }
 .home_conoce_mascota {
   margin-top: 60px;
+  position: relative;
+}
+.home_conoce_mascota .testimonio_link {
+  position: absolute;
+  right: 20%;
+  bottom: 20px;
+  z-index: 2;
+}
+.home_conoce_mascota .testimonio_link i {
+  font-size: 32px;
+  color: #5d5d5d;
+}
+.home_conoce_mascota .testimonio_link span.text {
+  font-size: 25px;
+  font-family: 'ventura_eddingmedium';
+  color: #5d5d5d;
+}
+.home_conoce_mascota .testimonio_link span.flecha {
+  animation: key_arrow_test_mas 1.5s infinite;
+  background-image: url("../img/ver_mas_noticias.png");
+  width: 60px;
+  margin-left: 10px;
+  margin-bottom: 3px;
+  background-repeat: no-repeat;
+  height: 11px;
+  display: inline-block;
+}
+.home_conoce_mascota .juguete_1 {
+  top: 4%;
+  position: absolute;
+  z-index: 2;
+  left: -35px;
+}
+.home_conoce_mascota .juguete_2 {
+  bottom: -16%;
+  position: absolute;
+  z-index: 2;
+  left: 200px;
 }
 .home_conoce_mascota__title {
   font-size: 25px;
@@ -590,6 +628,7 @@ footer .footer_top .facebook__slider__item ul li span {
   max-width: 250px;
   text-align: center;
   margin-bottom: 3em;
+  margin-left: 2em;
 }
 .home_conoce_mascota .full_container .container .title h4 {
   display: block;
@@ -659,6 +698,37 @@ footer .footer_top .facebook__slider__item ul li span {
   display: inline-block;
   right: 0;
   top: -10%;
+}
+.home_conoce_mascota .full_container .bloque_picture.bloque_5 a {
+  position: relative;
+}
+.home_conoce_mascota .full_container .bloque_picture.bloque_5 a:after {
+  display: block;
+  position: absolute;
+  content: "";
+  bottom: -60px;
+  right: -80px;
+  background-image: url("../img/circulo.png");
+  width: 179px;
+  height: 173px;
+}
+.home_conoce_mascota .full_container .bloque_picture a:hover span:before {
+  background: rgba(0,0,0,0.5);
+}
+.home_conoce_mascota .full_container .bloque_picture a {
+  position: relative;
+}
+.home_conoce_mascota .full_container .bloque_picture a span {
+  position: relative;
+}
+.home_conoce_mascota .full_container .bloque_picture a span:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  transition: 0.3s ease all;
+  top: 0;
 }
 .home_siempre_informados {
   margin-top: 5em;
@@ -767,6 +837,27 @@ footer .footer_top .facebook__slider__item ul li span {
   filter: grayscale(0%);
 }
 @media screen and (max-width: 1500px) {
+  .home_conoce_mascota .juguete_1 {
+    display: none;
+  }
+  .home_conoce_mascota .full_container .bloque_picture.bloque_1 a span {
+    width: 220px;
+  }
+  .home_conoce_mascota .full_container .bloque_picture.bloque_2 a span {
+    width: 150px;
+  }
+  .home_conoce_mascota .full_container .bloque_picture.bloque_3 a span {
+    width: 190px;
+  }
+  .home_conoce_mascota .full_container .bloque_picture.bloque_4 a span {
+    width: 250px;
+  }
+  .home_conoce_mascota .full_container .bloque_picture.bloque_5 {
+    right: 70px;
+  }
+  .home_conoce_mascota .full_container .bloque_picture.bloque_5 a span {
+    width: 220px;
+  }
   .home_banner .juguete {
     right: 120px;
   }
@@ -783,6 +874,34 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 1200px) {
+  .home_conoce_mascota .full_container .container .title {
+    margin: auto;
+  }
+  .home_conoce_mascota .full_container .container .cnt-bloque {
+    position: relative;
+  }
+  .home_conoce_mascota .full_container .bloque_picture.bloque_1 a span {
+    width: 200px;
+  }
+  .home_conoce_mascota .full_container .bloque_picture.bloque_2 a span {
+    width: 130px;
+  }
+  .home_conoce_mascota .full_container .bloque_picture.bloque_3 {
+    top: 95%;
+  }
+  .home_conoce_mascota .full_container .bloque_picture.bloque_4 a span {
+    width: 220px;
+  }
+  .home_conoce_mascota .full_container .bloque_picture.bloque_5 {
+    right: 0px;
+    top: 20%;
+  }
+  .home_conoce_mascota .full_container .bloque_picture.bloque_5 a span {
+    width: 200px;
+  }
+  .home_conoce_mascota .full_container .bloque_picture.bloque_5 a:after {
+    display: none;
+  }
   .home_banner .juguete {
     bottom: -115px;
     width: 120px;

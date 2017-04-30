@@ -230,53 +230,78 @@
 			</p>
 			<form action="">
 				<div class="grid_botton">
-					<a href="" class="btn btn--light-white btn--light-white-active">
+					<a href="" data-id="#tab1" class="btn-tab btn btn--light-white btn--light-white-active">
 						Para Empresas
 					</a>
-					<a href="" class="btn btn--light-white">
+					<a href="" data-id="#tab2" class="btn-tab btn btn--light-white">
 						Para Personas Naturales
 					</a>
 				</div>
-				<div class="text">
-					Por favor completa los datos para ponernos en contacto con ustedes:
-				</div>
-				<div class="cnt-form">
-					<div class="cnt-input">
-						<div class="input">
-							<label for="">Nombre de la Empresa:</label>
-							<input type="text">
-						</div>
+				<div id="tab1" class="tab">
+					<div class="text">
+						Por favor completa los datos para ponernos en contacto con ustedes:
 					</div>
-					<div class="cnt-input">
-						<div class="input input-m">
-							<label for="">Persona de Contacto:</label>
-							<input type="text">
+					<div class="cnt-form">
+						<div class="cnt-input">
+							<div class="input">
+								<label for="">Nombre de la Empresa:</label>
+								<input type="text">
+							</div>
 						</div>
-						<div class="input input-m">
-							<label for="">Rubro:</label>
-							<input type="text">
+						<div class="cnt-input">
+							<div class="input input-m">
+								<label for="">Persona de Contacto:</label>
+								<input type="text">
+							</div>
+							<div class="input input-m">
+								<label for="">Rubro:</label>
+								<input type="text">
+							</div>
 						</div>
-					</div>
-					<div class="cnt-input">
-						<div class="input input-m">
-							<label for="">Teléfono:</label>
-							<input type="text">
+						<div class="cnt-input">
+							<div class="input input-m">
+								<label for="">Teléfono:</label>
+								<input type="text">
+							</div>
+							<div class="input input-m">
+								<label for="">Email:</label>
+								<input type="text">
+							</div>
 						</div>
-						<div class="input input-m">
-							<label for="">Email:</label>
-							<input type="text">
-						</div>
-					</div>
-					<div class="cnt-input">
-						<div class="input">
-							<label for="">Comentario Adicional:</label>
-							<textarea name="" id="" cols="30" rows="10"></textarea>
-						</div>
+						<div class="cnt-input">
+							<div class="input">
+								<label for="">Comentario Adicional:</label>
+								<textarea name="" id="" cols="30" rows="10"></textarea>
+							</div>
 
+						</div>
+						<button class="btn btn--form btn--nosotros">
+							ENVIAR
+						</button>
 					</div>
-					<button class="btn btn--form btn--nosotros">
-						ENVIAR
-					</button>
+				</div>
+				<div id="tab2" class="tab_none tab">
+					<div class="text">
+						Para participar, sigue los siguientes pasos:
+					</div>
+					<div class="pasos">
+						<div class="pasos__paso">
+							<div class="text">1. Lee atentamente los requisitos, perfil del voluntario que buscamos y el área en la que pudieras participar.</div>
+							<div class="cnt-form">
+
+								<div class="cnt-input cnt-input--adjuntar cnt-input-descargar">
+		                            <a href="" class="descargar">visualizar programa <i class="icon-09"></i></a>
+		                        </div>
+							</div>
+							<div class="text text-paso">
+								2. Completa la <a href="">ficha de inscripción.</a>
+							</div>
+							<div class="text">
+								Si tu registro calza con el perfil que estamos buscando y los cupos disponibles para el Programa en curso, nos pondremos en contacto contigo.
+							</div>
+							<h3>¡Muchas gracias por el interés en ayudar!</h3>
+						</div>
+					</div>
 				</div>
 			</form>
 		</div>

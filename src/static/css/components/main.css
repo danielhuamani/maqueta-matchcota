@@ -106,6 +106,28 @@
   font-family: f_gothan_l;
   color: c_plomo_os;
 }
+.container_formulario .cnt-formulario .formulario form .tab {
+  animation: fadeEffect 0.5s;
+}
+.container_formulario .cnt-formulario .formulario form .tab_none {
+  display: none;
+}
+.container_formulario .cnt-formulario .formulario form .pasos__paso .text-paso {
+  margin-bottom: 10px;
+}
+.container_formulario .cnt-formulario .formulario form .pasos__paso .text {
+  margin-top: 15px;
+}
+.container_formulario .cnt-formulario .formulario form .pasos__paso .text a {
+  color: c_plomo_os;
+  border-bottom: 1px solid c_plomo_os;
+}
+.container_formulario .cnt-formulario .formulario form .pasos h3 {
+  color: c_narana_ad;
+  font-size: 22px;
+  font-family: f_ventura_m;
+  text-align: center;
+}
 .container_formulario .cnt-formulario .formulario form .btn--pop {
   display: block;
   text-align: center;
