@@ -2,7 +2,10 @@
   display: flex;
 }
 .list_mascotas__mascota--celeste:hover {
-  background: c_celeste;
+  background-image: url("../img/back_celeste.png");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .list_mascotas__mascota--celeste:hover .list_mascotas__title {
   color: c_white;
@@ -90,7 +93,7 @@
 }
 .list_mascotas__mascota {
   text-align: center;
-  width: 340px;
+  width: 20%;
   box-sizing: border-box;
   padding: 30px 5px 0px 5px;
   position: relative;
@@ -161,27 +164,19 @@
   height: 10px;
   border-radius: 50%;
 }
-@media screen and (max-width: 1900px) {
-  .list_mascotas__mascota {
-    width: 325px;
-  }
-}
-@media screen and (max-width: 1800px) {
-  .list_mascotas__mascota {
-    width: 310px;
-  }
-}
-@media screen and (max-width: 1500px) {
-  .list_mascotas__mascota {
-    width: 205px;
-  }
-  .list_mascotas__mascota figure {
-    width: 190px;
-  }
-  .list_mascotas__mascota figure img {
-    width: 100%;
-  }
-}
+/*@media screen and (max-width 1900px)
+    .list_mascotas__mascota
+        width 325px*/
+/*@media screen and (max-width 1800px)
+    .list_mascotas__mascota
+        width 310px*/
+/*@media screen and (max-width 1500px)
+    .list_mascotas__mascota
+
+        figure
+            width 190px
+            img
+                width 100%*/
 @media screen and (max-width: 1200px) {
   .list_mascotas__mascota {
     width: 285px;
