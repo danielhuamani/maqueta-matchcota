@@ -1190,14 +1190,21 @@ p {
   justify-content: center;
 }
 .container_formulario .cnt-image {
-  background-image: url("../img/nosotros_fondo_t.png");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
+  background: #fff;
+  -webkit-transform: skewX(-7.5deg);
+  -moz-transform: skewX(-7.5deg);
+  -o-transform: skewX(-7.5deg);
+  -ms-transform: skewX(-7.5deg);
+  transform: skewX(-7.5deg);
   width: 45%;
   padding-right: 30px;
 }
 .container_formulario .cnt-image .image {
+  -webkit-transform: skewX(7.5deg);
+  -moz-transform: skewX(7.5deg);
+  -o-transform: skewX(7.5deg);
+  -ms-transform: skewX(7.5deg);
+  transform: skewX(7.5deg);
   height: 100%;
   float: right;
   max-width: 713px;
@@ -1481,8 +1488,15 @@ p {
   -ms-animation: fadeEffect 0.5s ease;
   animation: fadeEffect 0.5s ease;
 }
+.cnt_pop_up.cnt_pop_up_adopta .pop_up .cnt-image {
+  padding: 2.5em 0;
+}
 .cnt_pop_up .pop_up {
-  background: #ebe7e2;
+  background: -webkit-linear-gradient(left, #fff, #ebe7e2, #ebe7e2, #ebe7e2);
+  background: -moz-linear-gradient(left, #fff, #ebe7e2, #ebe7e2, #ebe7e2);
+  background: -o-linear-gradient(left, #fff, #ebe7e2, #ebe7e2, #ebe7e2);
+  background: -ms-linear-gradient(left, #fff, #ebe7e2, #ebe7e2, #ebe7e2);
+  background: linear-gradient(to right, #fff, #ebe7e2, #ebe7e2, #ebe7e2);
   width: 100%;
   display: -webkit-box;
   display: -moz-box;

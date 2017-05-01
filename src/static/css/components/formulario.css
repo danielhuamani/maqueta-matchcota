@@ -4,12 +4,13 @@
   justify-content: center;
 }
 .container_formulario .cnt-image {
-  background-image: url("../img/nosotros_fondo_t.png");
-  background-size: cover;
+  background: #fff;
+  transform: skewX(-7.5deg);
   width: 45%;
   padding-right: 30px;
 }
 .container_formulario .cnt-image .image {
+  transform: skewX(7.5deg);
   height: 100%;
   float: right;
   max-width: 713px;
@@ -213,8 +214,11 @@
   transition: 0.5s ease all;
   animation: fadeEffect 0.5s ease;
 }
+.cnt_pop_up.cnt_pop_up_adopta .pop_up .cnt-image {
+  padding: 2.5em 0;
+}
 .cnt_pop_up .pop_up {
-  background: c_formulario;
+  background: linear-gradient(to right, #fff, c_formulario, c_formulario, c_formulario);
   width: 100%;
   display: flex;
   align-items: center;
