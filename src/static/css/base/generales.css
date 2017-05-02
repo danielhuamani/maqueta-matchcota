@@ -311,46 +311,46 @@ p {
 }
 @-moz-keyframes key_arrow_scroll {
   0% {
-    margin-top: 0;
+    background-position: center top;
   }
   50% {
-    margin-top: 10px;
+    background-position: center bottom;
   }
   100% {
-    margin-top: 0px;
+    background-position: center top;
   }
 }
 @-webkit-keyframes key_arrow_scroll {
   0% {
-    margin-top: 0;
+    background-position: center top;
   }
   50% {
-    margin-top: 10px;
+    background-position: center bottom;
   }
   100% {
-    margin-top: 0px;
+    background-position: center top;
   }
 }
 @-o-keyframes key_arrow_scroll {
   0% {
-    margin-top: 0;
+    background-position: center top;
   }
   50% {
-    margin-top: 10px;
+    background-position: center bottom;
   }
   100% {
-    margin-top: 0px;
+    background-position: center top;
   }
 }
 @keyframes key_arrow_scroll {
   0% {
-    margin-top: 0;
+    background-position: center top;
   }
   50% {
-    margin-top: 10px;
+    background-position: center bottom;
   }
   100% {
-    margin-top: 0px;
+    background-position: center top;
   }
 }
 @-moz-keyframes key_arrow_mas {

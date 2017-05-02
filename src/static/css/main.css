@@ -944,46 +944,46 @@ p {
 }
 @-moz-keyframes key_arrow_scroll {
   0% {
-    margin-top: 0;
+    background-position: center top;
   }
   50% {
-    margin-top: 10px;
+    background-position: center bottom;
   }
   100% {
-    margin-top: 0px;
+    background-position: center top;
   }
 }
 @-webkit-keyframes key_arrow_scroll {
   0% {
-    margin-top: 0;
+    background-position: center top;
   }
   50% {
-    margin-top: 10px;
+    background-position: center bottom;
   }
   100% {
-    margin-top: 0px;
+    background-position: center top;
   }
 }
 @-o-keyframes key_arrow_scroll {
   0% {
-    margin-top: 0;
+    background-position: center top;
   }
   50% {
-    margin-top: 10px;
+    background-position: center bottom;
   }
   100% {
-    margin-top: 0px;
+    background-position: center top;
   }
 }
 @keyframes key_arrow_scroll {
   0% {
-    margin-top: 0;
+    background-position: center top;
   }
   50% {
-    margin-top: 10px;
+    background-position: center bottom;
   }
   100% {
-    margin-top: 0px;
+    background-position: center top;
   }
 }
 @-moz-keyframes key_arrow_mas {
@@ -1813,7 +1813,12 @@ p {
   display: flex;
 }
 .list_mascotas__mascota--celeste:hover {
-  background: #00b2e2;
+  background-image: url("../img/back_celeste.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
 }
 .list_mascotas__mascota--celeste:hover .list_mascotas__title {
   color: #fff;
@@ -1911,7 +1916,7 @@ p {
 }
 .list_mascotas__mascota {
   text-align: center;
-  width: 340px;
+  width: 20%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -2038,27 +2043,6 @@ p {
   width: 10px;
   height: 10px;
   border-radius: 50%;
-}
-@media screen and (max-width: 1900px) {
-  .list_mascotas__mascota {
-    width: 325px;
-  }
-}
-@media screen and (max-width: 1800px) {
-  .list_mascotas__mascota {
-    width: 310px;
-  }
-}
-@media screen and (max-width: 1500px) {
-  .list_mascotas__mascota {
-    width: 205px;
-  }
-  .list_mascotas__mascota figure {
-    width: 190px;
-  }
-  .list_mascotas__mascota figure img {
-    width: 100%;
-  }
 }
 @media screen and (max-width: 1200px) {
   .list_mascotas__mascota {
@@ -3019,7 +3003,7 @@ footer .footer_top .facebook__slider__item ul li span {
   }
   .header__logo_links >a {
     left: inherit;
-    right: 30px;
+    right: 15px;
     margin: auto;
     display: inline-block;
     text-align: center;
@@ -3090,14 +3074,15 @@ footer .footer_top .facebook__slider__item ul li span {
 }
 .home_banner .arrow_scroll span {
   background-image: url("../img/flecha_bottom.png");
+  background-repeat: no-repeat;
   width: 12px;
-  height: 35px;
+  height: 50px;
   display: block;
-  -webkit-animation: key_arrow_scroll 1.2s infinite;
-  -moz-animation: key_arrow_scroll 1.2s infinite;
-  -o-animation: key_arrow_scroll 1.2s infinite;
-  -ms-animation: key_arrow_scroll 1.2s infinite;
-  animation: key_arrow_scroll 1.2s infinite;
+  -webkit-animation: key_arrow_scroll 1.5s infinite;
+  -moz-animation: key_arrow_scroll 1.5s infinite;
+  -o-animation: key_arrow_scroll 1.5s infinite;
+  -ms-animation: key_arrow_scroll 1.5s infinite;
+  animation: key_arrow_scroll 1.5s infinite;
 }
 .home_banner .arrow_scroll h3 {
   margin-top: 15px;
@@ -3212,7 +3197,7 @@ footer .footer_top .facebook__slider__item ul li span {
   -ms-animation: key_arrow_test_mas 1.5s infinite;
   animation: key_arrow_test_mas 1.5s infinite;
   background-image: url("../img/ver_mas_noticias.png");
-  width: 60px;
+  width: 50px;
   margin-left: 10px;
   margin-bottom: 3px;
   background-repeat: no-repeat;
@@ -3521,6 +3506,9 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 1200px) {
+  .home_conoce_mascota .juguete_2 {
+    display: none;
+  }
   .home_conoce_mascota .full_container .container .title {
     margin: auto;
   }
@@ -3536,6 +3524,9 @@ footer .footer_top .facebook__slider__item ul li span {
   .home_conoce_mascota .full_container .bloque_picture.bloque_3 {
     top: 95%;
   }
+  .home_conoce_mascota .full_container .bloque_picture.bloque_4 {
+    left: 47%;
+  }
   .home_conoce_mascota .full_container .bloque_picture.bloque_4 a span {
     width: 220px;
   }
@@ -3544,7 +3535,7 @@ footer .footer_top .facebook__slider__item ul li span {
     top: 20%;
   }
   .home_conoce_mascota .full_container .bloque_picture.bloque_5 a span {
-    width: 200px;
+    width: 180px;
   }
   .home_conoce_mascota .full_container .bloque_picture.bloque_5 a:after {
     display: none;
@@ -3575,6 +3566,44 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 960px) {
+  .home_conoce_mascota .full_container .container .cnt-bloque {
+    margin-top: 20px;
+    display: -webkit-box;
+    display: -moz-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: box;
+    display: flex;
+    -webkit-box-lines: multiple;
+    -moz-box-lines: multiple;
+    -o-box-lines: multiple;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -moz-box-pack: justify;
+    -o-box-pack: justify;
+    -ms-flex-pack: justify;
+    -webkit-justify-content: space-between;
+    justify-content: space-between;
+  }
+  .home_conoce_mascota .full_container .bloque_picture {
+    width: 30%;
+    margin: 10px;
+    position: initial;
+  }
+  .home_conoce_mascota .full_container .bloque_picture a span {
+    width: 100% !important;
+  }
+  .home_conoce_mascota .full_container .bloque_picture .text {
+    display: none;
+  }
   .home_banner .juguete {
     display: none;
   }
@@ -3583,6 +3612,20 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 768px) {
+  .home_conoce_mascota .testimonio_link {
+    width: 100%;
+    right: 0;
+    text-align: center;
+  }
+  .home_conoce_mascota .testimonio_link span.text {
+    font-size: 20px;
+  }
+  .home_conoce_mascota .full_container .container .title h4 {
+    font-size: 28px;
+  }
+  .home_conoce_mascota .full_container .container .title h3 {
+    font-size: 38px;
+  }
   .home_siempre_informados .title h2 {
     font-size: 30px;
   }
@@ -3598,8 +3641,25 @@ footer .footer_top .facebook__slider__item ul li span {
   .home_nuestro_aliados .bx-wrapper {
     max-width: 360px !important;
   }
+  .home_conoce_mascota .full_container .container .cnt-bloque {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -o-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  .home_conoce_mascota .full_container .bloque_picture {
+    width: 45%;
+  }
 }
 @media screen and (max-width: 480px) {
+  .home_conoce_mascota .full_container .bloque_picture {
+    width: 65%;
+  }
+  .home_conoce_mascota .full_container .bloque_picture a {
+    width: 100%;
+  }
   .home_banner .home_banner__slider_list__item {
     height: 360px;
   }
