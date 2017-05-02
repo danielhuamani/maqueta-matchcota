@@ -125,6 +125,7 @@
   position: absolute;
   z-index: 2;
   left: 200px;
+  animation: juguete 1.4s infinite;
 }
 .home_conoce_mascota__title {
   font-size: 25px;
@@ -223,6 +224,16 @@
 }
 .home_conoce_mascota .full_container .bloque_picture.bloque_5 a {
   position: relative;
+}
+.home_conoce_mascota .full_container .bloque_picture.bloque_5 a:before {
+  display: block;
+  position: absolute;
+  content: "";
+  bottom: -90px;
+  right: -70px;
+  background-image: url("../img/flash.png");
+  width: 62px;
+  height: 62px;
 }
 .home_conoce_mascota .full_container .bloque_picture.bloque_5 a:after {
   display: block;
@@ -427,7 +438,8 @@
   .home_conoce_mascota .full_container .bloque_picture.bloque_5 a span {
     width: 180px;
   }
-  .home_conoce_mascota .full_container .bloque_picture.bloque_5 a:after {
+  .home_conoce_mascota .full_container .bloque_picture.bloque_5 a:after,
+  .home_conoce_mascota .full_container .bloque_picture.bloque_5 a:before {
     display: none;
   }
   .home_banner .juguete {

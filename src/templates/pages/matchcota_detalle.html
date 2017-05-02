@@ -9,7 +9,7 @@
 	</div>
 </section>
 <section class="matchcota-detalle">
-	<div class="container">
+	<div class="container container--medium">
 		<div class="preview-img">
 
 			<h3 class="conoce_mascota__title">
@@ -17,7 +17,7 @@
 				<i class="icon-22"></i>CONOCE MÁS MASCOTAS AQUÍ
 			</h3>
 			<div class="main-img">
-				<img src="{{STATIC_URL}}img/mascota1.png" alt="">
+				<img src="{{STATIC_URL}}img/mascota1.png" width="274" height="295" alt="">
 			</div>
 			<ul class="list-thumbnails">
 				<li>
@@ -256,7 +256,7 @@
 					</div>
 				</li>
 			</ul>
-			<a href="#" class="btn btn-aceptar">
+			<a href="#" class="adopta_pop btn btn-aceptar">
 				ADOPTAR
 			</a>
 		</div>
@@ -264,6 +264,7 @@
 </section>
 {% endblock content %}
 {% block js %}
+<script src="{{STATIC_URL}}js/banner.js"></script>
 <script>
 	jQuery(document).ready(function($) {
 		$('.listado_aliados').bxSlider({
@@ -281,7 +282,7 @@
 		    nextText: '',
 			prevText: '',
 		});
-/*		function changeImage() {
+		function changeImage() {
 			$downImg = $(this).attr("point-src");
 			console.log($downImg);
 			$(".main-img img").attr("src", $downImg);
@@ -292,9 +293,16 @@
 			$(".acordeon li").removeClass("active");
 			$($href).addClass("active");
 		}
-		$( ".list-thumbnails li a" ).on( "click", changeImage );
-		$( ".acordeon a" ).on( "click", changeAcordonState );
-*/
+		$(".list-thumbnails li a").click(function(event) {
+			event.preventDefault()
+			$downImg = $(this).attr("point-src");
+			console.log($downImg);
+			$(".main-img img").attr("src", $downImg);
+			/* Act on the event */
+		});
+
+
+
 	});
 </script>
 {% endblock js %}

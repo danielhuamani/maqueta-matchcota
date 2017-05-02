@@ -65,6 +65,8 @@ jQuery(document).ready(function($) {
 		event.preventDefault();
 		$(".acordeon .text-content").stop("false").slideUp(300, function() {}
 		);
+		$(".acordeon li").removeClass("active")
+		$(this).closest('li').addClass("active")
 		$(this).closest('li').find(".text-content").slideToggle(300);
 	});
 });
