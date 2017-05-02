@@ -5,11 +5,28 @@ $cyan = #00b3e3
         display flex
         justify-content center
         .preview-img
-            max-width 357px
+            max-width 520px
             margin 0
             margin-right 90px
+            .conoce_mascota__title
+                font-size 25px
+                font-family f_ventura_m
+                color c_plomo_os
+                text-align left
+                margin-bottom 1.5em
+                i
+                    margin-right 10px
+                span.flecha
+                    animation key_arrow_test_mas 1.5s infinite
+                    background-image url("../img/flecha_ploma_left.png")
+                    width 60px
+                    margin-left 10px
+                    margin-bottom 3px
+                    background-repeat no-repeat
+                    height 11px
+                    display inline-block
             .main-img
-                max-width 350px
+                max-width 520px
                 border 4px solid #ddd
                 text-align center
             ul.list-thumbnails
@@ -32,23 +49,92 @@ $cyan = #00b3e3
                             position relative
         .cnt-descripcion
             max-width 520px
-            margin-top 60px
+            margin-top 0
+            .title-main
+                margin-bottom 2em
+                h1
+                    display inline-block
+                    text-align left
+                    font-family f_kaushan_r
+                    color c_celeste
+                    font-size 50px
+                .cnt-share
+                    display inline-block
+                    float right
             .acordeon
                 width 520px
                 li
-                    border 2px solid #ddd
+                    
                     margin 0 0 15px
                     .title
                         margin 0
+                        i
+                            margin-right 10px
+                            width 26px
+                            display inline-block
+                            font-size 26px
+                            text-align center
+                        .text
+                            display inline-block
+                            vertical-align middle
+                            margin-top -15px
                         a
                             background $cyan
-                            padding 10px 15px
+                            padding 12px 15px
                             color #fff
                             font-size 16px
                             display block
                     .text-content
-                        height 0
+                        border 1px solid #ddd
+                        border-top none
+                        height auto
                         overflow hidden
+                        padding 1em 
+                        &__comportamiento
+                            ul
+                                li
+                                    margin 5px 0
+                                    color c_plomo_os
+                                    display block
+                                    height auto
+                                    min-height: 20px
+                                    overflow hidden
+                                
+                            .text
+                                font-size 12px
+                                float left
+                            .cnt-bar
+                                margin 0 0 0 100px
+                                display block
+                                position relative
+                                &:after
+                                    border-top 1px solid c_plomo
+                                    width 100%
+                                    position absolute
+                                    left 0
+                                    top 8px
+                                    content ""
+                                    z-index 1
+                                .bar
+                                    height 14px 
+                                    display inline-block
+                                    background c_celeste
+                                    border-radius 5px
+                                    position relative
+                                    z-index 2
+                            .num
+                                font-size 10px
+                                padding  0 0 0 100px
+                                .num-first
+                                    float left
+                                    padding 0 3px
+                                .num-last
+                                    float right
+                                    padding 0 3px
+                        
+                        p 
+                            font-size 12px
+                    
                 li.active
                     .text-content
                         height auto!important

@@ -4,8 +4,10 @@ var jade = require('gulp-jade');
 var swig = require('gulp-swig');
 var concat = require('gulp-concat');
 var uglify = require('gulp-uglify');
+var open = require('gulp-open');
 var plumber = require('gulp-plumber');
 var connect = require('gulp-connect');
+var sourcemaps = require('gulp-sourcemaps');
 var nib = require('nib');
 var historyApiFallback = require('connect-history-api-fallback');
 var directorio = {
@@ -21,11 +23,13 @@ var directorio = {
 gulp.task('stylus', function () {
   gulp.src(directorio.stylus)
     .pipe(plumber())
+	.pipe(sourcemaps.init())
     .pipe(stylus({
       use: nib(),
       compress: true
 
       }))
+	.pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('src/static/css/'))
     .pipe(connect.reload());
 
@@ -33,9 +37,11 @@ gulp.task('stylus', function () {
 gulp.task('stylus_blocks', () => {
   return gulp.src(directorio.stylus_blocks)
     .pipe(plumber())
+	.pipe(sourcemaps.init())
     .pipe(stylus({
       use: nib()
     }))
+	.pipe(sourcemaps.write('.'))
     .pipe(gulp.dest('src/static/css/'))
     .pipe(connect.reload())
 });
@@ -104,5 +110,13 @@ gulp.task('connect', function() {
     }
   });
 });
-gulp.task('default', ['stylus', 'templates','watch', 'connect']);
+
+gulp.task('open', function() {
+  gulp.src('')
+    .pipe(open({
+      uri: "http://localhost:3000/build/pages/home.html"
+    }));
+});
+
+gulp.task('default', ['stylus', 'templates','watch', 'connect', 'open']);
 //creacioon  del server para el livereload
