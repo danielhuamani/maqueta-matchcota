@@ -8,7 +8,7 @@
 .matchcota-detalle .container .preview-img {
   max-width: 520px;
   margin: 0;
-  margin-right: 90px;
+  margin-right: 100px;
 }
 .matchcota-detalle .container .preview-img .conoce_mascota__title {
   font-size: 25px;
@@ -58,7 +58,7 @@
   position: relative;
 }
 .matchcota-detalle .container .cnt-descripcion {
-  max-width: 520px;
+  max-width: 600px;
   margin-top: 0;
 }
 .matchcota-detalle .container .cnt-descripcion .title-main {
@@ -76,7 +76,7 @@
   float: right;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon {
-  width: 520px;
+  width: 600px;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li {
   margin: 0 0 15px;
@@ -92,9 +92,10 @@
   text-align: center;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .title .text {
+  min-width: 240px;
   display: inline-block;
   vertical-align: middle;
-  margin-top: -15px;
+  margin-top: -4px;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .title a {
   background: #00b3e3;
@@ -103,12 +104,91 @@
   font-size: 16px;
   display: block;
 }
+.matchcota-detalle .container .cnt-descripcion .acordeon li .title .icon-arrow {
+  font-size: 16px;
+  border-radius: 50%;
+  padding: 6px 2px;
+  border: 1px solid c_white;
+}
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content {
+  display: none;
   border: 1px solid #ddd;
   border-top: none;
   height: auto;
   overflow: hidden;
   padding: 1em;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-salud {
+  display: flex;
+  justify-content: space-between;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-salud h3 {
+  margin: 0;
+  margin-right: 10px;
+  font-size: 16px;
+  font-family: f_gothan_l;
+  max-width: 97px;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-salud__alergias {
+  margin: 0px 7px;
+  display: flex;
+  align-items: center;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-salud__alergias i {
+  margin: 5px;
+  font-size: 24px;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas {
+  display: flex;
+  justify-content: space-between;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas__tamanio .icon-tamanio--small {
+  font-size: 24px;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas__tamanio .icon-tamanio--medium {
+  font-size: 28px;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas__tamanio .icon-tamanio--large {
+  font-size: 32px;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas__block {
+  display: flex;
+  align-items: flex-end;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas__block i.icon-active {
+  color: c_celeste;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas__block i {
+  font-size: 26px;
+  margin: 0px 3px;
+  color: c_plomo_os;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas__block h3 {
+  margin: 0;
+  margin-right: 10px;
+  font-size: 20px;
+  font-family: f_roboto_l;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract h2 {
+  color: c_plomo_os;
+  margin: 10px 0px;
+  font-size: 20px;
+  font-family: f_gothan_m;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract .caract {
+  display: flex;
+  justify-content: space-between;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract .caract p {
+  font-family: f_roboto_l;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract .caract h3 {
+  font-size: 20px;
+  color: c_plomo_os;
+  font-family: f_gothan_b;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract .caract h3 i {
+  color: c_celeste;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento ul li {
   margin: 5px 0;
@@ -161,6 +241,18 @@
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li.active .text-content {
   height: auto !important;
+}
+.matchcota-detalle .container .cnt-descripcion .btn-aceptar {
+  font-size: 24px;
+  font-family: f_ventura_m;
+  background: c_narana_ad;
+  color: c_white;
+  text-align: center;
+  padding: 6px 30px;
+  width: 110px;
+  margin: auto;
+  display: block;
+  margin-top: 30px;
 }
 /*@media screen and (max-width 1200px)
     .nosotros_formulario .btn--nosotros

@@ -408,6 +408,20 @@ br {
   font-style: normal;
 }
 @font-face {
+  font-family: 'robotoregular';
+  src: url("../fonts/roboto-regular-webfont.eot");
+  src: url("../fonts/roboto-regular-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/roboto-regular-webfont.woff2") format('woff2'), url("../fonts/roboto-regular-webfont.woff") format('woff'), url("../fonts/roboto-regular-webfont.svg#robotoregular") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'robotolight';
+  src: url("../fonts/roboto-light-webfont.eot");
+  src: url("../fonts/roboto-light-webfont.eot?#iefix") format('embedded-opentype'), url("../fonts/roboto-light-webfont.woff2") format('woff2'), url("../fonts/roboto-light-webfont.woff") format('woff'), url("../fonts/roboto-light-webfont.svg#robotolight") format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
   font-family: 'icomoon';
   src: url("../icons/icomoon.eot?gkahui");
   src: url("../icons/icomoon.eot?gkahui#iefix") format('embedded-opentype'), url("../icons/icomoon.ttf?gkahui") format('truetype'), url("../icons/icomoon.woff?gkahui") format('woff'), url("../icons/icomoon.svg?gkahui#icomoon") format('svg');
@@ -4884,7 +4898,7 @@ img
 .matchcota-detalle .container .preview-img {
   max-width: 520px;
   margin: 0;
-  margin-right: 90px;
+  margin-right: 100px;
 }
 .matchcota-detalle .container .preview-img .conoce_mascota__title {
   font-size: 25px;
@@ -4938,7 +4952,7 @@ img
   position: relative;
 }
 .matchcota-detalle .container .cnt-descripcion {
-  max-width: 520px;
+  max-width: 600px;
   margin-top: 0;
 }
 .matchcota-detalle .container .cnt-descripcion .title-main {
@@ -4956,7 +4970,7 @@ img
   float: right;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon {
-  width: 520px;
+  width: 600px;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li {
   margin: 0 0 15px;
@@ -4972,9 +4986,10 @@ img
   text-align: center;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .title .text {
+  min-width: 240px;
   display: inline-block;
   vertical-align: middle;
-  margin-top: -15px;
+  margin-top: -4px;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .title a {
   background: #00b3e3;
@@ -4983,12 +4998,141 @@ img
   font-size: 16px;
   display: block;
 }
+.matchcota-detalle .container .cnt-descripcion .acordeon li .title .icon-arrow {
+  font-size: 16px;
+  border-radius: 50%;
+  padding: 6px 2px;
+  border: 1px solid #fff;
+}
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content {
+  display: none;
   border: 1px solid #ddd;
   border-top: none;
   height: auto;
   overflow: hidden;
   padding: 1em;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-salud {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-salud h3 {
+  margin: 0;
+  margin-right: 10px;
+  font-size: 16px;
+  font-family: 'GothamRounded-Light';
+  max-width: 97px;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-salud__alergias {
+  margin: 0px 7px;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-salud__alergias i {
+  margin: 5px;
+  font-size: 24px;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas__tamanio .icon-tamanio--small {
+  font-size: 24px;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas__tamanio .icon-tamanio--medium {
+  font-size: 28px;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas__tamanio .icon-tamanio--large {
+  font-size: 32px;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas__block {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: end;
+  -moz-box-align: end;
+  -o-box-align: end;
+  -ms-flex-align: end;
+  -webkit-align-items: flex-end;
+  align-items: flex-end;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas__block i.icon-active {
+  color: #00b2e2;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas__block i {
+  font-size: 26px;
+  margin: 0px 3px;
+  color: #5d5d5d;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas__block h3 {
+  margin: 0;
+  margin-right: 10px;
+  font-size: 20px;
+  font-family: 'robotolight';
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract h2 {
+  color: #5d5d5d;
+  margin: 10px 0px;
+  font-size: 20px;
+  font-family: 'GothamRounded-Medium';
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract .caract {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: justify;
+  -moz-box-pack: justify;
+  -o-box-pack: justify;
+  -ms-flex-pack: justify;
+  -webkit-justify-content: space-between;
+  justify-content: space-between;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract .caract p {
+  font-family: 'robotolight';
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract .caract h3 {
+  font-size: 20px;
+  color: #5d5d5d;
+  font-family: 'GothamRounded-Book';
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract .caract h3 i {
+  color: #00b2e2;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento ul li {
   margin: 5px 0;
@@ -5041,6 +5185,18 @@ img
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li.active .text-content {
   height: auto !important;
+}
+.matchcota-detalle .container .cnt-descripcion .btn-aceptar {
+  font-size: 24px;
+  font-family: 'ventura_eddingmedium';
+  background: #ff4304;
+  color: #fff;
+  text-align: center;
+  padding: 6px 30px;
+  width: 110px;
+  margin: auto;
+  display: block;
+  margin-top: 30px;
 }
 .noticias-detail {
   padding: 2.5em 0;

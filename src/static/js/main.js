@@ -60,4 +60,11 @@ jQuery(document).ready(function($) {
 		$(".tab").addClass('tab_none')
 		$(data_tab).removeClass('tab_none')
 	});
+	$(".acordeon .title").click(function(event) {
+		/* Act on the event */
+		event.preventDefault();
+		$(".acordeon .text-content").stop("false").slideUp(300, function() {}
+		);
+		$(this).closest('li').find(".text-content").slideToggle(300);
+	});
 });

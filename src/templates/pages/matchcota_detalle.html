@@ -63,15 +63,27 @@
 							<i class="icon icon-arrow icon-26" ></i>
 						</a>
 					</h3>
-					<div class="text-content">
-						<h2>
-							<strong>
-								Historia: 
-							</strong>
-						</h2>
-						<p>
-							Chispa fue rescatada en enero de 2016 mientras buscaba entre bolsas de basura algo de comida, al lado de la Carretera Panamericana Sur. 
-						</p>
+					<div class="text-content text-content-info">
+						<div class="content-caract">
+							<div class="caract">
+
+								<div class="caract__anio">
+									<h3><i class="icon-mascotas-01"></i> 1 Año</h3>
+								</div>
+								<div class="caract__hogar">
+									<h3><i class="icon-mascotas-02"></i> 1 Albergue Voz Animal</h3>
+								</div>
+							</div>
+
+							<h2>
+
+									Historia:
+
+							</h2>
+							<p>
+								Chispa fue rescatada en enero de 2016 mientras buscaba entre bolsas de basura algo de comida, al lado de la Carretera Panamericana Sur.
+							</p>
+						</div>
 					</div>
 				</li>
 				<li id="caracteristicas-fisicas">
@@ -83,7 +95,24 @@
 						</a>
 					</h3>
 					<div class="text-content">
-						texto
+						<div class="caract-fisicas">
+							<div class="caract-fisicas__block caract-fisicas__sexo">
+								<h3>Sexo</h3>
+								<i class="icon-active icon-mascotas-04"></i>
+								<i class="icon-mascotas-03"></i>
+							</div>
+							<div class="caract-fisicas__block caract-fisicas__pelo">
+								<h3>Pelo</h3> <i class="icon-mascotas-09"></i>
+								<i class="icon-mascotas-05"></i>
+								<i class="icon-active  icon-mascotas-08"></i>
+							</div>
+							<div class="caract-fisicas__block caract-fisicas__tamanio">
+								<h3>Tamaño</h3>
+								<i class="icon-mascotas-06 icon-tamanio--small"></i>
+								<i class="icon-active  icon-mascotas-06 icon-tamanio--medium"></i>
+								<i class="icon-mascotas-06 icon-tamanio--large"></i>
+							</div>
+						</div>
 					</div>
 				</li>
 				<li id="salud">
@@ -95,7 +124,26 @@
 						</a>
 					</h3>
 					<div class="text-content">
-						texto
+						<div class="caract-salud">
+							<div class="caract-salud__alergias">
+
+								<h3>Alergias</h3>
+								<i class="icon-mascotas-07"></i>
+								<i class="icon-mascotas-07"></i>
+							</div>
+							<div class="caract-salud__alergias">
+
+								<h3>Tratamiento</h3>
+								<i class="icon-mascotas-07"></i>
+								<i class="icon-mascotas-07"></i>
+							</div>
+							<div class="caract-salud__alergias">
+
+								<h3>Enfermedad crónica</h3>
+								<i class="icon-mascotas-07"></i>
+								<i class="icon-mascotas-07"></i>
+							</div>
+						</div>
 					</div>
 				</li>
 				<li id="me-relaciono">
@@ -107,7 +155,26 @@
 						</a>
 					</h3>
 					<div class="text-content">
-						texto
+						<div class="caract-salud">
+							<div class="caract-salud__alergias">
+
+								<h3>Humanos</h3>
+								<i class="icon-mascotas-07"></i>
+								<i class="icon-mascotas-07"></i>
+							</div>
+							<div class="caract-salud__alergias">
+
+								<h3>Perras Hermbras</h3>
+								<i class="icon-mascotas-07"></i>
+								<i class="icon-mascotas-07"></i>
+							</div>
+							<div class="caract-salud__alergias">
+
+								<h3>Perros Machos</h3>
+								<i class="icon-mascotas-07"></i>
+								<i class="icon-mascotas-07"></i>
+							</div>
+						</div>
 					</div>
 				</li>
 				<li id="comportamiento">
@@ -214,7 +281,7 @@
 		    nextText: '',
 			prevText: '',
 		});
-		function changeImage() {
+/*		function changeImage() {
 			$downImg = $(this).attr("point-src");
 			console.log($downImg);
 			$(".main-img img").attr("src", $downImg);
@@ -227,7 +294,7 @@
 		}
 		$( ".list-thumbnails li a" ).on( "click", changeImage );
 		$( ".acordeon a" ).on( "click", changeAcordonState );
-
+*/
 	});
 </script>
 {% endblock js %}
