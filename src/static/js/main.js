@@ -63,10 +63,14 @@ jQuery(document).ready(function($) {
 	$(".acordeon .title").click(function(event) {
 		/* Act on the event */
 		event.preventDefault();
-		$(".acordeon .text-content").stop("false").slideUp(300, function() {}
-		);
-		$(".acordeon li").removeClass("active")
+		if(!$(this).closest("li").hasClass("active"))
+		{
+			$(".acordeon .text-content").slideUp(500, function() {}
+			);
+			$(".acordeon li").removeClass("active")
+
+		}
 		$(this).closest('li').addClass("active")
-		$(this).closest('li').find(".text-content").slideToggle(300);
+		$(this).closest('li').find(".text-content").slideDown(500);
 	});
 });
