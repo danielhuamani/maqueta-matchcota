@@ -137,6 +137,9 @@
   margin-right: 10px;
 }
 .home_conoce_mascota .full_container {
+  background-image: url("../img/trama.png");
+  background-size: cover;
+/**/
   background-color: #e5e5e5;
   padding: 1em 0 4em;
   transform: skew(0deg, 2.5deg);

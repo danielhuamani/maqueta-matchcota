@@ -3505,6 +3505,11 @@ footer .footer_top .facebook__slider__item ul li span {
   margin-right: 10px;
 }
 .home_conoce_mascota .full_container {
+  background-image: url("../img/trama.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
+/**/
   background-color: #e5e5e5;
   padding: 1em 0 4em;
   -webkit-transform: skew(0deg, 2.5deg);
