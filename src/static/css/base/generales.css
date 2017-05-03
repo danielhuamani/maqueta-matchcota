@@ -1,6 +1,6 @@
 a {
   margin: 0;
-  outline: none;
+  outline: none !important;
 }
 .container {
   width: 98%;
@@ -12,6 +12,9 @@ a {
 }
 .container--small {
   max-width: 1100px;
+}
+.container--medium {
+  max-width: 1500px;
 }
 .container--large {
   max-width: 1800px;
@@ -243,6 +246,50 @@ p {
   }
   .content_banner span.cuv_naran {
     font-size: 46px;
+  }
+}
+@-moz-keyframes juguete {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-webkit-keyframes juguete {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@-o-keyframes juguete {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes juguete {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(5deg);
+  }
+  100% {
+    transform: rotate(0deg);
   }
 }
 @-moz-keyframes fadeEffect {

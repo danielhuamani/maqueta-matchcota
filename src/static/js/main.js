@@ -60,4 +60,17 @@ jQuery(document).ready(function($) {
 		$(".tab").addClass('tab_none')
 		$(data_tab).removeClass('tab_none')
 	});
+	$(".acordeon .title").click(function(event) {
+		/* Act on the event */
+		event.preventDefault();
+		if(!$(this).closest("li").hasClass("active"))
+		{
+			$(".acordeon .text-content").slideUp(500, function() {}
+			);
+			$(".acordeon li").removeClass("active")
+
+		}
+		$(this).closest('li').addClass("active")
+		$(this).closest('li').find(".text-content").slideDown(500);
+	});
 });

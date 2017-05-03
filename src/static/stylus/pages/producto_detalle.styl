@@ -5,9 +5,9 @@ $cyan = #00b3e3
         display flex
         justify-content center
         .preview-img
-            max-width 520px
+            width calc(50% - 100px)
             margin 0
-            margin-right 90px
+            margin-right 100px
             .conoce_mascota__title
                 font-size 25px
                 font-family f_ventura_m
@@ -26,17 +26,19 @@ $cyan = #00b3e3
                     height 11px
                     display inline-block
             .main-img
-                max-width 520px
-                border 4px solid #ddd
+                padding-top 20px
+                max-width 100%
+                box-shadow 0 0 1px 1px #ddd, inset 0 0 1px 3px #ddd
                 text-align center
             ul.list-thumbnails
                 max-width 100%
-                height 150px
+                text-align center
                 font-size 0
                 li
-                    max-width 24%
+                    margin 0px 4px
+                    max-width 20%
                     display inline-block
-                    max-height 100%
+
                     a
                         display: inline-block
                         width 100%
@@ -48,7 +50,7 @@ $cyan = #00b3e3
                             height 100%
                             position relative
         .cnt-descripcion
-            max-width 520px
+            width 50%
             margin-top 0
             .title-main
                 margin-bottom 2em
@@ -62,9 +64,15 @@ $cyan = #00b3e3
                     display inline-block
                     float right
             .acordeon
-                width 520px
+                li.active
+                    .title
+                        .icon-arrow
+                            transform rotate(90deg)
+                    .text-content
+                        display block
+
                 li
-                    
+
                     margin 0 0 15px
                     .title
                         margin 0
@@ -75,21 +83,88 @@ $cyan = #00b3e3
                             font-size 26px
                             text-align center
                         .text
+                            min-width 240px
                             display inline-block
                             vertical-align middle
-                            margin-top -15px
+                            margin-top -4px
                         a
                             background $cyan
                             padding 12px 15px
                             color #fff
                             font-size 16px
                             display block
+                        .icon-arrow
+                            transition 0.3s ease all
+                            font-size 16px
+                            border-radius 50%
+                            padding 6px 2px
+                            border 1px solid c_white
                     .text-content
+                        display none
                         border 1px solid #ddd
                         border-top none
                         height auto
                         overflow hidden
-                        padding 1em 
+                        padding 1em
+                        .caract-salud
+                            display flex
+                            justify-content space-between
+                            h3
+                                margin 0
+                                margin-right 10px
+                                font-size 16px
+                                font-family f_gothan_l
+                                max-width 97px
+                            &__alergias
+                                margin 0px 7px
+                                display flex
+                                align-items center
+                                i
+                                    margin 5px
+                                    font-size 24px
+
+                        .caract-fisicas
+                            display flex
+                            justify-content space-between
+                            &__tamanio
+                                .icon-tamanio--small
+                                    font-size 24px
+                                .icon-tamanio--medium
+                                    font-size 28px
+                                .icon-tamanio--large
+                                    font-size 32px
+                            &__block
+                                display flex
+                                align-items flex-end
+                                i.icon-active
+                                    color c_celeste
+
+                                i
+                                    font-size 26px
+                                    margin 0px 3px
+                                    color c_plomo_os
+                                h3
+                                    margin 0
+                                    margin-right 10px
+                                    font-size 20px
+                                    font-family f_roboto_l
+                        .content-caract
+                            h2
+                                color c_plomo_os
+                                margin 10px 0px
+                                font-size 20px
+                                font-family f_gothan_m
+                            .caract
+                                display flex
+                                justify-content space-between
+                                p
+                                    font-family f_roboto_l
+                                h3
+                                    font-size 20px
+                                    color c_plomo_os
+                                    font-family f_gothan_b
+                                    i
+                                        color c_celeste
                         &__comportamiento
                             ul
                                 li
@@ -99,7 +174,7 @@ $cyan = #00b3e3
                                     height auto
                                     min-height: 20px
                                     overflow hidden
-                                
+
                             .text
                                 font-size 12px
                                 float left
@@ -116,7 +191,7 @@ $cyan = #00b3e3
                                     content ""
                                     z-index 1
                                 .bar
-                                    height 14px 
+                                    height 14px
                                     display inline-block
                                     background c_celeste
                                     border-radius 5px
@@ -131,13 +206,24 @@ $cyan = #00b3e3
                                 .num-last
                                     float right
                                     padding 0 3px
-                        
-                        p 
+
+                        p
                             font-size 12px
-                    
+
                 li.active
                     .text-content
                         height auto!important
+            .btn-aceptar
+                font-size 24px
+                font-family f_ventura_m
+                background c_narana_ad
+                color c_white
+                text-align center
+                padding 6px 30px
+                width 110px
+                margin auto
+                display  block
+                margin-top 30px
 /*@media screen and (max-width 1200px)
     .nosotros_formulario .btn--nosotros
         width  100%*/

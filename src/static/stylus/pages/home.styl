@@ -114,6 +114,7 @@
         position absolute
         z-index 2
         left 200px
+        animation juguete 1.4s infinite
     &__title
         font-size 25px
         font-family f_ventura_m
@@ -198,7 +199,15 @@
 
                 a
                     position relative
-
+                    &:before
+                        display block
+                        position absolute
+                        content ""
+                        bottom -90px
+                        right -70px
+                        background-image url("../img/flash.png")
+                        width 62px
+                        height 62px
                     &:after
                         display block
                         position absolute
@@ -380,7 +389,7 @@
             top 20%
             a span
                 width 180px
-            a:after
+            a:after, a:before
                 display none
     .home_banner
         .juguete

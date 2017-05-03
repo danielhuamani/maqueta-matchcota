@@ -44,10 +44,10 @@
         font-size 30px
         font-family f_ventura_m
         margin-bottom 1em
-    
+
   .view-more
     clear both
-    padding 1.5em 0 1.5em     
+    padding 1.5em 0 1.5em
     .ver_mas_noticias
       color c_plomo_os
       margin-top 40px
@@ -65,13 +65,13 @@
         position relative
         top -3px
         &.left
-          background-image url("../img/flecha_ploma_left.png") 
+          background-image url("../img/flecha_ploma_left.png")
           margin-right 2em
-      
+
 .cnt-share
   text-align center
   padding-top: 1em
-  .share-item 
+  .share-item
     border 1px solid c_celeste
     border-radius 10px
     color c_celeste
@@ -95,5 +95,27 @@
       i.icon
         background c_azul
         color #fff
-    
-    
+@media screen and (max-width 768px)
+  .noticias-detail .content-detail .image
+    width 100%
+    max-width 464px
+    padding-right 0
+    margin auto
+  .noticias-detail .content-detail
+    display flex
+    flex-direction column-reverse
+    .detail
+      width 100%
+      .date
+        margin-bottom 10px
+      h3
+        font-size 24px
+    .cnt-share
+      margin-bottom 20px
+  .noticias-detail
+    padding-bottom 0px
+  .noticias-detail .view-more .ver_mas_noticias
+    margin 0
+    text-align center
+    .arrow.left
+      margin-right 1em
