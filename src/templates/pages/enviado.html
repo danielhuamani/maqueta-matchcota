@@ -1,0 +1,81 @@
+{% extends "../common/base.html" %}
+{% block content %}
+
+
+<section class="sec-enviado">
+	<div class="container">
+		<div class="content-detail">
+			<div class="title-double">
+				<h2>Mensaje</h2>
+				<span>Enviado</span>
+			</div>
+			<h3>Gracias por Enviarnos tu Mensaje</h3>
+			<p>
+				Nos estaremos comunicando <br/>
+				contigo lo antes posible, puedes regresar a la página principal <br/>
+				o quizás encuentres lo que buscabas.
+			</p>
+			<div class="cnt-btn">
+				<a href="#" class="btn">Regresar al home</a>
+
+			</div>
+		</div>
+		<div class="content-image"></div>
+	</div>
+</section>
+
+
+{% endblock content %}
+{% block js %}
+<script src="{{STATIC_URL}}js/banner.js"></script>
+<script>
+	jQuery(document).ready(function($) {
+			$('.listado_aliados').bxSlider({
+
+				adaptiveHeight: false,
+				auto: true,
+				pause: '22600',
+				pager: false,
+				controls: false,
+				minSlides: 1,
+			    maxSlides: 5,
+			    moveSlides: 1,
+			    slideWidth: 135,
+			    controls: true,
+			    slideMargin: 30,
+			    nextText: '',
+				prevText: '',
+
+			});
+
+			$(window).scroll(function(){
+                var window_top = $(window).scrollTop();
+
+                if(window_top>200) {
+		  			$(".nosotros_matchota_ideal .container figure").addClass('active-img')
+		  		}else{
+		  			$(".nosotros_matchota_ideal .container figure").removeClass('active-img')
+		  		}
+		  		console.log(window_top)
+		  		if (window_top>920) {
+		  			$(".bloque_1").addClass('b_1_active')
+		  			$(".bloque_2").addClass('b_2_active')
+		  			$(".bloque_3").addClass('b_3_active')
+		  			$(".bloque_4").addClass('b_4_active')
+		  			$(".bloque_5").addClass('b_5_active')
+		  			$(".bloque_6").addClass('b_6_active')
+		  			$(".bloque_7").addClass('b_7_active')
+		  		}else{
+					$(".bloque_1").removeClass('b_1_active')
+					$(".bloque_2").removeClass('b_2_active')
+					$(".bloque_3").removeClass('b_3_active')
+					$(".bloque_4").removeClass('b_4_active')
+					$(".bloque_5").removeClass('b_5_active')
+					$(".bloque_6").removeClass('b_6_active')
+					$(".bloque_7").removeClass('b_7_active')
+		  		}
+            });
+	});
+
+</script>
+{% endblock js %}

@@ -1,0 +1,58 @@
+.sec-enviado {
+  padding: 2.5em 0;
+  height: auto;
+  overflow: hidden;
+}
+.sec-enviado .content-detail {
+  padding: 2.5em 0;
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+.sec-enviado .content-detail .title-double {
+  position: relative;
+}
+.sec-enviado .content-detail .title-double h2 {
+  font-size: 148px;
+  font-family: f_gothan_m;
+  text-align: center;
+  color: c_narana_ap;
+  opacity: 0.2;
+  text-transform: uppercase;
+}
+.sec-enviado .content-detail .title-double span {
+  font-size: 84px;
+  font-family: f_gothan_m;
+  text-align: center;
+  color: c_narana_ap;
+  text-transform: uppercase;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: 0 0 0 12%;
+}
+.sec-enviado .content-detail h3 {
+  font-size: 36px;
+  font-family: f_varela_r;
+  color: c_celeste;
+  margin: 1em 0;
+}
+.sec-enviado .content-detail p {
+  font-size: 20px;
+  font-family: f_roboto_l;
+}
+.sec-enviado .content-detail .cnt-btn {
+  margin-top: 2.5em;
+}
+.sec-enviado .content-detail .cnt-btn .btn {
+  background: c_narana_ap;
+  font-size: 24px;
+  color: #fff;
+  padding: 0.5em 1em;
+}
+.sec-enviado .content-image {
+  display: block;
+}
+
+/*# sourceMappingURL=enviado.css.map */
