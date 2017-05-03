@@ -145,5 +145,11 @@ img
     display: block;
   }
 }
+@media screen and (max-width: 480px) {
+  .slide-testimonios .item-slider-testimonios .detail {
+    float: inherit;
+    padding: 0;
+  }
+}
 
 /*# sourceMappingURL=testimonios.css.map */

@@ -1,12 +1,12 @@
-/*.home_listado_noticias
-    .listado_noticias__noticia:first-child, .listado_noticias__noticia:nth-child(5)
+.home_listado_noticias
+    .listado_noticias__noticia_large
         position relative
         display block
-        width 462px
+        width 429px
         height 410px
         figure
-            width 462px
-            height 410px
+            width 100%
+            height 100%
             margin 0
         .descripcion
             display none
@@ -40,7 +40,7 @@
             .descripcion
                 display flex
                 animation fadeEffect 0.5s
-*/
+
 .listado_noticias
     display flex
     justify-content center
@@ -129,7 +129,7 @@
                     color c_celeste
                 p
                     color c_celeste
-    &__noticia:nth-child(odd), &__noticia:nth-child(even)
+    &__noticia
         width 228px
         display flex
         figure
@@ -164,55 +164,16 @@
                 font-size 18px
                 font-family f_gothan_l
 
-    &__noticia
-        position relative
-        display block
-        width 430px
-        height 410px
-        figure
-            width 430px
-            height 410px
-            margin 0
-        .descripcion
-            display none
-            flex-direction column
-            padding 0px 30px
-            box-sizing border-box
-
-            position absolute
-            left 0
-            top 0
-            width 100%
-            height 100%
-            background rgba(0,0,0,0.5)
-            animation fadeEffect 0.5s !important
-
-            h3
-                color c_white
-                font-family f_ventura_m
-                font-size 20px
-            h4
-                color c_white
-                font-size 18px
-                font-family f_gothan_m
-                margin 0
-            p
-                color c_white
-                font-size 18px
-                font-family f_gothan_l
-        &:hover
-            .descripcion
-                display flex
 
     &__noticia_large
-        position relative !important
-        display block !important
-        width 462px !important
-        height 410px !important
+        position relative
+        display block
+        width 462px
+        height 410px
         figure
-            width 462px !important
-            height 410px !important
-            margin 0 !important
+            width 462px
+            height 410px
+            margin 0
         .descripcion
             display none !important
             flex-direction column !important
@@ -288,6 +249,10 @@
         &:hover
             .descripcion
                 display flex
+
+
+
+/*
 
 /*@media screen and (max-width 768px)
     .listado_noticias__noticia_large*/
@@ -381,3 +346,7 @@
                     color c_amarillo
                 p
                     color c_amarillo*/
+@media screen and (max-width 1910px)
+    .home_siempre_informados .home_listado_noticias
+        max-width 920px
+        margin auto

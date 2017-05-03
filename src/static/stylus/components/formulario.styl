@@ -196,7 +196,7 @@
       .pop_up
          .cnt-image
             padding: 2.5em 0
-            
+
     .pop_up
         //background c_formulario
         background linear-gradient(to right, #fff, c_formulario, c_formulario, c_formulario)
@@ -289,6 +289,8 @@
                             font-size 14px
 
 @media screen and (max-width 1200px)
+    .cnt_pop_up .pop_up
+        background c_formulario
     .cnt_pop_up .cnt-formulario
         padding 15px 30px !important
     .cnt_pop_up_apadrina .pop_up
@@ -308,10 +310,16 @@
                         margin-top 10px
 
 @media screen and (max-width 768px)
+    .container_formulario .cnt-formulario
+        width 96%
+    .container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input label
+        font-size 12px
+    .container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input-m:first-child
+        margin-right 20px
     .cnt_pop_up_dona, .cnt_pop_up_apadrina, .cnt_pop_up_adopta
         .pop_up
             overflow-y scroll
-            height 400px
+            height 450px
             .btn--pop
                 margin-bottom 15px !important
     .cnt_pop_up .cnt-formulario

@@ -405,6 +405,9 @@
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .b_7_active {
   opacity: 1;
 }
+.nosotros_formulario {
+  background: linear-gradient(to right, #fff, #ebe7e2, #ebe7e2, #ebe7e2);
+}
 .nosotros_formulario .btn--nosotros {
   text-align: center;
   margin: auto;
@@ -641,6 +644,9 @@
   }
 }
 @media screen and (max-width: 1200px) {
+  .nosotros_formulario {
+    background: c_formulario;
+  }
   .cnt-mision-vision .container figure {
     display: none;
   }

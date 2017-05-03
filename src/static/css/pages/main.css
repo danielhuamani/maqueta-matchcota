@@ -35,19 +35,19 @@
   background: #ff9971;
 }
 .header__logo_links nav ul li a.donar:hover {
-  box-shadow: 10px -5px 73px -13px rgba(0,0,0,0.75);
+  box-shadow: 6px 8px 26px -5px rgba(50,50,50,0.75);
 }
 .header__logo_links nav ul li a.apadrina {
   background: #ff7444;
 }
 .header__logo_links nav ul li a.apadrina:hover {
-  box-shadow: -4px 1px 70px -13px rgba(0,0,0,0.75);
+  box-shadow: 1px 1px 26px -5px rgba(50,50,50,0.75);
 }
 .header__logo_links nav ul li a.adopta {
   background: #ff4304;
 }
 .header__logo_links nav ul li a.adopta:hover {
-  box-shadow: -12px 10px 31px -8px rgba(0,0,0,0.75);
+  box-shadow: -6px 5px 26px -5px rgba(50,50,50,0.75);
 }
 .header__logo_links nav ul li a {
   min-width: 115px;
@@ -600,7 +600,7 @@ footer .footer_top .facebook__slider__item ul li span {
   left: -35px;
 }
 .home_conoce_mascota .juguete_2 {
-  bottom: -16%;
+  bottom: -17%;
   position: absolute;
   z-index: 2;
   left: 200px;
@@ -1430,6 +1430,9 @@ footer .footer_top .facebook__slider__item ul li span {
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .b_7_active {
   opacity: 1;
 }
+.nosotros_formulario {
+  background: linear-gradient(to right, #fff, #ebe7e2, #ebe7e2, #ebe7e2);
+}
 .nosotros_formulario .btn--nosotros {
   text-align: center;
   margin: auto;
@@ -1666,6 +1669,9 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 1200px) {
+  .nosotros_formulario {
+    background: #ebe7e2;
+  }
   .cnt-mision-vision .container figure {
     display: none;
   }
@@ -2009,6 +2015,12 @@ img
     font-size: 16px;
     margin-top: 13px;
     display: block;
+  }
+}
+@media screen and (max-width: 480px) {
+  .slide-testimonios .item-slider-testimonios .detail {
+    float: inherit;
+    padding: 0;
   }
 }
 .noticias_listado {

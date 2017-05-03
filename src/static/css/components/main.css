@@ -360,6 +360,9 @@
   }
 }
 @media screen and (max-width: 1200px) {
+  .cnt_pop_up .pop_up {
+    background: c_formulario;
+  }
   .cnt_pop_up .cnt-formulario {
     padding: 15px 30px !important;
   }
@@ -383,11 +386,20 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .container_formulario .cnt-formulario {
+    width: 96%;
+  }
+  .container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input label {
+    font-size: 12px;
+  }
+  .container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input-m:first-child {
+    margin-right: 20px;
+  }
   .cnt_pop_up_dona .pop_up,
   .cnt_pop_up_apadrina .pop_up,
   .cnt_pop_up_adopta .pop_up {
     overflow-y: scroll;
-    height: 400px;
+    height: 450px;
   }
   .cnt_pop_up_dona .pop_up .btn--pop,
   .cnt_pop_up_apadrina .pop_up .btn--pop,
@@ -486,7 +498,7 @@
 }
 .list_mascotas__mascota--celeste:hover .list_mascotas__etiqueta h4 {
   color: c_white;
-  background: c_white;
+  background-image: url("../img/mas_hover.png");
 }
 .list_mascotas__mascota--celeste:hover .list_mascotas__etiqueta h4:before {
   opacity: 1;
@@ -499,7 +511,9 @@
   color: c_celeste;
 }
 .list_mascotas__mascota--celeste .list_mascotas__etiqueta h4 {
-  background: c_celeste;
+  background-image: url("../img/mas_celeste.png");
+  background-size: contain;
+  background-repeat: no-repeat repeat;
   color: c_white;
 }
 .list_mascotas__mascota--celeste .list_mascotas__etiqueta h4:after {
@@ -516,7 +530,7 @@
 }
 .list_mascotas__mascota--amarillo:hover .list_mascotas__etiqueta h4 {
   color: c_white;
-  background: c_white;
+  background-image: url("../img/mas_hover.png");
 }
 .list_mascotas__mascota--amarillo:hover .list_mascotas__etiqueta h4:before {
   opacity: 1;
@@ -529,7 +543,9 @@
   color: c_amarillo;
 }
 .list_mascotas__mascota--amarillo .list_mascotas__etiqueta h4 {
-  background: c_amarillo;
+  background-image: url("../img/mas_amarillo.png");
+  background-size: contain;
+  background-repeat: no-repeat repeat;
   color: c_white;
 }
 .list_mascotas__mascota--amarillo .list_mascotas__etiqueta h4:after {
@@ -546,7 +562,7 @@
 }
 .list_mascotas__mascota--plomo:hover .list_mascotas__etiqueta h4 {
   color: c_white;
-  background: c_white;
+  background-image: url("../img/mas_hover.png");
 }
 .list_mascotas__mascota--plomo:hover .list_mascotas__etiqueta h4:before {
   opacity: 1;
@@ -559,7 +575,9 @@
   color: c_plomo;
 }
 .list_mascotas__mascota--plomo .list_mascotas__etiqueta h4 {
-  background: c_plomo;
+  background-image: url("../img/mas_plomo.png");
+  background-size: contain;
+  background-repeat: no-repeat repeat;
   color: c_white;
 }
 .list_mascotas__mascota--plomo .list_mascotas__etiqueta h4:after {
@@ -662,6 +680,53 @@
     width: 200px;
   }
 }
+.home_listado_noticias .listado_noticias__noticia_large {
+  position: relative;
+  display: block;
+  width: 429px;
+  height: 410px;
+}
+.home_listado_noticias .listado_noticias__noticia_large figure {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+.home_listado_noticias .listado_noticias__noticia_large .descripcion {
+  display: none;
+  flex-direction: column;
+  padding: 0px 30px;
+  box-sizing: border-box;
+  justify-content: flex-end;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.5) !important;
+}
+.home_listado_noticias .listado_noticias__noticia_large .descripcion h3 {
+  color: c_white !important;
+  font-family: f_ventura_m;
+  font-size: 20px;
+}
+.home_listado_noticias .listado_noticias__noticia_large .descripcion h4 {
+  color: c_white !important;
+  font-size: 18px;
+  font-family: f_gothan_m;
+  margin: 0;
+}
+.home_listado_noticias .listado_noticias__noticia_large .descripcion p {
+  color: c_white !important;
+  font-size: 18px;
+  font-family: f_gothan_l;
+}
+.home_listado_noticias .listado_noticias__noticia_large .descripcion:after {
+  display: none;
+}
+.home_listado_noticias .listado_noticias__noticia_large:hover .descripcion {
+  display: flex;
+  animation: fadeEffect 0.5s;
+}
 .listado_noticias {
   display: flex;
   justify-content: center;
@@ -761,82 +826,34 @@
 .listado_noticias__noticia:nth-child(even):hover .descripcion p {
   color: c_celeste;
 }
-.listado_noticias__noticia:nth-child(odd),
-.listado_noticias__noticia:nth-child(even) {
+.listado_noticias__noticia {
   width: 228px;
   display: flex;
 }
-.listado_noticias__noticia:nth-child(odd) figure,
-.listado_noticias__noticia:nth-child(even) figure {
+.listado_noticias__noticia figure {
   width: 228px;
   height: 204px;
   margin: 0;
 }
-.listado_noticias__noticia:nth-child(odd) figure img,
-.listado_noticias__noticia:nth-child(even) figure img {
+.listado_noticias__noticia figure img {
   height: 100%;
 }
-.listado_noticias__noticia:nth-child(odd) .descripcion,
-.listado_noticias__noticia:nth-child(even) .descripcion {
+.listado_noticias__noticia .descripcion {
   background: transparent;
   display: block;
   position: relative;
   box-sizing: border-box;
   padding: 30px 10px 10px 10px;
 }
-.listado_noticias__noticia:nth-child(odd) .descripcion:after,
-.listado_noticias__noticia:nth-child(even) .descripcion:after {
+.listado_noticias__noticia .descripcion:after {
   animation: fadeEffect 0.5s !important;
   border-left: 16px solid transparent;
   border-right: 16px solid transparent;
 }
-.listado_noticias__noticia:nth-child(odd) .descripcion h3,
-.listado_noticias__noticia:nth-child(even) .descripcion h3 {
-  color: c_white;
-  font-family: f_ventura_m;
-  font-size: 18px;
-}
-.listado_noticias__noticia:nth-child(odd) .descripcion h4,
-.listado_noticias__noticia:nth-child(even) .descripcion h4 {
-  color: c_white;
-  font-size: 18px;
-  font-family: f_gothan_m;
-  margin: 0;
-}
-.listado_noticias__noticia:nth-child(odd) .descripcion p,
-.listado_noticias__noticia:nth-child(even) .descripcion p {
-  color: c_white;
-  font-size: 18px;
-  font-family: f_gothan_l;
-}
-.listado_noticias__noticia {
-  position: relative;
-  display: block;
-  width: 430px;
-  height: 410px;
-}
-.listado_noticias__noticia figure {
-  width: 430px;
-  height: 410px;
-  margin: 0;
-}
-.listado_noticias__noticia .descripcion {
-  display: none;
-  flex-direction: column;
-  padding: 0px 30px;
-  box-sizing: border-box;
-  position: absolute;
-  left: 0;
-  top: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0,0,0,0.5);
-  animation: fadeEffect 0.5s !important;
-}
 .listado_noticias__noticia .descripcion h3 {
   color: c_white;
   font-family: f_ventura_m;
-  font-size: 20px;
+  font-size: 18px;
 }
 .listado_noticias__noticia .descripcion h4 {
   color: c_white;
@@ -849,19 +866,16 @@
   font-size: 18px;
   font-family: f_gothan_l;
 }
-.listado_noticias__noticia:hover .descripcion {
-  display: flex;
-}
 .listado_noticias__noticia_large {
-  position: relative !important;
-  display: block !important;
-  width: 462px !important;
-  height: 410px !important;
+  position: relative;
+  display: block;
+  width: 462px;
+  height: 410px;
 }
 .listado_noticias__noticia_large figure {
-  width: 462px !important;
-  height: 410px !important;
-  margin: 0 !important;
+  width: 462px;
+  height: 410px;
+  margin: 0;
 }
 .listado_noticias__noticia_large .descripcion {
   display: none !important;
@@ -946,6 +960,12 @@
 }
 .noticias_listado .listado_noticias__noticia_large:hover .descripcion {
   display: flex;
+}
+@media screen and (max-width: 1910px) {
+  .home_siempre_informados .home_listado_noticias {
+    max-width: 920px;
+    margin: auto;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

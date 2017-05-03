@@ -22,6 +22,10 @@ a {
 .container--r-large {
   max-width: 1900px;
 }
+.container--r-large-noticias {
+  max-width: 1900px;
+  width: 100%;
+}
 .title_section h2 {
   font-size: 35px;
   font-family: f_ventura_m;
