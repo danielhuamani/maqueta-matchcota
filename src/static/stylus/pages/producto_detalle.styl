@@ -5,11 +5,12 @@ $cyan = #00b3e3
         display flex
         justify-content center
         .preview-img
-            width calc(50% - 100px)
+            width calc(45% - 100px)
             margin 0
             margin-right 100px
             .conoce_mascota__title
                 font-size 25px
+                display block
                 font-family f_ventura_m
                 color c_plomo_os
                 text-align left
@@ -30,6 +31,8 @@ $cyan = #00b3e3
                 max-width 100%
                 box-shadow 0 0 1px 1px #ddd, inset 0 0 1px 3px #ddd
                 text-align center
+                img
+                    padding-bottom 2px
             ul.list-thumbnails
                 max-width 100%
                 text-align center
@@ -50,7 +53,7 @@ $cyan = #00b3e3
                             height 100%
                             position relative
         .cnt-descripcion
-            width 50%
+            width 55%
             margin-top 0
             .title-main
                 margin-bottom 2em
@@ -108,6 +111,7 @@ $cyan = #00b3e3
                         padding 1em
                         .caract-salud
                             display flex
+                            flex-wrap wrap
                             justify-content space-between
                             h3
                                 margin 0
@@ -117,15 +121,19 @@ $cyan = #00b3e3
                                 max-width 97px
                             &__alergias
                                 margin 0px 7px
+                                margin-bottom 5px
                                 display flex
                                 align-items center
+                                i.icon-active
+                                    color c_celeste
                                 i
                                     margin 5px
-                                    font-size 24px
+                                    font-size 32px
 
                         .caract-fisicas
                             display flex
                             justify-content space-between
+                            flex-wrap wrap
                             &__tamanio
                                 .icon-tamanio--small
                                     font-size 24px
@@ -135,6 +143,7 @@ $cyan = #00b3e3
                                     font-size 32px
                             &__block
                                 display flex
+                                margin 5px 0
                                 align-items flex-end
                                 i.icon-active
                                     color c_celeste
@@ -157,6 +166,8 @@ $cyan = #00b3e3
                             .caract
                                 display flex
                                 justify-content space-between
+                                &__hogar
+                                    margin-right 30px
                                 p
                                     font-family f_roboto_l
                                 h3
@@ -224,6 +235,53 @@ $cyan = #00b3e3
                 margin auto
                 display  block
                 margin-top 30px
-/*@media screen and (max-width 1200px)
-    .nosotros_formulario .btn--nosotros
-        width  100%*/
+@media screen and (max-width 1024px)
+    .matchcota-detalle .container
+        flex-direction column-reverse
+        .cnt-descripcion
+
+            margin auto
+            width 90%
+            max-width 800px
+        .preview-img
+            width auto
+            margin auto
+            max-width 400px
+    .matchcota-detalle .container .preview-img .conoce_mascota__title
+        margin 40px 0px
+/*    .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-salud__alergias
+        margin 0px 5px
+    .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-salud h3
+        font-size 14px
+    .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas__block h3
+        font-size 16px
+    .matchcota-detalle .container
+        .preview-img
+            width calc(40% - 80px)
+            margin-right 80px
+        .cnt-descripcion
+            width 60%
+*/
+@media screen and (max-width 768px)
+    .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract
+            .caract
+                h3
+                    font-size 18px
+                &__hogar
+                    margin-right 0px
+
+@media screen and (max-width 480px)
+    .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract
+            .caract
+                flex-wrap wrap
+                h3
+                    font-size 16px
+    .matchcota-detalle .container .cnt-descripcion .acordeon li .title
+            a
+                font-size 14px
+            .text
+                min-width 165px
+    .matchcota-detalle .container .cnt-descripcion
+        width 98%
+    .matchcota-detalle .container .preview-img .conoce_mascota__title
+        font-size 20px

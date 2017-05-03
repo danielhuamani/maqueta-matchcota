@@ -217,6 +217,17 @@ p {
 .w100 {
   width: 100%;
 }
+@-moz-keyframes rotate1 {
+  0% {
+    transform: rotateZ(-5deg);
+  }
+  50% {
+    transform: rotateZ(10deg);
+  }
+  100% {
+    transform: rotateZ(-5deg);
+  }
+}
 @media screen and (max-width: 1500px) {
   .container {
     width: 96%;
@@ -534,6 +545,50 @@ p {
   }
   100% {
     transform: scale(1);
+  }
+}
+@-moz-keyframes rotate_b {
+  0% {
+    transform: rotateZ(-8deg);
+  }
+  50% {
+    transform: rotateZ(10deg);
+  }
+  100% {
+    transform: rotateZ(-8deg);
+  }
+}
+@-webkit-keyframes rotate_b {
+  0% {
+    transform: rotateZ(-8deg);
+  }
+  50% {
+    transform: rotateZ(10deg);
+  }
+  100% {
+    transform: rotateZ(-8deg);
+  }
+}
+@-o-keyframes rotate_b {
+  0% {
+    transform: rotateZ(-8deg);
+  }
+  50% {
+    transform: rotateZ(10deg);
+  }
+  100% {
+    transform: rotateZ(-8deg);
+  }
+}
+@keyframes rotate_b {
+  0% {
+    transform: rotateZ(-8deg);
+  }
+  50% {
+    transform: rotateZ(10deg);
+  }
+  100% {
+    transform: rotateZ(-8deg);
   }
 }
 

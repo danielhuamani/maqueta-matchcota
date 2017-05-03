@@ -6,12 +6,13 @@
   justify-content: center;
 }
 .matchcota-detalle .container .preview-img {
-  width: calc(50% - 100px);
+  width: calc(45% - 100px);
   margin: 0;
   margin-right: 100px;
 }
 .matchcota-detalle .container .preview-img .conoce_mascota__title {
   font-size: 25px;
+  display: block;
   font-family: f_ventura_m;
   color: c_plomo_os;
   text-align: left;
@@ -36,6 +37,9 @@
   box-shadow: 0 0 1px 1px #ddd, inset 0 0 1px 3px #ddd;
   text-align: center;
 }
+.matchcota-detalle .container .preview-img .main-img img {
+  padding-bottom: 2px;
+}
 .matchcota-detalle .container .preview-img ul.list-thumbnails {
   max-width: 100%;
   text-align: center;
@@ -59,7 +63,7 @@
   position: relative;
 }
 .matchcota-detalle .container .cnt-descripcion {
-  width: 50%;
+  width: 55%;
   margin-top: 0;
 }
 .matchcota-detalle .container .cnt-descripcion .title-main {
@@ -125,6 +129,7 @@
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-salud {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-salud h3 {
@@ -136,16 +141,21 @@
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-salud__alergias {
   margin: 0px 7px;
+  margin-bottom: 5px;
   display: flex;
   align-items: center;
 }
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-salud__alergias i.icon-active {
+  color: c_celeste;
+}
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-salud__alergias i {
   margin: 5px;
-  font-size: 24px;
+  font-size: 32px;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas {
   display: flex;
   justify-content: space-between;
+  flex-wrap: wrap;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas__tamanio .icon-tamanio--small {
   font-size: 24px;
@@ -158,6 +168,7 @@
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas__block {
   display: flex;
+  margin: 5px 0;
   align-items: flex-end;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas__block i.icon-active {
@@ -183,6 +194,9 @@
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract .caract {
   display: flex;
   justify-content: space-between;
+}
+.matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract .caract__hogar {
+  margin-right: 30px;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract .caract p {
   font-family: f_roboto_l;
@@ -259,8 +273,64 @@
   display: block;
   margin-top: 30px;
 }
-/*@media screen and (max-width 1200px)
-    .nosotros_formulario .btn--nosotros
-        width  100%*/
+@media screen and (max-width: 1024px) {
+  .matchcota-detalle .container {
+    flex-direction: column-reverse;
+  }
+  .matchcota-detalle .container .cnt-descripcion {
+    margin: auto;
+    width: 90%;
+    max-width: 800px;
+  }
+  .matchcota-detalle .container .preview-img {
+    width: auto;
+    margin: auto;
+    max-width: 400px;
+  }
+  .matchcota-detalle .container .preview-img .conoce_mascota__title {
+    margin: 40px 0px;
+  }
+}
+/*    .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-salud__alergias
+        margin 0px 5px
+    .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-salud h3
+        font-size 14px
+    .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas__block h3
+        font-size 16px
+    .matchcota-detalle .container
+        .preview-img
+            width calc(40% - 80px)
+            margin-right 80px
+        .cnt-descripcion
+            width 60%
+*/
+@media screen and (max-width: 768px) {
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract .caract h3 {
+    font-size: 18px;
+  }
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract .caract__hogar {
+    margin-right: 0px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract .caract {
+    flex-wrap: wrap;
+  }
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract .caract h3 {
+    font-size: 16px;
+  }
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .title a {
+    font-size: 14px;
+  }
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .title .text {
+    min-width: 165px;
+  }
+  .matchcota-detalle .container .cnt-descripcion {
+    width: 98%;
+  }
+  .matchcota-detalle .container .preview-img .conoce_mascota__title {
+    font-size: 20px;
+  }
+}
 
 /*# sourceMappingURL=producto_detalle.css.map */

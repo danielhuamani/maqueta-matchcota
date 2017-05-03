@@ -1,0 +1,45 @@
+{% extends "../common/base_2.html" %}
+{% block classbody %}page-enviado{% endblock %}
+{% block content %}
+
+<section class="sec-enviado">
+	<div class="container">
+		<div class="content-detail">
+			<div class="title-double">
+				<h2>Mensaje</h2>
+				<span>Enviado</span>
+			</div>
+			<h3>Gracias por Enviarnos tu Mensaje</h3>
+			<p>
+				Nos estaremos comunicando <br/>
+				contigo lo antes posible, puedes regresar a la página principal <br/>
+				o quizás encuentres lo que buscabas.
+			</p>
+			<div class="cnt-btn">
+				<a href="#" class="btn">Regresar al home</a>
+
+			</div>
+		</div>
+		<div class="content-image">
+			<span class="blo_1"></span>
+			<span class="blo_2"></span>
+			<span class="blo_3"></span>
+			<span class="blo_4"></span>
+			<span class="blo_5"></span>
+			<span class="blo_6"></span>
+			<span class="blo_7"></span>
+			<figure>
+				<img src="{{STATIC_URL}}img/enviado.png" alt="" width="363px">
+			</figure>
+		</div>
+	</div>
+</section>
+
+
+{% endblock content %}
+{% block js %}
+<script src="{{STATIC_URL}}js/banner.js"></script>
+<script>
+
+</script>
+{% endblock js %}

@@ -1,0 +1,44 @@
+{% extends "../common/base_2.html" %}
+{% block classbody %}page-enviado{% endblock %}
+{% block content %}
+
+<section class="sec-enviado">
+	<div class="container">
+		<div class="content-detail">
+			<div class="title-double">
+				<h2>404</h2>
+				<span>Error</span>
+			</div>
+			<h3>Esta Página No Existe</h3>
+			<p>
+				La página solicitada puede no estar disponible, o haber  <br/>
+				cambiado de dirección.
+			</p>
+			<div class="cnt-btn">
+				<a href="#" class="btn">Regresar al home</a>
+
+			</div>
+		</div>
+		<div class="content-image">
+			<span class="blo_1"></span>
+			<span class="blo_2"></span>
+			<span class="blo_3"></span>
+			<span class="blo_4"></span>
+			<span class="blo_5"></span>
+			<span class="blo_6"></span>
+			<span class="blo_7"></span>
+			<figure>
+				<img src="{{STATIC_URL}}img/error.png" alt="" width="363px">
+			</figure>
+		</div>
+	</div>
+</section>
+
+
+{% endblock content %}
+{% block js %}
+<script src="{{STATIC_URL}}js/banner.js"></script>
+<script>
+
+</script>
+{% endblock js %}
