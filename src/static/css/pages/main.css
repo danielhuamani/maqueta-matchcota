@@ -35,22 +35,23 @@
   background: #ff9971;
 }
 .header__logo_links nav ul li a.donar:hover {
-  box-shadow: 6px 8px 26px -5px rgba(50,50,50,0.75);
+  box-shadow: 0px 2px 26px -9px rgba(50,50,50,0.75);
 }
 .header__logo_links nav ul li a.apadrina {
   background: #ff7444;
 }
 .header__logo_links nav ul li a.apadrina:hover {
-  box-shadow: 1px 1px 26px -5px rgba(50,50,50,0.75);
+  box-shadow: 0px 0px 26px -9px rgba(50,50,50,0.75);
 }
 .header__logo_links nav ul li a.adopta {
   background: #ff4304;
 }
 .header__logo_links nav ul li a.adopta:hover {
-  box-shadow: -6px 5px 26px -5px rgba(50,50,50,0.75);
+  box-shadow: 0px 3px 26px -9px rgba(50,50,50,0.75);
 }
 .header__logo_links nav ul li a {
   min-width: 115px;
+  text-align: center;
   display: block;
   box-sizing: border-box;
   transition: 0.3s ease all;
@@ -564,6 +565,18 @@ footer .footer_top .facebook__slider__item ul li span {
   margin-top: 38px;
   margin-bottom: 38px;
 }
+.home_mascotas .home_conoce_mascota__title span.flecha {
+  background-image: url("../img/ver_mas_noticias.png");
+  width: 50px;
+  margin-left: 10px;
+  margin-bottom: 3px;
+  background-repeat: no-repeat;
+  height: 11px;
+  display: inline-block;
+}
+.home_mascotas .home_conoce_mascota__title:hover span.flecha {
+  animation: key_arrow_test_mas 1.5s infinite;
+}
 .home_conoce_mascota {
   margin-top: 60px;
   position: relative;
@@ -584,7 +597,6 @@ footer .footer_top .facebook__slider__item ul li span {
   color: #5d5d5d;
 }
 .home_conoce_mascota .testimonio_link span.flecha {
-  animation: key_arrow_test_mas 1.5s infinite;
   background-image: url("../img/ver_mas_noticias.png");
   width: 50px;
   margin-left: 10px;
@@ -592,6 +604,9 @@ footer .footer_top .facebook__slider__item ul li span {
   background-repeat: no-repeat;
   height: 11px;
   display: inline-block;
+}
+.home_conoce_mascota .testimonio_link:hover span.flecha {
+  animation: key_arrow_test_mas 1.5s infinite;
 }
 .home_conoce_mascota .juguete_1 {
   top: 4%;
@@ -739,8 +754,8 @@ footer .footer_top .facebook__slider__item ul li span {
 .home_conoce_mascota .full_container .bloque_picture a span:before {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 102%;
+  height: 99%;
   left: 0;
   transition: 0.3s ease all;
   top: 0;

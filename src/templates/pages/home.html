@@ -24,7 +24,7 @@
 		</div>
 		<div class="home_banner__slider_list__item" style="background-image:url('{{STATIC_URL}}img/banner.png')">
 			<div class="content content_banner">
-				<h2>ADOPTAR ES <span class="cuv_naran">amar</span></h2>
+				<h2>ADOPTAR ES <span class="cuv_naran">cuidar</span></h2>
 				<div class="text">
 					DA UN HOGAR A UNA MASCOTA ABANDONADA
 				</div>
@@ -32,7 +32,7 @@
 		</div>
 		<div class="home_banner__slider_list__item" style="background-image:url('{{STATIC_URL}}img/banner.png')">
 			<div class="content content_banner">
-				<h2>ADOPTAR ES <span class="cuv_naran">amar</span></h2>
+				<h2>ADOPTAR ES <span class="cuv_naran">querer</span></h2>
 				<div class="text">
 					DA UN HOGAR A UNA MASCOTA ABANDONADA
 				</div>
@@ -97,7 +97,7 @@
 		</div>
 		<a href="mascota.html" class="row">
 			<h3 class="home_conoce_mascota__title">
-				<i class="icon-22"></i>CONOCE MÁS matchcota AQUÍ
+				<i class="icon-22"></i>CONOCE MÁS matchcota AQUÍ <span class="flecha"></span>
 			</h3>
 		</a>
 
@@ -274,7 +274,7 @@
 				mode: 'fade',
 				adaptiveHeight: true,
 				auto: true,
-				pause: '22600',
+				pause: '2222600',
 				pager: false,
 				controls: false,
 
@@ -352,6 +352,7 @@
 
             return this.each(function(){
                 var elem = $(this);
+
                 elem.stop().animate({
                     scrollLeft: !isNaN(Number(x)) ? x : $(y).offset().left + options.gap.x,
                     scrollTop: !isNaN(Number(y)) ? y : $(y).offset().top  + options.gap.y
@@ -366,13 +367,11 @@
 		}
 		var media_ = ""
 		function widthChange(mq){
-			console.log(mq.media)
 
 
 			$(window).scroll(function(){
                 var window_top = $(window).scrollTop();
-                console.log(mq.matches)
-                console.log(mq.media)
+
                 if (mq.matches) {
                 	media_ = mq.media
 
@@ -417,7 +416,7 @@
 		                	$(".logo_celeste").addClass('logo_none')
 			            	$(".logo_blanco").removeClass('logo_none')
 			        	}
-			        	if (window_top >= 500) {
+			        	if (window_top >= 450) {
 		                	$(".title_section").addClass('home_mascotas--title--active')
 		                }else{
 		                	$(".title_section").removeClass('home_mascotas--title--active')
@@ -433,7 +432,7 @@
 		                	$(".logo_celeste").addClass('logo_none')
 			            	$(".logo_blanco").removeClass('logo_none')
 			        	}
-			        	if (window_top >= 650) {
+			        	if (window_top >= 620) {
 		                	$(".title_section").addClass('home_mascotas--title--active')
 		                }else{
 		                	$(".title_section").removeClass('home_mascotas--title--active')

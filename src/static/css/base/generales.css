@@ -109,6 +109,7 @@ a {
   font-size: 78px;
 }
 .content_banner .text {
+  margin-top: 20px;
   font-size: 26px;
   font-family: f_ventura_m;
   color: c_white;
@@ -461,46 +462,46 @@ p {
 }
 @-moz-keyframes key_arrow_test_mas {
   0% {
-    background-position: right center;
-  }
-  50% {
     background-position: left center;
   }
-  100% {
+  50% {
     background-position: right center;
+  }
+  100% {
+    background-position: left center;
   }
 }
 @-webkit-keyframes key_arrow_test_mas {
   0% {
-    background-position: right center;
-  }
-  50% {
     background-position: left center;
   }
-  100% {
+  50% {
     background-position: right center;
+  }
+  100% {
+    background-position: left center;
   }
 }
 @-o-keyframes key_arrow_test_mas {
   0% {
-    background-position: right center;
-  }
-  50% {
     background-position: left center;
   }
-  100% {
+  50% {
     background-position: right center;
+  }
+  100% {
+    background-position: left center;
   }
 }
 @keyframes key_arrow_test_mas {
   0% {
-    background-position: right center;
-  }
-  50% {
     background-position: left center;
   }
-  100% {
+  50% {
     background-position: right center;
+  }
+  100% {
+    background-position: left center;
   }
 }
 @-moz-keyframes key_scale {

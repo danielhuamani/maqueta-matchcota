@@ -718,6 +718,7 @@ a {
   font-size: 78px;
 }
 .content_banner .text {
+  margin-top: 20px;
   font-size: 26px;
   font-family: 'ventura_eddingmedium';
   color: #fff;
@@ -1183,46 +1184,46 @@ p {
 }
 @-moz-keyframes key_arrow_test_mas {
   0% {
-    background-position: right center;
-  }
-  50% {
     background-position: left center;
   }
-  100% {
+  50% {
     background-position: right center;
+  }
+  100% {
+    background-position: left center;
   }
 }
 @-webkit-keyframes key_arrow_test_mas {
   0% {
-    background-position: right center;
-  }
-  50% {
     background-position: left center;
   }
-  100% {
+  50% {
     background-position: right center;
+  }
+  100% {
+    background-position: left center;
   }
 }
 @-o-keyframes key_arrow_test_mas {
   0% {
-    background-position: right center;
-  }
-  50% {
     background-position: left center;
   }
-  100% {
+  50% {
     background-position: right center;
+  }
+  100% {
+    background-position: left center;
   }
 }
 @keyframes key_arrow_test_mas {
   0% {
-    background-position: right center;
-  }
-  50% {
     background-position: left center;
   }
-  100% {
+  50% {
     background-position: right center;
+  }
+  100% {
+    background-position: left center;
   }
 }
 @-moz-keyframes key_scale {
@@ -2286,7 +2287,19 @@ p {
   position: absolute;
   z-index: 3;
   left: 34px;
-  top: 14px;
+  top: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
   bottom: 0;
   padding-right: 20px;
   margin: auto;
@@ -2804,25 +2817,26 @@ p {
   background: #ff9971;
 }
 .header__logo_links nav ul li a.donar:hover {
-  -webkit-box-shadow: 6px 8px 26px -5px rgba(50,50,50,0.75);
-  box-shadow: 6px 8px 26px -5px rgba(50,50,50,0.75);
+  -webkit-box-shadow: 0px 2px 26px -9px rgba(50,50,50,0.75);
+  box-shadow: 0px 2px 26px -9px rgba(50,50,50,0.75);
 }
 .header__logo_links nav ul li a.apadrina {
   background: #ff7444;
 }
 .header__logo_links nav ul li a.apadrina:hover {
-  -webkit-box-shadow: 1px 1px 26px -5px rgba(50,50,50,0.75);
-  box-shadow: 1px 1px 26px -5px rgba(50,50,50,0.75);
+  -webkit-box-shadow: 0px 0px 26px -9px rgba(50,50,50,0.75);
+  box-shadow: 0px 0px 26px -9px rgba(50,50,50,0.75);
 }
 .header__logo_links nav ul li a.adopta {
   background: #ff4304;
 }
 .header__logo_links nav ul li a.adopta:hover {
-  -webkit-box-shadow: -6px 5px 26px -5px rgba(50,50,50,0.75);
-  box-shadow: -6px 5px 26px -5px rgba(50,50,50,0.75);
+  -webkit-box-shadow: 0px 3px 26px -9px rgba(50,50,50,0.75);
+  box-shadow: 0px 3px 26px -9px rgba(50,50,50,0.75);
 }
 .header__logo_links nav ul li a {
   min-width: 115px;
+  text-align: center;
   display: block;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -3445,6 +3459,22 @@ footer .footer_top .facebook__slider__item ul li span {
   margin-top: 38px;
   margin-bottom: 38px;
 }
+.home_mascotas .home_conoce_mascota__title span.flecha {
+  background-image: url("../img/ver_mas_noticias.png");
+  width: 50px;
+  margin-left: 10px;
+  margin-bottom: 3px;
+  background-repeat: no-repeat;
+  height: 11px;
+  display: inline-block;
+}
+.home_mascotas .home_conoce_mascota__title:hover span.flecha {
+  -webkit-animation: key_arrow_test_mas 1.5s infinite;
+  -moz-animation: key_arrow_test_mas 1.5s infinite;
+  -o-animation: key_arrow_test_mas 1.5s infinite;
+  -ms-animation: key_arrow_test_mas 1.5s infinite;
+  animation: key_arrow_test_mas 1.5s infinite;
+}
 .home_conoce_mascota {
   margin-top: 60px;
   position: relative;
@@ -3465,11 +3495,6 @@ footer .footer_top .facebook__slider__item ul li span {
   color: #5d5d5d;
 }
 .home_conoce_mascota .testimonio_link span.flecha {
-  -webkit-animation: key_arrow_test_mas 1.5s infinite;
-  -moz-animation: key_arrow_test_mas 1.5s infinite;
-  -o-animation: key_arrow_test_mas 1.5s infinite;
-  -ms-animation: key_arrow_test_mas 1.5s infinite;
-  animation: key_arrow_test_mas 1.5s infinite;
   background-image: url("../img/ver_mas_noticias.png");
   width: 50px;
   margin-left: 10px;
@@ -3477,6 +3502,13 @@ footer .footer_top .facebook__slider__item ul li span {
   background-repeat: no-repeat;
   height: 11px;
   display: inline-block;
+}
+.home_conoce_mascota .testimonio_link:hover span.flecha {
+  -webkit-animation: key_arrow_test_mas 1.5s infinite;
+  -moz-animation: key_arrow_test_mas 1.5s infinite;
+  -o-animation: key_arrow_test_mas 1.5s infinite;
+  -ms-animation: key_arrow_test_mas 1.5s infinite;
+  animation: key_arrow_test_mas 1.5s infinite;
 }
 .home_conoce_mascota .juguete_1 {
   top: 4%;
@@ -3638,8 +3670,8 @@ footer .footer_top .facebook__slider__item ul li span {
 .home_conoce_mascota .full_container .bloque_picture a span:before {
   content: "";
   position: absolute;
-  width: 100%;
-  height: 100%;
+  width: 102%;
+  height: 99%;
   left: 0;
   -webkit-transition: 0.3s ease all;
   -moz-transition: 0.3s ease all;
