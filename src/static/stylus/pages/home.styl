@@ -1,5 +1,42 @@
 .home_banner
     position relative
+    height 650px
+    text-align center
+    width 100%
+
+    background-size cover
+    background-position center center
+    position relative
+    display flex
+    align-items center
+    justify-content cente
+    &:after
+        content ""
+        width 100%
+        top 0
+        height 100%
+        position absolute
+        left 0
+        right 0
+        margin 0
+        background-image url("../img/capa_banner.png")
+        background-position center center
+        z-index 100
+    .cnt_slide_home
+        width 100%
+        .home_banner__text_static
+            padding 0
+            .text_adoptar
+                display flex
+                align-items center
+                .bx-wrapper
+                    min-width 200px
+                    text-align left
+                h2
+                    margin 0
+                    margin-top 42px
+                    margin-right 5px
+
     .arrow_scroll
         position absolute
         right 60px
@@ -48,10 +85,15 @@
             bottom 30px
 
     .home_banner__slider_list
+        .text_slide
+            span
+                 color c_narana_ad
+                 font-size 78px
+                 font-family f_kaushan_r
         &__item
             text-align center
             width 100%
-            height 650px
+
             background-size cover
             background-position center center
             position relative
@@ -59,18 +101,7 @@
             align-items center
             justify-content center
 
-            &:after
-                content ""
-                width 100%
-                top 0
-                height 100%
-                position absolute
-                left 0
-                right 0
-                margin 0
-                background-image url("../img/capa_banner.png")
-                background-position center center
-                z-index 100
+
 
 .home_mascotas
     padding-top 38px
@@ -367,10 +398,10 @@
             a span
                 width 220px
     .home_banner
+        height 500px
         .juguete
             right 120px
-        .home_banner__slider_list__item
-            height 500px
+
     .home_siempre_informados
         .container--r-large
             max-width 1000px
@@ -441,10 +472,9 @@
         .text
             display none
     .home_banner
+        height 400px
         .juguete
             display none
-        .home_banner__slider_list__item
-            height 400px
 
 @media screen and (max-width 768px)
     .home_conoce_mascota .testimonio_link
@@ -479,7 +509,6 @@
         a
             width 100%
     .home_banner
-        .home_banner__slider_list__item
-            height 360px
+        height 360px
     .home_nuestro_aliados .bx-wrapper
         max-width 180px !important

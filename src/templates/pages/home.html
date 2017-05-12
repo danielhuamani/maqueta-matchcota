@@ -1,7 +1,7 @@
 {% extends "../common/base.html" %}
 {% block content %}
 
-<section class="home_banner left_menu">
+<section class="home_banner left_menu" style="background-image:url('{{STATIC_URL}}img/banner.png')">
 	<a href="#home_mascotas" class="arrow_scroll">
 		<span>
 
@@ -13,31 +13,28 @@
 	<figure class="juguete">
 		<img src="{{STATIC_URL}}img/juguete1.png" alt="" class="img_res">
 	</figure>
-	<div class="home_banner__slider_list">
-		<div class="home_banner__slider_list__item" style="background-image:url('{{STATIC_URL}}img/banner.png')">
-			<div class="content content_banner">
-				<h2>ADOPTAR ES <span class="cuv_naran">amar</span></h2>
-				<div class="text">
-					DA UN HOGAR A UNA MASCOTA ABANDONADA
+	<div class="cnt_slide_home">
+		<div class="home_banner__text_static content_banner">
+			<div class="text_adoptar">
+
+				<h2>Adoptar es</h2>
+				<div class="home_banner__slider_list">
+					<div class="text_slide">
+						<span class="cuv_naran">cuidar</span>
+					</div>
+					<div class="text_slide">
+						<span class="cuv_naran">amar</span>
+					</div>
+					<div class="text_slide">
+						<span class="cuv_naran">adorar</span>
+					</div>
 				</div>
 			</div>
-		</div>
-		<div class="home_banner__slider_list__item" style="background-image:url('{{STATIC_URL}}img/banner.png')">
-			<div class="content content_banner">
-				<h2>ADOPTAR ES <span class="cuv_naran">cuidar</span></h2>
-				<div class="text">
-					DA UN HOGAR A UNA MASCOTA ABANDONADA
-				</div>
+			<div class="text">
+				DA UN HOGAR A UNA MASCOTA ABANDONADA
 			</div>
 		</div>
-		<div class="home_banner__slider_list__item" style="background-image:url('{{STATIC_URL}}img/banner.png')">
-			<div class="content content_banner">
-				<h2>ADOPTAR ES <span class="cuv_naran">querer</span></h2>
-				<div class="text">
-					DA UN HOGAR A UNA MASCOTA ABANDONADA
-				</div>
-			</div>
-		</div>
+
 	</div>
 </section>
 <section class="home_mascotas" id="home_mascotas">
@@ -272,26 +269,18 @@
 
 			$('.home_banner__slider_list').bxSlider({
 				mode: 'fade',
-				adaptiveHeight: true,
+				adaptiveHeight: false,
 				auto: true,
-				pause: '2222600',
+				pause: '6600',
 				pager: false,
 				controls: false,
 
+				minSlides: 1,
+			    maxSlides: 3,
+			    moveSlides: 1,
 
-				onSliderLoad: function(currentIndex) {
-						$('.home_banner__slider_list').children().eq(currentIndex).addClass('active');
 
-					},
-					onSlideBefore: function($slideElement){
-					  setTimeout( function(){
 
-						  $slideElement.addClass('active');
-
-					  },500);
-					  $('.home_banner__slider_list').children().removeClass('active');
-
-					}
 			});
 			$('.listado_aliados').bxSlider({
 

@@ -1,5 +1,46 @@
 .home_banner {
   position: relative;
+  height: 650px;
+  text-align: center;
+  width: 100%;
+  background-size: cover;
+  background-position: center center;
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: cente;
+}
+.home_banner:after {
+  content: "";
+  width: 100%;
+  top: 0;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  right: 0;
+  margin: 0;
+  background-image: url("../img/capa_banner.png");
+  background-position: center center;
+  z-index: 100;
+}
+.home_banner .cnt_slide_home {
+  width: 100%;
+}
+.home_banner .cnt_slide_home .home_banner__text_static {
+  padding: 0;
+}
+.home_banner .cnt_slide_home .home_banner__text_static .text_adoptar {
+  display: flex;
+  align-items: center;
+}
+.home_banner .cnt_slide_home .home_banner__text_static .text_adoptar .bx-wrapper {
+  min-width: 200px;
+  text-align: left;
+}
+.home_banner .cnt_slide_home .home_banner__text_static .text_adoptar h2 {
+  margin: 0;
+  margin-top: 42px;
+  margin-right: 5px;
 }
 .home_banner .arrow_scroll {
   position: absolute;
@@ -52,29 +93,20 @@
   right: -5px;
   bottom: 30px;
 }
+.home_banner .home_banner__slider_list .text_slide span {
+  color: c_narana_ad;
+  font-size: 78px;
+  font-family: f_kaushan_r;
+}
 .home_banner .home_banner__slider_list__item {
   text-align: center;
   width: 100%;
-  height: 650px;
   background-size: cover;
   background-position: center center;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: center;
-}
-.home_banner .home_banner__slider_list__item:after {
-  content: "";
-  width: 100%;
-  top: 0;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  right: 0;
-  margin: 0;
-  background-image: url("../img/capa_banner.png");
-  background-position: center center;
-  z-index: 100;
 }
 .home_mascotas {
   padding-top: 38px;
@@ -408,11 +440,11 @@
   .home_conoce_mascota .full_container .bloque_picture.bloque_5 a span {
     width: 220px;
   }
+  .home_banner {
+    height: 500px;
+  }
   .home_banner .juguete {
     right: 120px;
-  }
-  .home_banner .home_banner__slider_list__item {
-    height: 500px;
   }
   .home_siempre_informados .container--r-large {
     max-width: 1000px;
@@ -503,11 +535,11 @@
   .home_conoce_mascota .full_container .bloque_picture .text {
     display: none;
   }
+  .home_banner {
+    height: 400px;
+  }
   .home_banner .juguete {
     display: none;
-  }
-  .home_banner .home_banner__slider_list__item {
-    height: 400px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -554,7 +586,7 @@
   .home_conoce_mascota .full_container .bloque_picture a {
     width: 100%;
   }
-  .home_banner .home_banner__slider_list__item {
+  .home_banner {
     height: 360px;
   }
   .home_nuestro_aliados .bx-wrapper {
