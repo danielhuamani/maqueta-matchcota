@@ -69,7 +69,7 @@
 .listado_noticias__noticia:nth-child(odd) .descripcion:after {
   content: "";
   transition: 0.3s ease all;
-  top: -32px;
+  top: -30px;
   border-top: 16px solid transparent !important;
   border-bottom: 16px solid c_amarillo;
   width: 0;
@@ -120,7 +120,7 @@
   left: 0;
   right: 0;
   margin: auto;
-  bottom: -32px;
+  bottom: -30px;
   border-top: 16px solid c_celeste;
   border-bottom: 16px solid transparent !important;
 }
@@ -189,6 +189,7 @@
   display: block;
   width: 462px;
   height: 410px;
+  border: none !important;
 }
 .listado_noticias__noticia_large figure {
   width: 462px;
@@ -237,6 +238,7 @@
   display: block;
   width: 462px;
   height: 410px;
+  border: none !important;
 }
 .noticias_listado .listado_noticias__noticia_large figure {
   width: 462px;
@@ -289,13 +291,13 @@
         &:hover
             .descripcion
                 &:after
-                    top -32px
+                    top -30px
                     border-top 16px solid transparent
                     border-bottom 16px solid transparent
         .descripcion
             &:after
 
-                bottom -32px
+                bottom -30px
                 border-bottom 16px solid transparent !important
                 border-top 16px solid transparent
 
@@ -304,13 +306,13 @@
         &:hover
             .descripcion
                 &:after
-                    top -32px
+                    top -30px
                     border-top 16px solid transparent
                     border-bottom 16px solid transparent
         .descripcion
             &:after
 
-                top -32px
+                top -30px
                 border-top 16px solid transparent !important
                 border-bottom 16px solid c_amarillo
     &__noticia_small--celeste

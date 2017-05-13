@@ -589,6 +589,9 @@ a {
 .container--small {
   max-width: 1100px;
 }
+.container--testimonio {
+  max-width: 1420px;
+}
 .container--medium {
   max-width: 1500px;
 }
@@ -2472,7 +2475,7 @@ p {
   -o-transition: 0.3s ease all;
   -ms-transition: 0.3s ease all;
   transition: 0.3s ease all;
-  top: -32px;
+  top: -30px;
   border-top: 16px solid transparent !important;
   border-bottom: 16px solid #ffb718;
   width: 0;
@@ -2539,7 +2542,7 @@ p {
   left: 0;
   right: 0;
   margin: auto;
-  bottom: -32px;
+  bottom: -30px;
   border-top: 16px solid #00b2e2;
   border-bottom: 16px solid transparent !important;
 }
@@ -2619,6 +2622,7 @@ p {
   display: block;
   width: 462px;
   height: 410px;
+  border: none !important;
 }
 .listado_noticias__noticia_large figure {
   width: 462px;
@@ -2692,6 +2696,7 @@ p {
   display: block;
   width: 462px;
   height: 410px;
+  border: none !important;
 }
 .noticias_listado .listado_noticias__noticia_large figure {
   width: 462px;
@@ -3575,6 +3580,16 @@ footer .footer_top .facebook__slider__item ul li span {
   z-index: 2;
   left: -35px;
 }
+.home_conoce_mascota .juguete_1:after {
+  content: "";
+  display: block;
+  background-image: url("../img/juguete_after.png");
+  width: 14px;
+  height: 30px;
+  position: absolute;
+  right: 0px;
+  top: 25%;
+}
 .home_conoce_mascota .juguete_2 {
   bottom: -17%;
   position: absolute;
@@ -3636,10 +3651,29 @@ footer .footer_top .facebook__slider__item ul li span {
 .home_conoce_mascota .full_container .container .title h3 {
   display: block;
   font-size: 44px;
-  color: #ff4304;
+  color: #ff4612;
   position: relative;
   font-family: 'ventura_eddingmedium';
-  color: #ff7444;
+}
+.home_conoce_mascota .full_container .container .title h3:after {
+  content: "";
+  position: absolute;
+  display: block;
+  left: 0;
+  bottom: 0;
+  background-image: url("../img/historia_left.png");
+  width: 11px;
+  height: 11px;
+}
+.home_conoce_mascota .full_container .container .title h3:before {
+  content: "";
+  position: absolute;
+  display: block;
+  right: 0;
+  top: 0;
+  background-image: url("../img/historia_right.png");
+  width: 11px;
+  height: 11px;
 }
 .home_conoce_mascota .full_container .bloque_picture {
   position: absolute;
@@ -3649,7 +3683,7 @@ footer .footer_top .facebook__slider__item ul li span {
 }
 .home_conoce_mascota .full_container .bloque_picture .text {
   color: #c7c7c7;
-  font-size: 65px;
+  font-size: 75px;
   font-family: 'kaushan_scriptregular';
   position: absolute;
   z-index: 2;
@@ -3659,39 +3693,39 @@ footer .footer_top .facebook__slider__item ul li span {
   display: inline-block;
 }
 .home_conoce_mascota .full_container .bloque_picture.bloque_1 .text {
-  left: -115px;
-  bottom: -60px;
+  left: -90px;
+  bottom: -70px;
 }
 .home_conoce_mascota .full_container .bloque_picture.bloque_2 {
   display: inline-block;
-  left: 28%;
+  left: 32%;
   top: 2%;
 }
 .home_conoce_mascota .full_container .bloque_picture.bloque_2 .text {
-  left: -40px;
-  bottom: -60px;
+  left: -68px;
+  bottom: -80px;
 }
 .home_conoce_mascota .full_container .bloque_picture.bloque_3 {
   display: inline-block;
-  left: 26%;
+  left: 32%;
   top: 65%;
 }
 .home_conoce_mascota .full_container .bloque_picture.bloque_3 .text {
-  right: -270px;
+  right: -320px;
   top: 20px;
 }
 .home_conoce_mascota .full_container .bloque_picture.bloque_4 {
   display: inline-block;
-  left: 45%;
+  left: 51%;
   top: 20%;
 }
 .home_conoce_mascota .full_container .bloque_picture.bloque_4 .text {
-  top: -90px;
-  right: -34px;
+  top: -105px;
+  right: -58px;
 }
 .home_conoce_mascota .full_container .bloque_picture.bloque_5 {
   display: inline-block;
-  right: 0;
+  right: 3%;
   top: -10%;
 }
 .home_conoce_mascota .full_container .bloque_picture.bloque_5 a {
@@ -3717,6 +3751,11 @@ footer .footer_top .facebook__slider__item ul li span {
   width: 179px;
   height: 173px;
 }
+.home_conoce_mascota .full_container .bloque_picture a:hover span:after {
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
+}
 .home_conoce_mascota .full_container .bloque_picture a:hover span:before {
   background: rgba(0,0,0,0.5);
 }
@@ -3725,6 +3764,45 @@ footer .footer_top .facebook__slider__item ul li span {
 }
 .home_conoce_mascota .full_container .bloque_picture a span {
   position: relative;
+}
+.home_conoce_mascota .full_container .bloque_picture a span:after {
+  content: "Ver Testimonio";
+  position: absolute;
+  max-width: 100px;
+  text-align: center;
+  left: 0;
+  right: 0;
+  margin: auto;
+  top: 0;
+  bottom: 0;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-align: center;
+  -moz-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -moz-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  color: #fff;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+  -ms-transition: 0.3s ease all;
+  transition: 0.3s ease all;
+  font-size: 18px;
 }
 .home_conoce_mascota .full_container .bloque_picture a span:before {
   content: "";
@@ -3754,17 +3832,20 @@ footer .footer_top .facebook__slider__item ul li span {
   margin-right: 10px;
 }
 .home_siempre_informados .ver_mas_noticias span {
-  width: 55px;
+  background-image: url("../img/ver_mas_noticias.png");
+  width: 50px;
+  margin-left: 10px;
+  margin-bottom: 3px;
+  background-repeat: no-repeat;
   height: 11px;
   display: inline-block;
-  -webkit-animation: key_arrow_mas 1.2s infinite;
-  -moz-animation: key_arrow_mas 1.2s infinite;
-  -o-animation: key_arrow_mas 1.2s infinite;
-  -ms-animation: key_arrow_mas 1.2s infinite;
-  animation: key_arrow_mas 1.2s infinite;
-  margin-bottom: 4px;
-  background-repeat: no-repeat;
-  background-image: url("../img/ver_mas_noticias.png");
+}
+.home_siempre_informados .ver_mas_noticias:hover span {
+  -webkit-animation: key_arrow_test_mas 1.5s infinite;
+  -moz-animation: key_arrow_test_mas 1.5s infinite;
+  -o-animation: key_arrow_test_mas 1.5s infinite;
+  -ms-animation: key_arrow_test_mas 1.5s infinite;
+  animation: key_arrow_test_mas 1.5s infinite;
 }
 .home_siempre_informados .home_listado_noticias {
   margin-top: 40px;
@@ -3853,7 +3934,15 @@ footer .footer_top .facebook__slider__item ul li span {
 .listado_aliados__item:hover img {
   filter: grayscale(0%);
 }
-@media screen and (max-width: 1500px) {
+@media screen and (max-width: 1800px) {
+  .home_conoce_mascota .full_container .bloque_picture.bloque_1 .text {
+    left: -20px;
+  }
+  .home_conoce_mascota .full_container .container .title {
+    margin-left: 4em;
+  }
+}
+@media screen and (max-width: 1700px) {
   .home_conoce_mascota .juguete_1 {
     display: none;
   }
@@ -3870,16 +3959,25 @@ footer .footer_top .facebook__slider__item ul li span {
     width: 250px;
   }
   .home_conoce_mascota .full_container .bloque_picture.bloque_5 {
-    right: 70px;
+    right: 5px;
+  }
+  .home_conoce_mascota .full_container .bloque_picture.bloque_5 a:after,
+  .home_conoce_mascota .full_container .bloque_picture.bloque_5 a:before {
+    display: none;
   }
   .home_conoce_mascota .full_container .bloque_picture.bloque_5 a span {
     width: 220px;
   }
+}
+@media screen and (max-width: 1500px) {
   .home_banner {
     height: 500px;
   }
   .home_banner .juguete {
     right: 120px;
+  }
+  .home_conoce_mascota .full_container .bloque_picture .text {
+    font-size: 60px;
   }
   .home_siempre_informados .container--r-large {
     max-width: 1000px;
@@ -3910,7 +4008,7 @@ footer .footer_top .facebook__slider__item ul li span {
     top: 95%;
   }
   .home_conoce_mascota .full_container .bloque_picture.bloque_4 {
-    left: 47%;
+    left: 50%;
   }
   .home_conoce_mascota .full_container .bloque_picture.bloque_4 a span {
     width: 220px;
