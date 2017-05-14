@@ -320,19 +320,19 @@
 		</div>
 		<div class="listado_aliados">
 			<figure class="listado_aliados__item">
-				<img src="/static/img/instinto.png" alt="" width="205" height="91">
+				<img src="/static/img/instinto.png" alt="" width="180" height="90">
 			</figure>
 			<figure class="listado_aliados__item">
-				<img src="/static/img/voz_animal.png" alt="" >
+				<img src="/static/img/voz_animal.png" width="180" height="90" alt="" >
 			</figure>
 			<figure class="listado_aliados__item">
-				<img src="/static/img/vet.png" alt="">
+				<img src="/static/img/vet.png" width="180" height="90" alt="">
 			</figure>
 			<figure class="listado_aliados__item">
-				<img src="/static/img/guau.png" alt="">
+				<img src="/static/img/guau.png" width="180" height="90" alt="">
 			</figure>
 			<figure class="listado_aliados__item">
-				<img src="/static/img/voz_animal.png" alt="">
+				<img src="/static/img/voz_animal.png" width="180" height="90" alt="">
 			</figure>
 			<figure class="listado_aliados__item">
 				<img src="/static/img/4patas.png" alt="">
@@ -686,8 +686,9 @@
 					<a href="" class="">
 						<span class="icon-15"></span> Jr. La Paz Nº. 170 - La Molina, Lima
 					</a>
-					<a href="" class="">
-						<span class="icon-16"></span>(01) 3483899
+					<a href="" class="telefono">
+						<span class="icon-16"></span>
+						<span class="text">(01) 3483899</span>
 					</a>
 					<a href="" class="informacion"> 	<span class="icon-14">
 
@@ -700,10 +701,10 @@
 	<div class="footer-bottom">
 		<div class="container">
 		<span>
-			Matchcota 2016. Todos lo Derechos Reservados
+			Matchcota 2017. Todos lo Derechos Reservados
 		</span>
 		<a href="">
-			Agencia digital: <span class="staff">staff</span><span class="digital">digital</span>
+			Diseño Web: <span class="staff">staff</span><span class="digital">digital</span>
 		</a>
 		</div>
 	</div>
@@ -777,19 +778,16 @@
 			});
 			$('.listado_aliados').bxSlider({
 
-				adaptiveHeight: false,
-				auto: true,
-				pause: '22600',
-				pager: false,
-				controls: false,
-				minSlides: 1,
+
+				minSlides: 5,
 			    maxSlides: 5,
-			    moveSlides: 1,
+
 			    slideWidth: 205,
-			    controls: true,
+
 			    slideMargin: 10,
-			    nextText: '',
-				prevText: '',
+
+				ticker: true,
+  				speed: 10000
 
 			});
 
@@ -798,6 +796,9 @@
 
                 if(window_top>720) {
 		  			$(".cnt-beneficios .facebook").addClass('facebook-fixed')
+		  		}
+		  		if(window_top>2400) {
+		  			$(".home_nuestro_aliados .title_colores h2").addClass('facebook-da')
 		  		}
             });
 

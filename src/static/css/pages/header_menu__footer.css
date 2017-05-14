@@ -249,6 +249,11 @@ footer .footer_top__contacto .links a.informacion {
 footer .footer_top__contacto .links a.informacion span {
   font-size: 24px;
 }
+footer .footer_top__contacto .links a.telefono {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
 footer .footer_top__contacto .links a {
   color: #fff;
   display: block;
@@ -257,6 +262,7 @@ footer .footer_top__contacto .links a {
   font-family: 'GothamRounded-Light';
 }
 footer .footer_top__contacto .links a span {
+  margin: 0;
   margin-right: 6px;
 }
 footer .footer_top .facebook_bloque {

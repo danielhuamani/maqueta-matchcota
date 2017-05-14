@@ -239,19 +239,19 @@
 		</div>
 		<div class="listado_aliados">
 			<figure class="listado_aliados__item">
-				<img src="{{STATIC_URL}}img/instinto.png" alt="" width="205" height="91">
+				<img src="{{STATIC_URL}}img/instinto.png" alt="" width="180" height="90">
 			</figure>
 			<figure class="listado_aliados__item">
-				<img src="{{STATIC_URL}}img/voz_animal.png" alt="" >
+				<img src="{{STATIC_URL}}img/voz_animal.png" width="180" height="90" alt="" >
 			</figure>
 			<figure class="listado_aliados__item">
-				<img src="{{STATIC_URL}}img/vet.png" alt="">
+				<img src="{{STATIC_URL}}img/vet.png" width="180" height="90" alt="">
 			</figure>
 			<figure class="listado_aliados__item">
-				<img src="{{STATIC_URL}}img/guau.png" alt="">
+				<img src="{{STATIC_URL}}img/guau.png" width="180" height="90" alt="">
 			</figure>
 			<figure class="listado_aliados__item">
-				<img src="{{STATIC_URL}}img/voz_animal.png" alt="">
+				<img src="{{STATIC_URL}}img/voz_animal.png" width="180" height="90" alt="">
 			</figure>
 			<figure class="listado_aliados__item">
 				<img src="{{STATIC_URL}}img/4patas.png" alt="">
@@ -284,19 +284,16 @@
 			});
 			$('.listado_aliados').bxSlider({
 
-				adaptiveHeight: false,
-				auto: true,
-				pause: '22600',
-				pager: false,
-				controls: false,
-				minSlides: 1,
+
+				minSlides: 5,
 			    maxSlides: 5,
-			    moveSlides: 1,
+
 			    slideWidth: 205,
-			    controls: true,
+
 			    slideMargin: 10,
-			    nextText: '',
-				prevText: '',
+
+				ticker: true,
+  				speed: 10000
 
 			});
 
@@ -305,6 +302,9 @@
 
                 if(window_top>720) {
 		  			$(".cnt-beneficios .facebook").addClass('facebook-fixed')
+		  		}
+		  		if(window_top>2400) {
+		  			$(".home_nuestro_aliados .title_colores h2").addClass('facebook-da')
 		  		}
             });
 
