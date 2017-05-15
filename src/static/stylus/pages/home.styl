@@ -397,7 +397,10 @@
                 height 12px
                 background-image url("../img/flecha_celeste.png")
                 display block
-
+    .title_colores_animate
+        h2
+            &:after, &:before
+                opacity 1 !important
     .title_colores
         margin-bottom 70px
         h2
@@ -410,6 +413,8 @@
                 position absolute
                 left -12px
                 top -7px
+                opacity 0
+                transition .3s ease all
             &:before
                 content ""
                 background-image url("../img/rayas_naranja.png")
@@ -418,6 +423,8 @@
                 position absolute
                 right -12px
                 bottom -7px
+                opacity 0
+                transition .3s ease all
 .listado_aliados
     &__item
         img

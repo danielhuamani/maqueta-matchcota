@@ -924,6 +924,10 @@ footer .footer_top .facebook__slider__item ul li span {
   background-image: url("../img/flecha_celeste.png");
   display: block;
 }
+.home_nuestro_aliados .title_colores_animate h2:after,
+.home_nuestro_aliados .title_colores_animate h2:before {
+  opacity: 1 !important;
+}
 .home_nuestro_aliados .title_colores {
   margin-bottom: 70px;
 }
@@ -938,6 +942,8 @@ footer .footer_top .facebook__slider__item ul li span {
   position: absolute;
   left: -12px;
   top: -7px;
+  opacity: 0;
+  transition: 0.3s ease all;
 }
 .home_nuestro_aliados .title_colores h2:before {
   content: "";
@@ -947,6 +953,8 @@ footer .footer_top .facebook__slider__item ul li span {
   position: absolute;
   right: -12px;
   bottom: -7px;
+  opacity: 0;
+  transition: 0.3s ease all;
 }
 .listado_aliados__item img {
   filter: grayscale(100%);
@@ -1149,13 +1157,9 @@ footer .footer_top .facebook__slider__item ul li span {
     max-width: 180px !important;
   }
 }
-.nosotros_matchota_ideal {
-  margin-top: 50px;
-}
 .nosotros_matchota_ideal .container {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
 }
 .nosotros_matchota_ideal .container figure.active-img {
   bottom: 0px !important;
@@ -1168,14 +1172,26 @@ footer .footer_top .facebook__slider__item ul li span {
   z-index: 20;
   width: 357px;
   margin: 0;
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.nosotros_matchota_ideal .container figure img {
+  display: block;
+  margin: 0;
 }
 .nosotros_matchota_ideal .container .cnt-descripcion {
   margin-left: 90px;
   max-width: 520px;
-  margin-top: 60px;
+  margin-top: 30px;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .nosotros_matchota_ideal .container .cnt-descripcion h2 {
+  max-width: 195px;
   position: relative;
   font-size: 28px;
   font-family: 'ventura_eddingmedium';
@@ -1322,7 +1338,7 @@ footer .footer_top .facebook__slider__item ul li span {
   font-family: 'ventura_eddingmedium';
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo {
-  margin-top: 80px;
+  margin-top: 120px;
   display: flex;
   justify-content: center;
 }
@@ -1338,7 +1354,7 @@ footer .footer_top .facebook__slider__item ul li span {
   height: 51px;
   background-image: url("../img/nos_ani_2.png");
   position: absolute;
-  right: 0;
+  right: 30px;
   top: 0;
   opacity: 0;
 }
@@ -1363,11 +1379,12 @@ footer .footer_top .facebook__slider__item ul li span {
   opacity: 1;
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_2 {
-  margin-left: 15px;
+  margin-left: 10px;
   padding-right: 20px;
+  opacity: 0;
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_2 figure {
-  margin-top: 10px;
+  margin-top: 20px;
   position: relative;
   margin-left: 10px;
   padding-right: 20px;
@@ -1393,7 +1410,7 @@ footer .footer_top .facebook__slider__item ul li span {
   position: absolute;
   left: 80px;
   top: 0;
-  width: 0px;
+  width: 106px;
   height: 64px;
   background-image: url("../img/nos_ani_3.png");
   transition: 0.8s ease all;
@@ -1404,14 +1421,15 @@ footer .footer_top .facebook__slider__item ul li span {
   font-family: 'GothamRounded-Light';
   color: #656564;
 }
+.nosotros_linea_tiempo .container .cnt_linea_tiempo .b_2_active {
+  opacity: 1;
+}
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .b_2_active figure {
   opacity: 1;
 }
-.nosotros_linea_tiempo .container .cnt_linea_tiempo .b_2_active .descripcion:after {
-  width: 106px;
-}
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_3 {
   margin-left: 15px;
+  opacity: 0;
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_3 h3 {
   background-image: url("../img/nos_ani_fondo.png");
@@ -1424,7 +1442,6 @@ footer .footer_top .facebook__slider__item ul li span {
   text-shadow: 2px 0 0 #656564, -2px 0 0 #656564, 0 2px 0 #656564, 0 -2px 0 #656564, 1px 1px #656564, -1px -1px 0 #656564, 1px -1px 0 #656564, -1px 1px 0 #656564;
   position: relative;
   transition: 0.5s ease all;
-  transform: scale(0.5);
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_3 h3:after {
   content: "";
@@ -1432,11 +1449,11 @@ footer .footer_top .facebook__slider__item ul li span {
   width: 112px;
   height: 57px;
   position: absolute;
-  bottom: -40px;
+  bottom: -80px;
   right: -50px;
 }
-.nosotros_linea_tiempo .container .cnt_linea_tiempo .b_3_active h3 {
-  transform: scale(1);
+.nosotros_linea_tiempo .container .cnt_linea_tiempo .b_3_active {
+  opacity: 1;
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_4 {
   margin-left: 60px;
@@ -1449,12 +1466,13 @@ footer .footer_top .facebook__slider__item ul li span {
   content: "";
   position: absolute;
   top: -40px;
-  right: -100px;
+  right: -80px;
   background-image: url("../img/nos_ani_7_3.png");
   width: 113px;
   height: 32px;
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_4 figure {
+  margin-bottom: 15px;
   text-align: center;
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_4 h3 {
@@ -1480,8 +1498,8 @@ footer .footer_top .facebook__slider__item ul li span {
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_5 figure:after {
   content: "";
   position: absolute;
-  bottom: -50px;
-  right: -60px;
+  bottom: -65px;
+  right: -45px;
   background-image: url("../img/nos_ani_8_2.png");
   width: 104px;
   height: 34px;
@@ -1540,14 +1558,15 @@ footer .footer_top .facebook__slider__item ul li span {
   animation: key_scale 1.5s infinite;
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_7 h3:last-child {
-  margin-left: 50px;
+  right: 0;
   bottom: -40px;
   top: inherit;
+  left: inherit;
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_7 h3 {
   position: absolute;
-  left: -30px;
-  top: -40px;
+  left: -10px;
+  top: -70px;
   margin: 0;
   color: #656564;
   font-family: 'ventura_eddingmedium';
@@ -1893,7 +1912,7 @@ footer .footer_top .facebook__slider__item ul li span {
   }
   .nosotros_matchota_ideal .container .cnt-descripcion {
     margin-left: 0;
-    margin-top: 0;
+    margin-top: 30px;
   }
   .nosotros_matchota_ideal .container .cnt-descripcion .descripcion {
     padding: 0 10px;

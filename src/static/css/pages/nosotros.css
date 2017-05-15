@@ -1,10 +1,6 @@
-.nosotros_matchota_ideal {
-  margin-top: 50px;
-}
 .nosotros_matchota_ideal .container {
   display: flex;
   justify-content: center;
-  align-items: flex-end;
 }
 .nosotros_matchota_ideal .container figure.active-img {
   bottom: 0px !important;
@@ -17,14 +13,26 @@
   z-index: 20;
   width: 357px;
   margin: 0;
+  margin-top: 40px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+.nosotros_matchota_ideal .container figure img {
+  display: block;
+  margin: 0;
 }
 .nosotros_matchota_ideal .container .cnt-descripcion {
   margin-left: 90px;
   max-width: 520px;
-  margin-top: 60px;
+  margin-top: 30px;
   margin-bottom: 30px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
 }
 .nosotros_matchota_ideal .container .cnt-descripcion h2 {
+  max-width: 195px;
   position: relative;
   font-size: 28px;
   font-family: f_ventura_m;
@@ -171,7 +179,7 @@
   font-family: f_ventura_m;
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo {
-  margin-top: 80px;
+  margin-top: 120px;
   display: flex;
   justify-content: center;
 }
@@ -187,7 +195,7 @@
   height: 51px;
   background-image: url("../img/nos_ani_2.png");
   position: absolute;
-  right: 0;
+  right: 30px;
   top: 0;
   opacity: 0;
 }
@@ -212,11 +220,12 @@
   opacity: 1;
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_2 {
-  margin-left: 15px;
+  margin-left: 10px;
   padding-right: 20px;
+  opacity: 0;
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_2 figure {
-  margin-top: 10px;
+  margin-top: 20px;
   position: relative;
   margin-left: 10px;
   padding-right: 20px;
@@ -242,7 +251,7 @@
   position: absolute;
   left: 80px;
   top: 0;
-  width: 0px;
+  width: 106px;
   height: 64px;
   background-image: url("../img/nos_ani_3.png");
   transition: 0.8s ease all;
@@ -253,14 +262,15 @@
   font-family: f_gothan_l;
   color: c_nosotros;
 }
+.nosotros_linea_tiempo .container .cnt_linea_tiempo .b_2_active {
+  opacity: 1;
+}
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .b_2_active figure {
   opacity: 1;
 }
-.nosotros_linea_tiempo .container .cnt_linea_tiempo .b_2_active .descripcion:after {
-  width: 106px;
-}
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_3 {
   margin-left: 15px;
+  opacity: 0;
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_3 h3 {
   background-image: url("../img/nos_ani_fondo.png");
@@ -273,7 +283,6 @@
   text-shadow: 2px 0 0 c_nosotros, -2px 0 0 c_nosotros, 0 2px 0 c_nosotros, 0 -2px 0 c_nosotros, 1px 1px c_nosotros, -1px -1px 0 c_nosotros, 1px -1px 0 c_nosotros, -1px 1px 0 c_nosotros;
   position: relative;
   transition: 0.5s ease all;
-  transform: scale(0.5);
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_3 h3:after {
   content: "";
@@ -281,11 +290,11 @@
   width: 112px;
   height: 57px;
   position: absolute;
-  bottom: -40px;
+  bottom: -80px;
   right: -50px;
 }
-.nosotros_linea_tiempo .container .cnt_linea_tiempo .b_3_active h3 {
-  transform: scale(1);
+.nosotros_linea_tiempo .container .cnt_linea_tiempo .b_3_active {
+  opacity: 1;
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_4 {
   margin-left: 60px;
@@ -298,12 +307,13 @@
   content: "";
   position: absolute;
   top: -40px;
-  right: -100px;
+  right: -80px;
   background-image: url("../img/nos_ani_7_3.png");
   width: 113px;
   height: 32px;
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_4 figure {
+  margin-bottom: 15px;
   text-align: center;
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_4 h3 {
@@ -329,8 +339,8 @@
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_5 figure:after {
   content: "";
   position: absolute;
-  bottom: -50px;
-  right: -60px;
+  bottom: -65px;
+  right: -45px;
   background-image: url("../img/nos_ani_8_2.png");
   width: 104px;
   height: 34px;
@@ -389,14 +399,15 @@
   animation: key_scale 1.5s infinite;
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_7 h3:last-child {
-  margin-left: 50px;
+  right: 0;
   bottom: -40px;
   top: inherit;
+  left: inherit;
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_7 h3 {
   position: absolute;
-  left: -30px;
-  top: -40px;
+  left: -10px;
+  top: -70px;
   margin: 0;
   color: c_nosotros;
   font-family: f_ventura_m;
@@ -742,7 +753,7 @@
   }
   .nosotros_matchota_ideal .container .cnt-descripcion {
     margin-left: 0;
-    margin-top: 0;
+    margin-top: 30px;
   }
   .nosotros_matchota_ideal .container .cnt-descripcion .descripcion {
     padding: 0 10px;
