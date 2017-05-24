@@ -314,22 +314,22 @@
 		</div>
 		<div class="listado_aliados listado_aliados_nosotros">
 			<figure class="listado_aliados__item">
-				<img src="/static/img/nos_soc_1.png" alt="" >
+				<img src="/static/img/nos_soc_1.png" width="135" height="135" alt="" >
 			</figure>
 			<figure class="listado_aliados__item">
-				<img src="/static/img/nos_soc_2.png" alt="" >
+				<img src="/static/img/nos_soc_2.png" width="135" height="135" alt="" >
 			</figure>
 			<figure class="listado_aliados__item">
-				<img src="/static/img/nos_soc_3.png" alt="">
+				<img src="/static/img/nos_soc_3.png" width="135" height="135" alt="">
 			</figure>
 			<figure class="listado_aliados__item">
-				<img src="/static/img/nos_soc_4.png" alt="">
+				<img src="/static/img/nos_soc_4.png" width="135" height="135" alt="">
 			</figure>
 			<figure class="listado_aliados__item">
-				<img src="/static/img/nos_soc_1.png" alt="">
+				<img src="/static/img/nos_soc_1.png" width="135" height="135" alt="">
 			</figure>
 			<figure class="listado_aliados__item">
-				<img src="/static/img/nos_soc_2.png" alt="">
+				<img src="/static/img/nos_soc_2.png" width="135" height="135" alt="">
 			</figure>
 		</div>
 	</div>
@@ -754,19 +754,17 @@
 	jQuery(document).ready(function($) {
 			$('.listado_aliados').bxSlider({
 
-				adaptiveHeight: false,
-				auto: true,
-				pause: '22600',
-				pager: false,
-				controls: false,
-				minSlides: 1,
+
+
+
+				minSlides: 5,
 			    maxSlides: 5,
-			    moveSlides: 1,
+
 			    slideWidth: 135,
-			    controls: true,
+
 			    slideMargin: 30,
-			    nextText: '',
-				prevText: '',
+				ticker: true,
+  				speed: 6000
 
 			});
 
