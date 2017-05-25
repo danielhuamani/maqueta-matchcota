@@ -261,16 +261,18 @@
 			$('.listado_aliados').bxSlider({
 
 
-
-
 				minSlides: 5,
 			    maxSlides: 5,
-
 			    slideWidth: 135,
-
 			    slideMargin: 30,
-				ticker: true,
-  				speed: 6000
+				auto: true,
+				moveSlides: 1,
+				autoControls: false,
+				pause: 1500,
+				nextText: "",
+				prevText: "",
+				pager: false
+
 
 			});
 
@@ -299,6 +301,11 @@
 					$(".bloque_5").removeClass('b_5_active')
 					$(".bloque_6").removeClass('b_6_active')
 					$(".bloque_7").removeClass('b_7_active')
+		  		}
+		  		if (window_top>2000) {
+		  			$(".nosotros_socios_estrategicos .title_colores").addClass('title_colores_animate')
+		  		}else{
+		  			$(".nosotros_socios_estrategicos .title_colores").removeClass('title_colores_animate')
 		  		}
             });
 	});

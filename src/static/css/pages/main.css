@@ -1587,6 +1587,10 @@ footer .footer_top .facebook__slider__item ul li span {
 .nosotros_socios_estrategicos {
   margin-top: 35px;
 }
+.nosotros_socios_estrategicos .container .title_colores_animate h2:after,
+.nosotros_socios_estrategicos .container .title_colores_animate h2:before {
+  opacity: 1 !important;
+}
 .nosotros_socios_estrategicos .container .title_colores {
   margin-bottom: 70px;
 }
@@ -1601,6 +1605,8 @@ footer .footer_top .facebook__slider__item ul li span {
   position: absolute;
   left: -12px;
   top: -7px;
+  opacity: 0;
+  transition: 0.3s ease all;
 }
 .nosotros_socios_estrategicos .container .title_colores h2:before {
   content: "";
@@ -1610,6 +1616,8 @@ footer .footer_top .facebook__slider__item ul li span {
   position: absolute;
   right: -12px;
   bottom: -7px;
+  opacity: 0;
+  transition: 0.3s ease all;
 }
 .nosotros_socios_estrategicos .container .bx-wrapper {
   margin: auto;
@@ -2015,6 +2023,15 @@ footer .footer_top .facebook__slider__item ul li span {
     max-width: 165px !important;
   }
 }
+.page-testimonio .footer_top {
+  margin-top: -90px;
+  position: relative;
+  z-index: 5;
+}
+.cnt-testimonios {
+  background: url("../img/trama.png");
+  padding-bottom: 100px;
+}
 .cnt-testimonios .title {
   text-align: center;
   margin-bottom: 2.5em;
@@ -2232,6 +2249,8 @@ img
   text-align: center;
 }
 .matchcota-detalle .container .preview-img .main-img img {
+  display: block;
+  max-width: 100%;
   padding-bottom: 2px;
 }
 .matchcota-detalle .container .preview-img ul.list-thumbnails {
@@ -2241,7 +2260,8 @@ img
 }
 .matchcota-detalle .container .preview-img ul.list-thumbnails li {
   margin: 0px 4px;
-  max-width: 20%;
+  width: 20%;
+  max-width: 140px;
   display: inline-block;
 }
 .matchcota-detalle .container .preview-img ul.list-thumbnails li a {
@@ -2297,7 +2317,7 @@ img
   min-width: 240px;
   display: inline-block;
   vertical-align: middle;
-  margin-top: -4px;
+  margin-top: -9px;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .title a {
   background: #00b3e3;
@@ -2310,8 +2330,8 @@ img
   transition: 0.3s ease all;
   font-size: 16px;
   border-radius: 50%;
-  padding: 6px 2px;
-  border: 1px solid #fff;
+  padding: 7px 2px;
+  border: 2px solid #fff;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content {
   display: none;
@@ -2382,7 +2402,7 @@ img
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract h2 {
   color: #5d5d5d;
   margin: 10px 0px;
-  font-size: 20px;
+  font-size: 21px;
   font-family: 'GothamRounded-Medium';
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract .caract {
@@ -2401,6 +2421,7 @@ img
   font-family: 'GothamRounded-Book';
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract .caract h3 i {
+  font-size: 24px;
   color: #00b2e2;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento ul li {
@@ -2450,7 +2471,7 @@ img
   padding: 0 3px;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content p {
-  font-size: 12px;
+  font-size: 16px;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li.active .text-content {
   height: auto !important;
@@ -2466,6 +2487,18 @@ img
   margin: auto;
   display: block;
   margin-top: 30px;
+}
+@media screen and (max-width: 1500px) {
+  .matchcota-detalle .container .preview-img {
+    width: calc(45% - 60px);
+  }
+  .matchcota-detalle .container .preview-img .main-img {
+    max-height: 500px;
+  }
+  .matchcota-detalle .container .preview-img .main-img img {
+    width: 100%;
+    height: auto;
+  }
 }
 @media screen and (max-width: 1024px) {
   .matchcota-detalle .container {
@@ -2554,6 +2587,9 @@ img
   float: right;
   box-sizing: border-box;
 }
+.noticias-detail .content-detail .detail p {
+  font-size: 16px;
+}
 .noticias-detail .content-detail .detail .date {
   color: #5d5d5d;
   font-size: 25px;
@@ -2573,9 +2609,9 @@ img
 }
 .noticias-detail .view-more .ver_mas_noticias {
   color: #5d5d5d;
-  margin-top: 40px;
-  margin-left: 15%;
-  text-align: left;
+  margin: auto;
+  margin-top: 30px;
+  text-align: center;
   display: block;
   font-family: 'ventura_eddingmedium';
   font-size: 25px;
@@ -2661,7 +2697,7 @@ img
 }
 .mascota_categorias {
   margin-top: 65px;
-  margin-bottom: 65px;
+  margin-bottom: 0px;
 }
 .mascota_categorias .text {
   font-family: 'GothamRounded-Light';
@@ -2696,36 +2732,38 @@ img
   border-left: 8px solid #00b2e2;
   border-right: 8px solid #00b2e2;
 }
-.mascota_categorias .list_categorias ul li a:before {
+.mascota_categorias .list_categorias ul li a span {
+  position: relative;
+  display: inline-block;
+}
+.mascota_categorias .list_categorias ul li a span:before {
   content: "";
   opacity: 0;
   position: absolute;
   transition: 0.3s ease all;
-  left: 0px;
-  top: 10px;
+  right: calc(100% + 8px);
+  top: 5px;
   width: 13px;
   height: 25px;
   background-image: url("../img/categoria_left.png");
   display: block;
 }
-.mascota_categorias .list_categorias ul li a:after {
+.mascota_categorias .list_categorias ul li a span:after {
   content: "";
   opacity: 0;
   position: absolute;
-  right: 0px;
-  top: 7px;
+  left: calc(100% + 8px);
+  top: 0px;
   width: 13px;
   height: 25px;
   transition: 0.3s ease all;
   background-image: url("../img/categoria_right.png");
   display: block;
 }
-.mascota_categorias .list_categorias ul li:hover a:after,
-.mascota_categorias .list_categorias ul li.active a:after {
-  opacity: 1;
-}
-.mascota_categorias .list_categorias ul li:hover a:before,
-.mascota_categorias .list_categorias ul li.active a:before {
+.mascota_categorias .list_categorias ul li:hover a span:after,
+.mascota_categorias .list_categorias ul li.active a span:after,
+.mascota_categorias .list_categorias ul li:hover a span:before,
+.mascota_categorias .list_categorias ul li.active a span:before {
   opacity: 1;
 }
 .list_mascotas {

@@ -428,6 +428,10 @@
 .nosotros_socios_estrategicos {
   margin-top: 35px;
 }
+.nosotros_socios_estrategicos .container .title_colores_animate h2:after,
+.nosotros_socios_estrategicos .container .title_colores_animate h2:before {
+  opacity: 1 !important;
+}
 .nosotros_socios_estrategicos .container .title_colores {
   margin-bottom: 70px;
 }
@@ -442,6 +446,8 @@
   position: absolute;
   left: -12px;
   top: -7px;
+  opacity: 0;
+  transition: 0.3s ease all;
 }
 .nosotros_socios_estrategicos .container .title_colores h2:before {
   content: "";
@@ -451,6 +457,8 @@
   position: absolute;
   right: -12px;
   bottom: -7px;
+  opacity: 0;
+  transition: 0.3s ease all;
 }
 .nosotros_socios_estrategicos .container .bx-wrapper {
   margin: auto;

@@ -65,12 +65,12 @@ jQuery(document).ready(function($) {
 		event.preventDefault();
 		if(!$(this).closest("li").hasClass("active"))
 		{
-			$(".acordeon .text-content").slideUp(500, function() {}
-			);
+			$(".acordeon .text-content").stop(false).slideUp(300)
+
 			$(".acordeon li").removeClass("active")
 
 		}
+		$(this).closest('li').find(".text-content").stop(false).slideDown(300);
 		$(this).closest('li').addClass("active")
-		$(this).closest('li').find(".text-content").slideDown(500);
 	});
 });
