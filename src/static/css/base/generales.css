@@ -231,6 +231,9 @@ p {
 .w100 {
   width: 100%;
 }
+.w0 {
+  width: 0;
+}
 @-moz-keyframes rotate1 {
   0% {
     transform: rotateZ(-5deg);

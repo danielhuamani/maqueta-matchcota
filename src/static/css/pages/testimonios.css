@@ -29,8 +29,11 @@
   right: -40px;
 }
 .cnt-testimonios .content-testimonios {
-  padding: 0 5em;
+  padding: 0 9em;
   display: block;
+  background-image: url("../img/adorno_testimonio.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
 }
 .cnt-testimonios .bx-wrapper {
   margin: auto;
@@ -51,10 +54,10 @@
   font-size: 20px;
 }
 .cnt-testimonios .bx-wrapper .bx-controls a.bx-prev {
-  left: -7em;
+  left: -9em;
 }
 .cnt-testimonios .bx-wrapper .bx-controls a.bx-next {
-  right: -3em;
+  right: -4em;
 }
 .cnt-testimonios .bx-wrapper .bx-controls a:hover {
   background: c_celeste;
@@ -104,7 +107,25 @@
   box-sizing: border-box;
 img
 }
+@media screen and (max-width: 1800px) {
+  .content-testimonios {
+    background-image: none !important;
+  }
+  .cnt-testimonios .bx-wrapper .bx-controls a.bx-next {
+    right: -3em;
+  }
+  .cnt-testimonios .bx-wrapper .bx-controls a.bx-prev {
+    left: -3em;
+  }
+}
 @media screen and (max-width: 1500px) {
+  .cnt-testimonios .container {
+    max-width: 100%;
+    width: 100%;
+  }
+  .cnt-testimonios .content-testimonios {
+    box-sizing: border-box;
+  }
   .cnt-testimonios .bx-wrapper .bx-controls a.bx-next {
     right: -3em;
   }

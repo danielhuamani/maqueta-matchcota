@@ -1,15 +1,15 @@
-.home_listado_noticias .listado_noticias__noticia_large {
+.home_listado_noticias .listado_noticias__large {
   position: relative;
   display: block;
   width: 429px;
   height: 410px;
 }
-.home_listado_noticias .listado_noticias__noticia_large figure {
+.home_listado_noticias .listado_noticias__large figure {
   width: 100%;
   height: 100%;
   margin: 0;
 }
-.home_listado_noticias .listado_noticias__noticia_large .descripcion {
+.home_listado_noticias .listado_noticias__large .descripcion {
   display: none;
   flex-direction: column;
   padding: 0px 30px;
@@ -22,26 +22,26 @@
   height: 100%;
   background: rgba(0,0,0,0.5) !important;
 }
-.home_listado_noticias .listado_noticias__noticia_large .descripcion h3 {
+.home_listado_noticias .listado_noticias__large .descripcion h3 {
   color: c_white !important;
   font-family: f_ventura_m;
   font-size: 20px;
 }
-.home_listado_noticias .listado_noticias__noticia_large .descripcion h4 {
+.home_listado_noticias .listado_noticias__large .descripcion h4 {
   color: c_white !important;
   font-size: 18px;
   font-family: f_gothan_m;
   margin: 0;
 }
-.home_listado_noticias .listado_noticias__noticia_large .descripcion p {
+.home_listado_noticias .listado_noticias__large .descripcion p {
   color: c_white !important;
   font-size: 18px;
   font-family: f_gothan_l;
 }
-.home_listado_noticias .listado_noticias__noticia_large .descripcion:after {
+.home_listado_noticias .listado_noticias__large .descripcion:after {
   display: none;
 }
-.home_listado_noticias .listado_noticias__noticia_large:hover .descripcion {
+.home_listado_noticias .listado_noticias__large:hover .descripcion {
   display: flex;
   animation: fadeEffect 0.5s;
 }
@@ -184,20 +184,19 @@
   font-size: 18px;
   font-family: f_gothan_l;
 }
-.listado_noticias__noticia_large {
+.listado_noticias__large {
   position: relative;
   display: block;
   width: 462px;
   height: 410px;
-  border: none !important;
+  border: 1px solid transparent;
 }
-.listado_noticias__noticia_large figure {
+.listado_noticias__large figure {
   width: 462px;
   height: 410px;
   margin: 0;
 }
-.listado_noticias__noticia_large .descripcion {
-  display: none !important;
+.listado_noticias__large .descripcion {
   flex-direction: column !important;
   padding: 0px 30px !important;
   box-sizing: border-box !important;
@@ -210,42 +209,42 @@
   background: rgba(0,0,0,0.5) !important;
   animation: fadeEffect 0.5s !important;
 }
-.listado_noticias__noticia_large .descripcion h3 {
+.listado_noticias__large .descripcion h3 {
   color: c_white !important;
   font-family: f_ventura_m !important;
   font-size: 20px !important;
 }
-.listado_noticias__noticia_large .descripcion h4 {
+.listado_noticias__large .descripcion h4 {
   color: c_white !important;
   font-size: 18px;
   font-family: f_gothan_m;
   margin: 0;
 }
-.listado_noticias__noticia_large .descripcion p {
+.listado_noticias__large .descripcion p {
   color: c_white !important;
   font-size: 18px;
   font-family: f_gothan_l;
 }
-.listado_noticias__noticia_large .descripcion:after {
+.listado_noticias__large .descripcion:after {
   display: none !important;
   animation: fadeEffect 0.5s !important;
 }
-.listado_noticias__noticia_large:hover .descripcion {
+.listado_noticias__large:hover .descripcion {
   display: flex !important;
 }
-.noticias_listado .listado_noticias__noticia_large {
+.noticias_listado .listado_noticias__large {
   position: relative;
   display: block;
   width: 462px;
   height: 410px;
   border: none !important;
 }
-.noticias_listado .listado_noticias__noticia_large figure {
+.noticias_listado .listado_noticias__large figure {
   width: 462px;
   height: 410px;
   margin: 0;
 }
-.noticias_listado .listado_noticias__noticia_large .descripcion {
+.noticias_listado .listado_noticias__large .descripcion {
   display: none;
   flex-direction: column;
   padding: 0px 30px;
@@ -259,32 +258,30 @@
   background: rgba(0,0,0,0.5) !important;
   animation: fadeEffect 0.5s;
 }
-.noticias_listado .listado_noticias__noticia_large .descripcion h3 {
+.noticias_listado .listado_noticias__large .descripcion h3 {
   color: c_white !important;
   font-family: f_ventura_m;
   font-size: 20px;
 }
-.noticias_listado .listado_noticias__noticia_large .descripcion h4 {
+.noticias_listado .listado_noticias__large .descripcion h4 {
   color: c_white !important;
   font-size: 18px;
   font-family: f_gothan_m;
   margin: 0;
 }
-.noticias_listado .listado_noticias__noticia_large .descripcion p {
+.noticias_listado .listado_noticias__large .descripcion p {
   color: c_white !important;
   font-size: 18px;
   font-family: f_gothan_l;
 }
-.noticias_listado .listado_noticias__noticia_large .descripcion:after {
+.noticias_listado .listado_noticias__large .descripcion:after {
   display: none;
 }
-.noticias_listado .listado_noticias__noticia_large:hover .descripcion {
+.noticias_listado .listado_noticias__large:hover .descripcion {
   display: flex;
 }
-/*
-
 /*@media screen and (max-width 768px)
-    .listado_noticias__noticia_large*/
+    .listado_noticias__noticia_large
 /*
    &__noticia_small--bottom
         flex-direction column-reverse
@@ -379,6 +376,45 @@
   .home_siempre_informados .home_listado_noticias {
     max-width: 920px;
     margin: auto;
+  }
+}
+@media screen and (max-width: 960px) {
+  .listado_noticias__large {
+    height: initial;
+  }
+  .listado_noticias__large .descripcion:after {
+    display: block !important;
+  }
+  .listado_noticias__noticia:nth-child(odd):hover {
+    border-left: 1px solid #ffb718 !important;
+    border-right: 1px solid #ffb718 !important;
+    border-bottom: 1px solid #ffb718 !important;
+    border-top: 1px solid #ffb718 !important;
+  }
+  .home_listado_noticias .listado_noticias__large:hover .descripcion h3,
+  .home_listado_noticias .listado_noticias__large:hover .descripcion p,
+  .home_listado_noticias .listado_noticias__large:hover .descripcion h4 {
+    color: c_amarillo !important;
+  }
+  .home_listado_noticias .listado_noticias__large {
+    width: 228px;
+    height: initial;
+  }
+  .home_listado_noticias .listado_noticias__large .descripcion {
+    background: none !important;
+    position: relative !important;
+    padding: 30px 10px 10px 10px !important;
+    width: initial !important;
+    height: initial !important;
+    display: flex;
+  }
+  .home_listado_noticias .listado_noticias__large .descripcion h3 {
+    color: c_white;
+  }
+  .home_listado_noticias .listado_noticias__large figure {
+    width: 228px;
+    height: 204px;
+    margin: 0;
   }
 }
 

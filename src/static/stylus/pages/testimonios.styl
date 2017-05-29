@@ -25,8 +25,11 @@
         top -35px
         right -40px
   .content-testimonios
-    padding 0 5em
+    padding 0 9em
     display block
+    background-image url("../img/adorno_testimonio.png")
+    background-repeat no-repeat
+    background-position left bottom
   .bx-wrapper
     margin auto
     position relative
@@ -45,9 +48,9 @@
         color c_celeste
         font-size 20px
         &.bx-prev
-          left -7em
+          left -9em
         &.bx-next
-          right -3em
+          right -4em
         &:hover
           background c_celeste
           color #fff
@@ -90,14 +93,29 @@
       float right
       box-sizing border-box
       img
-
-@media screen and (max-width 1500px)
+@media screen and (max-width 1800px)
+  .content-testimonios
+    background-image none !important
   .cnt-testimonios .bx-wrapper
     .bx-controls
       a.bx-next
         right -3em
       a.bx-prev
         left -3em
+@media screen and (max-width 1500px)
+  .cnt-testimonios
+    .container
+      max-width 100%
+      width 100%
+    .content-testimonios
+      box-sizing border-box
+
+    .bx-wrapper
+      .bx-controls
+        a.bx-next
+          right -3em
+        a.bx-prev
+          left -3em
   .picture-border .inner__picture
     width 100%
     box-sizing border-box

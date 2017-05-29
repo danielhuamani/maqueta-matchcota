@@ -161,7 +161,9 @@
                 color c_narana_ad
                 font-family f_ventura_m
         .cnt_linea_tiempo
-            margin-top 120px
+            margin-top 80px
+            padding-top 50px
+            padding-bottom 50px
             display flex
             justify-content center
 
@@ -414,6 +416,8 @@
             margin auto
             margin-top 50px
             position relative
+            figure
+                width 135px !important
             .bx-controls
                 .bx-prev
                     position absolute
@@ -508,7 +512,14 @@
                     width 100%
                     height auto
 @media screen and (max-width 1500px)
-    .nosotros_linea_tiempo .container .cnt_linea_tiempo
+/*    .nosotros_linea_tiempo
+        .cnt_linea_tiempo
+            width 1200px
+            padding-top 40px
+            overflow-x scroll
+            margin auto*/
+
+    /*.nosotros_linea_tiempo .container .cnt_linea_tiempo
         .bloque_1
             padding-right 60px
             &:after
@@ -563,8 +574,12 @@
                 top -15px
                 left 50px
             h3:last-child
-                bottom -10px
-@media screen and (max-width 1300px)
+                bottom -10px*/
+    .nosotros_linea_tiempo .container .cnt_linea_tiempo
+        justify-content flex-start
+        overflow-x scroll
+        width 100%
+/*@media screen and (max-width 1300px)
     .nosotros_linea_tiempo .container .cnt_linea_tiempo
         max-width 750px
         margin auto
@@ -573,8 +588,9 @@
         .bloque_4:after
             display none
         .bloque_5, .bloque_6, .bloque_7
-            margin-top 40px
+            margin-top 40px*/
 @media screen and (max-width 1200px)
+
     .nosotros_formulario
         background c_formulario
     .cnt-mision-vision .container figure
@@ -593,10 +609,12 @@
             font-size 18px
     .nosotros_socios_estrategicos .container .bx-wrapper
         max-width 660px !important
+    .nosotros_socios_estrategicos .container .bx-wrapper
+        max-width 660px !important
 @media screen and (max-width 960px)
-    .nosotros_linea_tiempo .container .cnt_linea_tiempo
+    /* .nosotros_linea_tiempo .container .cnt_linea_tiempo
         max-width 600px
-        .bloque_7
+       .bloque_7
             margin-top 80px
             h3:last-child
                 bottom -45px
@@ -617,7 +635,7 @@
                     height 51px
                     background-image url("../img/nos_ani_2.png")
         .bloque_3 h3:after
-            display none
+            display none*/
     .nosotros_matchota_ideal .container
         .cnt-descripcion .descripcion
             margin-top 20px
@@ -630,7 +648,7 @@
 @media screen and (max-width 768px)
     .nosotros_linea_tiempo
         max-width 490px
-        .container .cnt_linea_tiempo
+        /*.container .cnt_linea_tiempo
             .bloque_2 figure:after
                 display none
             .bloque_3
@@ -643,7 +661,7 @@
                     span
                         font-size 30px
         .cnt_linea_tiempo .bloque_3
-            margin-top 30px
+            margin-top 30px*/
     .nosotros_socios_estrategicos .container .bx-wrapper
         max-width 330px !important
     .nosotros_matchota_ideal .container
@@ -683,7 +701,7 @@
                     font-size 22px
                     margin 0
                     margin-left 5px
-            .cnt_linea_tiempo
+          /*  .cnt_linea_tiempo
                 flex-direction column
 
                 .bloque_1
@@ -722,7 +740,7 @@
                 .bloque_7
                     margin auto
                     margin-top 30px
-                    margin-bottom 20px
+                    margin-bottom 20px*/
 
     .nosotros_linea_tiempo
         max-width 490px

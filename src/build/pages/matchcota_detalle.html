@@ -285,7 +285,7 @@
 						</div>
 					</div>
 				</li>
-				<li id="comportamiento">
+				<li id="comportamiento" class="comportamiento_id">
 					<h3 class="title">
 						<a href="#comportamiento">
 							<i class="icon icon-07"></i>
@@ -298,43 +298,43 @@
 							<li>
 								<span class="text">Tranquilo</span>
 								<div class="cnt-bar">
-									<div class="bar w20"></div>
+									<div class="bar w0 w20"></div>
 								</div>
 							</li>
 							<li>
 								<span class="text">Independiente</span>
 								<div class="cnt-bar">
-									<div class="bar w20"></div>
+									<div class="bar w0 w20"></div>
 								</div>
 							</li>
 							<li>
 								<span class="text">Cariñoso</span>
 								<div class="cnt-bar">
-									<div class="bar w90"></div>
+									<div class="bar w0 w90"></div>
 								</div>
 							</li>
 							<li>
 								<span class="text">Curioso</span>
 								<div class="cnt-bar">
-									<div class="bar w90"></div>
+									<div class="bar w0 w90"></div>
 								</div>
 							</li>
 							<li>
 								<span class="text">Educado</span>
 								<div class="cnt-bar">
-									<div class="bar w40"></div>
+									<div class="bar w0 w40"></div>
 								</div>
 							</li>
 							<li>
 								<span class="text">Deportista</span>
 								<div class="cnt-bar">
-									<div class="bar w90"></div>
+									<div class="bar w0 w90"></div>
 								</div>
 							</li>
 							<li>
 								<span class="text">Juguetón</span>
 								<div class="cnt-bar">
-									<div class="bar w70"></div>
+									<div class="bar w0 w70"></div>
 								</div>
 							</li>
 
@@ -823,7 +823,27 @@
 		});
 
 
+		$(".acordeon .title").click(function(event) {
+			/* Act on the event */
+			event.preventDefault();
+			if(!$(this).closest("li").hasClass("active"))
+			{
+				$(".acordeon .text-content").stop(false).slideUp(300)
 
+				$(".acordeon li").removeClass("active")
+
+			}
+			if ($(this).closest("li").hasClass("comportamiento_id")) {
+				setTimeout(function(){
+
+					$(".bar").removeClass('w0')
+				}, 500)
+			}else{
+				$(".bar").addClass('w0')
+			}
+			$(this).closest('li').find(".text-content").stop(false).slideDown(300);
+			$(this).closest('li').addClass("active")
+		});
 	});
 </script>
 

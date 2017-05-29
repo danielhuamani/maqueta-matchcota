@@ -179,7 +179,9 @@
   font-family: f_ventura_m;
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo {
-  margin-top: 120px;
+  margin-top: 80px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   display: flex;
   justify-content: center;
 }
@@ -468,6 +470,9 @@
   margin-top: 50px;
   position: relative;
 }
+.nosotros_socios_estrategicos .container .bx-wrapper figure {
+  width: 135px !important;
+}
 .nosotros_socios_estrategicos .container .bx-wrapper .bx-controls .bx-prev {
   position: absolute;
   left: -50px;
@@ -577,94 +582,22 @@
   }
 }
 @media screen and (max-width: 1500px) {
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_1 {
-    padding-right: 60px;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_1:after {
-    width: 60px;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_1 figure {
-    width: 140px;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_1 h3 {
-    font-size: 18px;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_2 {
-    margin-left: 10px;
-    padding-right: 0px;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_2 figure {
-    width: 90px;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_2 figure img {
-    display: block;
-    width: 100%;
-    height: auto;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_2 figure:after {
-    right: -55px;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_3 h3 {
-    font-size: 28px;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_3 h3:after {
-    bottom: -70px;
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 70px;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_4 {
-    margin-left: 45px;
-    text-align: center;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_4 h3 {
-    font-size: 18px;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_4:after {
-    width: 80px;
-    right: -40px;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_5 {
-    margin-left: 10px;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_5 figure:after {
-    background-size: contain;
-    background-repeat: no-repeat;
-    width: 90px;
-    right: -35px;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_6:after {
-    background-size: contain;
-    background-repeat: no-repeat;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_7 figure {
-    width: 150px;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_7:after {
-    width: 45px;
-    top: -15px;
-    left: 50px;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_7 h3:last-child {
-    bottom: -10px;
-  }
-}
-@media screen and (max-width: 1300px) {
   .nosotros_linea_tiempo .container .cnt_linea_tiempo {
-    max-width: 750px;
-    margin: auto;
-    margin-top: 60px;
-    flex-wrap: wrap;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_4:after {
-    display: none;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_5,
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_6,
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_7 {
-    margin-top: 40px;
+    justify-content: flex-start;
+    overflow-x: scroll;
+    width: 100%;
   }
 }
+/*@media screen and (max-width 1300px)
+    .nosotros_linea_tiempo .container .cnt_linea_tiempo
+        max-width 750px
+        margin auto
+        margin-top 60px
+        flex-wrap wrap
+        .bloque_4:after
+            display none
+        .bloque_5, .bloque_6, .bloque_7
+            margin-top 40px*/
 @media screen and (max-width: 1200px) {
   .nosotros_formulario {
     background: c_formulario;
@@ -689,40 +622,11 @@
   .nosotros_socios_estrategicos .container .bx-wrapper {
     max-width: 660px !important;
   }
+  .nosotros_socios_estrategicos .container .bx-wrapper {
+    max-width: 660px !important;
+  }
 }
 @media screen and (max-width: 960px) {
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo {
-    max-width: 600px;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_7 {
-    margin-top: 80px;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_7 h3:last-child {
-    bottom: -45px;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_6:after {
-    display: none;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_4 {
-    margin-top: 60px;
-    margin-right: 60px;
-    margin-left: 10px;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_4 figure {
-    position: relative;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_4 figure:after {
-    content: "";
-    width: 106px;
-    position: absolute;
-    top: -60px;
-    right: -110px;
-    height: 51px;
-    background-image: url("../img/nos_ani_2.png");
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_3 h3:after {
-    display: none;
-  }
   .nosotros_matchota_ideal .container .cnt-descripcion .descripcion {
     margin-top: 20px;
   }
@@ -737,24 +641,20 @@
 @media screen and (max-width: 768px) {
   .nosotros_linea_tiempo {
     max-width: 490px;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_2 figure:after {
-    display: none;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_3 {
-    margin-top: 30px;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_5 figure:after {
-    display: none;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .container h2 {
-    font-size: 26px;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .container h2 span {
-    font-size: 30px;
-  }
-  .nosotros_linea_tiempo .cnt_linea_tiempo .bloque_3 {
-    margin-top: 30px;
+/*.container .cnt_linea_tiempo
+            .bloque_2 figure:after
+                display none
+            .bloque_3
+                margin-top 30px
+            .bloque_5 figure:after
+                display none
+            .container
+                h2
+                    font-size 26px
+                    span
+                        font-size 30px
+        .cnt_linea_tiempo .bloque_3
+            margin-top 30px*/
   }
   .nosotros_socios_estrategicos .container .bx-wrapper {
     max-width: 330px !important;
@@ -802,6 +702,46 @@
 @media screen and (max-width: 480px) {
   .nosotros_linea_tiempo {
     padding-bottom: 50px;
+/*  .cnt_linea_tiempo
+                flex-direction column
+
+                .bloque_1
+                    margin-bottom 20px
+                    padding 0
+                    &:after
+                        display none
+                .bloque_2
+                    margin 0
+                    margin-bottom 20px
+                    figure
+
+                        margin auto
+                        margin-top 20px
+                        padding 0
+                .bloque_3
+                    margin 0
+                    margin-bottom 20px
+                    h3
+                        margin 0
+                        text-align center
+                .bloque_4
+                    margin auto
+                    margin-bottom 20px
+                    figure:after
+                        display none
+
+                .bloque_5
+                    margin auto
+                    margin-bottom 20px
+                    text-align center
+                .bloque_6
+                    margin auto
+                    margin-bottom 20px
+                    text-align center
+                .bloque_7
+                    margin auto
+                    margin-top 30px
+                    margin-bottom 20px*/
   }
   .nosotros_linea_tiempo .container h2 {
     font-size: 22px;
@@ -810,55 +750,6 @@
     font-size: 22px;
     margin: 0;
     margin-left: 5px;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo {
-    flex-direction: column;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_1 {
-    margin-bottom: 20px;
-    padding: 0;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_1:after {
-    display: none;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_2 {
-    margin: 0;
-    margin-bottom: 20px;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_2 figure {
-    margin: auto;
-    margin-top: 20px;
-    padding: 0;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_3 {
-    margin: 0;
-    margin-bottom: 20px;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_3 h3 {
-    margin: 0;
-    text-align: center;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_4 {
-    margin: auto;
-    margin-bottom: 20px;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_4 figure:after {
-    display: none;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_5 {
-    margin: auto;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_6 {
-    margin: auto;
-    margin-bottom: 20px;
-    text-align: center;
-  }
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_7 {
-    margin: auto;
-    margin-top: 30px;
-    margin-bottom: 20px;
   }
   .nosotros_linea_tiempo {
     max-width: 490px;

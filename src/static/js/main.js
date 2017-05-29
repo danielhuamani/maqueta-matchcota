@@ -1,6 +1,6 @@
 jQuery(document).ready(function($) {
 
-	$(".link_menu").click(function(event) {
+	$(".btn_menu").click(function(event) {
 		/* Act on the event */
 		event.preventDefault();
 		$(".menu_block").addClass('menu_block--active')
@@ -60,17 +60,5 @@ jQuery(document).ready(function($) {
 		$(".tab").addClass('tab_none')
 		$(data_tab).removeClass('tab_none')
 	});
-	$(".acordeon .title").click(function(event) {
-		/* Act on the event */
-		event.preventDefault();
-		if(!$(this).closest("li").hasClass("active"))
-		{
-			$(".acordeon .text-content").stop(false).slideUp(300)
 
-			$(".acordeon li").removeClass("active")
-
-		}
-		$(this).closest('li').find(".text-content").stop(false).slideDown(300);
-		$(this).closest('li').addClass("active")
-	});
 });

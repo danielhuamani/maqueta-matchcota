@@ -658,6 +658,10 @@
   }
 }
 @media screen and (max-width: 480px) {
+  .home_conoce_mascota .full_container .bloque_picture.bloque_4,
+  .home_conoce_mascota .full_container .bloque_picture.bloque_5 {
+    display: none;
+  }
   .home_conoce_mascota .full_container .bloque_picture {
     width: 65%;
   }

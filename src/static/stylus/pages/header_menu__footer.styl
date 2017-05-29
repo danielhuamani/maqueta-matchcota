@@ -76,7 +76,7 @@
         right auto
 
         text-align center
-        padding-top 45px
+        padding-top 25px
         border-right 1px solid #D0D0D0
         z-index 300
 
@@ -107,7 +107,7 @@
                     font-family f_gothan_b
                 ul
                     display flex
-                    justify-content center
+                    justify-content space-around
                     flex-wrap wrap
                     li
                         margin-bottom 30px
@@ -208,7 +208,7 @@
         text-align center
         padding-top 45px
         border-right 1px solid #D0D0D0
-        z-index 300
+        z-index 160
         cursor pointer
     .btn_menu
         font-size 16px
@@ -356,6 +356,10 @@ footer
 
 @media screen and (max-width 1500px)
     .container_menu .menu_block .menu
+        nav
+            margin-top 20px
+            ul li
+                margin-bottom 10px
         .links_pop
             margin-top 20px
         .contacte
@@ -363,6 +367,11 @@ footer
             h3
                 margin-top 20px
                 margin-bottom 20px
+            ul li
+                margin-left 5px
+                margin-right 5px
+                a span
+                    font-size 16px
     .container_menu .menu_block
 
         .menu
@@ -425,6 +434,14 @@ footer
                 span
                     font-size 14px
 @media screen and (max-width 768px)
+    .logo_celeste
+        display block !important
+        height inherit !important
+    .logo_blanco
+        display none
+    .container_menu .btn_menu
+        width 50px
+        padding-left 10px
     footer
         .footer_top
             padding-bottom 10px
@@ -457,26 +474,24 @@ footer
         nav
             display none
         >a
-            left: inherit;
-            right: 15px;
-
-            margin: auto;
-            display: inline-block;
-            text-align: center;
+            left inherit
+            right 15px
+            top 8px
+            margin auto
+            display inline-block
+            text-align center
     .container_menu
         .link_menu--active
-            left 10px !important
+            left 0px !important
         .link_menu
             height auto
-            padding 15px 0
-            margin-top 20px
-            width 50px
+            padding 20px 0
+            width 100%
             border-bottom 1px solid #d0d0d0
             .btn_menu
                 .icon-menu
                     margin-bottom 0
-                span
-                    display none
+
     footer
         width 100%
         margin-left 0

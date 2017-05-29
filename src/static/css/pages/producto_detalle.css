@@ -242,6 +242,7 @@
   z-index: 1;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento .cnt-bar .bar {
+  transition: 0.5s ease all;
   height: 14px;
   display: inline-block;
   background: c_celeste;

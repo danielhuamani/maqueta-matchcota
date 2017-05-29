@@ -779,11 +779,13 @@
 <script src="/static/js/banner.js"></script>
 <script>
 	jQuery(document).ready(function($) {
-			$('.listado_aliados').bxSlider({
+
+			$('.listado_aliados_nosotros').bxSlider({
 
 
 				minSlides: 5,
 			    maxSlides: 5,
+			    adaptiveHeight: false,
 			    slideWidth: 135,
 			    slideMargin: 30,
 				auto: true,
@@ -829,6 +831,11 @@
 		  			$(".nosotros_socios_estrategicos .title_colores").removeClass('title_colores_animate')
 		  		}
             });
+            if ($("body").height()>640) {
+				setTimeout(function(){
+				  $(".nosotros_matchota_ideal .container figure").addClass('active-img')
+				}, 2000);
+            };
 	});
 
 </script>
