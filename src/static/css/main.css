@@ -3308,7 +3308,7 @@ p {
   width: 105px;
   height: 100%;
   top: 0;
-  left: -105px;
+  left: 0px;
   background: #fff;
   text-align: center;
   padding-top: 45px;

@@ -1,4 +1,7 @@
 {% extends "../common/base.html" %}
+{% block css %}
+
+{% endblock css %}
 {% block content %}
 
 <section class="banner_gral">
@@ -147,7 +150,7 @@
 			<p>
 				Sé parte de Matchcota, indicanos si eres una persona natural o una empresa.
 			</p>
-			<form action="">
+			<form action="" id="form_nosotros">
 				<div class="grid_botton">
 					<a href="" data-id="#tab1" class="btn-tab btn btn--light-white btn--light-white-active">
 						Para Empresas
@@ -164,27 +167,27 @@
 						<div class="cnt-input">
 							<div class="input">
 								<label for="">Nombre de la Empresa:</label>
-								<input type="text">
+								<input type="text" class="validate[required]" name="nos_empresa">
 							</div>
 						</div>
 						<div class="cnt-input">
 							<div class="input input-m">
 								<label for="">Persona de Contacto:</label>
-								<input type="text">
+								<input type="text" class="validate[required]" name="nos_contacto">
 							</div>
 							<div class="input input-m">
 								<label for="">Rubro:</label>
-								<input type="text">
+								<input type="text" class="validate[required]" name="nos_rubro">
 							</div>
 						</div>
 						<div class="cnt-input">
 							<div class="input input-m">
 								<label for="">Teléfono:</label>
-								<input type="text">
+								<input type="text" class="validate[required]" name="nos_telefono">
 							</div>
 							<div class="input input-m">
 								<label for="">Email:</label>
-								<input type="text">
+								<input type="text" class="validate[required]" name="nos_email">
 							</div>
 						</div>
 						<div class="cnt-input">
@@ -256,66 +259,29 @@
 {% endblock content %}
 {% block js %}
 <script src="{{STATIC_URL}}js/banner.js"></script>
+<script src="{{STATIC_URL}}js/nosotros.js"></script>
+
 <script>
 	jQuery(document).ready(function($) {
+		$("#form_nosotros").validationEngine('attach', {
+			promptPosition: "topLeft",
+			autoHidePrompt: true,
+			autoHideDelay: 400000,
+			binded: false,
+			scroll: false
+		});
+		$("#form_nosotros button").click(function(e) {
+			e.preventDefault();
+			var valid = $('#form_nosotros').validationEngine('validate');
+			console.log(valid)
+			if (!valid) {
 
-			$('.listado_aliados_nosotros').bxSlider({
+			}else{
+				$('#form_nosotros').fadeOut('slow');
 
+			}
 
-				minSlides: 5,
-			    maxSlides: 5,
-			    adaptiveHeight: false,
-			    slideWidth: 135,
-			    slideMargin: 30,
-				auto: true,
-				moveSlides: 1,
-				autoControls: false,
-				pause: 1500,
-				nextText: "",
-				prevText: "",
-				pager: false
-
-
-			});
-
-			$(window).scroll(function(){
-                var window_top = $(window).scrollTop();
-
-                if(window_top>200) {
-		  			$(".nosotros_matchota_ideal .container figure").addClass('active-img')
-		  		}else{
-		  			$(".nosotros_matchota_ideal .container figure").removeClass('active-img')
-		  		}
-		  		console.log(window_top)
-		  		if (window_top>920) {
-		  			$(".bloque_1").addClass('b_1_active')
-		  			$(".bloque_2").addClass('b_2_active')
-		  			$(".bloque_3").addClass('b_3_active')
-		  			$(".bloque_4").addClass('b_4_active')
-		  			$(".bloque_5").addClass('b_5_active')
-		  			$(".bloque_6").addClass('b_6_active')
-		  			$(".bloque_7").addClass('b_7_active')
-		  		}else{
-					$(".bloque_1").removeClass('b_1_active')
-					$(".bloque_2").removeClass('b_2_active')
-					$(".bloque_3").removeClass('b_3_active')
-					$(".bloque_4").removeClass('b_4_active')
-					$(".bloque_5").removeClass('b_5_active')
-					$(".bloque_6").removeClass('b_6_active')
-					$(".bloque_7").removeClass('b_7_active')
-		  		}
-		  		if (window_top>2000) {
-		  			$(".nosotros_socios_estrategicos .title_colores").addClass('title_colores_animate')
-		  		}else{
-		  			$(".nosotros_socios_estrategicos .title_colores").removeClass('title_colores_animate')
-		  		}
-            });
-            if ($("body").height()>640) {
-				setTimeout(function(){
-				  $(".nosotros_matchota_ideal .container figure").addClass('active-img')
-				}, 2000);
-            };
+		});
 	});
-
 </script>
 {% endblock js %}

@@ -60,5 +60,61 @@ jQuery(document).ready(function($) {
 		$(".tab").addClass('tab_none')
 		$(data_tab).removeClass('tab_none')
 	});
+	$("#form_dona").validationEngine('attach', {
+			promptPosition: "topLeft",
+			autoHidePrompt: true,
+			autoHideDelay: 400000,
+			binded: false,
+			scroll: false
+		});
+	$("#form_dona button").click(function(e) {
+		e.preventDefault();
+		var valid = $('#form_dona').validationEngine('validate');
+		console.log(valid)
+		if (!valid) {
 
+		}else{
+			$('#form_dona').fadeOut('slow');
+
+		}
+
+	});
+	$("#form_apadrina").validationEngine('attach', {
+			promptPosition: "topLeft",
+			autoHidePrompt: true,
+			autoHideDelay: 400000,
+			binded: false,
+			scroll: false
+		});
+	$("#form_apadrina button").click(function(e) {
+		e.preventDefault();
+		var valid = $('#form_apadrina').validationEngine('validate');
+		console.log(valid)
+		if (!valid) {
+
+		}else{
+			$('#form_apadrina').fadeOut('slow');
+
+		}
+
+	});
+	$("#form_adopta").validationEngine('attach', {
+			promptPosition: "topLeft",
+			autoHidePrompt: true,
+			autoHideDelay: 400000,
+			binded: false,
+			scroll: false
+		});
+	$("#form_adopta button").click(function(e) {
+		e.preventDefault();
+		var valid = $('#form_adopta').validationEngine('validate');
+		console.log(valid)
+		if (!valid) {
+
+		}else{
+			$('#form_adopta').fadeOut('slow');
+
+		}
+
+	});
 });
