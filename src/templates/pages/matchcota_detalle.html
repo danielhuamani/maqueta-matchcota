@@ -17,27 +17,27 @@
 				<i class="icon-22"></i>CONOCE MÁS MASCOTAS AQUÍ
 			</a>
 			<div class="main-img">
-				<img src="{{STATIC_URL}}img/mascota1.png" class="" width="550" height="520" alt="">
+				<img src="{{STATIC_URL}}img/mascota1.png" class="" width="450" height="450" alt="">
 			</div>
 			<ul class="list-thumbnails">
 				<li>
-					<a href="#" point-src="{{STATIC_URL}}img/mascota1.png">
-						<img src="{{STATIC_URL}}img/mascota1.png" alt="">
+					<a href="#" data-src="{{STATIC_URL}}img/mascota1.png">
+						<img width="87" height="87" src="{{STATIC_URL}}img/mascota1.png" alt="">
 					</a>
 				</li>
 				<li>
-					<a href="#" point-src="{{STATIC_URL}}img/mascota2.png">
-						<img src="{{STATIC_URL}}img/mascota2.png" alt="">
+					<a href="#" data-src="{{STATIC_URL}}img/mascota2.png">
+						<img width="87" height="87" src="{{STATIC_URL}}img/mascota2.png" alt="">
 					</a>
 				</li>
 				<li>
-					<a href="#" point-src="{{STATIC_URL}}img/mascota3.png">
-						<img src="{{STATIC_URL}}img/mascota3.png" alt="">
+					<a href="#" data-src="{{STATIC_URL}}img/mascota3.png">
+						<img width="87" height="87" src="{{STATIC_URL}}img/mascota3.png" alt="">
 					</a>
 				</li>
 				<li>
-					<a href="#" point-src="{{STATIC_URL}}img/mascota4.png">
-						<img src="{{STATIC_URL}}img/mascota4.png" alt="">
+					<a href="#" data-src="{{STATIC_URL}}img/mascota4.png">
+						<img width="87" height="87" src="{{STATIC_URL}}img/mascota4.png" alt="">
 					</a>
 				</li>
 			</ul>
@@ -283,7 +283,7 @@
 			prevText: '',
 		});
 		function changeImage() {
-			$downImg = $(this).attr("point-src");
+			$downImg = $(this).attr("data-src");
 			console.log($downImg);
 			$(".main-img img").attr("src", $downImg);
 		}
@@ -295,7 +295,7 @@
 		}
 		$(".list-thumbnails li a").click(function(event) {
 			event.preventDefault()
-			$downImg = $(this).attr("point-src");
+			$downImg = $(this).attr("data-src");
 			console.log($downImg);
 			$(".main-img img").attr("src", $downImg);
 			/* Act on the event */

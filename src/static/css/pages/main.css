@@ -67,16 +67,19 @@
   background: #fff;
 }
 .container_menu .menu_block--active {
-  left: 0px !important;
+  display: block !important;
 }
 .container_menu .menu_block {
   position: fixed;
-  width: 490px;
+  width: 100%;
+  background: #00b2e2;
+  animation: fadeEffect 0.5s ease;
+  display: none;
   transition: 0.5s ease all;
   height: 100%;
   top: 0;
-  left: -490px;
-  background: #fff;
+  left: 0;
+  right: auto;
   text-align: center;
   padding-top: 45px;
   border-right: 1px solid #d0d0d0;
@@ -87,13 +90,74 @@
 }
 .container_menu .menu_block .menu .icon-close {
   position: absolute;
-  right: 30px;
+  right: 80px;
   cursor: pointer;
-  top: -20px;
+  top: 0px;
   display: inline-block;
-  color: #00b2e2;
-  font-size: 28px;
-  border: 1px solid #00b2e2;
+  color: #ff4304;
+  background: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 36px;
+  border: 1px solid #ff4304;
+}
+.container_menu .menu_block .menu .contacte {
+  margin: auto;
+  margin-top: 40px;
+  max-width: 580px;
+  border-top: 2px solid #fff;
+}
+.container_menu .menu_block .menu .contacte h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 26px;
+  font-family: 'GothamRounded-Book';
+}
+.container_menu .menu_block .menu .contacte ul {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.container_menu .menu_block .menu .contacte ul li {
+  margin-bottom: 30px;
+}
+.container_menu .menu_block .menu .contacte ul li a:hover {
+  color: #003a5d;
+  transition: 0.3s ease all;
+}
+.container_menu .menu_block .menu .contacte ul li a:hover span {
+  color: #003a5d;
+  transition: 0.3s ease all;
+}
+.container_menu .menu_block .menu .contacte ul li a:hover i {
+  color: #003a5d;
+  border: 2px solid #003a5d;
+  transition: 0.3s ease all;
+}
+.container_menu .menu_block .menu .contacte ul li a {
+  color: #fff;
+}
+.container_menu .menu_block .menu .contacte ul li a i {
+  margin-right: 4px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.container_menu .menu_block .menu .contacte ul li a .icon-face {
+  font-size: 22px;
+  padding: 8px 14px;
+}
+.container_menu .menu_block .menu .contacte ul li a .icon-info {
+  font-size: 18px;
+  padding: 10px 7px;
+}
+.container_menu .menu_block .menu .contacte ul li a .icon-fono {
+  font-size: 22px;
+  padding: 8px 11px;
+}
+.container_menu .menu_block .menu .contacte ul li a span {
+  font-family: 'GothamRounded-Light';
+  font-size: 20px;
 }
 .container_menu .menu_block .menu .links_pop {
   display: flex;
@@ -136,7 +200,7 @@
   margin-top: 5px;
   font-size: 19px;
   font-family: 'ventura_eddingmedium';
-  color: #ff4304;
+  color: #fff;
 }
 .container_menu .menu_block .menu nav {
   margin-top: 40px;
@@ -146,11 +210,11 @@
 }
 .container_menu .menu_block .menu nav ul li a.active,
 .container_menu .menu_block .menu nav ul li a:hover {
-  border-bottom: 2px solid #00b2e2;
+  color: #003a5d;
 }
 .container_menu .menu_block .menu nav ul li a {
   padding: 0px 20px;
-  color: #00b2e2;
+  color: #fff;
   font-size: 30px;
   font-family: 'GothamRounded-Book';
   border-bottom: 2px solid transparent;
@@ -347,8 +411,15 @@ footer .footer_top .facebook__slider__item ul li span {
   margin-right: 5px;
 }
 @media screen and (max-width: 1500px) {
-  .container_menu .menu_block {
-    width: 300px;
+  .container_menu .menu_block .menu .links_pop {
+    margin-top: 20px;
+  }
+  .container_menu .menu_block .menu .contacte {
+    margin-top: 20px;
+  }
+  .container_menu .menu_block .menu .contacte h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
   }
   .container_menu .menu_block .menu figure {
     width: 190px;
@@ -360,12 +431,17 @@ footer .footer_top .facebook__slider__item ul li span {
   }
   .container_menu .menu_block .menu .icon-close {
     right: 15px;
+    font-size: 26px;
+    padding: 10px;
   }
   .container_menu .menu_block .menu nav ul li a {
     font-size: 26px;
   }
 }
 @media screen and (max-width: 1200px) {
+  .container_menu .menu_block {
+    padding-top: 30px;
+  }
   .container_menu .menu_block .menu figure {
     width: 180px;
   }
@@ -373,7 +449,7 @@ footer .footer_top .facebook__slider__item ul li span {
     margin-bottom: 10px;
   }
   .container_menu .menu_block .menu nav ul li a {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -402,6 +478,19 @@ footer .footer_top .facebook__slider__item ul li span {
   footer .footer_top .facebook_image {
     display: none;
   }
+  .container_menu .menu_block .menu .contacte {
+    max-width: 420px;
+  }
+  .container_menu .menu_block .menu .contacte h3 {
+    font-size: 18px;
+  }
+  .container_menu .menu_block .menu .contacte ul li a {
+    padding: 0px 10px;
+    box-sizing: border-box;
+  }
+  .container_menu .menu_block .menu .contacte ul li a span {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 768px) {
   footer .footer_top {
@@ -419,9 +508,6 @@ footer .footer_top .facebook__slider__item ul li span {
   footer .footer_top__contacto {
     margin-top: 40px;
     text-align: center;
-  }
-  .container_menu .menu_block {
-    width: 250px;
   }
   .container_menu .menu_block .menu figure {
     width: 150px;
@@ -1578,6 +1664,9 @@ footer .footer_top .facebook__slider__item ul li span {
 .nosotros_formulario {
   background: linear-gradient(to right, #fff, #ebe7e2, #ebe7e2, #ebe7e2);
 }
+.nosotros_formulario .cnt-image figure {
+  transform: skewX(7.5deg);
+}
 .nosotros_formulario .btn--nosotros {
   text-align: center;
   margin: auto;
@@ -2076,10 +2165,10 @@ footer .footer_top .facebook__slider__item ul li span {
   font-size: 20px;
 }
 .cnt-testimonios .bx-wrapper .bx-controls a.bx-prev {
-  left: -4em;
+  left: -7em;
 }
 .cnt-testimonios .bx-wrapper .bx-controls a.bx-next {
-  right: -5em;
+  right: -3em;
 }
 .cnt-testimonios .bx-wrapper .bx-controls a:hover {
   background: #00b2e2;
@@ -2094,6 +2183,7 @@ footer .footer_top .facebook__slider__item ul li span {
   float: left;
   padding: 5% 5% 0 2.5%;
   box-sizing: border-box;
+  text-align: justify;
 }
 .slide-testimonios .item-slider-testimonios .detail .date {
   color: #5d5d5d;
@@ -2107,6 +2197,20 @@ footer .footer_top .facebook__slider__item ul li span {
   font-size: 30px;
   font-family: 'ventura_eddingmedium';
   margin-bottom: 1em;
+  position: relative;
+  padding-left: 20px;
+}
+.slide-testimonios .item-slider-testimonios .detail h3:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: url("../img/punto.png");
+  width: 8px;
+  height: 9px;
+  display: block;
 }
 .slide-testimonios .item-slider-testimonios .image {
   width: 50%;
@@ -2282,6 +2386,7 @@ img
 }
 .matchcota-detalle .container .cnt-descripcion .title-main {
   margin-bottom: 2em;
+  overflow: hidden;
 }
 .matchcota-detalle .container .cnt-descripcion .title-main h1 {
   display: inline-block;
@@ -2317,11 +2422,12 @@ img
   min-width: 240px;
   display: inline-block;
   vertical-align: middle;
-  margin-top: -9px;
+  margin-top: -7px;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .title a {
   background: #00b3e3;
-  padding: 12px 15px;
+  padding: 12px 15px 12px 35px;
+  box-sizing: border-box;
   color: #fff;
   font-size: 16px;
   display: block;
@@ -2519,6 +2625,16 @@ img
   }
 }
 @media screen and (max-width: 768px) {
+  .matchcota-detalle .container .cnt-descripcion .title-main {
+    text-align: center;
+  }
+  .matchcota-detalle .container .cnt-descripcion .title-main .cnt-share {
+    float: inherit;
+    display: block;
+  }
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .title a {
+    padding: 12px 15px;
+  }
   .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract .caract h3 {
     font-size: 18px;
   }
@@ -2527,6 +2643,12 @@ img
   }
 }
 @media screen and (max-width: 480px) {
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .title a {
+    padding: 12px 8px;
+  }
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content p {
+    font-size: 14px;
+  }
   .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract .caract {
     flex-wrap: wrap;
   }
@@ -2620,15 +2742,21 @@ img
   margin-right: 10px;
 }
 .noticias-detail .view-more .ver_mas_noticias .arrow {
-  width: 36px;
   height: 12px;
   display: inline-block;
   position: relative;
   top: -3px;
 }
 .noticias-detail .view-more .ver_mas_noticias .arrow.left {
+  width: 50px;
+  background-repeat: no-repeat;
   background-image: url("../img/flecha_ploma_left.png");
-  margin-right: 2em;
+  background-position: left center;
+  transition: 1s ease all;
+  margin-right: 10px;
+}
+.noticias-detail .view-more .ver_mas_noticias:hover .arrow.left {
+  animation: key_arrow_test_mas 1.4s infinite;
 }
 .cnt-share {
   text-align: center;

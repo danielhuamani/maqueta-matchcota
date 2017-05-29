@@ -22,7 +22,7 @@
         .text
             color c_celeste
             font-family f_kaushan_r
-            font-size 160px
+            font-size 180px
             width 100%
             text-align center
             margin-bottom -140px
@@ -31,16 +31,22 @@
         figure
             margin auto
             max-width 713px
-            transform skew(7.5deg)
+            position relative
+
     .cnt-formulario
         width 55%
         padding-left 120px
         padding-bottom 45px
+        display flex
+        justify-content flex-start
+        align-items center
         box-sizing border-box
         .formulario
             margin-top 60px
             max-width 900px
+            width 100%
             padding-right 40px
+            box-sizing border-box
             .cuentas
                 margin-bottom 20px
                 display flex
@@ -61,7 +67,7 @@
                 font-size 35px
                 text-align center
                 font-family f_ventura_m
-                margin-bottom 20px
+                margin-bottom 30px
             p
                 font-size 15px
                 font-family f_gothan_l
@@ -102,11 +108,11 @@
                         text-align center
                         margin 0px 30px
                 .text
-                    margin-top 40px
+                    margin-top 25px
                     font-size 15px
                     font-family f_gothan_l
                     color c_plomo_os
-                    margin-bottom 36px
+                    margin-bottom 25px
                 .cnt-form
 
                     .cnt-input
@@ -218,14 +224,14 @@
                 font-size 28px
                 border 1px solid c_celeste
     .cnt-image
-        width 40%
+
         height 100%
 
         box-sizing border-box
     .cnt-formulario
         height 100%
         box-sizing border-box
-        width 60%
+
         background c_formulario
         .formulario
             position relative
@@ -237,6 +243,8 @@
     background transparent
     z-index 330
 @media screen and (max-width 1800px)
+    .container_formulario .cnt-image .text
+        font-size 160px
     .cnt_pop_up_apadrina
         .pop_up
             height 550px
@@ -245,19 +253,21 @@
             figure
                 width 400px
             .image
-                margin-right 80px
+                margin-right 50px
     .container_formulario .cnt-image
         background-size cover
         background-repeat no-repeat
         background-position -188px center
 
 @media screen and (max-width 1500px)
+    .container_formulario .cnt-image .text
+        font-size 130px
     .cnt_pop_up_adopta .cnt-image figure
         max-width 415px !important
     .cnt_pop_up_dona .pop_up
         height 515px
     .container_formulario .cnt-image .image
-        margin-right 10px
+        margin-right 30px
     .container_formulario
         .cnt-image
             background c_white
@@ -314,6 +324,10 @@
                         margin-top 10px
 
 @media screen and (max-width 768px)
+    .cnt_pop_up .cnt-formulario
+        display block
+        .formulario h2
+            margin-bottom 15px
     .container_formulario .cnt-formulario
         width 96%
     .container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input label

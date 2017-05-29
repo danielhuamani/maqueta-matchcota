@@ -45,9 +45,9 @@
         color c_celeste
         font-size 20px
         &.bx-prev
-          left -4em
+          left -7em
         &.bx-next
-          right -5em
+          right -3em
         &:hover
           background c_celeste
           color #fff
@@ -60,6 +60,7 @@
       float left
       padding: 5% 5% 0 2.5%
       box-sizing border-box
+      text-align justify
       .date
         color c_plomo_os
         font-size 25px
@@ -71,6 +72,19 @@
         font-size 30px
         font-family f_ventura_m
         margin-bottom 1em
+        position relative
+        padding-left 20px
+        &:before
+          content ""
+          position absolute
+          left 0
+          top 0
+          bottom 0
+          margin auto
+          background-image url("../img/punto.png")
+          width 8px
+          height 9px
+          display block
     .image
       width 50%
       float right

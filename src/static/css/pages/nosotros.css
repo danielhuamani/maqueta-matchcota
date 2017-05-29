@@ -419,6 +419,9 @@
 .nosotros_formulario {
   background: linear-gradient(to right, #fff, #ebe7e2, #ebe7e2, #ebe7e2);
 }
+.nosotros_formulario .cnt-image figure {
+  transform: skewX(7.5deg);
+}
 .nosotros_formulario .btn--nosotros {
   text-align: center;
   margin: auto;

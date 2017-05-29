@@ -61,6 +61,7 @@ $cyan = #00b3e3
             margin-top 0
             .title-main
                 margin-bottom 2em
+                overflow hidden
                 h1
                     display inline-block
                     text-align left
@@ -93,10 +94,11 @@ $cyan = #00b3e3
                             min-width 240px
                             display inline-block
                             vertical-align middle
-                            margin-top -9px
+                            margin-top -7px
                         a
                             background $cyan
-                            padding 12px 15px
+                            padding 12px 15px 12px 35px
+                            box-sizing border-box
                             color #fff
                             font-size 16px
                             display block
@@ -276,7 +278,17 @@ $cyan = #00b3e3
             width 60%
 */
 @media screen and (max-width 768px)
-    .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract
+    .matchcota-detalle .container .cnt-descripcion
+        .title-main
+            text-align center
+            .cnt-share
+                float inherit
+                display block
+    .matchcota-detalle .container .cnt-descripcion .acordeon li
+        .title
+            a
+                padding 12px 15px
+        .text-content .content-caract
             .caract
                 h3
                     font-size 18px
@@ -284,6 +296,12 @@ $cyan = #00b3e3
                     margin-right 0px
 
 @media screen and (max-width 480px)
+    .matchcota-detalle .container .cnt-descripcion .acordeon li
+        .title
+            a
+                padding 12px 8px
+    .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content p
+            font-size 14px
     .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract
             .caract
                 flex-wrap wrap
