@@ -1,6 +1,7 @@
 $cyan = #00b3e3
 .matchcota-detalle
     margin-top 50px
+    margin-bottom 40px
     .container
         display flex
         justify-content center
@@ -253,17 +254,20 @@ $cyan = #00b3e3
                 width 100%
                 height auto
 @media screen and (max-width 1024px)
-    .matchcota-detalle .container
-        flex-direction column-reverse
-        .cnt-descripcion
+    .matchcota-detalle
+        margin-top 0
+        .container
+            flex-direction column
+            .cnt-descripcion
 
-            margin auto
-            width 90%
-            max-width 800px
-        .preview-img
-            width auto
-            margin auto
-            max-width 400px
+                margin auto
+                margin-top 40px
+                width 90%
+                max-width 800px
+            .preview-img
+                width auto
+                margin auto
+                max-width 400px
     .matchcota-detalle .container .preview-img .conoce_mascota__title
         margin 40px 0px
 /*    .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-salud__alergias
@@ -280,12 +284,7 @@ $cyan = #00b3e3
             width 60%
 */
 @media screen and (max-width 768px)
-    .matchcota-detalle .container .cnt-descripcion
-        .title-main
-            text-align center
-            .cnt-share
-                float inherit
-                display block
+
     .matchcota-detalle .container .cnt-descripcion .acordeon li
         .title
             a
@@ -318,3 +317,10 @@ $cyan = #00b3e3
         width 98%
     .matchcota-detalle .container .preview-img .conoce_mascota__title
         font-size 20px
+@media screen and (max-width 420px)
+    .matchcota-detalle .container .cnt-descripcion
+        .title-main
+            text-align center
+            .cnt-share
+                float inherit
+                display block

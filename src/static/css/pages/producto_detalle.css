@@ -1,5 +1,6 @@
 .matchcota-detalle {
   margin-top: 50px;
+  margin-bottom: 40px;
 }
 .matchcota-detalle .container {
   display: flex;
@@ -293,11 +294,15 @@
   }
 }
 @media screen and (max-width: 1024px) {
+  .matchcota-detalle {
+    margin-top: 0;
+  }
   .matchcota-detalle .container {
-    flex-direction: column-reverse;
+    flex-direction: column;
   }
   .matchcota-detalle .container .cnt-descripcion {
     margin: auto;
+    margin-top: 40px;
     width: 90%;
     max-width: 800px;
   }
@@ -324,13 +329,6 @@
             width 60%
 */
 @media screen and (max-width: 768px) {
-  .matchcota-detalle .container .cnt-descripcion .title-main {
-    text-align: center;
-  }
-  .matchcota-detalle .container .cnt-descripcion .title-main .cnt-share {
-    float: inherit;
-    display: block;
-  }
   .matchcota-detalle .container .cnt-descripcion .acordeon li .title a {
     padding: 12px 15px;
   }
@@ -365,6 +363,15 @@
   }
   .matchcota-detalle .container .preview-img .conoce_mascota__title {
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .matchcota-detalle .container .cnt-descripcion .title-main {
+    text-align: center;
+  }
+  .matchcota-detalle .container .cnt-descripcion .title-main .cnt-share {
+    float: inherit;
+    display: block;
   }
 }
 

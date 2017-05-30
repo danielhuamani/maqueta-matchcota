@@ -14,7 +14,7 @@
     h2
       display inline-block
       font-size 35px
-      color c_narana_ad
+
       position relative
       font-family f_ventura_m
       color c_narana_ap
@@ -64,6 +64,8 @@
         font-size 20px
         &.bx-prev
           left -9em
+          i
+            margin-right 5px
         &.bx-next
           right -4em
         &:hover
@@ -144,35 +146,46 @@
       height auto
 @media screen and (max-width 960px)
   .cnt-testimonios .title
-    margin-bottom 1em
+    margin-bottom 40px
   .slide-testimonios .item-slider-testimonios
     display flex
-    flex-direction column
+    flex-direction column-reverse
+
     .detail
       width 100%
+      text-align center
+      margin-top 20px
       h3
-        text-align center
+
+        display inline-block
     .image
       width 80%
       margin auto
+  .cnt-testimonios .bx-wrapper .bx-controls a
+    top 36%
+    line-height 37px
+    width 33px
+    height 33px
 @media screen and (max-width 768px)
+  .page-testimonio .footer_top
+    margin-top -155px
   .slide-testimonios .item-slider-testimonios
     .image
-      width 100%
+      width 350px
   .cnt-testimonios .content-testimonios
-    padding 0 3em
+    padding 0 1em
   .cnt-testimonios .bx-wrapper .bx-controls
     a.bx-next, a.bx-prev
       width 40px
       height 40px
     a.bx-next
-      right -2.5em
+      right 2em
       i
         font-size: 16px;
         margin-top: 13px;
         display: block;
      a.bx-prev
-       left -2.5em
+       left 2em
        i
         font-size: 16px;
         margin-top: 13px;

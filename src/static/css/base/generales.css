@@ -251,11 +251,8 @@ p {
   }
 }
 @media screen and (max-width: 1200px) {
-  .picture-border .inner__picture--test {
-    border-top: 15px solid #dbdbdb;
-    border-left: 15px solid #d1d1d1;
-    border-right: 15px solid #e6e6e6;
-    border-bottom: 15px solid #e6e6e6;
+  .banner_gral .banner {
+    background-position: center center;
   }
 }
 @media screen and (max-width: 768px) {
@@ -277,15 +274,24 @@ p {
     font-size: 36px;
   }
   .content_banner span.cuv_naran {
-    font-size: 52px;
+    font-size: 52px !important;
   }
 }
 @media screen and (max-width: 480px) {
+  .content_banner .text {
+    font-size: 12px;
+  }
   .content_banner h2 {
-    font-size: 30px;
+    font-size: 26px;
   }
   .content_banner span.cuv_naran {
-    font-size: 46px;
+    font-size: 35px !important;
+  }
+  .picture-border .inner__picture--test {
+    border-top: 15px solid #dbdbdb;
+    border-left: 15px solid #d1d1d1;
+    border-right: 15px solid #e6e6e6;
+    border-bottom: 15px solid #e6e6e6;
   }
 }
 @-moz-keyframes juguete {
