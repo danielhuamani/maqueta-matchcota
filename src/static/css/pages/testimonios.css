@@ -6,6 +6,7 @@
 .cnt-testimonios {
   background: url("../img/trama.png");
   padding-bottom: 100px;
+  position: relative;
 }
 .cnt-testimonios .title {
   text-align: center;
@@ -20,16 +21,30 @@
   font-family: f_ventura_m;
   color: c_narana_ap;
 }
+.cnt-testimonios .title h2:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  border: 2px solid c_narana_ap;
+  border-top: none;
+  border-right: none;
+}
 .cnt-testimonios .title h2:after {
   content: "";
-  width: 33px;
-  height: 34px;
+  width: 10px;
+  height: 10px;
   position: absolute;
-  top: -35px;
-  right: -40px;
+  top: -10px;
+  right: -10px;
+  border: 2px solid c_narana_ap;
+  border-bottom: none;
+  border-left: none;
 }
 .cnt-testimonios .content-testimonios {
-  padding: 0 9em;
+  padding: 0 8em;
   display: block;
   background-image: url("../img/adorno_testimonio.png");
   background-repeat: no-repeat;
@@ -62,6 +77,11 @@
 .cnt-testimonios .bx-wrapper .bx-controls a:hover {
   background: c_celeste;
   color: #fff;
+}
+.juguete_test {
+  position: absolute;
+  left: 165px;
+  bottom: 85px;
 }
 .slide-testimonios .item-slider-testimonios {
   height: auto;
