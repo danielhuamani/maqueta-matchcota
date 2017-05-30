@@ -587,6 +587,15 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 480px) {
+  .container_menu .menu_block .menu .links_pop a span {
+    font-size: 17px;
+  }
+  .container_menu .menu_block .menu figure {
+    width: 120px;
+  }
+  .container_menu .menu_block .menu nav ul li a {
+    font-size: 18px;
+  }
   footer .footer_top__contacto .links a.informacion {
     font-size: 30px;
   }
@@ -2070,7 +2079,7 @@ footer .footer_top .facebook__slider__item ul li span {
   font-size: 35px;
   position: relative;
   font-family: 'ventura_eddingmedium';
-  color: #ff4612;
+  color: #ff7444;
 }
 .cnt-testimonios .title h2:before {
   content: "";
