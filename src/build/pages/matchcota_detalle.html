@@ -5,6 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="/static/css/main.css">
+    <link rel="stylesheet" href="/static/js/validationform/validationEngine.jquery.css">
     
 
     
@@ -25,7 +26,7 @@
 
 			<div class="icon-cross icon-close"></div>
 			<figure>
-				<img src="/static/img/logo_menu.png" alt="" width="249" height="110">
+				<img src="/static/img/logo_menu_active.png" alt="" width="249" height="110">
 			</figure>
 			<nav>
 				<ul>
@@ -50,6 +51,33 @@
 				<a href="" class="adopta adopta_pop"><i class="icon-11"></i> <span>Adopta</span></a>
 				<a href="" class="apadrina apadrina_pop"><i class="icon-12"></i><span>Apadrina</span></a>
 				<a href="" class="donar donar_pop"><i class="icon-13"></i><span>Dona</span></a>
+			</div>
+			<div class="contacte">
+				<h3>
+					Contáctate con Nosotros
+				</h3>
+				<div class="contacte__info">
+					<ul>
+						<li>
+							<a href="">
+								<i class="icon-face icon-mascotas-10"></i>
+								<span>@matchcotaperu</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="icon-info icon-14"></i>
+								<span>info@matchcota.org</span>
+							</a>
+						</li>
+						<li>
+							<a href="">
+								<i class="icon-fono icon-16"></i>
+								<span>(01) 3483899</span>
+							</a>
+						</li>
+					</ul>
+				</div>
 			</div>
 		</div>
 	</div>
@@ -98,27 +126,27 @@
 				<i class="icon-22"></i>CONOCE MÁS MASCOTAS AQUÍ
 			</a>
 			<div class="main-img">
-				<img src="/static/img/mascota1.png" class="img_res" width="274" height="295" alt="">
+				<img src="/static/img/mascota1.png" class="" width="450" height="450" alt="">
 			</div>
 			<ul class="list-thumbnails">
 				<li>
-					<a href="#" point-src="/static/img/mascota1.png">
-						<img src="/static/img/mascota1.png" alt="">
+					<a href="#" data-src="/static/img/mascota1.png">
+						<img width="87" height="87" src="/static/img/mascota1.png" alt="">
 					</a>
 				</li>
 				<li>
-					<a href="#" point-src="/static/img/mascota2.png">
-						<img src="/static/img/mascota2.png" alt="">
+					<a href="#" data-src="/static/img/mascota2.png">
+						<img width="87" height="87" src="/static/img/mascota2.png" alt="">
 					</a>
 				</li>
 				<li>
-					<a href="#" point-src="/static/img/mascota3.png">
-						<img src="/static/img/mascota3.png" alt="">
+					<a href="#" data-src="/static/img/mascota3.png">
+						<img width="87" height="87" src="/static/img/mascota3.png" alt="">
 					</a>
 				</li>
 				<li>
-					<a href="#" point-src="/static/img/mascota4.png">
-						<img src="/static/img/mascota4.png" alt="">
+					<a href="#" data-src="/static/img/mascota4.png">
+						<img width="87" height="87" src="/static/img/mascota4.png" alt="">
 					</a>
 				</li>
 			</ul>
@@ -258,7 +286,7 @@
 						</div>
 					</div>
 				</li>
-				<li id="comportamiento">
+				<li id="comportamiento" class="comportamiento_id">
 					<h3 class="title">
 						<a href="#comportamiento">
 							<i class="icon icon-07"></i>
@@ -271,43 +299,43 @@
 							<li>
 								<span class="text">Tranquilo</span>
 								<div class="cnt-bar">
-									<div class="bar w20"></div>
+									<div class="bar w0 w20"></div>
 								</div>
 							</li>
 							<li>
 								<span class="text">Independiente</span>
 								<div class="cnt-bar">
-									<div class="bar w20"></div>
+									<div class="bar w0 w20"></div>
 								</div>
 							</li>
 							<li>
 								<span class="text">Cariñoso</span>
 								<div class="cnt-bar">
-									<div class="bar w90"></div>
+									<div class="bar w0 w90"></div>
 								</div>
 							</li>
 							<li>
 								<span class="text">Curioso</span>
 								<div class="cnt-bar">
-									<div class="bar w90"></div>
+									<div class="bar w0 w90"></div>
 								</div>
 							</li>
 							<li>
 								<span class="text">Educado</span>
 								<div class="cnt-bar">
-									<div class="bar w40"></div>
+									<div class="bar w0 w40"></div>
 								</div>
 							</li>
 							<li>
 								<span class="text">Deportista</span>
 								<div class="cnt-bar">
-									<div class="bar w90"></div>
+									<div class="bar w0 w90"></div>
 								</div>
 							</li>
 							<li>
 								<span class="text">Juguetón</span>
 								<div class="cnt-bar">
-									<div class="bar w70"></div>
+									<div class="bar w0 w70"></div>
 								</div>
 							</li>
 
@@ -380,7 +408,7 @@
                                     <h3>002 194 1333308352098 95</h3>
                                 </div>
                             </div>
-                            <form action="">
+                            <form action="" id="form_dona">
                                 <div class="text">
                                     Si ya realizaste una donación déjanos aquí tus datos y adjunta el voucher del depósito para poderte enviar una postal digital como agradecimiento:
                                 </div>
@@ -390,31 +418,31 @@
                                     <div class="cnt-input">
                                         <div class="input input input-m">
                                             <label for="">Nombre y Apellido:</label>
-                                            <input type="text">
+                                            <input type="text" class="validate[required]" name="dona_nomb_apell">
                                         </div>
                                         <div class="input input-m">
                                             <label for="">Distrito:</label>
-                                            <input type="text">
+                                            <input type="text" class="validate[required]" name="dona_distrito">
                                         </div>
                                     </div>
                                     <div class="cnt-input">
                                         <div class="input input-m">
                                             <label for="">DNI:</label>
-                                            <input type="text">
+                                            <input type="text" class="validate[required]" name="dona_dni">
                                         </div>
                                         <div class="input input-m">
                                             <label for="">Célular:</label>
-                                            <input type="text">
+                                            <input type="text" class="validate[required]" name="dona_celular">
                                         </div>
                                     </div>
                                     <div class="cnt-input">
                                         <div class="input input-m">
                                             <label for="">Correo Electronico:</label>
-                                            <input type="text">
+                                            <input type="text" class="validate[required]" name="dona_email">
                                         </div>
                                         <div class="input input-m">
                                             <label for="">Confirmación de Correo Electronico:</label>
-                                            <input type="text">
+                                            <input type="text" class="validate[required]" name="dona_conf_email">
                                         </div>
                                     </div>
                                     <div class="cnt-input cnt-input--adjuntar">
@@ -437,7 +465,7 @@
                         <div class="image">
 
                             <div class="text">
-                                APADRINA
+                                Apadrina
                             </div>
                             <figure>
                             <img src="/static/img/apadrina.png" width="531" height="592" alt="" class="img_res">
@@ -453,7 +481,7 @@
                                 Completa los datos para ser un padrino/madrina:
                             </h2>
 
-                            <form action="">
+                            <form action="" id="form_apadrina">
                                 <div class="text">
                                     Completa los datos para ser un padrino/madrina:
                                 </div>
@@ -463,27 +491,27 @@
                                     <div class="cnt-input">
                                         <div class="input input input-m">
                                             <label for="">Nombre:</label>
-                                            <input type="text">
+                                            <input type="text" class="validate[required]" name="apa_nombre">
                                         </div>
                                         <div class="input input-m">
                                             <label for="">Apellido:</label>
-                                            <input type="text">
+                                            <input type="text" class="validate[required]" name="apa_apellido">
                                         </div>
                                     </div>
                                     <div class="cnt-input">
                                         <div class="input input-m">
                                             <label for="">Email:</label>
-                                            <input type="text">
+                                            <input type="text" class="validate[required]" name="apa_email">
                                         </div>
                                         <div class="input input-m">
                                             <label for="">Teléfono:</label>
-                                            <input type="text">
+                                            <input type="text" class="validate[required]" name="apa_telefono">
                                         </div>
                                     </div>
                                     <div class="cnt-input">
                                         <div class="input">
                                             <label for="">Nombre de la mascota que desea apadrinar:</label>
-                                            <input type="text">
+                                            <input type="text" class="validate[required]" name="apa_nom_mascota">
                                         </div>
 
                                     </div>
@@ -509,7 +537,7 @@
                         <div class="image">
 
                             <div class="text">
-                                ADOPTA
+                                Adopta
                             </div>
                             <figure>
                             <img src="/static/img/adopta.png" width="484" height="589" alt="" class="img_res">
@@ -525,52 +553,49 @@
                                 adopta una mascota
                             </h2>
 
-                            <form action="">
-
-
-
+                            <form action="" id="form_adopta">
                                 <div class="cnt-form">
                                     <div class="cnt-input">
                                         <div class="input input input-m">
                                             <label for="">Nombre:</label>
-                                            <input type="text">
+                                            <input type="text" class="validate[required]" name="adopta_nombre">
                                         </div>
                                         <div class="input input-m">
                                             <label for="">Apellido:</label>
-                                            <input type="text">
+                                            <input type="text" class="validate[required]" name="adopta_apellido">
                                         </div>
                                     </div>
                                     <div class="cnt-input">
                                         <div class="input input-m">
                                             <label for="">N° de DNI:</label>
-                                            <input type="text">
+                                            <input type="text" class="validate[required]" name="adopta_dni">
                                         </div>
                                         <div class="input input-m">
                                             <label for="">Email:</label>
-                                            <input type="text">
+                                            <input type="text" class="validate[required]" name="adopta_email">
                                         </div>
                                     </div>
                                     <div class="cnt-input">
                                         <div class="input input-m">
                                             <label for="">Teléfono:</label>
-                                            <input type="text">
+                                            <input type="text" class="validate[required]" name="adopta_telefono">
                                         </div>
                                         <div class="input input-m">
                                             <label for="">Distrito:</label>
-                                            <input type="text">
+                                            <input type="text" class="validate[required]" name="adopta_distrito">
                                         </div>
                                     </div>
                                     <div class="cnt-input">
                                         <div class="input">
                                             <label for="">Dirección:</label>
-                                            <input type="text">
+                                            <input type="text" class="validate[required]" name="adopta_direccion">
                                         </div>
 
                                     </div>
                                     <div class="cnt-input">
                                         <div class="input">
                                             <label for="">Nombre de la mascota que desea apadrinar:</label>
-                                            <input type="text">
+                                            <input type="text" class="validate[required]" name="adopta_nombre_masc">
                                         </div>
 
                                     </div>
@@ -587,7 +612,7 @@
                                      <div class="cnt-input cnt-input--adjuntar">
 
                                         <label for="adjuntar">adjuntar archivo <i class="icon-09"></i> </label>
-                                        <input type="file" name="adjuntar" id="adjuntar" class="adjuntar">
+                                        <input type="file" name="adjuntar" id="adjuntar" class="adjuntar" >
                                     </div>
                                     <button class="btn btn--form btn--nosotros btn--pop">
                                         ENVIAR
@@ -717,6 +742,8 @@
 
     <script src="/static/js/jquery1.8.3.min.js"></script>
     <script src="/static/js/jquery.bxslider.min.js"></script>
+    <script src="/static/js/validationform/jquery.validationEngine-es.js"></script>
+    <script src="/static/js/validationform/jquery.validationEngine.js"></script>
     <script src="/static/js/main.js"></script>
     <script>
         jQuery(document).ready(function($) {
@@ -777,7 +804,7 @@
 			prevText: '',
 		});
 		function changeImage() {
-			$downImg = $(this).attr("point-src");
+			$downImg = $(this).attr("data-src");
 			console.log($downImg);
 			$(".main-img img").attr("src", $downImg);
 		}
@@ -789,14 +816,34 @@
 		}
 		$(".list-thumbnails li a").click(function(event) {
 			event.preventDefault()
-			$downImg = $(this).attr("point-src");
+			$downImg = $(this).attr("data-src");
 			console.log($downImg);
 			$(".main-img img").attr("src", $downImg);
 			/* Act on the event */
 		});
 
 
+		$(".acordeon .title").click(function(event) {
+			/* Act on the event */
+			event.preventDefault();
+			if(!$(this).closest("li").hasClass("active"))
+			{
+				$(".acordeon .text-content").stop(false).slideUp(300)
 
+				$(".acordeon li").removeClass("active")
+
+			}
+			if ($(this).closest("li").hasClass("comportamiento_id")) {
+				setTimeout(function(){
+
+					$(".bar").removeClass('w0')
+				}, 500)
+			}else{
+				$(".bar").addClass('w0')
+			}
+			$(this).closest('li').find(".text-content").stop(false).slideDown(300);
+			$(this).closest('li').addClass("active")
+		});
 	});
 </script>
 

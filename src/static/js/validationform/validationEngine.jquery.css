@@ -25,6 +25,7 @@
 	display: block;
 	cursor: pointer;
 	text-align: left;
+	z-index: 50;
 }
 
 .formError.inline {

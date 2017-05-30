@@ -67,33 +67,99 @@
   background: #fff;
 }
 .container_menu .menu_block--active {
-  left: 0px !important;
+  display: flex !important;
 }
 .container_menu .menu_block {
+  align-items: center;
+  justify-content: center;
   position: fixed;
-  width: 490px;
+  width: 100%;
+  background: #00b2e2;
+  animation: fadeEffect 0.5s ease;
+  display: none;
   transition: 0.5s ease all;
   height: 100%;
   top: 0;
-  left: -490px;
-  background: #fff;
+  left: 0;
+  right: auto;
   text-align: center;
-  padding-top: 45px;
+  padding-top: 25px;
   border-right: 1px solid #d0d0d0;
   z-index: 300;
 }
 .container_menu .menu_block .menu {
+  width: 100%;
   position: relative;
 }
 .container_menu .menu_block .menu .icon-close {
   position: absolute;
-  right: 30px;
+  right: 80px;
   cursor: pointer;
-  top: -20px;
+  top: 0px;
   display: inline-block;
-  color: #00b2e2;
-  font-size: 28px;
-  border: 1px solid #00b2e2;
+  color: #ff4304;
+  background: #fff;
+  padding: 15px;
+  border-radius: 50%;
+  font-size: 36px;
+}
+.container_menu .menu_block .menu .contacte {
+  margin: auto;
+  margin-top: 40px;
+  max-width: 580px;
+  border-top: 2px solid #fff;
+}
+.container_menu .menu_block .menu .contacte h3 {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  color: #fff;
+  font-size: 26px;
+  font-family: 'GothamRounded-Book';
+}
+.container_menu .menu_block .menu .contacte ul {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.container_menu .menu_block .menu .contacte ul li {
+  margin-bottom: 30px;
+}
+.container_menu .menu_block .menu .contacte ul li a:hover {
+  color: #003a5d;
+  transition: 0.3s ease all;
+}
+.container_menu .menu_block .menu .contacte ul li a:hover span {
+  color: #003a5d;
+  transition: 0.3s ease all;
+}
+.container_menu .menu_block .menu .contacte ul li a:hover i {
+  color: #003a5d;
+  border: 2px solid #003a5d;
+  transition: 0.3s ease all;
+}
+.container_menu .menu_block .menu .contacte ul li a {
+  color: #fff;
+}
+.container_menu .menu_block .menu .contacte ul li a i {
+  margin-right: 4px;
+  border: 2px solid #fff;
+  border-radius: 50%;
+}
+.container_menu .menu_block .menu .contacte ul li a .icon-face {
+  font-size: 22px;
+  padding: 8px 14px;
+}
+.container_menu .menu_block .menu .contacte ul li a .icon-info {
+  font-size: 18px;
+  padding: 10px 7px;
+}
+.container_menu .menu_block .menu .contacte ul li a .icon-fono {
+  font-size: 22px;
+  padding: 8px 11px;
+}
+.container_menu .menu_block .menu .contacte ul li a span {
+  font-family: 'GothamRounded-Light';
+  font-size: 20px;
 }
 .container_menu .menu_block .menu .links_pop {
   display: flex;
@@ -136,7 +202,7 @@
   margin-top: 5px;
   font-size: 19px;
   font-family: 'ventura_eddingmedium';
-  color: #ff4304;
+  color: #fff;
 }
 .container_menu .menu_block .menu nav {
   margin-top: 40px;
@@ -146,17 +212,14 @@
 }
 .container_menu .menu_block .menu nav ul li a.active,
 .container_menu .menu_block .menu nav ul li a:hover {
-  border-bottom: 2px solid #00b2e2;
+  color: #003a5d;
 }
 .container_menu .menu_block .menu nav ul li a {
   padding: 0px 20px;
-  color: #00b2e2;
+  color: #fff;
   font-size: 30px;
   font-family: 'GothamRounded-Book';
   border-bottom: 2px solid transparent;
-}
-.container_menu .link_menu--active {
-  left: 0 !important;
 }
 .container_menu .link_menu {
   position: fixed;
@@ -164,12 +227,12 @@
   width: 105px;
   height: 100%;
   top: 0;
-  left: -105px;
+  left: 0px;
   background: #fff;
   text-align: center;
   padding-top: 45px;
   border-right: 1px solid #d0d0d0;
-  z-index: 300;
+  z-index: 160;
   cursor: pointer;
 }
 .container_menu .btn_menu {
@@ -347,8 +410,28 @@ footer .footer_top .facebook__slider__item ul li span {
   margin-right: 5px;
 }
 @media screen and (max-width: 1500px) {
-  .container_menu .menu_block {
-    width: 300px;
+  .container_menu .menu_block .menu nav {
+    margin-top: 20px;
+  }
+  .container_menu .menu_block .menu nav ul li {
+    margin-bottom: 10px;
+  }
+  .container_menu .menu_block .menu .links_pop {
+    margin-top: 20px;
+  }
+  .container_menu .menu_block .menu .contacte {
+    margin-top: 20px;
+  }
+  .container_menu .menu_block .menu .contacte h3 {
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .container_menu .menu_block .menu .contacte ul li {
+    margin-left: 5px;
+    margin-right: 5px;
+  }
+  .container_menu .menu_block .menu .contacte ul li a span {
+    font-size: 16px;
   }
   .container_menu .menu_block .menu figure {
     width: 190px;
@@ -360,6 +443,8 @@ footer .footer_top .facebook__slider__item ul li span {
   }
   .container_menu .menu_block .menu .icon-close {
     right: 15px;
+    font-size: 26px;
+    padding: 10px;
   }
   .container_menu .menu_block .menu nav ul li a {
     font-size: 26px;
@@ -373,7 +458,7 @@ footer .footer_top .facebook__slider__item ul li span {
     margin-bottom: 10px;
   }
   .container_menu .menu_block .menu nav ul li a {
-    font-size: 24px;
+    font-size: 22px;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -402,8 +487,32 @@ footer .footer_top .facebook__slider__item ul li span {
   footer .footer_top .facebook_image {
     display: none;
   }
+  .container_menu .menu_block .menu .contacte {
+    max-width: 420px;
+  }
+  .container_menu .menu_block .menu .contacte h3 {
+    font-size: 18px;
+  }
+  .container_menu .menu_block .menu .contacte ul li a {
+    padding: 0px 10px;
+    box-sizing: border-box;
+  }
+  .container_menu .menu_block .menu .contacte ul li a span {
+    font-size: 14px;
+  }
 }
 @media screen and (max-width: 768px) {
+  .logo_celeste {
+    display: block !important;
+    height: inherit !important;
+  }
+  .logo_blanco {
+    display: none;
+  }
+  .container_menu .btn_menu {
+    width: 50px;
+    padding-left: 10px;
+  }
   footer .footer_top {
     padding-bottom: 10px;
     padding-top: 140px;
@@ -419,9 +528,6 @@ footer .footer_top .facebook__slider__item ul li span {
   footer .footer_top__contacto {
     margin-top: 40px;
     text-align: center;
-  }
-  .container_menu .menu_block {
-    width: 250px;
   }
   .container_menu .menu_block .menu figure {
     width: 150px;
@@ -445,25 +551,22 @@ footer .footer_top .facebook__slider__item ul li span {
   .header__logo_links >a {
     left: inherit;
     right: 15px;
+    top: 8px;
     margin: auto;
     display: inline-block;
     text-align: center;
   }
   .container_menu .link_menu--active {
-    left: 10px !important;
+    left: 0px !important;
   }
   .container_menu .link_menu {
     height: auto;
-    padding: 15px 0;
-    margin-top: 20px;
-    width: 50px;
+    padding: 20px 0;
+    width: 100%;
     border-bottom: 1px solid #d0d0d0;
   }
   .container_menu .link_menu .btn_menu .icon-menu {
     margin-bottom: 0;
-  }
-  .container_menu .link_menu .btn_menu span {
-    display: none;
   }
   footer {
     width: 100%;

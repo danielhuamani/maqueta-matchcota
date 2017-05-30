@@ -1,6 +1,6 @@
 .mascota_categorias
     margin-top 65px
-    margin-bottom 65px
+    margin-bottom 0px
     .text
         font-family f_gothan_l
         font-size  16px
@@ -30,34 +30,36 @@
                     position relative
                     border-left 8px solid c_celeste
                     border-right 8px solid c_celeste
-                    &:before
-                        content ""
-                        opacity 0
-                        position absolute
-                        transition 0.3s ease all
-                        left 0px
-                        top 10px
-                        width 13px
-                        height 25px
-                        background-image url("../img/categoria_left.png")
-                        display block
-                    &:after
-                        content ""
-                        opacity 0
-                        position absolute
-                        right 0px
-                        top 7px
-                        width 13px
-                        height 25px
-                        transition 0.3s ease all
-                        background-image url("../img/categoria_right.png")
-                        display block
+                    span
+                        position relative
+                        display inline-block
+                        &:before
+                            content ""
+                            opacity 0
+                            position absolute
+                            transition 0.3s ease all
+                            right calc(100% + 8px)
+                            top 5px
+                            width 13px
+                            height 25px
+                            background-image url("../img/categoria_left.png")
+                            display block
+                        &:after
+                            content ""
+                            opacity 0
+                            position absolute
+                            left calc(100% + 8px)
+                            top 0px
+                            width 13px
+                            height 25px
+                            transition 0.3s ease all
+                            background-image url("../img/categoria_right.png")
+                            display block
 
             li:hover, li.active
-                a:after
-                    opacity 1
-                a:before
-                    opacity 1
+                a
+                    span:after, span:before
+                        opacity 1
 
 .list_mascotas
     flex-wrap wrap

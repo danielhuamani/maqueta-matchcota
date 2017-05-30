@@ -1,3 +1,12 @@
+.page-testimonio .footer_top {
+  margin-top: -90px;
+  position: relative;
+  z-index: 5;
+}
+.cnt-testimonios {
+  background: url("../img/trama.png");
+  padding-bottom: 100px;
+}
 .cnt-testimonios .title {
   text-align: center;
   margin-bottom: 2.5em;
@@ -20,8 +29,11 @@
   right: -40px;
 }
 .cnt-testimonios .content-testimonios {
-  padding: 0 5em;
+  padding: 0 9em;
   display: block;
+  background-image: url("../img/adorno_testimonio.png");
+  background-repeat: no-repeat;
+  background-position: left bottom;
 }
 .cnt-testimonios .bx-wrapper {
   margin: auto;
@@ -42,10 +54,10 @@
   font-size: 20px;
 }
 .cnt-testimonios .bx-wrapper .bx-controls a.bx-prev {
-  left: -4em;
+  left: -9em;
 }
 .cnt-testimonios .bx-wrapper .bx-controls a.bx-next {
-  right: -5em;
+  right: -4em;
 }
 .cnt-testimonios .bx-wrapper .bx-controls a:hover {
   background: c_celeste;
@@ -60,6 +72,7 @@
   float: left;
   padding: 5% 5% 0 2.5%;
   box-sizing: border-box;
+  text-align: justify;
 }
 .slide-testimonios .item-slider-testimonios .detail .date {
   color: c_plomo_os;
@@ -73,6 +86,20 @@
   font-size: 30px;
   font-family: f_ventura_m;
   margin-bottom: 1em;
+  position: relative;
+  padding-left: 20px;
+}
+.slide-testimonios .item-slider-testimonios .detail h3:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  background-image: url("../img/punto.png");
+  width: 8px;
+  height: 9px;
+  display: block;
 }
 .slide-testimonios .item-slider-testimonios .image {
   width: 50%;
@@ -80,7 +107,25 @@
   box-sizing: border-box;
 img
 }
+@media screen and (max-width: 1800px) {
+  .content-testimonios {
+    background-image: none !important;
+  }
+  .cnt-testimonios .bx-wrapper .bx-controls a.bx-next {
+    right: -3em;
+  }
+  .cnt-testimonios .bx-wrapper .bx-controls a.bx-prev {
+    left: -3em;
+  }
+}
 @media screen and (max-width: 1500px) {
+  .cnt-testimonios .container {
+    max-width: 100%;
+    width: 100%;
+  }
+  .cnt-testimonios .content-testimonios {
+    box-sizing: border-box;
+  }
   .cnt-testimonios .bx-wrapper .bx-controls a.bx-next {
     right: -3em;
   }

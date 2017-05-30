@@ -61,32 +61,89 @@
     background c_white
 
     .menu_block--active
+        display flex !important
 
-        left 0px !important
     .menu_block
+        align-items center
+        justify-content center
         position fixed
-        width 490px
+        width 100%
+        background c_celeste
+        animation fadeEffect .5s ease
+        display none
         transition 0.5s ease all
         height 100%
         top 0
-        left -490px
-        background c_white
+        left 0
+        right auto
+
         text-align center
-        padding-top 45px
+        padding-top 25px
         border-right 1px solid #D0D0D0
         z-index 300
 
         .menu
+            width 100%
             position relative
             .icon-close
                 position absolute
-                right 30px
+                right 80px
                 cursor pointer
-                top -20px
+                top 0px
                 display inline-block
-                color c_celeste
-                font-size 28px
-                border 1px solid c_celeste
+                color c_narana_ad
+                background c_white
+                padding 15px
+                border-radius 50%
+                font-size 36px
+
+            .contacte
+                margin auto
+                margin-top 40px
+                max-width 580px
+                border-top 2px solid c_white
+                h3
+                    margin-top 30px
+                    margin-bottom 30px
+                    color c_white
+                    font-size 26px
+                    font-family f_gothan_b
+                ul
+                    display flex
+                    justify-content space-around
+                    flex-wrap wrap
+                    li
+                        margin-bottom 30px
+                        a:hover
+                            color #003A5D
+                            transition 0.3s ease all
+                            span
+                                color #003A5D
+                                transition 0.3s ease all
+                            i
+                                color #003A5D
+
+                                border 2px solid #003A5D
+                                transition 0.3s ease all
+                        a
+                            color c_white
+                            i
+                                margin-right 4px
+                                border 2px solid c_white
+                                border-radius 50%
+
+                            .icon-face
+                                font-size 22px
+                                padding 8px 14px
+                            .icon-info
+                                font-size 18px
+                                padding 10px 7px
+                            .icon-fono
+                                font-size 22px
+                                padding 8px 11px
+                            span
+                                font-family f_gothan_l
+                                font-size 20px
             .links_pop
                 display flex
                 justify-content center
@@ -125,36 +182,35 @@
                         margin-top 5px
                         font-size 19px
                         font-family f_ventura_m
-                        color c_narana_ad
+                        color c_white
             nav
                 margin-top 40px
                 ul
                     li
                         margin-bottom 20px
                         a.active, a:hover
-                            border-bottom 2px solid c_celeste
+                            color #003A5D
 
                         a
                             padding 0px 20px
-                            color c_celeste
+                            color c_white
                             font-size 30px
                             font-family f_gothan_b
                             border-bottom 2px solid transparent
 
-    .link_menu--active
-        left 0 !important
+
     .link_menu
         position fixed
         transition 0.5s ease all
         width 105px
         height 100%
         top 0
-        left -105px
+        left 0px
         background c_white
         text-align center
         padding-top 45px
         border-right 1px solid #D0D0D0
-        z-index 300
+        z-index 160
         cursor pointer
     .btn_menu
         font-size 16px
@@ -301,8 +357,25 @@ footer
                                 margin-right 5px
 
 @media screen and (max-width 1500px)
+    .container_menu .menu_block .menu
+        nav
+            margin-top 20px
+            ul li
+                margin-bottom 10px
+        .links_pop
+            margin-top 20px
+        .contacte
+            margin-top 20px
+            h3
+                margin-top 20px
+                margin-bottom 20px
+            ul li
+                margin-left 5px
+                margin-right 5px
+                a span
+                    font-size 16px
     .container_menu .menu_block
-        width 300px
+
         .menu
             figure
                 width 190px
@@ -313,17 +386,21 @@ footer
 
             .icon-close
                 right 15px
+                font-size 26px
+                padding 10px
             nav ul li a
                 font-size 26px
 @media screen and (max-width 1200px)
+
     .container_menu .menu_block
+
         .menu
             figure
                 width 180px
             nav ul li
                 margin-bottom 10px
                 a
-                    font-size 24px
+                    font-size 22px
 
 @media screen and (max-width 1024px)
     footer .footer_top
@@ -347,7 +424,26 @@ footer
 
         .facebook_image
             display none
+    .container_menu .menu_block .menu
+        .contacte
+
+            max-width 420px
+            h3
+                font-size 18px
+            ul li a
+                padding 0px 10px
+                box-sizing border-box
+                span
+                    font-size 14px
 @media screen and (max-width 768px)
+    .logo_celeste
+        display block !important
+        height inherit !important
+    .logo_blanco
+        display none
+    .container_menu .btn_menu
+        width 50px
+        padding-left 10px
     footer
         .footer_top
             padding-bottom 10px
@@ -362,7 +458,7 @@ footer
             margin-top 40px
             text-align center
     .container_menu .menu_block
-        width 250px
+
         .menu
             figure
                 width 150px
@@ -380,26 +476,24 @@ footer
         nav
             display none
         >a
-            left: inherit;
-            right: 15px;
-
-            margin: auto;
-            display: inline-block;
-            text-align: center;
+            left inherit
+            right 15px
+            top 8px
+            margin auto
+            display inline-block
+            text-align center
     .container_menu
         .link_menu--active
-            left 10px !important
+            left 0px !important
         .link_menu
             height auto
-            padding 15px 0
-            margin-top 20px
-            width 50px
+            padding 20px 0
+            width 100%
             border-bottom 1px solid #d0d0d0
             .btn_menu
                 .icon-menu
                     margin-bottom 0
-                span
-                    display none
+
     footer
         width 100%
         margin-left 0

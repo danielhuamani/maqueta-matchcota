@@ -13,6 +13,7 @@
 .list_mascotas__mascota--celeste:hover .list_mascotas__etiqueta h4 {
   color: c_white;
   background-image: url("../img/mas_hover.png");
+  background-position: 0 2px;
 }
 .list_mascotas__mascota--celeste:hover .list_mascotas__etiqueta h4:before {
   opacity: 1;
@@ -45,6 +46,7 @@
 .list_mascotas__mascota--amarillo:hover .list_mascotas__etiqueta h4 {
   color: c_white;
   background-image: url("../img/mas_hover.png");
+  background-position: 0 2px;
 }
 .list_mascotas__mascota--amarillo:hover .list_mascotas__etiqueta h4:before {
   opacity: 1;
@@ -77,6 +79,7 @@
 .list_mascotas__mascota--plomo:hover .list_mascotas__etiqueta h4 {
   color: c_white;
   background-image: url("../img/mas_hover.png");
+  background-position: 0 2px;
 }
 .list_mascotas__mascota--plomo:hover .list_mascotas__etiqueta h4:before {
   opacity: 1;
@@ -151,7 +154,7 @@
   position: absolute;
   z-index: 3;
   left: 34px;
-  top: 0;
+  top: 2px;
   display: flex;
   align-items: center;
   bottom: 0;

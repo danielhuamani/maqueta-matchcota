@@ -17,27 +17,27 @@
 				<i class="icon-22"></i>CONOCE MÁS MASCOTAS AQUÍ
 			</a>
 			<div class="main-img">
-				<img src="{{STATIC_URL}}img/mascota1.png" class="img_res" width="274" height="295" alt="">
+				<img src="{{STATIC_URL}}img/mascota1.png" class="" width="450" height="450" alt="">
 			</div>
 			<ul class="list-thumbnails">
 				<li>
-					<a href="#" point-src="{{STATIC_URL}}img/mascota1.png">
-						<img src="{{STATIC_URL}}img/mascota1.png" alt="">
+					<a href="#" data-src="{{STATIC_URL}}img/mascota1.png">
+						<img width="87" height="87" src="{{STATIC_URL}}img/mascota1.png" alt="">
 					</a>
 				</li>
 				<li>
-					<a href="#" point-src="{{STATIC_URL}}img/mascota2.png">
-						<img src="{{STATIC_URL}}img/mascota2.png" alt="">
+					<a href="#" data-src="{{STATIC_URL}}img/mascota2.png">
+						<img width="87" height="87" src="{{STATIC_URL}}img/mascota2.png" alt="">
 					</a>
 				</li>
 				<li>
-					<a href="#" point-src="{{STATIC_URL}}img/mascota3.png">
-						<img src="{{STATIC_URL}}img/mascota3.png" alt="">
+					<a href="#" data-src="{{STATIC_URL}}img/mascota3.png">
+						<img width="87" height="87" src="{{STATIC_URL}}img/mascota3.png" alt="">
 					</a>
 				</li>
 				<li>
-					<a href="#" point-src="{{STATIC_URL}}img/mascota4.png">
-						<img src="{{STATIC_URL}}img/mascota4.png" alt="">
+					<a href="#" data-src="{{STATIC_URL}}img/mascota4.png">
+						<img width="87" height="87" src="{{STATIC_URL}}img/mascota4.png" alt="">
 					</a>
 				</li>
 			</ul>
@@ -177,7 +177,7 @@
 						</div>
 					</div>
 				</li>
-				<li id="comportamiento">
+				<li id="comportamiento" class="comportamiento_id">
 					<h3 class="title">
 						<a href="#comportamiento">
 							<i class="icon icon-07"></i>
@@ -190,43 +190,43 @@
 							<li>
 								<span class="text">Tranquilo</span>
 								<div class="cnt-bar">
-									<div class="bar w20"></div>
+									<div class="bar w0 w20"></div>
 								</div>
 							</li>
 							<li>
 								<span class="text">Independiente</span>
 								<div class="cnt-bar">
-									<div class="bar w20"></div>
+									<div class="bar w0 w20"></div>
 								</div>
 							</li>
 							<li>
 								<span class="text">Cariñoso</span>
 								<div class="cnt-bar">
-									<div class="bar w90"></div>
+									<div class="bar w0 w90"></div>
 								</div>
 							</li>
 							<li>
 								<span class="text">Curioso</span>
 								<div class="cnt-bar">
-									<div class="bar w90"></div>
+									<div class="bar w0 w90"></div>
 								</div>
 							</li>
 							<li>
 								<span class="text">Educado</span>
 								<div class="cnt-bar">
-									<div class="bar w40"></div>
+									<div class="bar w0 w40"></div>
 								</div>
 							</li>
 							<li>
 								<span class="text">Deportista</span>
 								<div class="cnt-bar">
-									<div class="bar w90"></div>
+									<div class="bar w0 w90"></div>
 								</div>
 							</li>
 							<li>
 								<span class="text">Juguetón</span>
 								<div class="cnt-bar">
-									<div class="bar w70"></div>
+									<div class="bar w0 w70"></div>
 								</div>
 							</li>
 
@@ -283,7 +283,7 @@
 			prevText: '',
 		});
 		function changeImage() {
-			$downImg = $(this).attr("point-src");
+			$downImg = $(this).attr("data-src");
 			console.log($downImg);
 			$(".main-img img").attr("src", $downImg);
 		}
@@ -295,14 +295,34 @@
 		}
 		$(".list-thumbnails li a").click(function(event) {
 			event.preventDefault()
-			$downImg = $(this).attr("point-src");
+			$downImg = $(this).attr("data-src");
 			console.log($downImg);
 			$(".main-img img").attr("src", $downImg);
 			/* Act on the event */
 		});
 
 
+		$(".acordeon .title").click(function(event) {
+			/* Act on the event */
+			event.preventDefault();
+			if(!$(this).closest("li").hasClass("active"))
+			{
+				$(".acordeon .text-content").stop(false).slideUp(300)
 
+				$(".acordeon li").removeClass("active")
+
+			}
+			if ($(this).closest("li").hasClass("comportamiento_id")) {
+				setTimeout(function(){
+
+					$(".bar").removeClass('w0')
+				}, 500)
+			}else{
+				$(".bar").addClass('w0')
+			}
+			$(this).closest('li').find(".text-content").stop(false).slideDown(300);
+			$(this).closest('li').addClass("active")
+		});
 	});
 </script>
 {% endblock js %}

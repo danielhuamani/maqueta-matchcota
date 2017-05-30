@@ -8,11 +8,27 @@
 	padding 8px 22px
 	color c_celeste
 	border 1px solid c_white
-	&:hover
+	position relative
+	z-index 1
+	&:before
+		content ""
+		position absolute
+		width 100%
+		height 100%
+		top 0
+		left 0
+		opacity 0
 		background c_white
-		color c_celeste
-		border 1px solid c_celeste
-
+		transition-timing-function cubic-bezier(0.2, 1, 0.3, 1)
+		transform scale3d(0.7, 1, 1)
+		z-index -1
+		border-radius 6px
+		transition 0.3s ease all
+.btn--light-white:hover
+	border 1px solid c_white
+	&:before
+		transform translate3d(0, 0, 0)
+		opacity 1
 .btn--light-white-active
 	background c_white
 	color c_celeste
@@ -23,10 +39,28 @@
 	border 1px solid c_celeste
 	background c_celeste
 	padding 8px 22px
-	&:hover
-
+	position relative
+	z-index 1
+	&:before
+		content ""
+		position absolute
+		width 100%
+		height 100%
+		top 0
+		left 0
+		opacity 0
 		background c_white
+		transition-timing-function cubic-bezier(0.2, 1, 0.3, 1)
+		transform scale3d(0.7, 1, 1)
+		z-index -1
+		border-radius 6px
+		transition 0.3s ease all
+	&:hover
 		color c_celeste
-		border 1px solid c_celeste
+		background c_white
+		border 1px solid c_white
+		&:before
+			transform translate3d(0, 0, 0)
+			opacity 1
 @media screen and (max-width 1500px)
 	padding 6px 18px

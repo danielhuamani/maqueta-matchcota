@@ -32,6 +32,9 @@ $cyan = #00b3e3
                 box-shadow 0 0 1px 1px #ddd, inset 0 0 1px 3px #ddd
                 text-align center
                 img
+
+                    display block
+                    max-width 100%
                     padding-bottom 2px
             ul.list-thumbnails
                 max-width 100%
@@ -39,7 +42,8 @@ $cyan = #00b3e3
                 font-size 0
                 li
                     margin 0px 4px
-                    max-width 20%
+                    width 20%
+                    max-width 140px
                     display inline-block
 
                     a
@@ -57,6 +61,7 @@ $cyan = #00b3e3
             margin-top 0
             .title-main
                 margin-bottom 2em
+                overflow hidden
                 h1
                     display inline-block
                     text-align left
@@ -89,10 +94,11 @@ $cyan = #00b3e3
                             min-width 240px
                             display inline-block
                             vertical-align middle
-                            margin-top -4px
+                            margin-top -7px
                         a
                             background $cyan
-                            padding 12px 15px
+                            padding 12px 15px 12px 35px
+                            box-sizing border-box
                             color #fff
                             font-size 16px
                             display block
@@ -100,8 +106,8 @@ $cyan = #00b3e3
                             transition 0.3s ease all
                             font-size 16px
                             border-radius 50%
-                            padding 6px 2px
-                            border 1px solid c_white
+                            padding 7px 2px
+                            border 2px solid c_white
                     .text-content
                         display none
                         border 1px solid #ddd
@@ -161,7 +167,7 @@ $cyan = #00b3e3
                             h2
                                 color c_plomo_os
                                 margin 10px 0px
-                                font-size 20px
+                                font-size 21px
                                 font-family f_gothan_m
                             .caract
                                 display flex
@@ -175,6 +181,7 @@ $cyan = #00b3e3
                                     color c_plomo_os
                                     font-family f_gothan_b
                                     i
+                                        font-size 24px
                                         color c_celeste
                         &__comportamiento
                             ul
@@ -191,6 +198,7 @@ $cyan = #00b3e3
                                 float left
                             .cnt-bar
                                 margin 0 0 0 100px
+
                                 display block
                                 position relative
                                 &:after
@@ -202,6 +210,7 @@ $cyan = #00b3e3
                                     content ""
                                     z-index 1
                                 .bar
+                                    transition 0.5s ease all
                                     height 14px
                                     display inline-block
                                     background c_celeste
@@ -219,7 +228,7 @@ $cyan = #00b3e3
                                     padding 0 3px
 
                         p
-                            font-size 12px
+                            font-size 16px
 
                 li.active
                     .text-content
@@ -235,6 +244,14 @@ $cyan = #00b3e3
                 margin auto
                 display  block
                 margin-top 30px
+@media screen and (max-width 1500px)
+    .matchcota-detalle .container .preview-img
+        width calc(45% - 60px)
+        .main-img
+            max-height 500px
+            img
+                width 100%
+                height auto
 @media screen and (max-width 1024px)
     .matchcota-detalle .container
         flex-direction column-reverse
@@ -263,7 +280,17 @@ $cyan = #00b3e3
             width 60%
 */
 @media screen and (max-width 768px)
-    .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract
+    .matchcota-detalle .container .cnt-descripcion
+        .title-main
+            text-align center
+            .cnt-share
+                float inherit
+                display block
+    .matchcota-detalle .container .cnt-descripcion .acordeon li
+        .title
+            a
+                padding 12px 15px
+        .text-content .content-caract
             .caract
                 h3
                     font-size 18px
@@ -271,6 +298,12 @@ $cyan = #00b3e3
                     margin-right 0px
 
 @media screen and (max-width 480px)
+    .matchcota-detalle .container .cnt-descripcion .acordeon li
+        .title
+            a
+                padding 12px 8px
+    .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content p
+            font-size 14px
     .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract
             .caract
                 flex-wrap wrap

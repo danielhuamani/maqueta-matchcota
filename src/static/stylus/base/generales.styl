@@ -144,6 +144,7 @@ p
     box-shadow: 6px 6px 20px 1px #b9bbbe
     position relative
     z-index: 3
+
     .inner__picture
         border-top 14px solid #dbdbdb
         border-left 14px solid #d1d1d1
@@ -156,6 +157,11 @@ p
             border-right 2px solid #fff
             border-bottom 2px solid #fff
             display block
+    .inner__picture--test
+        border-top 30px solid #dbdbdb
+        border-left 30px solid #d1d1d1
+        border-right 30px solid #e6e6e6
+        border-bottom 30px solid #e6e6e6
 .w10
     width 10%
 .w20
@@ -176,7 +182,8 @@ p
     width 90%
 .w100
     width 100%
-
+.w0
+    width 0
 @keyframes juguete {
 
     0% {transform: rotate(0deg);}
@@ -203,6 +210,11 @@ p
     0% {margin-left: 5px;}
     50% {margin-left: 15px;}
     100% {margin-left: 5px;}
+}
+@keyframes key_arrow_noti_mas {
+    0% {margin-right: 5px;}
+    50% {margin-right: 15px;}
+    100% {margin-right: 5px;}
 }
 
 @keyframes key_arrow_test_mas {
@@ -246,6 +258,12 @@ p
 @media screen and (max-width 1500px)
     .container
         width 96%
+@media screen and (max-width 1200px)
+    .picture-border .inner__picture--test
+            border-top 15px solid #dbdbdb
+            border-left 15px solid #d1d1d1
+            border-right 15px solid #e6e6e6
+            border-bottom 15px solid #e6e6e6
 @media screen and (max-width 768px)
     .title_colores h2.celeste
         font-size 30px
