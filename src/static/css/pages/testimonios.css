@@ -15,10 +15,9 @@
 .cnt-testimonios .title h2 {
   display: inline-block;
   font-size: 35px;
-  color: c_narana_ad;
   position: relative;
   font-family: f_ventura_m;
-  color: c_narana_ap;
+  color: #ff4612;
 }
 .cnt-testimonios .title h2:after {
   content: "";
@@ -55,6 +54,9 @@
 }
 .cnt-testimonios .bx-wrapper .bx-controls a.bx-prev {
   left: -9em;
+}
+.cnt-testimonios .bx-wrapper .bx-controls a.bx-prev i {
+  margin-right: 5px;
 }
 .cnt-testimonios .bx-wrapper .bx-controls a.bx-next {
   right: -4em;
@@ -144,29 +146,40 @@ img
 }
 @media screen and (max-width: 960px) {
   .cnt-testimonios .title {
-    margin-bottom: 1em;
+    margin-bottom: 40px;
   }
   .slide-testimonios .item-slider-testimonios {
     display: flex;
-    flex-direction: column;
+    flex-direction: column-reverse;
   }
   .slide-testimonios .item-slider-testimonios .detail {
     width: 100%;
+    text-align: center;
+    margin-top: 20px;
   }
   .slide-testimonios .item-slider-testimonios .detail h3 {
-    text-align: center;
+    display: inline-block;
   }
   .slide-testimonios .item-slider-testimonios .image {
     width: 80%;
     margin: auto;
   }
+  .cnt-testimonios .bx-wrapper .bx-controls a {
+    top: 36%;
+    line-height: 37px;
+    width: 33px;
+    height: 33px;
+  }
 }
 @media screen and (max-width: 768px) {
+  .page-testimonio .footer_top {
+    margin-top: -155px;
+  }
   .slide-testimonios .item-slider-testimonios .image {
-    width: 100%;
+    width: 350px;
   }
   .cnt-testimonios .content-testimonios {
-    padding: 0 3em;
+    padding: 0 1em;
   }
   .cnt-testimonios .bx-wrapper .bx-controls a.bx-next,
   .cnt-testimonios .bx-wrapper .bx-controls a.bx-prev {
@@ -174,7 +187,7 @@ img
     height: 40px;
   }
   .cnt-testimonios .bx-wrapper .bx-controls a.bx-next {
-    right: -2.5em;
+    right: 2em;
   }
   .cnt-testimonios .bx-wrapper .bx-controls a.bx-next i {
     font-size: 16px;
@@ -182,7 +195,7 @@ img
     display: block;
   }
   .cnt-testimonios .bx-wrapper .bx-controls a.bx-prev {
-    left: -2.5em;
+    left: 2em;
   }
   .cnt-testimonios .bx-wrapper .bx-controls a.bx-prev i {
     font-size: 16px;

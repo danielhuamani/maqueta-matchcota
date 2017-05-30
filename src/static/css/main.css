@@ -893,11 +893,8 @@ p {
   }
 }
 @media screen and (max-width: 1200px) {
-  .picture-border .inner__picture--test {
-    border-top: 15px solid #dbdbdb;
-    border-left: 15px solid #d1d1d1;
-    border-right: 15px solid #e6e6e6;
-    border-bottom: 15px solid #e6e6e6;
+  .banner_gral .banner {
+    background-position: center center;
   }
 }
 @media screen and (max-width: 768px) {
@@ -919,15 +916,24 @@ p {
     font-size: 36px;
   }
   .content_banner span.cuv_naran {
-    font-size: 52px;
+    font-size: 52px !important;
   }
 }
 @media screen and (max-width: 480px) {
+  .content_banner .text {
+    font-size: 12px;
+  }
   .content_banner h2 {
-    font-size: 30px;
+    font-size: 26px;
   }
   .content_banner span.cuv_naran {
-    font-size: 46px;
+    font-size: 35px !important;
+  }
+  .picture-border .inner__picture--test {
+    border-top: 15px solid #dbdbdb;
+    border-left: 15px solid #d1d1d1;
+    border-right: 15px solid #e6e6e6;
+    border-bottom: 15px solid #e6e6e6;
   }
 }
 @-moz-keyframes juguete {
@@ -2565,6 +2571,13 @@ p {
   .list_mascotas__mascota figure {
     width: 200px;
   }
+  .list_mascotas {
+    margin-top: 0 !important;
+  }
+  .list_mascotas__etiqueta h4 {
+    width: 93%;
+    font-size: 13px;
+  }
 }
 .home_listado_noticias .listado_noticias__large {
   position: relative;
@@ -3661,6 +3674,14 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 768px) {
+  footer .footer_top__contacto .links a.telefono {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -o-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
   .logo_celeste {
     display: block !important;
     height: inherit !important;
@@ -3751,6 +3772,16 @@ footer .footer_top .facebook__slider__item ul li span {
     width: 100%;
     margin-left: 0;
   }
+  .logo_celeste {
+    height: 48px !important;
+    width: auto;
+  }
+  .container_menu .btn_menu {
+    font-size: 12px;
+  }
+  .container_menu .link_menu {
+    padding: 10px 0px;
+  }
 }
 @media screen and (max-width: 480px) {
   footer .footer_top__contacto .links a.informacion {
@@ -3764,6 +3795,18 @@ footer .footer_top .facebook__slider__item ul li span {
   }
   footer .footer_top .facebook_bloque {
     display: none;
+  }
+  .logo_celeste {
+    height: 36px !important;
+  }
+  .container_menu .btn_menu {
+    font-size: 10px;
+  }
+  .container_menu .link_menu {
+    padding: 8px 0px;
+  }
+  .header__logo_links >a {
+    top: 10px;
   }
 }
 .home_banner {
@@ -4585,6 +4628,10 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 768px) {
+  .home_conoce_mascota .full_container .bloque_picture.bloque_1,
+  .home_conoce_mascota .full_container .bloque_picture.bloque_5 {
+    display: none;
+  }
   .home_conoce_mascota .testimonio_link {
     width: 100%;
     right: 0;
@@ -4628,7 +4675,8 @@ footer .footer_top .facebook__slider__item ul li span {
 }
 @media screen and (max-width: 480px) {
   .home_conoce_mascota .full_container .bloque_picture.bloque_4,
-  .home_conoce_mascota .full_container .bloque_picture.bloque_5 {
+  .home_conoce_mascota .full_container .bloque_picture.bloque_5,
+  .home_conoce_mascota .full_container .bloque_picture.bloque_3 {
     display: none;
   }
   .home_conoce_mascota .full_container .bloque_picture {
@@ -4642,6 +4690,9 @@ footer .footer_top .facebook__slider__item ul li span {
   }
   .home_nuestro_aliados .bx-wrapper {
     max-width: 180px !important;
+  }
+  .home_banner .cnt_slide_home .home_banner__text_static .text_adoptar .bx-wrapper {
+    min-width: 100px;
   }
 }
 .nosotros_matchota_ideal .container {
@@ -5624,10 +5675,9 @@ footer .footer_top .facebook__slider__item ul li span {
 .cnt-testimonios .title h2 {
   display: inline-block;
   font-size: 35px;
-  color: #ff4304;
   position: relative;
   font-family: 'ventura_eddingmedium';
-  color: #ff7444;
+  color: #ff4612;
 }
 .cnt-testimonios .title h2:after {
   content: "";
@@ -5664,6 +5714,9 @@ footer .footer_top .facebook__slider__item ul li span {
 }
 .cnt-testimonios .bx-wrapper .bx-controls a.bx-prev {
   left: -9em;
+}
+.cnt-testimonios .bx-wrapper .bx-controls a.bx-prev i {
+  margin-right: 5px;
 }
 .cnt-testimonios .bx-wrapper .bx-controls a.bx-next {
   right: -4em;
@@ -5761,7 +5814,7 @@ img
 }
 @media screen and (max-width: 960px) {
   .cnt-testimonios .title {
-    margin-bottom: 1em;
+    margin-bottom: 40px;
   }
   .slide-testimonios .item-slider-testimonios {
     display: -webkit-box;
@@ -5770,30 +5823,44 @@ img
     display: -ms-flexbox;
     display: box;
     display: flex;
+    -webkit-box-direction: reverse;
+    -moz-box-direction: reverse;
+    -o-box-direction: reverse;
     -webkit-box-orient: vertical;
     -moz-box-orient: vertical;
     -o-box-orient: vertical;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
+    -webkit-flex-direction: column-reverse;
+    -ms-flex-direction: column-reverse;
+    flex-direction: column-reverse;
   }
   .slide-testimonios .item-slider-testimonios .detail {
     width: 100%;
+    text-align: center;
+    margin-top: 20px;
   }
   .slide-testimonios .item-slider-testimonios .detail h3 {
-    text-align: center;
+    display: inline-block;
   }
   .slide-testimonios .item-slider-testimonios .image {
     width: 80%;
     margin: auto;
   }
+  .cnt-testimonios .bx-wrapper .bx-controls a {
+    top: 36%;
+    line-height: 37px;
+    width: 33px;
+    height: 33px;
+  }
 }
 @media screen and (max-width: 768px) {
+  .page-testimonio .footer_top {
+    margin-top: -155px;
+  }
   .slide-testimonios .item-slider-testimonios .image {
-    width: 100%;
+    width: 350px;
   }
   .cnt-testimonios .content-testimonios {
-    padding: 0 3em;
+    padding: 0 1em;
   }
   .cnt-testimonios .bx-wrapper .bx-controls a.bx-next,
   .cnt-testimonios .bx-wrapper .bx-controls a.bx-prev {
@@ -5801,7 +5868,7 @@ img
     height: 40px;
   }
   .cnt-testimonios .bx-wrapper .bx-controls a.bx-next {
-    right: -2.5em;
+    right: 2em;
   }
   .cnt-testimonios .bx-wrapper .bx-controls a.bx-next i {
     font-size: 16px;
@@ -5809,7 +5876,7 @@ img
     display: block;
   }
   .cnt-testimonios .bx-wrapper .bx-controls a.bx-prev {
-    left: -2.5em;
+    left: 2em;
   }
   .cnt-testimonios .bx-wrapper .bx-controls a.bx-prev i {
     font-size: 16px;
@@ -5849,6 +5916,7 @@ img
 }
 .matchcota-detalle {
   margin-top: 50px;
+  margin-bottom: 40px;
 }
 .matchcota-detalle .container {
   display: -webkit-box;
@@ -6231,19 +6299,20 @@ img
   }
 }
 @media screen and (max-width: 1024px) {
+  .matchcota-detalle {
+    margin-top: 0;
+  }
   .matchcota-detalle .container {
-    -webkit-box-direction: reverse;
-    -moz-box-direction: reverse;
-    -o-box-direction: reverse;
     -webkit-box-orient: vertical;
     -moz-box-orient: vertical;
     -o-box-orient: vertical;
-    -webkit-flex-direction: column-reverse;
-    -ms-flex-direction: column-reverse;
-    flex-direction: column-reverse;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
   }
   .matchcota-detalle .container .cnt-descripcion {
     margin: auto;
+    margin-top: 40px;
     width: 90%;
     max-width: 800px;
   }
@@ -6257,13 +6326,6 @@ img
   }
 }
 @media screen and (max-width: 768px) {
-  .matchcota-detalle .container .cnt-descripcion .title-main {
-    text-align: center;
-  }
-  .matchcota-detalle .container .cnt-descripcion .title-main .cnt-share {
-    float: inherit;
-    display: block;
-  }
   .matchcota-detalle .container .cnt-descripcion .acordeon li .title a {
     padding: 12px 15px;
   }
@@ -6303,6 +6365,15 @@ img
   }
   .matchcota-detalle .container .preview-img .conoce_mascota__title {
     font-size: 20px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .matchcota-detalle .container .cnt-descripcion .title-main {
+    text-align: center;
+  }
+  .matchcota-detalle .container .cnt-descripcion .title-main .cnt-share {
+    float: inherit;
+    display: block;
   }
 }
 .noticias-detail {
@@ -6596,6 +6667,15 @@ img
 @media screen and (max-width: 1500px) {
   .mascota_categorias .list_categorias ul li a {
     min-width: 175px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mascota_categorias .list_categorias ul li {
+    margin: 10px;
+  }
+  .mascota_categorias .list_categorias ul li a {
+    font-size: 20px;
+    min-width: 140px;
   }
 }
 .page-enviado footer .footer_top {

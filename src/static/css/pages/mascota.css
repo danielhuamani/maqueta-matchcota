@@ -77,5 +77,14 @@
     min-width: 175px;
   }
 }
+@media screen and (max-width: 768px) {
+  .mascota_categorias .list_categorias ul li {
+    margin: 10px;
+  }
+  .mascota_categorias .list_categorias ul li a {
+    font-size: 20px;
+    min-width: 140px;
+  }
+}
 
 /*# sourceMappingURL=mascota.css.map */
