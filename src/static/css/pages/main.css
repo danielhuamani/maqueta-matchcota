@@ -620,6 +620,13 @@ footer .footer_top .facebook__slider__item ul li span {
   .header__logo_links >a {
     top: 10px;
   }
+  .container_menu .menu_block {
+    padding: 0;
+  }
+  .container_menu .menu_block .menu {
+    height: 510px;
+    overflow-y: scroll;
+  }
 }
 .home_banner {
   position: relative;
@@ -1319,6 +1326,9 @@ footer .footer_top .facebook__slider__item ul li span {
   }
   .home_banner .cnt_slide_home .home_banner__text_static .text_adoptar .bx-wrapper {
     min-width: 100px;
+  }
+  .home_conoce_mascota .full_container .container {
+    min-height: inherit;
   }
 }
 .nosotros_matchota_ideal .container {

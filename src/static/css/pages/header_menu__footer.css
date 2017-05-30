@@ -620,6 +620,13 @@ footer .footer_top .facebook__slider__item ul li span {
   .header__logo_links >a {
     top: 10px;
   }
+  .container_menu .menu_block {
+    padding: 0;
+  }
+  .container_menu .menu_block .menu {
+    height: 510px;
+    overflow-y: scroll;
+  }
 }
 
 /*# sourceMappingURL=header_menu__footer.css.map */
