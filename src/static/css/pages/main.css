@@ -67,9 +67,11 @@
   background: #fff;
 }
 .container_menu .menu_block--active {
-  display: block !important;
+  display: flex !important;
 }
 .container_menu .menu_block {
+  align-items: center;
+  justify-content: center;
   position: fixed;
   width: 100%;
   background: #00b2e2;
@@ -86,6 +88,7 @@
   z-index: 300;
 }
 .container_menu .menu_block .menu {
+  width: 100%;
   position: relative;
 }
 .container_menu .menu_block .menu .icon-close {
@@ -99,7 +102,6 @@
   padding: 15px;
   border-radius: 50%;
   font-size: 36px;
-  border: 1px solid #ff4304;
 }
 .container_menu .menu_block .menu .contacte {
   margin: auto;
@@ -449,9 +451,6 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 1200px) {
-  .container_menu .menu_block {
-    padding-top: 30px;
-  }
   .container_menu .menu_block .menu figure {
     width: 180px;
   }
@@ -687,6 +686,8 @@ footer .footer_top .facebook__slider__item ul li span {
   color: #ff4304;
   font-size: 78px;
   font-family: 'kaushan_scriptregular';
+  margin-top: 24px;
+  display: block;
 }
 .home_banner .home_banner__slider_list__item {
   text-align: center;
@@ -795,6 +796,10 @@ footer .footer_top .facebook__slider__item ul li span {
   min-height: 480px;
   position: relative;
 }
+.home_conoce_mascota .full_container .container .title_active h3:after,
+.home_conoce_mascota .full_container .container .title_active h3:before {
+  opacity: 1 !important;
+}
 .home_conoce_mascota .full_container .container .title {
   width: 100%;
   max-width: 250px;
@@ -826,6 +831,8 @@ footer .footer_top .facebook__slider__item ul li span {
   background-image: url("../img/historia_left.png");
   width: 11px;
   height: 11px;
+  opacity: 0;
+  transition: 0.4s ease all;
 }
 .home_conoce_mascota .full_container .container .title h3:before {
   content: "";
@@ -836,6 +843,8 @@ footer .footer_top .facebook__slider__item ul li span {
   background-image: url("../img/historia_right.png");
   width: 11px;
   height: 11px;
+  opacity: 0;
+  transition: 0.4s ease all;
 }
 .home_conoce_mascota .full_container .bloque_picture {
   position: absolute;
@@ -981,6 +990,9 @@ footer .footer_top .facebook__slider__item ul li span {
 .home_siempre_informados .home_listado_noticias {
   margin-top: 40px;
 }
+.home_siempre_informados .title_active h2:after {
+  opacity: 1 !important;
+}
 .home_siempre_informados .title {
   text-align: center;
 }
@@ -1002,6 +1014,8 @@ footer .footer_top .facebook__slider__item ul li span {
   position: absolute;
   top: -35px;
   right: -40px;
+  opacity: 0;
+  transition: 0.5s ease all;
 }
 .home_nuestro_aliados {
   margin-top: 60px;
@@ -1397,6 +1411,10 @@ footer .footer_top .facebook__slider__item ul li span {
   background: #00b2e2;
   border-left: 1px solid #fff;
   padding: 50px 0px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
 }
 .cnt-mision-vision .container .mision_vision h2 {
   color: #fff;
@@ -1409,9 +1427,10 @@ footer .footer_top .facebook__slider__item ul li span {
   max-width: 340px;
   color: #fff;
   margin: auto;
-  font-size: 14px;
+  font-size: 15px;
   font-family: 'GothamRounded-Light';
   text-align: center;
+  margin: 0;
 }
 .cnt-mision-vision .container .mision_vision .icon-mision {
   text-align: center;
@@ -1421,7 +1440,7 @@ footer .footer_top .facebook__slider__item ul li span {
 }
 .nosotros_linea_tiempo {
   padding-top: 50px;
-  padding-bottom: 120px;
+  padding-bottom: 50px;
   background-image: url("../img/fondo_cuadricula.png");
 }
 .nosotros_linea_tiempo .container {
@@ -1446,8 +1465,8 @@ footer .footer_top .facebook__slider__item ul li span {
   font-family: 'ventura_eddingmedium';
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo {
-  margin-top: 80px;
-  padding-top: 50px;
+  margin-top: 40px;
+  padding-top: 80px;
   padding-bottom: 50px;
   display: flex;
   justify-content: center;
@@ -1896,23 +1915,6 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 768px) {
-  .nosotros_linea_tiempo {
-    max-width: 490px;
-/*.container .cnt_linea_tiempo
-            .bloque_2 figure:after
-                display none
-            .bloque_3
-                margin-top 30px
-            .bloque_5 figure:after
-                display none
-            .container
-                h2
-                    font-size 26px
-                    span
-                        font-size 30px
-        .cnt_linea_tiempo .bloque_3
-            margin-top 30px*/
-  }
   .nosotros_socios_estrategicos .container .bx-wrapper {
     max-width: 330px !important;
   }

@@ -90,6 +90,8 @@
                  color c_narana_ad
                  font-size 78px
                  font-family f_kaushan_r
+                 margin-top 24px
+                 display block
         &__item
             text-align center
             width 100%
@@ -190,6 +192,11 @@
             transform skew(0deg, -2.5deg)
             min-height 480px
             position relative
+            .title_active
+                h3
+                    &:after, &:before
+                        opacity 1 !important
+
             .title
                 width 100%
                 max-width 250px
@@ -218,6 +225,8 @@
                         background-image url("../img/historia_left.png")
                         width 11px
                         height 11px
+                        opacity 0
+                        transition 0.4s ease all
                     &:before
                         content ""
                         position absolute
@@ -227,6 +236,8 @@
                         background-image url("../img/historia_right.png")
                         width 11px
                         height 11px
+                        opacity 0
+                        transition 0.4s ease all
 
         .bloque_picture
             position absolute
@@ -355,6 +366,10 @@
                 animation key_arrow_test_mas 1.5s infinite
     .home_listado_noticias
         margin-top 40px
+    .title_active
+        h2
+            &:after
+                opacity 1 !important
     .title
         text-align center
         h2
@@ -374,6 +389,8 @@
                 position absolute
                 top -35px
                 right -40px
+                opacity 0
+                transition 0.5s ease all
 
 .home_nuestro_aliados
     margin-top 60px

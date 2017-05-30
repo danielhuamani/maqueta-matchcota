@@ -97,6 +97,8 @@
   color: c_narana_ad;
   font-size: 78px;
   font-family: f_kaushan_r;
+  margin-top: 24px;
+  display: block;
 }
 .home_banner .home_banner__slider_list__item {
   text-align: center;
@@ -205,6 +207,10 @@
   min-height: 480px;
   position: relative;
 }
+.home_conoce_mascota .full_container .container .title_active h3:after,
+.home_conoce_mascota .full_container .container .title_active h3:before {
+  opacity: 1 !important;
+}
 .home_conoce_mascota .full_container .container .title {
   width: 100%;
   max-width: 250px;
@@ -236,6 +242,8 @@
   background-image: url("../img/historia_left.png");
   width: 11px;
   height: 11px;
+  opacity: 0;
+  transition: 0.4s ease all;
 }
 .home_conoce_mascota .full_container .container .title h3:before {
   content: "";
@@ -246,6 +254,8 @@
   background-image: url("../img/historia_right.png");
   width: 11px;
   height: 11px;
+  opacity: 0;
+  transition: 0.4s ease all;
 }
 .home_conoce_mascota .full_container .bloque_picture {
   position: absolute;
@@ -391,6 +401,9 @@
 .home_siempre_informados .home_listado_noticias {
   margin-top: 40px;
 }
+.home_siempre_informados .title_active h2:after {
+  opacity: 1 !important;
+}
 .home_siempre_informados .title {
   text-align: center;
 }
@@ -412,6 +425,8 @@
   position: absolute;
   top: -35px;
   right: -40px;
+  opacity: 0;
+  transition: 0.5s ease all;
 }
 .home_nuestro_aliados {
   margin-top: 60px;

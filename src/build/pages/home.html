@@ -287,7 +287,7 @@
 			</a>
 			<a href="noticias_detalle.html" class="listado_noticias__noticia ">
 				<figure>
-					<img src="/static/img/noticia_small_1.png" alt="" class="img_res" width="228" height="204">
+					<img src="/static/img/noticia_1.png" alt="" class="img_res" width="228" height="204">
 				</figure>
 				<div class="descripcion">
 					<h3>31 Octubre 2016</h3>
@@ -787,7 +787,11 @@
 
 		$(document).ready(function(){
 
-
+			if ($("body").height()>540) {
+				setTimeout(function(){
+				  $(".title_section").addClass('home_mascotas--title--active')
+				}, 1000);
+            };
 			$('.home_banner__slider_list').bxSlider({
 				mode: 'fade',
 				adaptiveHeight: false,
@@ -825,12 +829,22 @@
 
                 if(window_top>720) {
 		  			$(".cnt-beneficios .facebook").addClass('facebook-fixed')
+		  			$(".home_conoce_mascota .full_container .container .title").addClass('title_active')
+		  		}else{
+		  			$(".home_conoce_mascota .full_container .container .title").removeClass('title_active')
 		  		}
-		  		if(window_top>2400) {
+		  		if(window_top>2200) {
 		  			$(".home_nuestro_aliados .title_colores").addClass('title_colores_animate')
 		  		}else{
 		  			$(".home_nuestro_aliados .title_colores").removeClass('title_colores_animate')
 		  		}
+		  		if (window_top>1400) {
+		  			$(".home_siempre_informados .title").addClass('title_active')
+
+		  		}else{
+		  			$(".home_siempre_informados .title").removeClass('title_active')
+		  		}
+
             });
 
             $(".arrow_scroll").click(function(evn){

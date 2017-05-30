@@ -67,9 +67,11 @@
   background: #fff;
 }
 .container_menu .menu_block--active {
-  display: block !important;
+  display: flex !important;
 }
 .container_menu .menu_block {
+  align-items: center;
+  justify-content: center;
   position: fixed;
   width: 100%;
   background: #00b2e2;
@@ -86,6 +88,7 @@
   z-index: 300;
 }
 .container_menu .menu_block .menu {
+  width: 100%;
   position: relative;
 }
 .container_menu .menu_block .menu .icon-close {
@@ -99,7 +102,6 @@
   padding: 15px;
   border-radius: 50%;
   font-size: 36px;
-  border: 1px solid #ff4304;
 }
 .container_menu .menu_block .menu .contacte {
   margin: auto;
@@ -449,9 +451,6 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 1200px) {
-  .container_menu .menu_block {
-    padding-top: 30px;
-  }
   .container_menu .menu_block .menu figure {
     width: 180px;
   }

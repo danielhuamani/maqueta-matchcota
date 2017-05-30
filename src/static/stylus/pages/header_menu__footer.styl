@@ -61,9 +61,11 @@
     background c_white
 
     .menu_block--active
-        display block !important
+        display flex !important
 
     .menu_block
+        align-items center
+        justify-content center
         position fixed
         width 100%
         background c_celeste
@@ -81,6 +83,7 @@
         z-index 300
 
         .menu
+            width 100%
             position relative
             .icon-close
                 position absolute
@@ -93,7 +96,7 @@
                 padding 15px
                 border-radius 50%
                 font-size 36px
-                border 1px solid c_narana_ad
+
             .contacte
                 margin auto
                 margin-top 40px
@@ -390,7 +393,7 @@ footer
 @media screen and (max-width 1200px)
 
     .container_menu .menu_block
-        padding-top 30px
+
         .menu
             figure
                 width 180px

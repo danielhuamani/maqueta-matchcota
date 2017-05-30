@@ -24,10 +24,10 @@
   transform: scale3d(0.7, 1, 1);
   z-index: -1;
   border-radius: 6px;
-  transition: 0.4s;
+  transition: 0.3s ease all;
 }
 .btn--light-white:hover {
-  border: 1px solid c_celeste;
+  border: 1px solid c_white;
 }
 .btn--light-white:hover:before {
   transform: translate3d(0, 0, 0);
@@ -59,11 +59,12 @@
   transform: scale3d(0.7, 1, 1);
   z-index: -1;
   border-radius: 6px;
-  transition: 0.4s;
+  transition: 0.3s ease all;
 }
 .btn--form:hover {
   color: c_celeste;
-  border: 1px solid c_celeste;
+  background: c_white;
+  border: 1px solid c_white;
 }
 .btn--form:hover:before {
   transform: translate3d(0, 0, 0);
@@ -110,14 +111,14 @@
 .container_formulario .cnt-formulario {
   width: 55%;
   padding-left: 120px;
-  padding-bottom: 45px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
   box-sizing: border-box;
 }
 .container_formulario .cnt-formulario .formulario {
-  margin-top: 60px;
   max-width: 900px;
   width: 100%;
   padding-right: 40px;
@@ -197,7 +198,7 @@
   font-size: 15px;
   font-family: f_gothan_l;
   color: c_plomo_os;
-  margin-bottom: 25px;
+  margin-bottom: 20px;
 }
 .container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input {
   display: flex;
@@ -228,14 +229,14 @@
   position: relative;
   border: none;
   font-size: 15px;
-  border-bottom: 2px solid c_plomo_os;
+  border-bottom: 1px solid c_plomo_os;
   background: transparent;
 }
 .container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input:after {
   content: "";
   width: 0%;
   position: absolute;
-  border-bottom: 2px solid c_celeste;
+  border-bottom: 1px solid c_celeste;
   left: 0;
   height: 1px;
   bottom: 0;
@@ -257,6 +258,8 @@
   color: c_celeste;
   text-align: center;
   width: 100%;
+  font-size: 17px;
+  transition: 0.3s ease all;
 }
 .container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input--adjuntar {
   padding: 5px 0px;
@@ -269,6 +272,14 @@
   background: c_white;
   position: relative;
   cursor: pointer;
+  transition: 0.3s ease all;
+}
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input--adjuntar:hover {
+  color: c_white;
+  background: c_celeste;
+}
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input--adjuntar:hover .descargar {
+  color: c_white;
 }
 .container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input--adjuntar input {
   cursor: pointer;
@@ -309,13 +320,15 @@
   position: absolute;
   right: 30px;
   cursor: pointer;
-  top: -30px;
+  top: -40px;
 }
 .cnt_pop_up .pop_up .close .icon-close {
   display: inline-block;
-  color: c_celeste;
+  color: c_narana_ad;
   font-size: 28px;
-  border: 1px solid c_celeste;
+  background: c_white;
+  border-radius: 50%;
+  padding: 8px;
 }
 .cnt_pop_up .cnt-image {
   height: 100%;
@@ -385,7 +398,6 @@
     padding-top: 20px;
   }
   .container_formulario .cnt-formulario .formulario {
-    margin-top: 30px;
     max-width: 650px;
   }
   .container_formulario .cnt-formulario .formulario form .grid_botton {
@@ -398,7 +410,7 @@
   }
   .container_formulario .cnt-formulario .formulario form .text {
     margin-top: 30px;
-    margin-bottom: 30px;
+    margin-bottom: 20px;
   }
   .container_formulario .cnt-formulario .formulario form .text-archivo {
     margin-bottom: 10px;
@@ -416,7 +428,7 @@
     background: c_formulario;
   }
   .cnt_pop_up .cnt-formulario {
-    padding: 15px 30px !important;
+    padding: 35px 30px !important;
   }
   .cnt_pop_up_apadrina .pop_up {
     height: 420px;
@@ -558,6 +570,7 @@
 .list_mascotas__mascota--celeste:hover .list_mascotas__etiqueta h4 {
   color: c_white;
   background-image: url("../img/mas_hover.png");
+  background-position: 0 2px;
 }
 .list_mascotas__mascota--celeste:hover .list_mascotas__etiqueta h4:before {
   opacity: 1;
@@ -590,6 +603,7 @@
 .list_mascotas__mascota--amarillo:hover .list_mascotas__etiqueta h4 {
   color: c_white;
   background-image: url("../img/mas_hover.png");
+  background-position: 0 2px;
 }
 .list_mascotas__mascota--amarillo:hover .list_mascotas__etiqueta h4:before {
   opacity: 1;
@@ -622,6 +636,7 @@
 .list_mascotas__mascota--plomo:hover .list_mascotas__etiqueta h4 {
   color: c_white;
   background-image: url("../img/mas_hover.png");
+  background-position: 0 2px;
 }
 .list_mascotas__mascota--plomo:hover .list_mascotas__etiqueta h4:before {
   opacity: 1;
@@ -696,7 +711,7 @@
   position: absolute;
   z-index: 3;
   left: 34px;
-  top: 0;
+  top: 2px;
   display: flex;
   align-items: center;
   bottom: 0;

@@ -24,10 +24,10 @@
   transform: scale3d(0.7, 1, 1);
   z-index: -1;
   border-radius: 6px;
-  transition: 0.4s;
+  transition: 0.3s ease all;
 }
 .btn--light-white:hover {
-  border: 1px solid c_celeste;
+  border: 1px solid c_white;
 }
 .btn--light-white:hover:before {
   transform: translate3d(0, 0, 0);
@@ -59,11 +59,12 @@
   transform: scale3d(0.7, 1, 1);
   z-index: -1;
   border-radius: 6px;
-  transition: 0.4s;
+  transition: 0.3s ease all;
 }
 .btn--form:hover {
   color: c_celeste;
-  border: 1px solid c_celeste;
+  background: c_white;
+  border: 1px solid c_white;
 }
 .btn--form:hover:before {
   transform: translate3d(0, 0, 0);

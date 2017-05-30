@@ -36,13 +36,14 @@
     .cnt-formulario
         width 55%
         padding-left 120px
-        padding-bottom 45px
+        padding-top 20px
+        padding-bottom 20px
         display flex
         justify-content flex-start
         align-items center
         box-sizing border-box
         .formulario
-            margin-top 60px
+
             max-width 900px
             width 100%
             padding-right 40px
@@ -112,7 +113,7 @@
                     font-size 15px
                     font-family f_gothan_l
                     color c_plomo_os
-                    margin-bottom 25px
+                    margin-bottom 20px
                 .cnt-form
 
                     .cnt-input
@@ -140,13 +141,13 @@
                                 position relative
                                 border none
                                 font-size 15px
-                                border-bottom 2px solid c_plomo_os
+                                border-bottom 1px solid c_plomo_os
                                 background transparent
                             &:after
                                 content ""
                                 width 0%
                                 position absolute
-                                border-bottom 2px solid c_celeste
+                                border-bottom 1px solid c_celeste
                                 left 0
                                 height 1px
                                 bottom 0
@@ -166,6 +167,8 @@
                         color c_celeste
                         text-align center
                         width 100%
+                        font-size 17px
+                        transition 0.3s ease all
                     .cnt-input--adjuntar
                         padding 5px 0px
                         margin-bottom 20px !important
@@ -177,6 +180,12 @@
                         background c_white
                         position relative
                         cursor pointer
+                        transition 0.3s ease all
+                        &:hover
+                            color c_white
+                            background c_celeste
+                            .descargar
+                                color c_white
                         input
                             cursor pointer
                             position absolute
@@ -217,12 +226,15 @@
             position absolute
             right 30px
             cursor pointer
-            top -30px
+            top -40px
             .icon-close
                 display inline-block
-                color c_celeste
+                color c_narana_ad
                 font-size 28px
-                border 1px solid c_celeste
+                background c_white
+                border-radius 50%
+                padding 8px
+
     .cnt-image
 
         height 100%
@@ -279,7 +291,7 @@
             padding-left 60px
             padding-top 20px
             .formulario
-                margin-top 30px
+
                 max-width 650px
                 form
                     .grid_botton
@@ -291,7 +303,7 @@
 
                     .text
                         margin-top 30px
-                        margin-bottom 30px
+                        margin-bottom 20px
                     .text-archivo
                         margin-bottom 10px
                         margin-top 0px
@@ -306,7 +318,7 @@
     .cnt_pop_up .pop_up
         background c_formulario
     .cnt_pop_up .cnt-formulario
-        padding 15px 30px !important
+        padding 35px 30px !important
     .cnt_pop_up_apadrina .pop_up
         height 420px
     .container_formulario
