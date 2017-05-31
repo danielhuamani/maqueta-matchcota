@@ -121,8 +121,26 @@
 
 	</div>
 </section>
+
 {% endblock content %}
 {% block js %}
 <script src="{{STATIC_URL}}js/banner.js"></script>
 
+<script>
+		var mql_n = window.matchMedia("(max-width: 960px)");
+
+		widthChangeNoticia(mql_n)
+		mql_n.addListener(widthChangeNoticia);
+		function widthChangeNoticia(mq){
+			console.log(mq.media)
+			if(mq.matches){
+				$(".listado_noticias .large").removeClass('listado_noticias__large')
+			}else{
+				$(".listado_noticias .large").addClass('listado_noticias__large')
+			}
+
+        }
+
+ </script>
+</script>
 {% endblock js %}
