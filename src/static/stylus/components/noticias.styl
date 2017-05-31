@@ -49,16 +49,13 @@
 
     &__noticia
         margin 2px 2px
-        border-left 1px solid transparent
+
     &__noticia:nth-child(odd)
         flex-direction column
-        background c_amarillo
         transition .3s ease all
-        border-left 1px solid transparent
-        border-right 1px solid transparent
-        border-bottom 1px solid transparent
-        border-top 1px solid transparent
+
         .descripcion
+            background c_amarillo
             transition .3s ease all
             &:after
 
@@ -73,13 +70,15 @@
                 right 0
                 margin auto
         &:hover
-            border-left 1px solid c_amarillo
-            border-right 1px solid c_amarillo
-            border-bottom 1px solid c_amarillo
-            border-top 1px solid c_amarillo
-            background c_white
+
+
             .descripcion
                 background c_white
+                background c_white
+                border-left 1px solid c_amarillo
+                border-right 1px solid c_amarillo
+                border-bottom 1px solid c_amarillo
+                box-sizing border-box
                 &:after
 
                     border-bottom 16px solid c_white !important
@@ -93,14 +92,12 @@
                     color c_amarillo
     &__noticia:nth-child(even)
         flex-direction column-reverse
-        background c_celeste
+
         transition .3s ease all
-        border-left 1px solid transparent
-        border-right 1px solid transparent
-        border-bottom 1px solid transparent
-        border-top 1px solid transparent
+
         .descripcion
             transition .3s ease all
+            background c_celeste
             &:after
                 content ""
                 width 0
@@ -114,12 +111,13 @@
 
 
         &:hover
-            border-left 1px solid c_celeste
-            border-right 1px solid c_celeste
-            border-bottom 1px solid c_celeste
-            border-top 1px solid c_celeste
-            background c_white
+
             .descripcion
+                background c_white
+                border-left 1px solid c_celeste
+                border-right 1px solid c_celeste
+                border-top 1px solid c_celeste
+                box-sizing border-box
                 &:after
                     border-top 16px solid c_white !important
                     border-bottom 16px solid transparent !important
@@ -142,8 +140,12 @@
             background transparent
             display block
             position relative
+            height 206px
             box-sizing border-box
-            padding 30px 10px 10px 10px
+            padding 10px 10px 10px 10px
+            display flex
+            justify-content center
+            flex-direction column
             &:after
                 animation fadeEffect 0.5s !important
 
@@ -163,6 +165,7 @@
                 color c_white
                 font-size 18px
                 font-family f_gothan_l
+                margin 0
 
 
     &__large
@@ -189,7 +192,7 @@
             height 100% !important
             background rgba(0,0,0,0.5) !important
             animation fadeEffect 0.5s !important
-
+            display block
             h3
                 color c_white !important
                 font-family f_ventura_m !important
@@ -203,6 +206,7 @@
                 color c_white !important
                 font-size 18px
                 font-family f_gothan_l
+                margin-bottom 20px
             &:after
                 display none !important
                 animation fadeEffect 0.5s !important
@@ -361,14 +365,11 @@
         .descripcion
             &:after
                 display block !important
-    .listado_noticias__noticia:nth-child(odd):hover
-        border-left: 1px solid #ffb718 !important
-        border-right: 1px solid #ffb718 !important
-        border-bottom: 1px solid #ffb718 !important
-        border-top: 1px solid #ffb718 !important
-    .home_listado_noticias
+
+    .noticias_listado, .home_listado_noticias
         .listado_noticias__large:hover
             .descripcion
+                background c_white !important
                 h3, p, h4
                     color c_amarillo !important
 
@@ -376,12 +377,13 @@
             width 228px
             height initial
             .descripcion
-                background none !important
+                background c_amarillo !important
                 position relative !important
-                padding 30px 10px 10px 10px !important
+                padding 10px 10px 10px 10px !important
                 width initial !important
-                height initial !important
+
                 display flex
+                height 204px !important
                 h3
                     color c_white
 

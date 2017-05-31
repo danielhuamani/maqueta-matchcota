@@ -578,6 +578,15 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 480px) {
+  .container_menu .menu_block .menu .links_pop a span {
+    font-size: 17px;
+  }
+  .container_menu .menu_block .menu figure {
+    width: 120px;
+  }
+  .container_menu .menu_block .menu nav ul li a {
+    font-size: 18px;
+  }
   footer .footer_top__contacto .links a.informacion {
     font-size: 30px;
   }
@@ -601,6 +610,13 @@ footer .footer_top .facebook__slider__item ul li span {
   }
   .header__logo_links >a {
     top: 10px;
+  }
+  .container_menu .menu_block {
+    padding: 0;
+  }
+  .container_menu .menu_block .menu {
+    height: 510px;
+    overflow-y: scroll;
   }
 }
 

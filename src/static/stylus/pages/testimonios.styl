@@ -6,6 +6,8 @@
 .cnt-testimonios
   background url("../img/trama.png")
   padding-bottom 100px
+  position relative
+  background-size cover
   .title
     text-align center
     margin-bottom 2.5em
@@ -16,16 +18,30 @@
 
       position relative
       font-family f_ventura_m
-      color #FF4612
+      color c_narana_ap
+      &:before
+        content ""
+        width 10px
+        height 10px
+        position absolute
+        bottom -10px
+        left -10px
+        border 2px solid c_narana_ap
+        border-top none
+        border-right none
       &:after
         content ""
-        width 33px
-        height 34px
+        width 10px
+        height 10px
         position absolute
-        top -35px
-        right -40px
+        top -10px
+        right -10px
+        border: 2px solid c_narana_ap
+        border-bottom none
+        border-left none
+
   .content-testimonios
-    padding 0 9em
+    padding 0 8em
     display block
     background-image url("../img/adorno_testimonio.png")
     background-repeat no-repeat
@@ -50,12 +66,19 @@
         &.bx-prev
           left -9em
           i
-            margin-right 5px
+            margin-right 3px
+            font-weight bold
         &.bx-next
           right -4em
+          i
+            font-weight bold
         &:hover
           background c_celeste
           color #fff
+.juguete_test
+  position absolute
+  left 165px
+  bottom 85px
 .slide-testimonios
   .item-slider-testimonios
     height auto
@@ -66,6 +89,8 @@
       padding: 5% 5% 0 2.5%
       box-sizing border-box
       text-align justify
+      p
+        font-size 18px
       .date
         color c_plomo_os
         font-size 25px

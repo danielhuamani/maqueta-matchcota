@@ -6,6 +6,8 @@
 .cnt-testimonios {
   background: url("../img/trama.png");
   padding-bottom: 100px;
+  position: relative;
+  background-size: cover;
 }
 .cnt-testimonios .title {
   text-align: center;
@@ -17,18 +19,32 @@
   font-size: 35px;
   position: relative;
   font-family: f_ventura_m;
-  color: #ff4612;
+  color: c_narana_ap;
+}
+.cnt-testimonios .title h2:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  border: 2px solid c_narana_ap;
+  border-top: none;
+  border-right: none;
 }
 .cnt-testimonios .title h2:after {
   content: "";
-  width: 33px;
-  height: 34px;
+  width: 10px;
+  height: 10px;
   position: absolute;
-  top: -35px;
-  right: -40px;
+  top: -10px;
+  right: -10px;
+  border: 2px solid c_narana_ap;
+  border-bottom: none;
+  border-left: none;
 }
 .cnt-testimonios .content-testimonios {
-  padding: 0 9em;
+  padding: 0 8em;
   display: block;
   background-image: url("../img/adorno_testimonio.png");
   background-repeat: no-repeat;
@@ -56,14 +72,23 @@
   left: -9em;
 }
 .cnt-testimonios .bx-wrapper .bx-controls a.bx-prev i {
-  margin-right: 5px;
+  margin-right: 3px;
+  font-weight: bold;
 }
 .cnt-testimonios .bx-wrapper .bx-controls a.bx-next {
   right: -4em;
 }
+.cnt-testimonios .bx-wrapper .bx-controls a.bx-next i {
+  font-weight: bold;
+}
 .cnt-testimonios .bx-wrapper .bx-controls a:hover {
   background: c_celeste;
   color: #fff;
+}
+.juguete_test {
+  position: absolute;
+  left: 165px;
+  bottom: 85px;
 }
 .slide-testimonios .item-slider-testimonios {
   height: auto;
@@ -75,6 +100,9 @@
   padding: 5% 5% 0 2.5%;
   box-sizing: border-box;
   text-align: justify;
+}
+.slide-testimonios .item-slider-testimonios .detail p {
+  font-size: 18px;
 }
 .slide-testimonios .item-slider-testimonios .detail .date {
   color: c_plomo_os;

@@ -578,6 +578,15 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 480px) {
+  .container_menu .menu_block .menu .links_pop a span {
+    font-size: 17px;
+  }
+  .container_menu .menu_block .menu figure {
+    width: 120px;
+  }
+  .container_menu .menu_block .menu nav ul li a {
+    font-size: 18px;
+  }
   footer .footer_top__contacto .links a.informacion {
     font-size: 30px;
   }
@@ -601,6 +610,13 @@ footer .footer_top .facebook__slider__item ul li span {
   }
   .header__logo_links >a {
     top: 10px;
+  }
+  .container_menu .menu_block {
+    padding: 0;
+  }
+  .container_menu .menu_block .menu {
+    height: 510px;
+    overflow-y: scroll;
   }
 }
 .home_banner {
@@ -1311,6 +1327,9 @@ footer .footer_top .facebook__slider__item ul li span {
   }
   .home_banner .cnt_slide_home .home_banner__text_static .text_adoptar .bx-wrapper {
     min-width: 100px;
+  }
+  .home_conoce_mascota .full_container .container {
+    min-height: inherit;
   }
 }
 .nosotros_matchota_ideal .container {
@@ -2059,6 +2078,8 @@ footer .footer_top .facebook__slider__item ul li span {
 .cnt-testimonios {
   background: url("../img/trama.png");
   padding-bottom: 100px;
+  position: relative;
+  background-size: cover;
 }
 .cnt-testimonios .title {
   text-align: center;
@@ -2070,18 +2091,32 @@ footer .footer_top .facebook__slider__item ul li span {
   font-size: 35px;
   position: relative;
   font-family: 'ventura_eddingmedium';
-  color: #ff4612;
+  color: #ff7444;
+}
+.cnt-testimonios .title h2:before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  position: absolute;
+  bottom: -10px;
+  left: -10px;
+  border: 2px solid #ff7444;
+  border-top: none;
+  border-right: none;
 }
 .cnt-testimonios .title h2:after {
   content: "";
-  width: 33px;
-  height: 34px;
+  width: 10px;
+  height: 10px;
   position: absolute;
-  top: -35px;
-  right: -40px;
+  top: -10px;
+  right: -10px;
+  border: 2px solid #ff7444;
+  border-bottom: none;
+  border-left: none;
 }
 .cnt-testimonios .content-testimonios {
-  padding: 0 9em;
+  padding: 0 8em;
   display: block;
   background-image: url("../img/adorno_testimonio.png");
   background-repeat: no-repeat;
@@ -2109,14 +2144,23 @@ footer .footer_top .facebook__slider__item ul li span {
   left: -9em;
 }
 .cnt-testimonios .bx-wrapper .bx-controls a.bx-prev i {
-  margin-right: 5px;
+  margin-right: 3px;
+  font-weight: bold;
 }
 .cnt-testimonios .bx-wrapper .bx-controls a.bx-next {
   right: -4em;
 }
+.cnt-testimonios .bx-wrapper .bx-controls a.bx-next i {
+  font-weight: bold;
+}
 .cnt-testimonios .bx-wrapper .bx-controls a:hover {
   background: #00b2e2;
   color: #fff;
+}
+.juguete_test {
+  position: absolute;
+  left: 165px;
+  bottom: 85px;
 }
 .slide-testimonios .item-slider-testimonios {
   height: auto;
@@ -2128,6 +2172,9 @@ footer .footer_top .facebook__slider__item ul li span {
   padding: 5% 5% 0 2.5%;
   box-sizing: border-box;
   text-align: justify;
+}
+.slide-testimonios .item-slider-testimonios .detail p {
+  font-size: 18px;
 }
 .slide-testimonios .item-slider-testimonios .detail .date {
   color: #5d5d5d;
