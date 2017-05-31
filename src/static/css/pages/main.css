@@ -615,7 +615,7 @@ footer .footer_top .facebook__slider__item ul li span {
     padding: 0;
   }
   .container_menu .menu_block .menu {
-    height: 510px;
+    height: 480px;
     overflow-y: scroll;
   }
 }
@@ -1968,6 +1968,9 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 768px) {
+  .nosotros_matchota_ideal .container .cnt-descripcion h2 {
+    margin: auto;
+  }
   .nosotros_socios_estrategicos .container .bx-wrapper {
     max-width: 330px !important;
   }
@@ -2301,6 +2304,37 @@ img
     font-size: 16px;
     margin-top: 13px;
     display: block;
+  }
+}
+@media screen and (max-width: 620px) {
+  .cnt-testimonios .bx-wrapper .bx-controls a {
+    top: 25%;
+  }
+  .slide-testimonios .item-slider-testimonios .image {
+    width: 70%;
+  }
+  .cnt-testimonios .bx-wrapper .bx-controls a.bx-next,
+  .cnt-testimonios .bx-wrapper .bx-controls a.bx-prev {
+    width: 32px;
+    height: 32px;
+  }
+  .cnt-testimonios .bx-wrapper .bx-controls a.bx-next {
+    right: 0em;
+  }
+  .cnt-testimonios .bx-wrapper .bx-controls a.bx-next i {
+    margin-top: 9px;
+  }
+  .cnt-testimonios .bx-wrapper .bx-controls a.bx-prev {
+    left: 0em;
+  }
+  .cnt-testimonios .bx-wrapper .bx-controls a.bx-prev i {
+    margin-top: 9px;
+  }
+  .slide-testimonios .item-slider-testimonios .detail p {
+    font-size: 16px;
+  }
+  .page-testimonio .footer_top {
+    margin-top: -80px;
   }
 }
 @media screen and (max-width: 480px) {
@@ -2825,13 +2859,14 @@ img
 }
 @media screen and (max-width: 768px) {
   .noticias-detail .content-detail .image {
-    width: 100%;
+    width: 96%;
     max-width: 464px;
     padding-right: 0;
     margin: auto;
   }
   .noticias-detail .content-detail {
     display: flex;
+    margin: 0px 7px;
     flex-direction: column-reverse;
   }
   .noticias-detail .content-detail .detail {
@@ -2854,7 +2889,7 @@ img
     text-align: center;
   }
   .noticias-detail .view-more .ver_mas_noticias .arrow.left {
-    margin-right: 1em;
+    margin-right: 10px;
   }
 }
 .mascota_categorias {

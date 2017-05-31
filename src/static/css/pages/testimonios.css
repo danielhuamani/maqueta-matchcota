@@ -231,6 +231,37 @@ img
     display: block;
   }
 }
+@media screen and (max-width: 620px) {
+  .cnt-testimonios .bx-wrapper .bx-controls a {
+    top: 25%;
+  }
+  .slide-testimonios .item-slider-testimonios .image {
+    width: 70%;
+  }
+  .cnt-testimonios .bx-wrapper .bx-controls a.bx-next,
+  .cnt-testimonios .bx-wrapper .bx-controls a.bx-prev {
+    width: 32px;
+    height: 32px;
+  }
+  .cnt-testimonios .bx-wrapper .bx-controls a.bx-next {
+    right: 0em;
+  }
+  .cnt-testimonios .bx-wrapper .bx-controls a.bx-next i {
+    margin-top: 9px;
+  }
+  .cnt-testimonios .bx-wrapper .bx-controls a.bx-prev {
+    left: 0em;
+  }
+  .cnt-testimonios .bx-wrapper .bx-controls a.bx-prev i {
+    margin-top: 9px;
+  }
+  .slide-testimonios .item-slider-testimonios .detail p {
+    font-size: 16px;
+  }
+  .page-testimonio .footer_top {
+    margin-top: -80px;
+  }
+}
 @media screen and (max-width: 480px) {
   .slide-testimonios .item-slider-testimonios .detail {
     float: inherit;

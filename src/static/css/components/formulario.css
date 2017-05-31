@@ -394,7 +394,6 @@
   .cnt_pop_up_dona .pop_up,
   .cnt_pop_up_apadrina .pop_up,
   .cnt_pop_up_adopta .pop_up {
-    overflow-y: scroll;
     height: 100%;
   }
   .cnt_pop_up_dona .pop_up .btn--pop,
@@ -437,6 +436,19 @@
   }
   .container_formulario .cnt-formulario .formulario h2 {
     font-size: 22px;
+  }
+  .cnt_pop_up .cnt-formulario .formulario {
+    height: 480px;
+    padding: 0px 7px;
+    overflow-y: scroll;
+  }
+  .cnt_pop_up .pop_up .close {
+    top: 5px;
+    right: 10px;
+    position: fixed;
+  }
+  .cnt_pop_up .pop_up .close .icon-close {
+    padding: 6px;
   }
 }
 

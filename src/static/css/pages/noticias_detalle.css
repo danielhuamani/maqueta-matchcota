@@ -121,13 +121,14 @@
 }
 @media screen and (max-width: 768px) {
   .noticias-detail .content-detail .image {
-    width: 100%;
+    width: 96%;
     max-width: 464px;
     padding-right: 0;
     margin: auto;
   }
   .noticias-detail .content-detail {
     display: flex;
+    margin: 0px 7px;
     flex-direction: column-reverse;
   }
   .noticias-detail .content-detail .detail {
@@ -150,7 +151,7 @@
     text-align: center;
   }
   .noticias-detail .view-more .ver_mas_noticias .arrow.left {
-    margin-right: 1em;
+    margin-right: 10px;
   }
 }
 

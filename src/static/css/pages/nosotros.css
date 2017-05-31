@@ -644,6 +644,9 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .nosotros_matchota_ideal .container .cnt-descripcion h2 {
+    margin: auto;
+  }
   .nosotros_socios_estrategicos .container .bx-wrapper {
     max-width: 330px !important;
   }
