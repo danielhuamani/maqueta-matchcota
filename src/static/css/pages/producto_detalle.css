@@ -99,31 +99,36 @@
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .title i {
   margin-right: 10px;
-  width: 26px;
   display: inline-block;
-  font-size: 26px;
+  font-size: 32px;
   text-align: center;
+  width: 38px;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .title .text {
   min-width: 240px;
   display: inline-block;
   vertical-align: middle;
-  margin-top: -7px;
+  margin-top: -1px;
+  margin: 0;
+  margin-left: 8px;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .title a {
   background: #00b3e3;
-  padding: 12px 15px 12px 35px;
+  padding: 12px 15px 12px 30px;
   box-sizing: border-box;
   color: #fff;
   font-size: 16px;
-  display: block;
+  display: flex;
+  align-items: center;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .title .icon-arrow {
   transition: 0.3s ease all;
   font-size: 16px;
   border-radius: 50%;
   padding: 7px 2px;
+  width: 26px;
   border: 2px solid c_white;
+  font-weight: bold;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content {
   display: none;
@@ -131,7 +136,7 @@
   border-top: none;
   height: auto;
   overflow: hidden;
-  padding: 1em;
+  padding: 15px 15px 15px 30px;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-salud {
   display: flex;
@@ -225,11 +230,12 @@
   overflow: hidden;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento .text {
-  font-size: 12px;
+  font-size: 20px;
   float: left;
+  font-family: f_roboto_l;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento .cnt-bar {
-  margin: 0 0 0 100px;
+  margin: 6px 0 0 160px;
   display: block;
   position: relative;
 }

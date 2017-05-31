@@ -34,15 +34,15 @@
                     a.donar
                         background c_narana_do
                         &:hover
-                            box-shadow  0px 2px 26px -9px rgba(50,50,50,.75)
+                            box-shadow  0px 2px 26px 3px rgba(50,50,50,.8)
                     a.apadrina
                         background c_narana_ap
                         &:hover
-                            box-shadow 0px 0px 26px -9px rgba(50,50,50,.75)
+                            box-shadow 0px 0px 26px 3px rgba(50,50,50,.8)
                     a.adopta
                         background c_narana_ad
                         &:hover
-                            box-shadow 0px 3px 26px -9px rgba(50,50,50,.75)
+                            box-shadow 0px 3px 26px 3px rgba(50,50,50,.8)
 
                     a
                         min-width 115px
@@ -61,30 +61,30 @@
     background c_white
 
     .menu_block--active
-        display flex !important
 
+        left 0 !important
+        transition 0.5s ease all
     .menu_block
         align-items center
         justify-content center
         position fixed
         width 100%
-        background c_celeste
-        animation fadeEffect .5s ease
-        display none
+        background rgba(1, 178, 226, 0.8)
+        display flex
         transition 0.5s ease all
         height 100%
         top 0
-        left 0
+        left -100%
         right auto
-
+        transition 0.5s ease all
         text-align center
-        padding-top 25px
         border-right 1px solid #D0D0D0
         z-index 300
-
         .menu
             width 100%
             position relative
+            padding 15px 0px
+            margin-top 10px
             .icon-close
                 position absolute
                 right 80px
@@ -113,7 +113,7 @@
                     justify-content space-around
                     flex-wrap wrap
                     li
-                        margin-bottom 30px
+                        margin-bottom 20px
                         a:hover
                             color #003A5D
                             transition 0.3s ease all
@@ -149,16 +149,7 @@
                 justify-content center
                 margin-top 40px
                 position relative
-                &:after
-                    content ""
-                    width 80px
-                    height 8px
-                    background c_celeste
-                    position absolute
-                    left 0
-                    margin auto
-                    right 0
-                    bottom -40px
+
                 a.donar
                     i
                         background c_narana_do

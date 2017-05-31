@@ -129,13 +129,22 @@
 				<h2>Adoptar es</h2>
 				<div class="home_banner__slider_list">
 					<div class="text_slide">
-						<span class="cuv_naran">cuidar</span>
+						<h4>
+
+							<span class="cuv_naran">cuidar</span>
+						</h4>
 					</div>
 					<div class="text_slide">
-						<span class="cuv_naran">amar</span>
+						<h4>
+
+							<span class="cuv_naran">amar</span>
+						</h4>
 					</div>
 					<div class="text_slide">
-						<span class="cuv_naran">adorar</span>
+						<h4>
+
+							<span class="cuv_naran">adorar</span>
+						</h4>
 					</div>
 				</div>
 			</div>
@@ -148,7 +157,7 @@
 </section>
 <section class="home_mascotas" id="home_mascotas">
 	<div class="container--r-large container">
-		<div class="title_section home_mascotas--title title_section--celeste">
+		<div class="title_section  title_section--celeste">
 			<h2 class="">
 				TU matchcota ideal
 			</h2>
@@ -796,10 +805,9 @@
 				mode: 'fade',
 				adaptiveHeight: false,
 				auto: true,
-				pause: '6600',
+				pause: '4600',
 				pager: false,
 				controls: false,
-
 				minSlides: 1,
 			    maxSlides: 3,
 			    moveSlides: 1,
@@ -929,7 +937,7 @@
 		                	$(".logo_celeste").addClass('logo_none')
 			            	$(".logo_blanco").removeClass('logo_none')
 			        	}
-			            if (window_top >= 400) {
+			            if (window_top >= 420) {
 		                	$(".title_section").addClass('home_mascotas--title--active')
 		                }else{
 		                	$(".title_section").removeClass('home_mascotas--title--active')
@@ -960,11 +968,14 @@
 		                	$(".logo_celeste").addClass('logo_none')
 			            	$(".logo_blanco").removeClass('logo_none')
 			        	}
-			        	if (window_top >= 620) {
-		                	$(".title_section").addClass('home_mascotas--title--active')
-		                }else{
-		                	$(".title_section").removeClass('home_mascotas--title--active')
-		                };
+			        	if ($("body").height()<540) {
+
+				        	if (window_top >= 620) {
+			                	$(".title_section").addClass('home_mascotas--title--active')
+			                }else{
+			                	$(".title_section").removeClass('home_mascotas--title--active')
+			                };
+			        	};
 			    }
 
             });

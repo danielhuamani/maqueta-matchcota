@@ -35,19 +35,19 @@
   background: #ff9971;
 }
 .header__logo_links nav ul li a.donar:hover {
-  box-shadow: 0px 2px 26px -9px rgba(50,50,50,0.75);
+  box-shadow: 0px 2px 26px 3px rgba(50,50,50,0.8);
 }
 .header__logo_links nav ul li a.apadrina {
   background: #ff7444;
 }
 .header__logo_links nav ul li a.apadrina:hover {
-  box-shadow: 0px 0px 26px -9px rgba(50,50,50,0.75);
+  box-shadow: 0px 0px 26px 3px rgba(50,50,50,0.8);
 }
 .header__logo_links nav ul li a.adopta {
   background: #ff4304;
 }
 .header__logo_links nav ul li a.adopta:hover {
-  box-shadow: 0px 3px 26px -9px rgba(50,50,50,0.75);
+  box-shadow: 0px 3px 26px 3px rgba(50,50,50,0.8);
 }
 .header__logo_links nav ul li a {
   min-width: 115px;
@@ -67,29 +67,31 @@
   background: #fff;
 }
 .container_menu .menu_block--active {
-  display: flex !important;
+  left: 0 !important;
+  transition: 0.5s ease all;
 }
 .container_menu .menu_block {
   align-items: center;
   justify-content: center;
   position: fixed;
   width: 100%;
-  background: #00b2e2;
-  animation: fadeEffect 0.5s ease;
-  display: none;
+  background: rgba(1,178,226,0.8);
+  display: flex;
   transition: 0.5s ease all;
   height: 100%;
   top: 0;
-  left: 0;
+  left: -100%;
   right: auto;
+  transition: 0.5s ease all;
   text-align: center;
-  padding-top: 25px;
   border-right: 1px solid #d0d0d0;
   z-index: 300;
 }
 .container_menu .menu_block .menu {
   width: 100%;
   position: relative;
+  padding: 15px 0px;
+  margin-top: 10px;
 }
 .container_menu .menu_block .menu .icon-close {
   position: absolute;
@@ -122,7 +124,7 @@
   flex-wrap: wrap;
 }
 .container_menu .menu_block .menu .contacte ul li {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .container_menu .menu_block .menu .contacte ul li a:hover {
   color: #003a5d;
@@ -166,17 +168,6 @@
   justify-content: center;
   margin-top: 40px;
   position: relative;
-}
-.container_menu .menu_block .menu .links_pop:after {
-  content: "";
-  width: 80px;
-  height: 8px;
-  background: #00b2e2;
-  position: absolute;
-  left: 0;
-  margin: auto;
-  right: 0;
-  bottom: -40px;
 }
 .container_menu .menu_block .menu .links_pop a.donar i {
   background: #ff9971;
@@ -645,15 +636,16 @@ footer .footer_top .facebook__slider__item ul li span {
 }
 .home_banner .cnt_slide_home .home_banner__text_static .text_adoptar {
   display: flex;
-  align-items: center;
+  align-items: flex-end;
 }
 .home_banner .cnt_slide_home .home_banner__text_static .text_adoptar .bx-wrapper {
-  min-width: 200px;
+  min-width: 210px;
   text-align: left;
+/*.bx-viewport
+                        height 75px !important*/
 }
 .home_banner .cnt_slide_home .home_banner__text_static .text_adoptar h2 {
   margin: 0;
-  margin-top: 42px;
   margin-right: 5px;
 }
 .home_banner .arrow_scroll {
@@ -707,11 +699,20 @@ footer .footer_top .facebook__slider__item ul li span {
   right: -5px;
   bottom: 30px;
 }
-.home_banner .home_banner__slider_list .text_slide span {
+.home_banner .home_banner__slider_list .text_slide {
   color: #ff4304;
   font-size: 78px;
   font-family: 'kaushan_scriptregular';
-  margin-top: 24px;
+  display: block;
+}
+.home_banner .home_banner__slider_list h4 {
+  margin: 0;
+}
+.home_banner .home_banner__slider_list span,
+.home_banner .home_banner__slider_list p {
+  color: #ff4304;
+  font-size: 78px;
+  font-family: 'kaushan_scriptregular';
   display: block;
 }
 .home_banner .home_banner__slider_list__item {
@@ -2386,31 +2387,36 @@ img
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .title i {
   margin-right: 10px;
-  width: 26px;
   display: inline-block;
-  font-size: 26px;
+  font-size: 32px;
   text-align: center;
+  width: 38px;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .title .text {
   min-width: 240px;
   display: inline-block;
   vertical-align: middle;
-  margin-top: -7px;
+  margin-top: -1px;
+  margin: 0;
+  margin-left: 8px;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .title a {
   background: #00b3e3;
-  padding: 12px 15px 12px 35px;
+  padding: 12px 15px 12px 30px;
   box-sizing: border-box;
   color: #fff;
   font-size: 16px;
-  display: block;
+  display: flex;
+  align-items: center;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .title .icon-arrow {
   transition: 0.3s ease all;
   font-size: 16px;
   border-radius: 50%;
   padding: 7px 2px;
+  width: 26px;
   border: 2px solid #fff;
+  font-weight: bold;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content {
   display: none;
@@ -2418,7 +2424,7 @@ img
   border-top: none;
   height: auto;
   overflow: hidden;
-  padding: 1em;
+  padding: 15px 15px 15px 30px;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-salud {
   display: flex;
@@ -2512,11 +2518,12 @@ img
   overflow: hidden;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento .text {
-  font-size: 12px;
+  font-size: 20px;
   float: left;
+  font-family: 'robotolight';
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento .cnt-bar {
-  margin: 0 0 0 100px;
+  margin: 6px 0 0 160px;
   display: block;
   position: relative;
 }

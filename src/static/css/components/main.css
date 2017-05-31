@@ -258,11 +258,11 @@
   color: c_celeste;
   text-align: center;
   width: 100%;
-  font-size: 17px;
+  font-size: 18px;
   transition: 0.3s ease all;
 }
 .container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input--adjuntar {
-  padding: 5px 0px;
+  padding: 7px 0px;
   margin-bottom: 20px !important;
   width: 100%;
   margin: auto;
@@ -718,6 +718,7 @@
   padding-right: 20px;
   margin: auto;
   opacity: 0;
+  font-size: 14px;
 }
 .list_mascotas__etiqueta h4:after {
   content: "";

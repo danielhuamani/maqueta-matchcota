@@ -35,19 +35,19 @@
   background: #ff9971;
 }
 .header__logo_links nav ul li a.donar:hover {
-  box-shadow: 0px 2px 26px -9px rgba(50,50,50,0.75);
+  box-shadow: 0px 2px 26px 3px rgba(50,50,50,0.8);
 }
 .header__logo_links nav ul li a.apadrina {
   background: #ff7444;
 }
 .header__logo_links nav ul li a.apadrina:hover {
-  box-shadow: 0px 0px 26px -9px rgba(50,50,50,0.75);
+  box-shadow: 0px 0px 26px 3px rgba(50,50,50,0.8);
 }
 .header__logo_links nav ul li a.adopta {
   background: #ff4304;
 }
 .header__logo_links nav ul li a.adopta:hover {
-  box-shadow: 0px 3px 26px -9px rgba(50,50,50,0.75);
+  box-shadow: 0px 3px 26px 3px rgba(50,50,50,0.8);
 }
 .header__logo_links nav ul li a {
   min-width: 115px;
@@ -67,29 +67,31 @@
   background: #fff;
 }
 .container_menu .menu_block--active {
-  display: flex !important;
+  left: 0 !important;
+  transition: 0.5s ease all;
 }
 .container_menu .menu_block {
   align-items: center;
   justify-content: center;
   position: fixed;
   width: 100%;
-  background: #00b2e2;
-  animation: fadeEffect 0.5s ease;
-  display: none;
+  background: rgba(1,178,226,0.8);
+  display: flex;
   transition: 0.5s ease all;
   height: 100%;
   top: 0;
-  left: 0;
+  left: -100%;
   right: auto;
+  transition: 0.5s ease all;
   text-align: center;
-  padding-top: 25px;
   border-right: 1px solid #d0d0d0;
   z-index: 300;
 }
 .container_menu .menu_block .menu {
   width: 100%;
   position: relative;
+  padding: 15px 0px;
+  margin-top: 10px;
 }
 .container_menu .menu_block .menu .icon-close {
   position: absolute;
@@ -122,7 +124,7 @@
   flex-wrap: wrap;
 }
 .container_menu .menu_block .menu .contacte ul li {
-  margin-bottom: 30px;
+  margin-bottom: 20px;
 }
 .container_menu .menu_block .menu .contacte ul li a:hover {
   color: #003a5d;
@@ -166,17 +168,6 @@
   justify-content: center;
   margin-top: 40px;
   position: relative;
-}
-.container_menu .menu_block .menu .links_pop:after {
-  content: "";
-  width: 80px;
-  height: 8px;
-  background: #00b2e2;
-  position: absolute;
-  left: 0;
-  margin: auto;
-  right: 0;
-  bottom: -40px;
 }
 .container_menu .menu_block .menu .links_pop a.donar i {
   background: #ff9971;

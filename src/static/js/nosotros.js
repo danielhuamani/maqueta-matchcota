@@ -51,7 +51,7 @@ jQuery(document).ready(function($) {
 		  			$(".nosotros_socios_estrategicos .title_colores").removeClass('title_colores_animate')
 		  		}
             });
-            if ($("body").height()>640) {
+            if ($("body").height()>580) {
 				setTimeout(function(){
 				  $(".nosotros_matchota_ideal .container figure").addClass('active-img')
 				}, 2000);
