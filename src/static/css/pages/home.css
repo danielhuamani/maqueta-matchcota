@@ -47,7 +47,7 @@
   position: absolute;
   right: 60px;
   bottom: 30px;
-  z-index: 195;
+  z-index: 150;
   cursor: pointer;
   height: 85px;
   display: flex;
@@ -646,6 +646,12 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .home_banner .cnt_slide_home .home_banner__text_static .text_adoptar .bx-wrapper {
+    min-width: 170px;
+  }
+  .home_siempre_informados .title h2:after {
+    opacity: 1 !important;
+  }
   .home_conoce_mascota .full_container .bloque_picture.bloque_1,
   .home_conoce_mascota .full_container .bloque_picture.bloque_5 {
     display: none;

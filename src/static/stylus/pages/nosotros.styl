@@ -1,3 +1,7 @@
+.form-ficha:hover
+    color c_celeste !important
+    border-bottom 1px solid c_celeste !important
+    transition 0.3s ease all
 .nosotros_matchota_ideal
 
     .container
@@ -617,6 +621,9 @@
     .nosotros_socios_estrategicos .container .bx-wrapper
         max-width 660px !important
 @media screen and (max-width 960px)
+    .nosotros_linea_tiempo .container h2 span
+        font-size 36px
+        margin-top -5px
     /* .nosotros_linea_tiempo .container .cnt_linea_tiempo
         max-width 600px
        .bloque_7
@@ -651,6 +658,11 @@
             max-width 495px !important
             margin-top 20px
 @media screen and (max-width 768px)
+    .nosotros_linea_tiempo .container h2
+        display block
+        span
+            display block
+            margin-top 5px
     .nosotros_matchota_ideal .container .cnt-descripcion h2
         margin auto
     .nosotros_linea_tiempo
@@ -676,9 +688,11 @@
         .cnt-descripcion
             margin-left 0
             margin-top 30px
+            max-width 90%
             .descripcion
                 padding 0 10px
-                text-align left
+                text-align center
+
     .nosotros_comillas .descripcion
         padding 30px 20px
         &:after, &:before

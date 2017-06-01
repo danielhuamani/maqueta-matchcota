@@ -24,8 +24,6 @@ jQuery(document).ready(function($) {
 
                 if(window_top>200) {
 		  			$(".nosotros_matchota_ideal .container figure").addClass('active-img')
-		  		}else{
-		  			$(".nosotros_matchota_ideal .container figure").removeClass('active-img')
 		  		}
 		  		console.log(window_top)
 		  		if (window_top>920) {
@@ -54,6 +52,6 @@ jQuery(document).ready(function($) {
             if ($("body").height()>580) {
 				setTimeout(function(){
 				  $(".nosotros_matchota_ideal .container figure").addClass('active-img')
-				}, 2000);
+				}, 1000);
             };
 	});

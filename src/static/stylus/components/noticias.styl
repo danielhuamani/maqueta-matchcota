@@ -74,7 +74,7 @@
 
             .descripcion
                 background c_white
-                background c_white
+
                 border-left 1px solid c_amarillo
                 border-right 1px solid c_amarillo
                 border-bottom 1px solid c_amarillo
@@ -140,7 +140,7 @@
             background transparent
             display block
             position relative
-            height 204px
+            height 100%
             box-sizing border-box
             padding 10px 10px 10px 10px
             display flex
@@ -193,6 +193,7 @@
             background rgba(0,0,0,0.5) !important
             animation fadeEffect 0.5s !important
             display block
+
             h3
                 color c_white !important
                 font-family f_ventura_m !important
@@ -212,6 +213,7 @@
                 animation fadeEffect 0.5s !important
         &:hover
             .descripcion
+                border none
                 display flex !important
 .noticias_listado
     .listado_noticias__large
@@ -256,6 +258,7 @@
         &:hover
             .descripcion
                 display flex
+                border none !important
 
 
 
@@ -355,11 +358,16 @@
                     color c_amarillo*/
 
 @media screen and (max-width 1910px)
-    .home_siempre_informados .home_listado_noticias
-            max-width 920px
-            margin auto
+    .home_listado_noticias
+        .noticia_6, .noticia_5
+            display none !important
 
+@media screen and (max-width 1300px)
+    .home_listado_noticias
+        .noticia_4
+            display none !important
 @media screen and (max-width 960px)
+
     .listado_noticias__large
         height initial
         .descripcion
@@ -391,3 +399,8 @@
                 width 228px
                 height 204px
                 margin 0
+
+@media screen and (max-width 768px)
+    .home_listado_noticias
+        .noticia_3
+            display none !important

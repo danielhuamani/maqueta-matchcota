@@ -186,7 +186,7 @@
   color: c_celeste;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas__block i {
-  font-size: 26px;
+  font-size: 28px;
   margin: 0px 3px;
   color: c_plomo_os;
 }
@@ -218,7 +218,8 @@
   font-family: f_gothan_b;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract .caract h3 i {
-  font-size: 24px;
+  margin-right: 5px;
+  font-size: 30px;
   color: c_celeste;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento ul li {
@@ -259,7 +260,7 @@
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento .num {
   font-size: 10px;
-  padding: 0 0 0 100px;
+  padding: 0 0 0 160px;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento .num .num-first {
   float: left;

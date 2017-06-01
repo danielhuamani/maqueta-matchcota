@@ -35,19 +35,19 @@
   background: #ff9971;
 }
 .header__logo_links nav ul li a.donar:hover {
-  box-shadow: 0px 2px 26px 3px rgba(50,50,50,0.8);
+  box-shadow: 0px 2px 20px -3px rgba(50,50,50,0.8);
 }
 .header__logo_links nav ul li a.apadrina {
   background: #ff7444;
 }
 .header__logo_links nav ul li a.apadrina:hover {
-  box-shadow: 0px 0px 26px 3px rgba(50,50,50,0.8);
+  box-shadow: 0px 0px 20px -3px rgba(50,50,50,0.8);
 }
 .header__logo_links nav ul li a.adopta {
   background: #ff4304;
 }
 .header__logo_links nav ul li a.adopta:hover {
-  box-shadow: 0px 3px 26px 3px rgba(50,50,50,0.8);
+  box-shadow: 0px 3px 20px -3px rgba(50,50,50,0.8);
 }
 .header__logo_links nav ul li a {
   min-width: 115px;
@@ -71,7 +71,6 @@
   transition: 0.5s ease all;
 }
 .container_menu .menu_block {
-  align-items: center;
   justify-content: center;
   position: fixed;
   width: 100%;
@@ -91,7 +90,8 @@
   width: 100%;
   position: relative;
   padding: 15px 0px;
-  margin-top: 10px;
+  margin-bottom: 40px;
+  margin-top: 80px;
 }
 .container_menu .menu_block .menu .icon-close {
   position: absolute;
@@ -433,7 +433,6 @@ footer .footer_top .facebook__slider__item ul li span {
     height: auto;
   }
   .container_menu .menu_block .menu .icon-close {
-    right: 15px;
     font-size: 26px;
     padding: 10px;
   }
@@ -469,6 +468,9 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 960px) {
+  footer .footer_top__contacto .links a.informacion {
+    font-size: 32px;
+  }
   footer .footer_top .facebook {
     padding: 20px 15px 25px 15px;
   }
@@ -493,9 +495,6 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 768px) {
-  footer .footer_top__contacto .links a.telefono {
-    justify-content: center;
-  }
   .logo_celeste {
     display: block !important;
     height: inherit !important;
@@ -506,22 +505,6 @@ footer .footer_top .facebook__slider__item ul li span {
   .container_menu .btn_menu {
     width: 50px;
     padding-left: 10px;
-  }
-  footer .footer_top {
-    padding-bottom: 10px;
-    padding-top: 140px;
-  }
-  footer .footer_top .facebook_bloque {
-    padding-bottom: 0px;
-  }
-  footer .container {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-  footer .footer_top__contacto {
-    margin-top: 40px;
-    text-align: center;
   }
   .container_menu .menu_block .menu figure {
     width: 150px;
@@ -562,6 +545,8 @@ footer .footer_top .facebook__slider__item ul li span {
   .container_menu .link_menu .btn_menu .icon-menu {
     margin-bottom: 0;
   }
+}
+@media screen and (max-width: 767px) {
   footer {
     width: 100%;
     margin-left: 0;
@@ -575,6 +560,25 @@ footer .footer_top .facebook__slider__item ul li span {
   }
   .container_menu .link_menu {
     padding: 10px 0px;
+  }
+  footer .footer_top__contacto .links a.telefono {
+    justify-content: center;
+  }
+  footer .footer_top {
+    padding-bottom: 10px;
+    padding-top: 140px;
+  }
+  footer .footer_top .facebook_bloque {
+    padding-bottom: 0px;
+  }
+  footer .container {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  footer .footer_top__contacto {
+    margin-top: 40px;
+    text-align: center;
   }
 }
 @media screen and (max-width: 480px) {

@@ -34,15 +34,15 @@
                     a.donar
                         background c_narana_do
                         &:hover
-                            box-shadow  0px 2px 26px 3px rgba(50,50,50,.8)
+                            box-shadow  0px 2px 20px -3px rgba(50,50,50,.8)
                     a.apadrina
                         background c_narana_ap
                         &:hover
-                            box-shadow 0px 0px 26px 3px rgba(50,50,50,.8)
+                            box-shadow 0px 0px 20px -3px rgba(50,50,50,.8)
                     a.adopta
                         background c_narana_ad
                         &:hover
-                            box-shadow 0px 3px 26px 3px rgba(50,50,50,.8)
+                            box-shadow 0px 3px 20px -3px rgba(50,50,50,.8)
 
                     a
                         min-width 115px
@@ -65,7 +65,7 @@
         left 0 !important
         transition 0.5s ease all
     .menu_block
-        align-items center
+
         justify-content center
         position fixed
         width 100%
@@ -84,7 +84,8 @@
             width 100%
             position relative
             padding 15px 0px
-            margin-top 10px
+            margin-bottom 40px
+            margin-top 80px
             .icon-close
                 position absolute
                 right 80px
@@ -376,7 +377,7 @@ footer
                     height auto
 
             .icon-close
-                right 15px
+
                 font-size 26px
                 padding 10px
             nav ul li a
@@ -407,6 +408,8 @@ footer
                     width 100%
                     height auto
 @media screen and (max-width 960px)
+    footer .footer_top__contacto .links a.informacion
+        font-size 32px
     footer .footer_top
         .facebook
             padding 20px 15px 25px 15px
@@ -427,8 +430,7 @@ footer
                 span
                     font-size 14px
 @media screen and (max-width 768px)
-    footer .footer_top__contacto .links a.telefono
-        justify-content center
+
     .logo_celeste
         display block !important
         height inherit !important
@@ -437,19 +439,7 @@ footer
     .container_menu .btn_menu
         width 50px
         padding-left 10px
-    footer
-        .footer_top
-            padding-bottom 10px
-            padding-top 140px
-            .facebook_bloque
-                padding-bottom 0px
-        .container
-            flex-direction column
-            justify-content center
-            align-items center
-        .footer_top__contacto
-            margin-top 40px
-            text-align center
+
     .container_menu .menu_block
 
         .menu
@@ -486,7 +476,7 @@ footer
             .btn_menu
                 .icon-menu
                     margin-bottom 0
-
+@media screen and (max-width 767px)
     footer
         width 100%
         margin-left 0
@@ -497,6 +487,22 @@ footer
         font-size 12px
     .container_menu .link_menu
         padding 10px 0px
+
+    footer .footer_top__contacto .links a.telefono
+        justify-content center
+    footer
+        .footer_top
+            padding-bottom 10px
+            padding-top 140px
+            .facebook_bloque
+                padding-bottom 0px
+        .container
+            flex-direction column
+            justify-content center
+            align-items center
+        .footer_top__contacto
+            margin-top 40px
+            text-align center
 @media screen and (max-width 480px)
     .container_menu .menu_block .menu .links_pop a span
         font-size 17px

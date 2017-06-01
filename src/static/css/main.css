@@ -607,7 +607,7 @@ a {
 }
 .container--r-large-noticias {
   max-width: 1900px;
-  width: 100%;
+  width: 100% !important;
 }
 .title_section h2 {
   font-size: 35px;
@@ -908,9 +908,38 @@ p {
   .page {
     width: 100%;
     margin: auto;
+    margin-top: 63px;
   }
   .title_section h2 {
     font-size: 28px;
+  }
+  .title_section h2:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: calc(100% + 15px);
+    background-image: url("../img/flechitasleft.png");
+    width: 26px;
+    height: 48px;
+    -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    -ms-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+  }
+  .title_section h2:before {
+    content: "";
+    position: absolute;
+    bottom: -10px;
+    right: calc(100% + 15px);
+    background-image: url("../img/flechitasright.png");
+    width: 26px;
+    -webkit-transition: 0.3s ease all;
+    -moz-transition: 0.3s ease all;
+    -o-transition: 0.3s ease all;
+    -ms-transition: 0.3s ease all;
+    transition: 0.3s ease all;
+    height: 48px;
   }
   .content_banner h2 {
     font-size: 36px;
@@ -2325,7 +2354,7 @@ p {
 }
 .list_mascotas__mascota--celeste:hover .list_mascotas__etiqueta h4 {
   color: #fff;
-  background-image: url("../img/mas_hover.png");
+  background-image: url("../img/cuadro-01.png");
   background-position: 0 2px;
 }
 .list_mascotas__mascota--celeste:hover .list_mascotas__etiqueta h4:before {
@@ -2341,10 +2370,10 @@ p {
   color: #00b2e2;
 }
 .list_mascotas__mascota--celeste .list_mascotas__etiqueta h4 {
-  background-image: url("../img/mas_celeste.png");
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  background-size: contain;
+  background-image: url("../img/cuadro-02.png");
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat repeat;
   color: #fff;
 }
@@ -2381,9 +2410,9 @@ p {
 }
 .list_mascotas__mascota--amarillo .list_mascotas__etiqueta h4 {
   background-image: url("../img/mas_amarillo.png");
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  background-size: contain;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
   background-repeat: no-repeat repeat;
   color: #fff;
 }
@@ -2419,10 +2448,10 @@ p {
   color: #c7c7c7;
 }
 .list_mascotas__mascota--plomo .list_mascotas__etiqueta h4 {
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  background-size: cover;
   background-image: url("../img/mas_plomo.png");
-  -webkit-background-size: contain;
-  -moz-background-size: contain;
-  background-size: contain;
   background-repeat: no-repeat repeat;
   color: #fff;
 }
@@ -2733,7 +2762,6 @@ p {
 }
 .listado_noticias__noticia:nth-child(odd):hover .descripcion {
   background: #fff;
-  background: #fff;
   border-left: 1px solid #ffb718;
   border-right: 1px solid #ffb718;
   border-bottom: 1px solid #ffb718;
@@ -2832,7 +2860,7 @@ p {
   background: transparent;
   display: block;
   position: relative;
-  height: 204px;
+  height: 100%;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -2949,6 +2977,7 @@ p {
   animation: fadeEffect 0.5s !important;
 }
 .listado_noticias__large:hover .descripcion {
+  border: none;
   display: -webkit-box !important;
   display: -moz-box !important;
   display: -webkit-flex !important;
@@ -3024,11 +3053,17 @@ p {
   display: -ms-flexbox;
   display: box;
   display: flex;
+  border: none !important;
 }
 @media screen and (max-width: 1910px) {
-  .home_siempre_informados .home_listado_noticias {
-    max-width: 920px;
-    margin: auto;
+  .home_listado_noticias .noticia_6,
+  .home_listado_noticias .noticia_5 {
+    display: none !important;
+  }
+}
+@media screen and (max-width: 1300px) {
+  .home_listado_noticias .noticia_4 {
+    display: none !important;
   }
 }
 @media screen and (max-width: 960px) {
@@ -3078,6 +3113,11 @@ p {
     width: 228px;
     height: 204px;
     margin: 0;
+  }
+}
+@media screen and (max-width: 768px) {
+  .home_listado_noticias .noticia_3 {
+    display: none !important;
   }
 }
 .header {
@@ -3136,22 +3176,22 @@ p {
   background: #ff9971;
 }
 .header__logo_links nav ul li a.donar:hover {
-  -webkit-box-shadow: 0px 2px 26px 3px rgba(50,50,50,0.8);
-  box-shadow: 0px 2px 26px 3px rgba(50,50,50,0.8);
+  -webkit-box-shadow: 0px 2px 20px -3px rgba(50,50,50,0.8);
+  box-shadow: 0px 2px 20px -3px rgba(50,50,50,0.8);
 }
 .header__logo_links nav ul li a.apadrina {
   background: #ff7444;
 }
 .header__logo_links nav ul li a.apadrina:hover {
-  -webkit-box-shadow: 0px 0px 26px 3px rgba(50,50,50,0.8);
-  box-shadow: 0px 0px 26px 3px rgba(50,50,50,0.8);
+  -webkit-box-shadow: 0px 0px 20px -3px rgba(50,50,50,0.8);
+  box-shadow: 0px 0px 20px -3px rgba(50,50,50,0.8);
 }
 .header__logo_links nav ul li a.adopta {
   background: #ff4304;
 }
 .header__logo_links nav ul li a.adopta:hover {
-  -webkit-box-shadow: 0px 3px 26px 3px rgba(50,50,50,0.8);
-  box-shadow: 0px 3px 26px 3px rgba(50,50,50,0.8);
+  -webkit-box-shadow: 0px 3px 20px -3px rgba(50,50,50,0.8);
+  box-shadow: 0px 3px 20px -3px rgba(50,50,50,0.8);
 }
 .header__logo_links nav ul li a {
   min-width: 115px;
@@ -3185,12 +3225,6 @@ p {
   transition: 0.5s ease all;
 }
 .container_menu .menu_block {
-  -webkit-box-align: center;
-  -moz-box-align: center;
-  -o-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
   -webkit-box-pack: center;
   -moz-box-pack: center;
   -o-box-pack: center;
@@ -3228,7 +3262,8 @@ p {
   width: 100%;
   position: relative;
   padding: 15px 0px;
-  margin-top: 10px;
+  margin-bottom: 40px;
+  margin-top: 80px;
 }
 .container_menu .menu_block .menu .icon-close {
   position: absolute;
@@ -3650,7 +3685,6 @@ footer .footer_top .facebook__slider__item ul li span {
     height: auto;
   }
   .container_menu .menu_block .menu .icon-close {
-    right: 15px;
     font-size: 26px;
     padding: 10px;
   }
@@ -3686,6 +3720,9 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 960px) {
+  footer .footer_top__contacto .links a.informacion {
+    font-size: 32px;
+  }
   footer .footer_top .facebook {
     padding: 20px 15px 25px 15px;
   }
@@ -3712,14 +3749,6 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 768px) {
-  footer .footer_top__contacto .links a.telefono {
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    -o-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-  }
   .logo_celeste {
     display: block !important;
     height: inherit !important;
@@ -3730,37 +3759,6 @@ footer .footer_top .facebook__slider__item ul li span {
   .container_menu .btn_menu {
     width: 50px;
     padding-left: 10px;
-  }
-  footer .footer_top {
-    padding-bottom: 10px;
-    padding-top: 140px;
-  }
-  footer .footer_top .facebook_bloque {
-    padding-bottom: 0px;
-  }
-  footer .container {
-    -webkit-box-orient: vertical;
-    -moz-box-orient: vertical;
-    -o-box-orient: vertical;
-    -webkit-flex-direction: column;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    -webkit-box-pack: center;
-    -moz-box-pack: center;
-    -o-box-pack: center;
-    -ms-flex-pack: center;
-    -webkit-justify-content: center;
-    justify-content: center;
-    -webkit-box-align: center;
-    -moz-box-align: center;
-    -o-box-align: center;
-    -ms-flex-align: center;
-    -webkit-align-items: center;
-    align-items: center;
-  }
-  footer .footer_top__contacto {
-    margin-top: 40px;
-    text-align: center;
   }
   .container_menu .menu_block .menu figure {
     width: 150px;
@@ -3806,6 +3804,8 @@ footer .footer_top .facebook__slider__item ul li span {
   .container_menu .link_menu .btn_menu .icon-menu {
     margin-bottom: 0;
   }
+}
+@media screen and (max-width: 767px) {
   footer {
     width: 100%;
     margin-left: 0;
@@ -3819,6 +3819,45 @@ footer .footer_top .facebook__slider__item ul li span {
   }
   .container_menu .link_menu {
     padding: 10px 0px;
+  }
+  footer .footer_top__contacto .links a.telefono {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -o-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
+  footer .footer_top {
+    padding-bottom: 10px;
+    padding-top: 140px;
+  }
+  footer .footer_top .facebook_bloque {
+    padding-bottom: 0px;
+  }
+  footer .container {
+    -webkit-box-orient: vertical;
+    -moz-box-orient: vertical;
+    -o-box-orient: vertical;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -o-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -moz-box-align: center;
+    -o-box-align: center;
+    -ms-flex-align: center;
+    -webkit-align-items: center;
+    align-items: center;
+  }
+  footer .footer_top__contacto {
+    margin-top: 40px;
+    text-align: center;
   }
 }
 @media screen and (max-width: 480px) {
@@ -3939,7 +3978,7 @@ footer .footer_top .facebook__slider__item ul li span {
   position: absolute;
   right: 60px;
   bottom: 30px;
-  z-index: 195;
+  z-index: 150;
   cursor: pointer;
   height: 85px;
   display: -webkit-box;
@@ -4692,6 +4731,14 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 768px) {
+  .home_banner .cnt_slide_home .home_banner__text_static .text_adoptar .bx-wrapper {
+    min-width: 170px;
+  }
+  .home_siempre_informados .title h2:after {
+    opacity: 1 !important;
+    -ms-filter: none !important;
+    filter: none !important;
+  }
   .home_conoce_mascota .full_container .bloque_picture.bloque_1,
   .home_conoce_mascota .full_container .bloque_picture.bloque_5 {
     display: none;
@@ -4761,6 +4808,15 @@ footer .footer_top .facebook__slider__item ul li span {
   .home_conoce_mascota .full_container .container {
     min-height: inherit;
   }
+}
+.form-ficha:hover {
+  color: #00b2e2 !important;
+  border-bottom: 1px solid #00b2e2 !important;
+  -webkit-transition: 0.3s ease all;
+  -moz-transition: 0.3s ease all;
+  -o-transition: 0.3s ease all;
+  -ms-transition: 0.3s ease all;
+  transition: 0.3s ease all;
 }
 .nosotros_matchota_ideal .container {
   display: -webkit-box;
@@ -5606,6 +5662,10 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 960px) {
+  .nosotros_linea_tiempo .container h2 span {
+    font-size: 36px;
+    margin-top: -5px;
+  }
   .nosotros_matchota_ideal .container .cnt-descripcion .descripcion {
     margin-top: 20px;
   }
@@ -5618,6 +5678,13 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 768px) {
+  .nosotros_linea_tiempo .container h2 {
+    display: block;
+  }
+  .nosotros_linea_tiempo .container h2 span {
+    display: block;
+    margin-top: 5px;
+  }
   .nosotros_matchota_ideal .container .cnt-descripcion h2 {
     margin: auto;
   }
@@ -5630,10 +5697,11 @@ footer .footer_top .facebook__slider__item ul li span {
   .nosotros_matchota_ideal .container .cnt-descripcion {
     margin-left: 0;
     margin-top: 30px;
+    max-width: 90%;
   }
   .nosotros_matchota_ideal .container .cnt-descripcion .descripcion {
     padding: 0 10px;
-    text-align: left;
+    text-align: center;
   }
   .nosotros_comillas .descripcion {
     padding: 30px 20px;
@@ -6318,7 +6386,7 @@ img
   color: #00b2e2;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas__block i {
-  font-size: 26px;
+  font-size: 28px;
   margin: 0px 3px;
   color: #5d5d5d;
 }
@@ -6360,7 +6428,8 @@ img
   font-family: 'GothamRounded-Book';
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract .caract h3 i {
-  font-size: 24px;
+  margin-right: 5px;
+  font-size: 30px;
   color: #00b2e2;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento ul li {
@@ -6405,7 +6474,7 @@ img
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento .num {
   font-size: 10px;
-  padding: 0 0 0 100px;
+  padding: 0 0 0 160px;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento .num .num-first {
   float: left;
@@ -6815,6 +6884,19 @@ img
 @media screen and (max-width: 1500px) {
   .mascota_categorias .list_categorias ul li a {
     min-width: 175px;
+  }
+}
+@media screen and (max-width: 1200px) {
+  .mascota_categorias .list_categorias ul li {
+    margin: 10px 10px;
+  }
+  .mascota_categorias .list_categorias ul li a {
+    padding: 8px 4px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .mascota_categorias .list_categorias ul li {
+    margin: 10px 48px;
   }
 }
 @media screen and (max-width: 768px) {

@@ -77,6 +77,19 @@
     min-width: 175px;
   }
 }
+@media screen and (max-width: 1200px) {
+  .mascota_categorias .list_categorias ul li {
+    margin: 10px 10px;
+  }
+  .mascota_categorias .list_categorias ul li a {
+    padding: 8px 4px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .mascota_categorias .list_categorias ul li {
+    margin: 10px 48px;
+  }
+}
 @media screen and (max-width: 768px) {
   .mascota_categorias .list_categorias ul li {
     margin: 10px;

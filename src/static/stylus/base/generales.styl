@@ -22,7 +22,7 @@ a
     max-width 1900px
 .container--r-large-noticias
     max-width 1900px
-    width 100%
+    width 100% !important
 .title_section
     h2
         font-size 35px
@@ -263,6 +263,8 @@ p
     .banner_gral .banner
         background-position center center
 @media screen and (max-width 768px)
+
+
     .title_colores h2.celeste
         font-size 30px
         &:after, &:before
@@ -270,9 +272,28 @@ p
     .page
         width 100%
         margin auto
+        margin-top 63px
     .title_section
         h2
             font-size 28px
+            &:after
+                content ""
+                position absolute
+                bottom 0
+                left calc(100% + 15px)
+                background-image url("../img/flechitasleft.png")
+                width 26px
+                height 48px
+                transition .3s ease all
+            &:before
+                content ""
+                position absolute
+                bottom -10px
+                right calc(100% + 15px)
+                background-image url("../img/flechitasright.png")
+                width 26px
+                transition .3s ease all
+                height 48px
     .content_banner
         h2
             font-size 36px
