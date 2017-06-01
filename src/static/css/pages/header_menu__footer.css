@@ -91,7 +91,7 @@
   position: relative;
   padding: 15px 0px;
   margin-bottom: 40px;
-  margin-top: 80px;
+  margin-top: 25px;
 }
 .container_menu .menu_block .menu .icon-close {
   position: absolute;
@@ -281,6 +281,7 @@ footer .footer_top {
   background-image: url("../img/footer_back.png");
   padding-top: 100px;
   background-size: cover;
+  background-position: center center;
 }
 footer .footer_top__contacto {
   max-width: 380px;

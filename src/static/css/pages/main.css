@@ -91,7 +91,7 @@
   position: relative;
   padding: 15px 0px;
   margin-bottom: 40px;
-  margin-top: 80px;
+  margin-top: 25px;
 }
 .container_menu .menu_block .menu .icon-close {
   position: absolute;
@@ -281,6 +281,7 @@ footer .footer_top {
   background-image: url("../img/footer_back.png");
   padding-top: 100px;
   background-size: cover;
+  background-position: center center;
 }
 footer .footer_top__contacto {
   max-width: 380px;
@@ -2394,6 +2395,13 @@ img
   right: -45px;
   top: -20px;
 }
+.page-adopta .footer_top {
+  margin-top: -70px;
+  position: relative;
+}
+.matchcota_formulario .cnt-image figure {
+  margin-top: 25px;
+}
 .matchcota-detalle {
   margin-top: 50px;
   margin-bottom: 40px;
@@ -2510,7 +2518,7 @@ img
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .title a {
   background: #00b3e3;
-  padding: 12px 15px 12px 30px;
+  padding: 12px 15px 12px 25px;
   box-sizing: border-box;
   color: #fff;
   font-size: 16px;
@@ -2549,6 +2557,7 @@ img
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-salud__alergias {
   margin: 0px 7px;
   margin-bottom: 5px;
+  margin-top: 5px;
   display: flex;
   align-items: center;
 }
@@ -2615,7 +2624,7 @@ img
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .content-caract .caract h3 i {
   margin-right: 5px;
-  font-size: 30px;
+  font-size: 32px;
   color: #00b2e2;
 }
 .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento ul li {
@@ -2697,6 +2706,15 @@ img
   }
 }
 @media screen and (max-width: 1024px) {
+  .nosotros_formulario {
+    padding: 25px 0px;
+  }
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento .cnt-bar {
+    margin: 2px 0 0 160px;
+  }
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento .text {
+    font-size: 17px;
+  }
   .matchcota-detalle {
     margin-top: 0;
   }
@@ -2706,8 +2724,8 @@ img
   .matchcota-detalle .container .cnt-descripcion {
     margin: auto;
     margin-top: 40px;
-    width: 90%;
-    max-width: 800px;
+    width: 96%;
+    max-width: 900px;
   }
   .matchcota-detalle .container .preview-img {
     width: auto;
@@ -2716,6 +2734,12 @@ img
   }
   .matchcota-detalle .container .preview-img .conoce_mascota__title {
     margin: 40px 0px;
+  }
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .title a {
+    padding: 12px 15px 12px 20px;
+  }
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content {
+    padding: 20px 15px 15px 20px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -3010,15 +3034,6 @@ img
 @media screen and (max-width: 1024px) {
   .mascota_categorias .list_categorias ul li {
     margin: 10px 48px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .mascota_categorias .list_categorias ul li {
-    margin: 10px;
-  }
-  .mascota_categorias .list_categorias ul li a {
-    font-size: 20px;
-    min-width: 140px;
   }
 }
 .page-enviado footer .footer_top {
