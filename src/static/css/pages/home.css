@@ -699,6 +699,9 @@
   }
 }
 @media screen and (max-width: 480px) {
+  .home_banner .cnt_slide_home .home_banner__text_static {
+    margin-bottom: 40px;
+  }
   .home_conoce_mascota {
     margin-top: 30px;
   }
