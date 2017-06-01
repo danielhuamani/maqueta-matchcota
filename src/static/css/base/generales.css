@@ -1,3 +1,6 @@
+.body-active {
+  overflow: hidden;
+}
 a {
   margin: 0;
   outline: none !important;
@@ -307,6 +310,9 @@ p {
   }
 }
 @media screen and (max-width: 480px) {
+  .page {
+    margin-top: 56px;
+  }
   .content_banner .text {
     font-size: 12px;
   }

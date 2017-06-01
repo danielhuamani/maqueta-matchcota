@@ -5,6 +5,7 @@ jQuery(document).ready(function($) {
 		event.preventDefault();
 		$(".menu_block").addClass('menu_block--active')
 		$(".link_menu").removeClass('link_menu--active')
+		$("body").addClass('body-active')
 
 		$(".overlay").addClass('overlay--active')
 	});
@@ -13,6 +14,7 @@ jQuery(document).ready(function($) {
 		/* Act on the event */
 		$(".menu_block").removeClass('menu_block--active')
 		$(".link_menu").addClass('link_menu--active')
+		$("body").removeClass('body-active')
 		$(".overlay").removeClass('overlay--active')
 
 	});
@@ -31,12 +33,14 @@ jQuery(document).ready(function($) {
 	   event.preventDefault();
 	   $(".cnt_pop_up").addClass('cnt_pop_up_none')
 	   $(".overlay").removeClass('overlay--active-pop')
+	   $("body").removeClass('body-active')
 	});
 	$(".adopta_pop").click(function(event) {
 		/* Act on the event */
 		event.preventDefault();
 		$(".overlay").addClass('overlay--active-pop')
 		$(".cnt_pop_up_adopta").removeClass('cnt_pop_up_none')
+		$("body").addClass('body-active')
 	});
 
 	$(".apadrina_pop").click(function(event) {
@@ -44,12 +48,14 @@ jQuery(document).ready(function($) {
 		event.preventDefault();
 		$(".overlay").addClass('overlay--active-pop')
 		$(".cnt_pop_up_apadrina").removeClass('cnt_pop_up_none')
+		$("body").addClass('body-active')
 	});
 	$(".donar_pop").click(function(event) {
 		/* Act on the event */
 		event.preventDefault();
 		$(".overlay").addClass('overlay--active-pop')
 		$(".cnt_pop_up_dona").removeClass('cnt_pop_up_none')
+		$("body").addClass('body-active')
 	});
 	$(".btn-tab").click(function(event) {
 		/* Act on the event */

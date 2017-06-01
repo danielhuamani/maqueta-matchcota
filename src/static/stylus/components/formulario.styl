@@ -319,12 +319,10 @@
         background c_formulario
     .cnt_pop_up .cnt-formulario
         padding 35px 30px !important
-    .cnt_pop_up .pop_up
-        height 460px
-        padding 20px 0px
-        overflow-y scroll
+
     .cnt_pop_up .pop_up .close
-        top -50px
+        top 20px
+        right 5%
     .container_formulario
         .cnt-image
             width 40%
@@ -338,6 +336,14 @@
                 form
                     .text
                         margin-top 10px
+    .cnt_pop_up .pop_up
+        .cnt-formulario
+            position relative
+            .formulario
+                height 420px
+                overflow-y scroll
+                padding 20px 8px
+                position initial
 
 @media screen and (max-width 768px)
     .cnt_pop_up .cnt-formulario
@@ -370,6 +376,8 @@
                 margin-bottom 15px
 
 @media screen and (max-width 480px)
+    .container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input label
+        font-size 11px
     .cnt_pop_up .pop_up .close
         right 0px
         top -35px

@@ -122,9 +122,13 @@
 @media screen and (max-width: 768px) {
   .noticias-detail .content-detail .image {
     width: 96%;
-    max-width: 464px;
+    max-width: 520px;
     padding-right: 0;
     margin: auto;
+  }
+  .noticias-detail .title {
+    padding: 0;
+    margin-bottom: 20px;
   }
   .noticias-detail .content-detail {
     display: flex;
@@ -132,7 +136,10 @@
     flex-direction: column-reverse;
   }
   .noticias-detail .content-detail .detail {
+    text-align: center;
     width: 100%;
+    max-width: 520px;
+    margin: auto;
   }
   .noticias-detail .content-detail .detail .date {
     margin-bottom: 10px;

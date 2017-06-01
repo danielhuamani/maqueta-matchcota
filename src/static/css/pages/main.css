@@ -552,6 +552,9 @@ footer .footer_top .facebook__slider__item ul li span {
     width: 100%;
     margin-left: 0;
   }
+  .container_menu .menu_block .menu .contacte ul li {
+    margin-bottom: 30px;
+  }
   .logo_celeste {
     height: 48px !important;
     width: auto;
@@ -583,6 +586,9 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 480px) {
+  .container_menu .menu_block .menu .icon-close {
+    top: 15px;
+  }
   .container_menu .menu_block .menu .links_pop a span {
     font-size: 17px;
   }
@@ -620,8 +626,12 @@ footer .footer_top .facebook__slider__item ul li span {
     padding: 0;
   }
   .container_menu .menu_block .menu {
-    height: 480px;
-    overflow-y: scroll;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    overflow-y: auto;
   }
 }
 .home_banner {
@@ -1272,6 +1282,12 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 768px) {
+  .container_menu .menu_block .menu .icon-close {
+    right: 20px;
+  }
+  .home_mascotas .list_mascotas {
+    margin-top: 30px !important;
+  }
   .home_banner .cnt_slide_home .home_banner__text_static .text_adoptar .bx-wrapper {
     min-width: 170px;
   }
@@ -1319,6 +1335,18 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 480px) {
+  .home_conoce_mascota {
+    margin-top: 30px;
+  }
+  .home_mascotas .home_conoce_mascota__title span.flecha {
+    display: none;
+  }
+  .home_siempre_informados {
+    margin-top: 40px;
+  }
+  .home_siempre_informados .home_listado_noticias {
+    margin-top: 20px;
+  }
   .home_conoce_mascota .full_container .bloque_picture.bloque_4,
   .home_conoce_mascota .full_container .bloque_picture.bloque_5,
   .home_conoce_mascota .full_container .bloque_picture.bloque_3 {
@@ -2710,10 +2738,13 @@ img
     padding: 25px 0px;
   }
   .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento .cnt-bar {
-    margin: 2px 0 0 160px;
+    margin: 2px 0 0 130px;
   }
   .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento .text {
     font-size: 17px;
+  }
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento .num {
+    padding: 0 0 0 130px;
   }
   .matchcota-detalle {
     margin-top: 0;
@@ -2754,8 +2785,29 @@ img
   }
 }
 @media screen and (max-width: 480px) {
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento .text {
+    font-size: 15px;
+  }
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento .cnt-bar {
+    margin: 2px 0 0 110px;
+  }
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento .num {
+    padding: 0 0 0 110px;
+  }
   .matchcota-detalle .container .cnt-descripcion .acordeon li .title a {
     padding: 12px 8px;
+  }
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas__block h3 {
+    min-width: 80px;
+  }
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas {
+    flex-direction: column;
+  }
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-salud {
+    flex-direction: column;
+  }
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-salud h3 {
+    min-width: 97px;
   }
   .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content p {
     font-size: 14px;
@@ -2912,9 +2964,13 @@ img
 @media screen and (max-width: 768px) {
   .noticias-detail .content-detail .image {
     width: 96%;
-    max-width: 464px;
+    max-width: 520px;
     padding-right: 0;
     margin: auto;
+  }
+  .noticias-detail .title {
+    padding: 0;
+    margin-bottom: 20px;
   }
   .noticias-detail .content-detail {
     display: flex;
@@ -2922,7 +2978,10 @@ img
     flex-direction: column-reverse;
   }
   .noticias-detail .content-detail .detail {
+    text-align: center;
     width: 100%;
+    max-width: 520px;
+    margin: auto;
   }
   .noticias-detail .content-detail .detail .date {
     margin-bottom: 10px;

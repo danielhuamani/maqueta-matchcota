@@ -552,6 +552,9 @@ footer .footer_top .facebook__slider__item ul li span {
     width: 100%;
     margin-left: 0;
   }
+  .container_menu .menu_block .menu .contacte ul li {
+    margin-bottom: 30px;
+  }
   .logo_celeste {
     height: 48px !important;
     width: auto;
@@ -583,6 +586,9 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 480px) {
+  .container_menu .menu_block .menu .icon-close {
+    top: 15px;
+  }
   .container_menu .menu_block .menu .links_pop a span {
     font-size: 17px;
   }
@@ -620,8 +626,12 @@ footer .footer_top .facebook__slider__item ul li span {
     padding: 0;
   }
   .container_menu .menu_block .menu {
-    height: 480px;
-    overflow-y: scroll;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 0;
+    padding-top: 40px;
+    padding-bottom: 20px;
+    overflow-y: auto;
   }
 }
 

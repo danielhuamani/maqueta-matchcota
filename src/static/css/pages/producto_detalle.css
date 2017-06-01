@@ -313,10 +313,13 @@
     padding: 25px 0px;
   }
   .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento .cnt-bar {
-    margin: 2px 0 0 160px;
+    margin: 2px 0 0 130px;
   }
   .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento .text {
     font-size: 17px;
+  }
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento .num {
+    padding: 0 0 0 130px;
   }
   .matchcota-detalle {
     margin-top: 0;
@@ -370,8 +373,29 @@
   }
 }
 @media screen and (max-width: 480px) {
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento .text {
+    font-size: 15px;
+  }
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento .cnt-bar {
+    margin: 2px 0 0 110px;
+  }
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento .num {
+    padding: 0 0 0 110px;
+  }
   .matchcota-detalle .container .cnt-descripcion .acordeon li .title a {
     padding: 12px 8px;
+  }
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas__block h3 {
+    min-width: 80px;
+  }
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-fisicas {
+    flex-direction: column;
+  }
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-salud {
+    flex-direction: column;
+  }
+  .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content .caract-salud h3 {
+    min-width: 97px;
   }
   .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content p {
     font-size: 14px;
