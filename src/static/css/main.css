@@ -2106,9 +2106,6 @@ p {
   .cnt_pop_up_adopta .cnt-image figure {
     max-width: 415px !important;
   }
-  .cnt_pop_up_dona .pop_up {
-    height: 515px;
-  }
   .container_formulario .cnt-image .image {
     margin-right: 30px;
   }
@@ -2180,7 +2177,6 @@ p {
     position: relative;
   }
   .cnt_pop_up .pop_up .cnt-formulario .formulario {
-    height: 420px;
     overflow-y: scroll;
     padding: 20px 8px;
     position: initial;
@@ -2245,6 +2241,12 @@ p {
   }
 }
 @media screen and (max-width: 480px) {
+  .cnt_pop_up {
+    background: #ebe7e2;
+  }
+  .cnt_pop_up .pop_up {
+    height: 100%;
+  }
   .container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input label {
     font-size: 11px;
   }
@@ -2271,15 +2273,23 @@ p {
   .container_formulario .cnt-formulario .formulario h2 {
     font-size: 22px;
   }
-  .cnt_pop_up .cnt-formulario .formulario {
-    height: 480px;
-    padding: 0px 7px;
+  .cnt_pop_up .cnt-formulario {
+    padding: 0 !important;
+  }
+  .cnt_pop_up .pop_up .cnt-formulario .formulario {
+    padding: 50px 8px 20px 8px;
+  }
+  .cnt_pop_up .cnt-formulario .formulario h2 {
+    margin-bottom: 30px;
+  }
+  .cnt_pop_up .pop_up .cnt-formulario .formulario {
+    height: 100%;
     overflow-y: scroll;
+    position: relative;
   }
   .cnt_pop_up .pop_up .close {
     top: 5px;
     right: 10px;
-    position: fixed;
   }
   .cnt_pop_up .pop_up .close .icon-close {
     padding: 6px;
@@ -2368,7 +2378,7 @@ p {
 }
 .list_mascotas__mascota--celeste:hover .list_mascotas__etiqueta h4 {
   color: #fff;
-  background-image: url("../img/cuadro-01.png");
+  background-image: url("../img/mas_hover.png");
   background-position: 0 2px;
 }
 .list_mascotas__mascota--celeste:hover .list_mascotas__etiqueta h4:before {
@@ -2384,10 +2394,10 @@ p {
   color: #00b2e2;
 }
 .list_mascotas__mascota--celeste .list_mascotas__etiqueta h4 {
-  background-image: url("../img/cuadro-02.png");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
+  background-image: url("../img/mas_celeste.png");
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
   background-repeat: no-repeat repeat;
   color: #fff;
 }
@@ -2424,9 +2434,9 @@ p {
 }
 .list_mascotas__mascota--amarillo .list_mascotas__etiqueta h4 {
   background-image: url("../img/mas_amarillo.png");
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
   background-repeat: no-repeat repeat;
   color: #fff;
 }
@@ -2462,9 +2472,9 @@ p {
   color: #c7c7c7;
 }
 .list_mascotas__mascota--plomo .list_mascotas__etiqueta h4 {
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  background-size: cover;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  background-size: contain;
   background-image: url("../img/mas_plomo.png");
   background-repeat: no-repeat repeat;
   color: #fff;
@@ -2519,7 +2529,7 @@ p {
   display: block;
 }
 .list_mascotas__title {
-  height: 100%;
+  display: block;
   font-size: 30px;
   font-family: 'ventura_eddingmedium';
 }
@@ -3222,6 +3232,12 @@ p {
     display: none !important;
   }
 }
+@media screen and (max-width: 748px) {
+  .listado_noticias__noticia .descripcion {
+    min-height: 204px;
+    height: inherit;
+  }
+}
 .header {
   position: absolute;
   width: calc(100% - 105px);
@@ -3320,11 +3336,11 @@ p {
 }
 .container_menu .menu_block--active {
   left: 0 !important;
-  -webkit-transition: 0.5s ease all;
-  -moz-transition: 0.5s ease all;
-  -o-transition: 0.5s ease all;
-  -ms-transition: 0.5s ease all;
-  transition: 0.5s ease all;
+  -webkit-transition: 0.7s ease all;
+  -moz-transition: 0.7s ease all;
+  -o-transition: 0.7s ease all;
+  -ms-transition: 0.7s ease all;
+  transition: 0.7s ease all;
 }
 .container_menu .menu_block {
   -webkit-box-pack: center;
@@ -3861,7 +3877,7 @@ footer .footer_top .facebook__slider__item ul li span {
   }
   .container_menu .btn_menu {
     width: 50px;
-    padding-left: 10px;
+    padding-left: 20px;
   }
   .container_menu .menu_block .menu figure {
     width: 150px;
@@ -3907,12 +3923,12 @@ footer .footer_top .facebook__slider__item ul li span {
   .container_menu .link_menu .btn_menu .icon-menu {
     margin-bottom: 0;
   }
-}
-@media screen and (max-width: 767px) {
   footer {
     width: 100%;
     margin-left: 0;
   }
+}
+@media screen and (max-width: 768px) {
   .container_menu .menu_block .menu .contacte ul li {
     margin-bottom: 30px;
   }
@@ -4844,6 +4860,9 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 768px) {
+  .home_conoce_mascota .full_container .bloque_picture {
+    width: 42%;
+  }
   .container_menu .menu_block .menu .icon-close {
     right: 20px;
   }
@@ -4876,31 +4895,31 @@ footer .footer_top .facebook__slider__item ul li span {
   .home_conoce_mascota .full_container .container .title h3 {
     font-size: 38px;
   }
-}
-.home_banner .arrow_scroll {
-  left: 0;
-  right: 0;
-  display: block;
-  text-align: center;
-}
-.home_nuestro_aliados .bx-wrapper {
-  max-width: 360px !important;
-}
-.home_conoce_mascota .full_container .container .cnt-bloque {
-  -webkit-box-pack: center;
-  -moz-box-pack: center;
-  -o-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-}
-.home_conoce_mascota .full_container .bloque_picture {
-  width: 45%;
+  .home_banner .arrow_scroll {
+    left: 0;
+    right: 0;
+    display: block;
+    text-align: center;
+  }
+  .home_nuestro_aliados .bx-wrapper {
+    max-width: 360px !important;
+  }
+  .home_conoce_mascota .full_container .container .cnt-bloque {
+    -webkit-box-pack: center;
+    -moz-box-pack: center;
+    -o-box-pack: center;
+    -ms-flex-pack: center;
+    -webkit-justify-content: center;
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 480px) {
   .title_section--celeste h2:after,
   .title_section--celeste h2:before {
     display: none;
+  }
+  .home_banner .cnt_slide_home .home_banner__text_static {
+    margin-bottom: 40px;
   }
   .home_conoce_mascota {
     margin-top: 30px;
@@ -6697,6 +6716,12 @@ img
   }
 }
 @media screen and (max-width: 768px) {
+  .nosotros_linea_tiempo .container .cnt_linea_tiempo {
+    margin-top: 20px;
+  }
+  .page-adopta .footer_top {
+    margin-top: -102px;
+  }
   .matchcota-detalle .container .cnt-descripcion .acordeon li .title a {
     padding: 12px 15px;
   }
@@ -6708,6 +6733,9 @@ img
   }
 }
 @media screen and (max-width: 480px) {
+  .page-adopta .footer_top {
+    margin-top: -45px;
+  }
   .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento .text {
     font-size: 15px;
   }

@@ -68,7 +68,7 @@
 }
 .container_menu .menu_block--active {
   left: 0 !important;
-  transition: 0.5s ease all;
+  transition: 0.7s ease all;
 }
 .container_menu .menu_block {
   justify-content: center;
@@ -505,7 +505,7 @@ footer .footer_top .facebook__slider__item ul li span {
   }
   .container_menu .btn_menu {
     width: 50px;
-    padding-left: 10px;
+    padding-left: 20px;
   }
   .container_menu .menu_block .menu figure {
     width: 150px;
@@ -546,12 +546,12 @@ footer .footer_top .facebook__slider__item ul li span {
   .container_menu .link_menu .btn_menu .icon-menu {
     margin-bottom: 0;
   }
-}
-@media screen and (max-width: 767px) {
   footer {
     width: 100%;
     margin-left: 0;
   }
+}
+@media screen and (max-width: 768px) {
   .container_menu .menu_block .menu .contacte ul li {
     margin-bottom: 30px;
   }
@@ -1282,6 +1282,9 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 768px) {
+  .home_conoce_mascota .full_container .bloque_picture {
+    width: 42%;
+  }
   .container_menu .menu_block .menu .icon-close {
     right: 20px;
   }
@@ -1312,26 +1315,26 @@ footer .footer_top .facebook__slider__item ul li span {
   .home_conoce_mascota .full_container .container .title h3 {
     font-size: 38px;
   }
-}
-.home_banner .arrow_scroll {
-  left: 0;
-  right: 0;
-  display: block;
-  text-align: center;
-}
-.home_nuestro_aliados .bx-wrapper {
-  max-width: 360px !important;
-}
-.home_conoce_mascota .full_container .container .cnt-bloque {
-  justify-content: center;
-}
-.home_conoce_mascota .full_container .bloque_picture {
-  width: 45%;
+  .home_banner .arrow_scroll {
+    left: 0;
+    right: 0;
+    display: block;
+    text-align: center;
+  }
+  .home_nuestro_aliados .bx-wrapper {
+    max-width: 360px !important;
+  }
+  .home_conoce_mascota .full_container .container .cnt-bloque {
+    justify-content: center;
+  }
 }
 @media screen and (max-width: 480px) {
   .title_section--celeste h2:after,
   .title_section--celeste h2:before {
     display: none;
+  }
+  .home_banner .cnt_slide_home .home_banner__text_static {
+    margin-bottom: 40px;
   }
   .home_conoce_mascota {
     margin-top: 30px;
@@ -2772,6 +2775,12 @@ img
   }
 }
 @media screen and (max-width: 768px) {
+  .nosotros_linea_tiempo .container .cnt_linea_tiempo {
+    margin-top: 20px;
+  }
+  .page-adopta .footer_top {
+    margin-top: -102px;
+  }
   .matchcota-detalle .container .cnt-descripcion .acordeon li .title a {
     padding: 12px 15px;
   }
@@ -2783,6 +2792,9 @@ img
   }
 }
 @media screen and (max-width: 480px) {
+  .page-adopta .footer_top {
+    margin-top: -45px;
+  }
   .matchcota-detalle .container .cnt-descripcion .acordeon li .text-content__comportamiento .text {
     font-size: 15px;
   }

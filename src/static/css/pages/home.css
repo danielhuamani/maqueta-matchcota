@@ -646,6 +646,9 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .home_conoce_mascota .full_container .bloque_picture {
+    width: 42%;
+  }
   .container_menu .menu_block .menu .icon-close {
     right: 20px;
   }
@@ -676,30 +679,28 @@
   .home_conoce_mascota .full_container .container .title h3 {
     font-size: 38px;
   }
+  .home_banner .arrow_scroll {
+    left: 0;
+    right: 0;
+    display: block;
+    text-align: center;
+  }
+  .home_nuestro_aliados .bx-wrapper {
+    max-width: 360px !important;
+  }
+  .home_conoce_mascota .full_container .container .cnt-bloque {
+    justify-content: center;
+  }
 }
-/*    .home_siempre_informados .title h2
-        font-size 30px
-        &:after
-            display none*/
-.home_banner .arrow_scroll {
-  left: 0;
-  right: 0;
-  display: block;
-  text-align: center;
-}
-.home_nuestro_aliados .bx-wrapper {
-  max-width: 360px !important;
-}
-.home_conoce_mascota .full_container .container .cnt-bloque {
-  justify-content: center;
-}
-.home_conoce_mascota .full_container .bloque_picture {
-  width: 45%;
-}
+/*    .home_conoce_mascota .full_container .bloque_picture
+        width 45%*/
 @media screen and (max-width: 480px) {
   .title_section--celeste h2:after,
   .title_section--celeste h2:before {
     display: none;
+  }
+  .home_banner .cnt_slide_home .home_banner__text_static {
+    margin-bottom: 40px;
   }
   .home_conoce_mascota {
     margin-top: 30px;

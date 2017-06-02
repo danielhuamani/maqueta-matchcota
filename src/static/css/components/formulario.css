@@ -305,9 +305,6 @@
   .cnt_pop_up_adopta .cnt-image figure {
     max-width: 415px !important;
   }
-  .cnt_pop_up_dona .pop_up {
-    height: 515px;
-  }
   .container_formulario .cnt-image .image {
     margin-right: 30px;
   }
@@ -379,7 +376,6 @@
     position: relative;
   }
   .cnt_pop_up .pop_up .cnt-formulario .formulario {
-    height: 420px;
     overflow-y: scroll;
     padding: 20px 8px;
     position: initial;
@@ -424,6 +420,12 @@
   }
 }
 @media screen and (max-width: 480px) {
+  .cnt_pop_up {
+    background: c_formulario;
+  }
+  .cnt_pop_up .pop_up {
+    height: 100%;
+  }
   .container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input label {
     font-size: 11px;
   }
@@ -445,15 +447,23 @@
   .container_formulario .cnt-formulario .formulario h2 {
     font-size: 22px;
   }
-  .cnt_pop_up .cnt-formulario .formulario {
-    height: 480px;
-    padding: 0px 7px;
+  .cnt_pop_up .cnt-formulario {
+    padding: 0 !important;
+  }
+  .cnt_pop_up .pop_up .cnt-formulario .formulario {
+    padding: 50px 8px 20px 8px;
+  }
+  .cnt_pop_up .cnt-formulario .formulario h2 {
+    margin-bottom: 30px;
+  }
+  .cnt_pop_up .pop_up .cnt-formulario .formulario {
+    height: 100%;
     overflow-y: scroll;
+    position: relative;
   }
   .cnt_pop_up .pop_up .close {
     top: 5px;
     right: 10px;
-    position: fixed;
   }
   .cnt_pop_up .pop_up .close .icon-close {
     padding: 6px;

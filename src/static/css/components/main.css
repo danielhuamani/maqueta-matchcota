@@ -379,9 +379,6 @@
   .cnt_pop_up_adopta .cnt-image figure {
     max-width: 415px !important;
   }
-  .cnt_pop_up_dona .pop_up {
-    height: 515px;
-  }
   .container_formulario .cnt-image .image {
     margin-right: 30px;
   }
@@ -453,7 +450,6 @@
     position: relative;
   }
   .cnt_pop_up .pop_up .cnt-formulario .formulario {
-    height: 420px;
     overflow-y: scroll;
     padding: 20px 8px;
     position: initial;
@@ -498,6 +494,12 @@
   }
 }
 @media screen and (max-width: 480px) {
+  .cnt_pop_up {
+    background: c_formulario;
+  }
+  .cnt_pop_up .pop_up {
+    height: 100%;
+  }
   .container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input label {
     font-size: 11px;
   }
@@ -519,15 +521,23 @@
   .container_formulario .cnt-formulario .formulario h2 {
     font-size: 22px;
   }
-  .cnt_pop_up .cnt-formulario .formulario {
-    height: 480px;
-    padding: 0px 7px;
+  .cnt_pop_up .cnt-formulario {
+    padding: 0 !important;
+  }
+  .cnt_pop_up .pop_up .cnt-formulario .formulario {
+    padding: 50px 8px 20px 8px;
+  }
+  .cnt_pop_up .cnt-formulario .formulario h2 {
+    margin-bottom: 30px;
+  }
+  .cnt_pop_up .pop_up .cnt-formulario .formulario {
+    height: 100%;
     overflow-y: scroll;
+    position: relative;
   }
   .cnt_pop_up .pop_up .close {
     top: 5px;
     right: 10px;
-    position: fixed;
   }
   .cnt_pop_up .pop_up .close .icon-close {
     padding: 6px;
@@ -592,7 +602,7 @@
 }
 .list_mascotas__mascota--celeste:hover .list_mascotas__etiqueta h4 {
   color: c_white;
-  background-image: url("../img/cuadro-01.png");
+  background-image: url("../img/mas_hover.png");
   background-position: 0 2px;
 }
 .list_mascotas__mascota--celeste:hover .list_mascotas__etiqueta h4:before {
@@ -606,8 +616,8 @@
   color: c_celeste;
 }
 .list_mascotas__mascota--celeste .list_mascotas__etiqueta h4 {
-  background-image: url("../img/cuadro-02.png");
-  background-size: cover;
+  background-image: url("../img/mas_celeste.png");
+  background-size: contain;
   background-repeat: no-repeat repeat;
   color: c_white;
 }
@@ -640,7 +650,7 @@
 }
 .list_mascotas__mascota--amarillo .list_mascotas__etiqueta h4 {
   background-image: url("../img/mas_amarillo.png");
-  background-size: cover;
+  background-size: contain;
   background-repeat: no-repeat repeat;
   color: c_white;
 }
@@ -672,7 +682,7 @@
   color: c_plomo;
 }
 .list_mascotas__mascota--plomo .list_mascotas__etiqueta h4 {
-  background-size: cover;
+  background-size: contain;
   background-image: url("../img/mas_plomo.png");
   background-repeat: no-repeat repeat;
   color: c_white;
@@ -701,7 +711,7 @@
   display: block;
 }
 .list_mascotas__title {
-  height: 100%;
+  display: block;
   font-size: 30px;
   font-family: f_ventura_m;
 }
@@ -1199,6 +1209,12 @@
 @media screen and (max-width: 748px) {
   .home_listado_noticias .noticia_3 {
     display: none !important;
+  }
+}
+@media screen and (max-width: 748px) {
+  .listado_noticias__noticia .descripcion {
+    min-height: 204px;
+    height: inherit;
   }
 }
 

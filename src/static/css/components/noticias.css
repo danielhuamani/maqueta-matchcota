@@ -428,5 +428,11 @@
     display: none !important;
   }
 }
+@media screen and (max-width: 748px) {
+  .listado_noticias__noticia .descripcion {
+    min-height: 204px;
+    height: inherit;
+  }
+}
 
 /*# sourceMappingURL=noticias.css.map */
