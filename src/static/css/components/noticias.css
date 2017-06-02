@@ -423,7 +423,7 @@
     margin: 0;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 748px) {
   .home_listado_noticias .noticia_3 {
     display: none !important;
   }

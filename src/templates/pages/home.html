@@ -328,10 +328,7 @@
                 if (window_top>1400) {
                     $(".home_siempre_informados .title").addClass('title_active')
 
-                }else{
-                    $(".home_siempre_informados .title").removeClass('title_active')
                 }
-
             });
 
             $(".arrow_scroll").click(function(evn){
@@ -393,14 +390,7 @@
                 };
                 switch(media_) {
                     case "(max-width: 480px)":
-                        if (window_top >= 270) {
-                            $(".logo_celeste").removeClass('logo_none')
-                            $(".logo_blanco").addClass('logo_none')
-                        }else{
 
-                            $(".logo_celeste").addClass('logo_none')
-                            $(".logo_blanco").removeClass('logo_none')
-                        }
                         if (window_top >= 360) {
                             $(".title_section").addClass('home_mascotas--title--active')
                         }

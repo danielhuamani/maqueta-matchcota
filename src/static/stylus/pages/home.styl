@@ -595,10 +595,10 @@
             font-size 28px
         h3
             font-size 38px
-    .home_siempre_informados .title h2
+/*    .home_siempre_informados .title h2
         font-size 30px
         &:after
-            display none
+            display none*/
     .home_banner .arrow_scroll
         left 0
         right 0
@@ -611,12 +611,15 @@
     .home_conoce_mascota .full_container .bloque_picture
         width 45%
 @media screen and (max-width 480px)
+    .title_section--celeste
+        h2:after, h2:before
+            display none
     .home_conoce_mascota
         margin-top 30px
     .home_mascotas .home_conoce_mascota__title span.flecha
         display none
     .home_siempre_informados
-        margin-top 40px
+        margin-top 60px
         .home_listado_noticias
             margin-top 20px
     .home_conoce_mascota .full_container
