@@ -129,6 +129,9 @@
   margin-top: 38px;
   margin-bottom: 38px;
 }
+.home_mascotas .bx-wrapper {
+  margin: auto;
+}
 .home_mascotas .home_conoce_mascota__title span.flecha {
   background-image: url("../img/ver_mas_noticias.png");
   width: 50px;
@@ -695,6 +698,19 @@
 /*    .home_conoce_mascota .full_container .bloque_picture
         width 45%*/
 @media screen and (max-width: 480px) {
+  .home_mascotas .bx-wrapper {
+    margin-top: 20px;
+  }
+  .home_mascotas .row {
+    display: block;
+    margin-top: 20px;
+  }
+  .home_mascotas .list_mascotas {
+    margin-top: 0 !important;
+  }
+  .home_mascotas .list_mascotas__mascota {
+    margin: 0;
+  }
   .title_section--celeste h2:after,
   .title_section--celeste h2:before {
     display: none;
