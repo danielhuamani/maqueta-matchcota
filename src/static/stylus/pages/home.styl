@@ -403,7 +403,7 @@
                 opacity 0
                 transition 0.5s ease all
 
-.home_nuestro_aliados
+.home_nuestro_aliados, .home_mascotas
     margin-top 60px
     .bx-wrapper
         margin auto
@@ -611,18 +611,33 @@
 /*    .home_conoce_mascota .full_container .bloque_picture
         width 45%*/
 @media screen and (max-width 480px)
+    .home_nuestro_aliados .bx-wrapper .bx-controls .bx-next, .home_mascotas .bx-wrapper .bx-controls
+        .bx-prev
+            top 50%
+            left -39px
+        .bx-next
+            top 50%
     .home_mascotas .bx-wrapper
         margin-top 20px
+        position relative
     .home_mascotas
+        padding-top 0px
         .row
             display block
             margin-top 20px
         .list_mascotas
             margin-top 0 !important
+    .home_mascotas__list_mascotas
+        .list_mascotas__mascota
+            padding-left 0
+            padding-right 0
+        .list_mascotas__mascota figure
+            width 200px
     .home_mascotas .list_mascotas__mascota
         margin 0
 
-
+    .home_siempre_informados .title h2
+        font-size 30px
     .title_section--celeste
         h2:after, h2:before
             display none

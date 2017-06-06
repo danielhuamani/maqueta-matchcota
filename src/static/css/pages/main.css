@@ -1077,14 +1077,17 @@ footer .footer_top .facebook__slider__item ul li span {
   opacity: 0;
   transition: 0.5s ease all;
 }
-.home_nuestro_aliados {
+.home_nuestro_aliados,
+.home_mascotas {
   margin-top: 60px;
 }
-.home_nuestro_aliados .bx-wrapper {
+.home_nuestro_aliados .bx-wrapper,
+.home_mascotas .bx-wrapper {
   margin: auto;
   position: relative;
 }
-.home_nuestro_aliados .bx-wrapper .bx-controls .bx-prev {
+.home_nuestro_aliados .bx-wrapper .bx-controls .bx-prev,
+.home_mascotas .bx-wrapper .bx-controls .bx-prev {
   position: absolute;
   left: -50px;
   top: 40px;
@@ -1093,7 +1096,8 @@ footer .footer_top .facebook__slider__item ul li span {
   background-image: url("../img/flecha_naranja.png");
   display: block;
 }
-.home_nuestro_aliados .bx-wrapper .bx-controls .bx-next {
+.home_nuestro_aliados .bx-wrapper .bx-controls .bx-next,
+.home_mascotas .bx-wrapper .bx-controls .bx-next {
   position: absolute;
   right: -40px;
   top: 40px;
@@ -1103,16 +1107,21 @@ footer .footer_top .facebook__slider__item ul li span {
   display: block;
 }
 .home_nuestro_aliados .title_colores_animate h2:after,
-.home_nuestro_aliados .title_colores_animate h2:before {
+.home_mascotas .title_colores_animate h2:after,
+.home_nuestro_aliados .title_colores_animate h2:before,
+.home_mascotas .title_colores_animate h2:before {
   opacity: 1 !important;
 }
-.home_nuestro_aliados .title_colores {
+.home_nuestro_aliados .title_colores,
+.home_mascotas .title_colores {
   margin-bottom: 70px;
 }
-.home_nuestro_aliados .title_colores h2 {
+.home_nuestro_aliados .title_colores h2,
+.home_mascotas .title_colores h2 {
   position: relative;
 }
-.home_nuestro_aliados .title_colores h2:after {
+.home_nuestro_aliados .title_colores h2:after,
+.home_mascotas .title_colores h2:after {
   content: "";
   background-image: url("../img/rayas_celeste.png");
   width: 9px;
@@ -1123,7 +1132,8 @@ footer .footer_top .facebook__slider__item ul li span {
   opacity: 0;
   transition: 0.3s ease all;
 }
-.home_nuestro_aliados .title_colores h2:before {
+.home_nuestro_aliados .title_colores h2:before,
+.home_mascotas .title_colores h2:before {
   content: "";
   background-image: url("../img/rayas_naranja.png");
   width: 9px;
@@ -1332,8 +1342,21 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 480px) {
+  .home_nuestro_aliados .bx-wrapper .bx-controls .bx-next .bx-prev,
+  .home_mascotas .bx-wrapper .bx-controls .bx-prev {
+    top: 50%;
+    left: -39px;
+  }
+  .home_nuestro_aliados .bx-wrapper .bx-controls .bx-next .bx-next,
+  .home_mascotas .bx-wrapper .bx-controls .bx-next {
+    top: 50%;
+  }
   .home_mascotas .bx-wrapper {
     margin-top: 20px;
+    position: relative;
+  }
+  .home_mascotas {
+    padding-top: 0px;
   }
   .home_mascotas .row {
     display: block;
@@ -1342,8 +1365,18 @@ footer .footer_top .facebook__slider__item ul li span {
   .home_mascotas .list_mascotas {
     margin-top: 0 !important;
   }
+  .home_mascotas__list_mascotas .list_mascotas__mascota {
+    padding-left: 0;
+    padding-right: 0;
+  }
+  .home_mascotas__list_mascotas .list_mascotas__mascota figure {
+    width: 200px;
+  }
   .home_mascotas .list_mascotas__mascota {
     margin: 0;
+  }
+  .home_siempre_informados .title h2 {
+    font-size: 30px;
   }
   .title_section--celeste h2:after,
   .title_section--celeste h2:before {

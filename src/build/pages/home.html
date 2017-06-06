@@ -858,12 +858,6 @@
                 $('html,body').scrollTo(this.hash, this.hash);
             });
 
-            /*$(window).scroll(function(){
-                var windowPos = $(window).scrollTop();
-                var windowHeight = $(window).height();
-                var docHeight = $(document).height();
-                console.log(windowPos)
-            });*/
 
 
         });
@@ -895,8 +889,8 @@
 
         var mql = [window.matchMedia("(max-width: 1500px)"), window.matchMedia("(max-width: 960px)"), window.matchMedia("(max-width: 480px)")];
         for (var i=0; i<mql.length; i++){
-            widthChange(mql[i]) // call action function explicitly at run time
-            mql[i].addListener(widthChange); // call action function whenever each media query is triggered
+            widthChange(mql[i])
+            mql[i].addListener(widthChange);
         }
         var media_ = ""
         function widthChange(mq){
@@ -975,14 +969,15 @@
 
 	                minSlides: 1,
 	                maxSlides: 1,
-	                slideWidth: 280,
+	                slideWidth: 220,
 	                slideMargin: 0,
 	                auto: true,
 	                moveSlides: 1,
 	                autoControls: false,
-	                controls: false,
+	                controls: true,
 	                pause: 22500,
-
+                    nextText: "",
+                    prevText: "",
 	                pager: false
 
 
