@@ -6,13 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
     <link rel="stylesheet" type="text/css" href="/static/css/main.css">
     <link rel="stylesheet" href="/static/js/validationform/validationEngine.jquery.css">
+    
 
-
-
+    
 </head>
 <body class="">
     <div class="wrapper">
-
+        
 <section class="container_menu">
 
 	<div class="link_menu link_menu--active">
@@ -108,7 +108,7 @@
 
         <div class="page">
             <div class="overlay"></div>
-
+            
 
 <section class="home_banner left_menu" style="background-image:url('/static/img/banner.png')">
     <a href="#home_mascotas" class="arrow_scroll">
@@ -960,8 +960,8 @@
         mql_n.addListener(widthChangeNoticia);
         function widthChangeNoticia(mq){
             console.log(mq.media)
-            if(mq.matches){
-                     if ($('.home_mascotas .bx-wrapper').length > 0) {
+           if(mq.matches){
+                 if ($('.home_mascotas .bx-wrapper').length > 0) {
 
                     listado.destroySlider();
                 }
@@ -973,23 +973,23 @@
                 listado = $('.home_mascotas__list_mascotas').bxSlider({
 
 
-    	                minSlides: 1,
-    	                maxSlides: 1,
-    	                slideWidth: 220,
-    	                slideMargin: 0,
-    	                auto: true,
-    	                moveSlides: 1,
-    	                autoControls: false,
-    	                controls: true,
-    	                pause: 22500,
+                        minSlides: 1,
+                        maxSlides: 1,
+                        slideWidth: 220,
+                        slideMargin: 0,
+                        auto: true,
+                        moveSlides: 1,
+                        autoControls: false,
+                        controls: true,
+                        pause: 22500,
                         nextText: "",
                         prevText: "",
-    	                pager: false
+                        pager: false
 
 
-    	            });
+                    });
                 }
-            	console.log("dasda")
+                console.log("dasda")
 
             }
 

@@ -315,6 +315,7 @@ p {
   }
   .content_banner .text {
     font-size: 12px;
+    margin-top: 8px;
   }
   .content_banner h2 {
     font-size: 26px;

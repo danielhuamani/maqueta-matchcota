@@ -439,34 +439,36 @@
         mql_n.addListener(widthChangeNoticia);
         function widthChangeNoticia(mq){
             console.log(mq.media)
-            if ($('.home_mascotas .bx-wrapper').length > 0) {
+           if(mq.matches){
+                 if ($('.home_mascotas .bx-wrapper').length > 0) {
 
+                    listado.destroySlider();
+                }
             }else{
+                if ($('.home_mascotas .bx-wrapper').length > 0) {
 
-            listado = $('.home_mascotas__list_mascotas').bxSlider({
+                }else{
 
-
-	                minSlides: 1,
-	                maxSlides: 1,
-	                slideWidth: 220,
-	                slideMargin: 0,
-	                auto: true,
-	                moveSlides: 1,
-	                autoControls: false,
-	                controls: true,
-	                pause: 22500,
-                    nextText: "",
-                    prevText: "",
-	                pager: false
+                listado = $('.home_mascotas__list_mascotas').bxSlider({
 
 
-	            });
-            }
-            if(mq.matches){
+                        minSlides: 1,
+                        maxSlides: 1,
+                        slideWidth: 220,
+                        slideMargin: 0,
+                        auto: true,
+                        moveSlides: 1,
+                        autoControls: false,
+                        controls: true,
+                        pause: 22500,
+                        nextText: "",
+                        prevText: "",
+                        pager: false
 
-				listado.destroySlider();
-            }else{
-            	console.log("dasda")
+
+                    });
+                }
+                console.log("dasda")
 
             }
 

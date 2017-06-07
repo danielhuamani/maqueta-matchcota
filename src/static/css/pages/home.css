@@ -708,6 +708,10 @@
 /*    .home_conoce_mascota .full_container .bloque_picture
         width 45%*/
 @media screen and (max-width: 480px) {
+  .home_nuestro_aliados,
+  .home_mascotas {
+    margin-top: 40px;
+  }
   .home_nuestro_aliados .bx-wrapper .bx-controls .bx-next .bx-prev,
   .home_mascotas .bx-wrapper .bx-controls .bx-prev {
     top: 50%;

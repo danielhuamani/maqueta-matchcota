@@ -52,6 +52,6 @@ jQuery(document).ready(function($) {
             if ($("body").height()>580) {
 				setTimeout(function(){
 				  $(".nosotros_matchota_ideal .container figure").addClass('active-img')
-				}, 1000);
+				}, 500);
             };
 	});
