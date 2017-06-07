@@ -53,6 +53,9 @@
 .listado_noticias__noticia {
   margin: 2px 2px;
 }
+.listado_noticias__noticia .descripcion {
+  min-height: 206px;
+}
 .listado_noticias__noticia:nth-child(odd) {
   flex-direction: column;
   transition: 0.3s ease all;

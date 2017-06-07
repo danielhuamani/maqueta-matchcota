@@ -494,6 +494,9 @@
   }
 }
 @media screen and (max-width: 480px) {
+  .container_formulario .cnt-formulario .formulario form .text {
+    font-size: 13px;
+  }
   .cnt_pop_up {
     background: c_formulario;
   }
@@ -934,6 +937,9 @@
 }
 .listado_noticias__noticia {
   margin: 2px 2px;
+}
+.listado_noticias__noticia .descripcion {
+  min-height: 206px;
 }
 .listado_noticias__noticia:nth-child(odd) {
   flex-direction: column;

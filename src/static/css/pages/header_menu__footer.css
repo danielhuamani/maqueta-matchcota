@@ -353,7 +353,7 @@ footer .footer_top .facebook .bx-wrapper .bx-controls {
   position: absolute;
   left: 15px;
   top: 20px;
-  z-index: 200;
+  z-index: 140;
 }
 footer .footer_top .facebook .bx-wrapper .bx-controls .bx-prev {
   background-image: url("../img/footer_flecha_left.png");
@@ -550,8 +550,6 @@ footer .footer_top .facebook__slider__item ul li span {
     width: 100%;
     margin-left: 0;
   }
-}
-@media screen and (max-width: 768px) {
   .container_menu .menu_block .menu .contacte ul li {
     margin-bottom: 30px;
   }
@@ -565,6 +563,8 @@ footer .footer_top .facebook__slider__item ul li span {
   .container_menu .link_menu {
     padding: 10px 0px;
   }
+}
+@media screen and (max-width: 767px) {
   footer .footer_top__contacto .links a.telefono {
     justify-content: center;
   }
