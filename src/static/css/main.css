@@ -2667,7 +2667,10 @@ p {
   }
 }
 @media screen and (max-width: 480px) {
-  .list_mascotas__mascota {
+  .page_mascotas {
+    margin-top: 30px !important;
+  }
+  .page_mascotas .list_mascotas__mascota {
     margin: 8px !important;
   }
   .list_mascotas__etiqueta h4 {
@@ -4890,6 +4893,9 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 768px) {
+  .home_mascotas {
+    padding-top: 0;
+  }
   .home_conoce_mascota .full_container .bloque_picture {
     width: 42%;
   }

@@ -227,7 +227,10 @@
   }
 }
 @media screen and (max-width: 480px) {
-  .list_mascotas__mascota {
+  .page_mascotas {
+    margin-top: 30px !important;
+  }
+  .page_mascotas .list_mascotas__mascota {
     margin: 8px !important;
   }
   .list_mascotas__etiqueta h4 {
