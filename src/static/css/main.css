@@ -2665,11 +2665,6 @@ p {
   }
 }
 @media screen and (max-width: 480px) {
-  .list_mascotas__mascota--amarillo .list_mascotas__etiqueta h4 {
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-  }
   .list_mascotas__etiqueta h4 {
     -webkit-background-size: contain;
     -moz-background-size: contain;
@@ -2695,7 +2690,7 @@ p {
   }
   .list_mascotas__mascota--celeste .list_mascotas__etiqueta h4 {
     color: #fff;
-    background-image: url("../img/cuadro-01.png");
+    background-image: url("../img/mas_hover.png");
     background-position: 0 2px;
   }
   .list_mascotas__mascota--celeste .list_mascotas__etiqueta h4:before {
@@ -2720,7 +2715,7 @@ p {
   }
   .list_mascotas__mascota--amarillo .list_mascotas__etiqueta h4 {
     color: #fff;
-    background-image: url("../img/cuadro-01.png");
+    background-image: url("../img/mas_hover.png");
     background-position: 0 2px;
   }
   .list_mascotas__mascota--amarillo .list_mascotas__etiqueta h4:before {
@@ -2745,7 +2740,7 @@ p {
   }
   .list_mascotas__mascota--plomo .list_mascotas__etiqueta h4 {
     color: #fff;
-    background-image: url("../img/cuadro-01.png");
+    background-image: url("../img/mas_hover.png");
     background-position: 0 2px;
   }
   .list_mascotas__mascota--plomo .list_mascotas__etiqueta h4:before {

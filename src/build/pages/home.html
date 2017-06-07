@@ -955,16 +955,15 @@
         }
         var mql_n = window.matchMedia("(min-width: 480px)");
 
-        var listado;
         widthChangeNoticia(mql_n)
+        var listado;
         mql_n.addListener(widthChangeNoticia);
         function widthChangeNoticia(mq){
             console.log(mq.media)
             if(mq.matches){
+                     if ($('.home_mascotas .bx-wrapper').length > 0) {
 
-                if ($('.home_mascotas .bx-wrapper').length > 0) {
-
-                    listado.destroySlider()
+                    listado.destroySlider();
                 }
             }else{
                 if ($('.home_mascotas .bx-wrapper').length > 0) {
