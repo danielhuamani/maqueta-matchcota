@@ -397,6 +397,7 @@
   }
   .container_formulario .cnt-image figure {
     max-width: 500px;
+    margin-top: 60px;
   }
   .container_formulario .cnt-formulario {
     padding-bottom: 20px;

@@ -1179,6 +1179,7 @@ footer .footer_top .facebook__slider__item ul li span {
   }
   .home_conoce_mascota .full_container .bloque_picture.bloque_5 {
     right: 5px;
+    top: 10%;
   }
   .home_conoce_mascota .full_container .bloque_picture.bloque_5 a:after,
   .home_conoce_mascota .full_container .bloque_picture.bloque_5 a:before {
@@ -1377,7 +1378,7 @@ footer .footer_top .facebook__slider__item ul li span {
     padding-right: 0;
   }
   .home_mascotas__list_mascotas .list_mascotas__mascota figure {
-    width: 200px;
+    width: 190px;
   }
   .home_mascotas .list_mascotas__mascota {
     margin: 0;
@@ -2030,6 +2031,7 @@ footer .footer_top .facebook__slider__item ul li span {
 }
 @media screen and (max-width: 1200px) {
   .nosotros_formulario {
+    padding-bottom: 30px;
     background: #ebe7e2;
   }
   .cnt-mision-vision .container figure {
@@ -2856,6 +2858,9 @@ img
   }
 }
 @media screen and (max-width: 480px) {
+  #form_nosotros {
+    margin: 0px 10px;
+  }
   .page-adopta .footer_top {
     margin-top: -45px;
   }
