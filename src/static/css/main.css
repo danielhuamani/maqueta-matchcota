@@ -1719,6 +1719,9 @@ p {
   -ms-transform: skew(7.5deg);
   transform: skew(7.5deg);
 }
+.container_formulario .cnt-image figure.asesoria {
+  max-width: 600px;
+}
 .container_formulario .cnt-image figure {
   margin: auto;
   max-width: 713px;
@@ -1869,6 +1872,9 @@ p {
   width: 100%;
   margin-bottom: 35px;
 }
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input label i {
+  margin-left: 5px;
+}
 .container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input {
   width: 100%;
   position: relative;
@@ -1936,6 +1942,9 @@ p {
   -o-transition: 0.3s ease all;
   -ms-transition: 0.3s ease all;
   transition: 0.3s ease all;
+}
+.container_formulario .cnt-formulario .formulario form .cnt-form .descargar i {
+  margin-left: 5px;
 }
 .container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input--adjuntar {
   padding: 7px 0px;
@@ -2179,7 +2188,7 @@ p {
   }
   .cnt_pop_up .pop_up .cnt-formulario .formulario {
     overflow-y: scroll;
-    padding: 20px 8px;
+    padding: 25px 8px;
     position: initial;
   }
 }
@@ -2488,8 +2497,8 @@ p {
 }
 .list_mascotas__mascota {
   text-align: center;
-  width: 20%;
-  margin: 8px;
+  width: 19%;
+  margin: 4px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -4205,7 +4214,8 @@ footer .footer_top .facebook__slider__item ul li span {
 .home_banner .home_banner__slider_list span,
 .home_banner .home_banner__slider_list p {
   color: #ff4304;
-  font-size: 78px;
+}
+.home_banner .home_banner__slider_list font-size 78px {
   font-family: 'kaushan_scriptregular';
   display: block;
 }
@@ -4847,6 +4857,9 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 960px) {
+  .home_mascotas {
+    margin-top: 20px;
+  }
   .home_conoce_mascota .full_container .container .cnt-bloque {
     margin-top: 20px;
     display: -webkit-box;
@@ -4895,9 +4908,11 @@ footer .footer_top .facebook__slider__item ul li span {
 @media screen and (max-width: 768px) {
   .home_mascotas {
     padding-top: 0;
+    margin-top: 50px;
   }
   .home_conoce_mascota .full_container .bloque_picture {
     width: 42%;
+    text-align: center;
   }
   .container_menu .menu_block .menu .icon-close {
     right: 20px;
@@ -7053,7 +7068,7 @@ img
     flex-direction: column-reverse;
   }
   .noticias-detail .content-detail .detail {
-    text-align: center;
+    text-align: justify;
     width: 100%;
     max-width: 520px;
     margin: auto;
@@ -7205,6 +7220,17 @@ img
 @media screen and (max-width: 1024px) {
   .mascota_categorias .list_categorias ul li {
     margin: 10px 48px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .mascota_categorias {
+    margin-top: 30px;
+  }
+  .mascota_categorias .list_categorias {
+    margin-top: 20px;
+  }
+  .page_mascotas .list_mascotas {
+    margin-top: 20px !important;
   }
 }
 .page-enviado footer .footer_top {

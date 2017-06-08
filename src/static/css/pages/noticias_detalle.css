@@ -136,7 +136,7 @@
     flex-direction: column-reverse;
   }
   .noticias-detail .content-detail .detail {
-    text-align: center;
+    text-align: justify;
     width: 100%;
     max-width: 520px;
     margin: auto;

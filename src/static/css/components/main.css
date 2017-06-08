@@ -103,6 +103,9 @@
   margin-bottom: -140px;
   transform: skew(7.5deg);
 }
+.container_formulario .cnt-image figure.asesoria {
+  max-width: 600px;
+}
 .container_formulario .cnt-image figure {
   margin: auto;
   max-width: 713px;
@@ -205,6 +208,9 @@
   width: 100%;
   margin-bottom: 35px;
 }
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input label i {
+  margin-left: 5px;
+}
 .container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input {
   width: 100%;
   position: relative;
@@ -260,6 +266,9 @@
   width: 100%;
   font-size: 18px;
   transition: 0.3s ease all;
+}
+.container_formulario .cnt-formulario .formulario form .cnt-form .descargar i {
+  margin-left: 5px;
 }
 .container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input--adjuntar {
   padding: 7px 0px;
@@ -451,7 +460,7 @@
   }
   .cnt_pop_up .pop_up .cnt-formulario .formulario {
     overflow-y: scroll;
-    padding: 20px 8px;
+    padding: 25px 8px;
     position: initial;
   }
 }
@@ -695,8 +704,8 @@
 }
 .list_mascotas__mascota {
   text-align: center;
-  width: 20%;
-  margin: 8px;
+  width: 19%;
+  margin: 4px;
   box-sizing: border-box;
   padding: 30px 5px 0px 5px;
   position: relative;

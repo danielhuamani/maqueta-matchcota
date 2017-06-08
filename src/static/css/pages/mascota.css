@@ -93,11 +93,22 @@
     margin: 10px 48px;
   }
 }
-/*@media screen and (max-width 768px)
-    .mascota_categorias .list_categorias ul li
-        margin 10px
-        a
-            font-size 20px
+@media screen and (max-width: 768px) {
+  .mascota_categorias {
+    margin-top: 30px;
+  }
+  .mascota_categorias .list_categorias {
+    margin-top: 20px;
+  }
+  .page_mascotas .list_mascotas {
+    margin-top: 20px !important;
+  }
+}
+/*    .mascota_categorias
+        .list_categorias ul li
+            margin 10px
+            a
+                font-size 20px
             min-width 140px
 */
 

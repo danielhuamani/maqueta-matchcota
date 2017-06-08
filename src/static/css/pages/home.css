@@ -106,7 +106,8 @@
 .home_banner .home_banner__slider_list span,
 .home_banner .home_banner__slider_list p {
   color: c_narana_ad;
-  font-size: 78px;
+}
+.home_banner .home_banner__slider_list font-size 78px {
   font-family: f_kaushan_r;
   display: block;
 }
@@ -633,6 +634,9 @@
   }
 }
 @media screen and (max-width: 960px) {
+  .home_mascotas {
+    margin-top: 20px;
+  }
   .home_conoce_mascota .full_container .container .cnt-bloque {
     margin-top: 20px;
     display: flex;
@@ -661,9 +665,11 @@
 @media screen and (max-width: 768px) {
   .home_mascotas {
     padding-top: 0;
+    margin-top: 50px;
   }
   .home_conoce_mascota .full_container .bloque_picture {
     width: 42%;
+    text-align: center;
   }
   .container_menu .menu_block .menu .icon-close {
     right: 20px;
