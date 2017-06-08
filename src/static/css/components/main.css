@@ -103,9 +103,15 @@
   margin-bottom: -140px;
   transform: skew(7.5deg);
 }
+.container_formulario .cnt-image figure.dona {
+  max-width: 620px;
+  margin-bottom: 0;
+}
 .container_formulario .cnt-image figure {
+  padding-left: 10px;
+  box-sizing: border-box;
   margin: auto;
-  max-width: 713px;
+  max-width: 700px;
   position: relative;
 }
 .container_formulario .cnt-formulario {
@@ -378,6 +384,9 @@
   }
   .cnt_pop_up_adopta .cnt-image figure {
     max-width: 415px !important;
+  }
+  .container_formulario .cnt-image figure.dona {
+    margin-top: 40px;
   }
   .container_formulario .cnt-image .image {
     margin-right: 30px;
@@ -695,8 +704,8 @@
 }
 .list_mascotas__mascota {
   text-align: center;
-  width: 20%;
-  margin: 8px;
+  width: 19%;
+  margin: 4px;
   box-sizing: border-box;
   padding: 30px 5px 0px 5px;
   position: relative;

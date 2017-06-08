@@ -1719,9 +1719,17 @@ p {
   -ms-transform: skew(7.5deg);
   transform: skew(7.5deg);
 }
+.container_formulario .cnt-image figure.dona {
+  max-width: 620px;
+  margin-bottom: 0;
+}
 .container_formulario .cnt-image figure {
+  padding-left: 10px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
   margin: auto;
-  max-width: 713px;
+  max-width: 700px;
   position: relative;
 }
 .container_formulario .cnt-formulario {
@@ -2107,6 +2115,9 @@ p {
   .cnt_pop_up_adopta .cnt-image figure {
     max-width: 415px !important;
   }
+  .container_formulario .cnt-image figure.dona {
+    margin-top: 40px;
+  }
   .container_formulario .cnt-image .image {
     margin-right: 30px;
   }
@@ -2488,8 +2499,8 @@ p {
 }
 .list_mascotas__mascota {
   text-align: center;
-  width: 20%;
-  margin: 8px;
+  width: 19%;
+  margin: 4px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -3960,6 +3971,13 @@ footer .footer_top .facebook__slider__item ul li span {
   .container_menu .link_menu {
     padding: 10px 0px;
   }
+  footer .footer_top {
+    padding-bottom: 10px;
+    padding-top: 140px;
+  }
+  footer .footer_top .facebook_bloque {
+    padding-bottom: 0px;
+  }
 }
 @media screen and (max-width: 767px) {
   footer .footer_top__contacto .links a.telefono {
@@ -3969,13 +3987,6 @@ footer .footer_top .facebook__slider__item ul li span {
     -ms-flex-pack: center;
     -webkit-justify-content: center;
     justify-content: center;
-  }
-  footer .footer_top {
-    padding-bottom: 10px;
-    padding-top: 140px;
-  }
-  footer .footer_top .facebook_bloque {
-    padding-bottom: 0px;
   }
   footer .container {
     -webkit-box-orient: vertical;
@@ -6253,7 +6264,7 @@ img
 }
 @media screen and (max-width: 768px) {
   .page-testimonio .footer_top {
-    margin-top: -155px;
+    margin-top: -100px;
   }
   .slide-testimonios .item-slider-testimonios .image {
     width: 350px;
