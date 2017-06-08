@@ -563,17 +563,17 @@ footer .footer_top .facebook__slider__item ul li span {
   .container_menu .link_menu {
     padding: 10px 0px;
   }
-}
-@media screen and (max-width: 767px) {
-  footer .footer_top__contacto .links a.telefono {
-    justify-content: center;
-  }
   footer .footer_top {
     padding-bottom: 10px;
     padding-top: 140px;
   }
   footer .footer_top .facebook_bloque {
     padding-bottom: 0px;
+  }
+}
+@media screen and (max-width: 767px) {
+  footer .footer_top__contacto .links a.telefono {
+    justify-content: center;
   }
   footer .container {
     flex-direction: column;

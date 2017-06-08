@@ -201,7 +201,7 @@ img
 }
 @media screen and (max-width: 768px) {
   .page-testimonio .footer_top {
-    margin-top: -155px;
+    margin-top: -100px;
   }
   .slide-testimonios .item-slider-testimonios .image {
     width: 350px;

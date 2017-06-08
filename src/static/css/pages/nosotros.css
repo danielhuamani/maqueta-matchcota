@@ -610,6 +610,7 @@
             margin-top 40px*/
 @media screen and (max-width: 1200px) {
   .nosotros_formulario {
+    padding-bottom: 30px;
     background: c_formulario;
   }
   .cnt-mision-vision .container figure {
