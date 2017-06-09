@@ -1726,7 +1726,7 @@ p {
   max-width: 620px;
   margin-bottom: 0;
 }
->>>>>>> c55b252fd072e43b2acb1d52cab9cbd1403cb6a5 figure {
+.container_formulario .cnt-image figure {
   padding-left: 10px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -1735,7 +1735,7 @@ p {
   max-width: 700px;
   position: relative;
 }
-.cnt-formulario {
+.container_formulario .cnt-formulario {
   width: 55%;
   padding-left: 120px;
   padding-top: 20px;
@@ -1762,7 +1762,7 @@ p {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.cnt-formulario .formulario {
+.container_formulario .cnt-formulario .formulario {
   max-width: 900px;
   width: 100%;
   padding-right: 40px;
@@ -1770,7 +1770,7 @@ p {
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
-.cnt-formulario .formulario .cuentas {
+.container_formulario .cnt-formulario .formulario .cuentas {
   margin-bottom: 20px;
   display: -webkit-box;
   display: -moz-box;
@@ -1785,65 +1785,65 @@ p {
   -webkit-justify-content: space-between;
   justify-content: space-between;
 }
-.cnt-formulario .formulario .cuentas .cuenta {
+.container_formulario .cnt-formulario .formulario .cuentas .cuenta {
   margin: 0px 5px 10px 0px;
 }
-.cnt-formulario .formulario .cuentas h4 {
+.container_formulario .cnt-formulario .formulario .cuentas h4 {
   color: #5d5d5d;
   font-size: 16px;
   text-align: center;
 }
-.cnt-formulario .formulario .cuentas h3 {
+.container_formulario .cnt-formulario .formulario .cuentas h3 {
   color: #00b2e2;
   font-family: 'ventura_eddingmedium';
   font-size: 24px;
   margin-bottom: 0;
 }
-.cnt-formulario .formulario h2 {
+.container_formulario .cnt-formulario .formulario h2 {
   color: #00b2e2;
   font-size: 35px;
   text-align: center;
   font-family: 'ventura_eddingmedium';
   margin-bottom: 30px;
 }
-.cnt-formulario .formulario p {
+.container_formulario .cnt-formulario .formulario p {
   font-size: 15px;
   font-family: 'GothamRounded-Light';
   color: #5d5d5d;
 }
-.cnt-formulario .formulario form .tab {
+.container_formulario .cnt-formulario .formulario form .tab {
   -webkit-animation: fadeEffect 0.5s;
   -moz-animation: fadeEffect 0.5s;
   -o-animation: fadeEffect 0.5s;
   -ms-animation: fadeEffect 0.5s;
   animation: fadeEffect 0.5s;
 }
-.cnt-formulario .formulario form .tab_none {
+.container_formulario .cnt-formulario .formulario form .tab_none {
   display: none;
 }
-.cnt-formulario .formulario form .pasos__paso .text-paso {
+.container_formulario .cnt-formulario .formulario form .pasos__paso .text-paso {
   margin-bottom: 10px;
 }
-.cnt-formulario .formulario form .pasos__paso .text {
+.container_formulario .cnt-formulario .formulario form .pasos__paso .text {
   margin-top: 15px;
 }
-.cnt-formulario .formulario form .pasos__paso .text a {
+.container_formulario .cnt-formulario .formulario form .pasos__paso .text a {
   color: #5d5d5d;
   border-bottom: 1px solid #5d5d5d;
 }
-.cnt-formulario .formulario form .pasos h3 {
+.container_formulario .cnt-formulario .formulario form .pasos h3 {
   color: #ff4304;
   font-size: 22px;
   font-family: 'ventura_eddingmedium';
   text-align: center;
 }
-.cnt-formulario .formulario form .btn--pop {
+.container_formulario .cnt-formulario .formulario form .btn--pop {
   display: block;
   text-align: center;
   margin: auto;
   min-width: 200px;
 }
-.cnt-formulario .formulario form .grid_botton {
+.container_formulario .cnt-formulario .formulario form .grid_botton {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -1858,19 +1858,19 @@ p {
   justify-content: center;
   margin-top: 30px;
 }
-.cnt-formulario .formulario form .grid_botton a {
+.container_formulario .cnt-formulario .formulario form .grid_botton a {
   min-width: 230px;
   text-align: center;
   margin: 0px 30px;
 }
-.cnt-formulario .formulario form .text {
+.container_formulario .cnt-formulario .formulario form .text {
   margin-top: 25px;
   font-size: 15px;
   font-family: 'GothamRounded-Light';
   color: #5d5d5d;
   margin-bottom: 20px;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input {
   display: -webkit-box;
   display: -moz-box;
   display: -webkit-flex;
@@ -1880,17 +1880,17 @@ p {
   width: 100%;
   margin-bottom: 35px;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input label i {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input label i {
   margin-left: 5px;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input .input {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input {
   width: 100%;
   position: relative;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input .input textarea {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input textarea {
   height: 20px;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input .input label {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input label {
   position: absolute;
   top: 0;
   left: 0;
@@ -1904,8 +1904,8 @@ p {
   -ms-transition: 0.3s ease all;
   transition: 0.3s ease all;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input .input input,
-.cnt-formulario .formulario form .cnt-form .cnt-input .input textarea {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input input,
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input textarea {
   width: 100%;
   color: #5d5d5d;
   position: relative;
@@ -1914,7 +1914,7 @@ p {
   border-bottom: 1px solid #5d5d5d;
   background: transparent;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input .input:after {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input:after {
   content: "";
   width: 0%;
   position: absolute;
@@ -1928,19 +1928,19 @@ p {
   -ms-transition: 1s ease all;
   transition: 1s ease all;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input .input-m {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input-m {
   width: 50%;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input .input-m:first-child {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input-m:first-child {
   margin-right: 40px;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input .input-active label {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input-active label {
   top: -20px;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input .input-active:after {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input-active:after {
   width: 100%;
 }
-.cnt-formulario .formulario form .cnt-form .descargar {
+.container_formulario .cnt-formulario .formulario form .cnt-form .descargar {
   color: #00b2e2;
   text-align: center;
   width: 100%;
@@ -1951,10 +1951,10 @@ p {
   -ms-transition: 0.3s ease all;
   transition: 0.3s ease all;
 }
-.cnt-formulario .formulario form .cnt-form .descargar i {
+.container_formulario .cnt-formulario .formulario form .cnt-form .descargar i {
   margin-left: 5px;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input--adjuntar {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input--adjuntar {
   padding: 7px 0px;
   margin-bottom: 20px !important;
   width: 100%;
@@ -1971,14 +1971,14 @@ p {
   -ms-transition: 0.3s ease all;
   transition: 0.3s ease all;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input--adjuntar:hover {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input--adjuntar:hover {
   color: #fff;
   background: #00b2e2;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input--adjuntar:hover .descargar {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input--adjuntar:hover .descargar {
   color: #fff;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input--adjuntar input {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input--adjuntar input {
   cursor: pointer;
   position: absolute;
   left: 0;
@@ -3387,11 +3387,11 @@ p {
 }
 .container_menu .menu_block--active {
   left: 0 !important;
-  -webkit-transition: 0.7s ease all;
-  -moz-transition: 0.7s ease all;
-  -o-transition: 0.7s ease all;
-  -ms-transition: 0.7s ease all;
-  transition: 0.7s ease all;
+  -webkit-transition: 2s ease all;
+  -moz-transition: 2s ease all;
+  -o-transition: 2s ease all;
+  -ms-transition: 2s ease all;
+  transition: 2s ease all;
 }
 .container_menu .menu_block {
   -webkit-box-pack: center;
@@ -3418,11 +3418,11 @@ p {
   top: 0;
   left: -100%;
   right: auto;
-  -webkit-transition: 0.5s ease all;
-  -moz-transition: 0.5s ease all;
-  -o-transition: 0.5s ease all;
-  -ms-transition: 0.5s ease all;
-  transition: 0.5s ease all;
+  -webkit-transition: 0.7s ease all;
+  -moz-transition: 0.7s ease all;
+  -o-transition: 0.7s ease all;
+  -ms-transition: 0.7s ease all;
+  transition: 0.7s ease all;
   text-align: center;
   border-right: 1px solid #d0d0d0;
   z-index: 300;

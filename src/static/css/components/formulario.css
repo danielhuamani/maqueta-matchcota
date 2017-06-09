@@ -36,14 +36,14 @@
   max-width: 620px;
   margin-bottom: 0;
 }
->>>>>>> c55b252fd072e43b2acb1d52cab9cbd1403cb6a5 figure {
+.container_formulario .cnt-image figure {
   padding-left: 10px;
   box-sizing: border-box;
   margin: auto;
   max-width: 700px;
   position: relative;
 }
-.cnt-formulario {
+.container_formulario .cnt-formulario {
   width: 55%;
   padding-left: 120px;
   padding-top: 20px;
@@ -53,104 +53,104 @@
   align-items: center;
   box-sizing: border-box;
 }
-.cnt-formulario .formulario {
+.container_formulario .cnt-formulario .formulario {
   max-width: 900px;
   width: 100%;
   padding-right: 40px;
   box-sizing: border-box;
 }
-.cnt-formulario .formulario .cuentas {
+.container_formulario .cnt-formulario .formulario .cuentas {
   margin-bottom: 20px;
   display: flex;
   justify-content: space-between;
 }
-.cnt-formulario .formulario .cuentas .cuenta {
+.container_formulario .cnt-formulario .formulario .cuentas .cuenta {
   margin: 0px 5px 10px 0px;
 }
-.cnt-formulario .formulario .cuentas h4 {
+.container_formulario .cnt-formulario .formulario .cuentas h4 {
   color: c_plomo_os;
   font-size: 16px;
   text-align: center;
 }
-.cnt-formulario .formulario .cuentas h3 {
+.container_formulario .cnt-formulario .formulario .cuentas h3 {
   color: c_celeste;
   font-family: f_ventura_m;
   font-size: 24px;
   margin-bottom: 0;
 }
-.cnt-formulario .formulario h2 {
+.container_formulario .cnt-formulario .formulario h2 {
   color: c_celeste;
   font-size: 35px;
   text-align: center;
   font-family: f_ventura_m;
   margin-bottom: 30px;
 }
-.cnt-formulario .formulario p {
+.container_formulario .cnt-formulario .formulario p {
   font-size: 15px;
   font-family: f_gothan_l;
   color: c_plomo_os;
 }
-.cnt-formulario .formulario form .tab {
+.container_formulario .cnt-formulario .formulario form .tab {
   animation: fadeEffect 0.5s;
 }
-.cnt-formulario .formulario form .tab_none {
+.container_formulario .cnt-formulario .formulario form .tab_none {
   display: none;
 }
-.cnt-formulario .formulario form .pasos__paso .text-paso {
+.container_formulario .cnt-formulario .formulario form .pasos__paso .text-paso {
   margin-bottom: 10px;
 }
-.cnt-formulario .formulario form .pasos__paso .text {
+.container_formulario .cnt-formulario .formulario form .pasos__paso .text {
   margin-top: 15px;
 }
-.cnt-formulario .formulario form .pasos__paso .text a {
+.container_formulario .cnt-formulario .formulario form .pasos__paso .text a {
   color: c_plomo_os;
   border-bottom: 1px solid c_plomo_os;
 }
-.cnt-formulario .formulario form .pasos h3 {
+.container_formulario .cnt-formulario .formulario form .pasos h3 {
   color: c_narana_ad;
   font-size: 22px;
   font-family: f_ventura_m;
   text-align: center;
 }
-.cnt-formulario .formulario form .btn--pop {
+.container_formulario .cnt-formulario .formulario form .btn--pop {
   display: block;
   text-align: center;
   margin: auto;
   min-width: 200px;
 }
-.cnt-formulario .formulario form .grid_botton {
+.container_formulario .cnt-formulario .formulario form .grid_botton {
   display: flex;
   justify-content: center;
   margin-top: 30px;
 }
-.cnt-formulario .formulario form .grid_botton a {
+.container_formulario .cnt-formulario .formulario form .grid_botton a {
   min-width: 230px;
   text-align: center;
   margin: 0px 30px;
 }
-.cnt-formulario .formulario form .text {
+.container_formulario .cnt-formulario .formulario form .text {
   margin-top: 25px;
   font-size: 15px;
   font-family: f_gothan_l;
   color: c_plomo_os;
   margin-bottom: 20px;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input {
   display: flex;
   width: 100%;
   margin-bottom: 35px;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input label i {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input label i {
   margin-left: 5px;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input .input {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input {
   width: 100%;
   position: relative;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input .input textarea {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input textarea {
   height: 20px;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input .input label {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input label {
   position: absolute;
   top: 0;
   left: 0;
@@ -160,8 +160,8 @@
   color: c_plomo_os;
   transition: 0.3s ease all;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input .input input,
-.cnt-formulario .formulario form .cnt-form .cnt-input .input textarea {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input input,
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input textarea {
   width: 100%;
   color: c_plomo_os;
   position: relative;
@@ -170,7 +170,7 @@
   border-bottom: 1px solid c_plomo_os;
   background: transparent;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input .input:after {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input:after {
   content: "";
   width: 0%;
   position: absolute;
@@ -180,29 +180,29 @@
   bottom: 0;
   transition: 1s ease all;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input .input-m {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input-m {
   width: 50%;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input .input-m:first-child {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input-m:first-child {
   margin-right: 40px;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input .input-active label {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input-active label {
   top: -20px;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input .input-active:after {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input .input-active:after {
   width: 100%;
 }
-.cnt-formulario .formulario form .cnt-form .descargar {
+.container_formulario .cnt-formulario .formulario form .cnt-form .descargar {
   color: c_celeste;
   text-align: center;
   width: 100%;
   font-size: 18px;
   transition: 0.3s ease all;
 }
-.cnt-formulario .formulario form .cnt-form .descargar i {
+.container_formulario .cnt-formulario .formulario form .cnt-form .descargar i {
   margin-left: 5px;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input--adjuntar {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input--adjuntar {
   padding: 7px 0px;
   margin-bottom: 20px !important;
   width: 100%;
@@ -215,14 +215,14 @@
   cursor: pointer;
   transition: 0.3s ease all;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input--adjuntar:hover {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input--adjuntar:hover {
   color: c_white;
   background: c_celeste;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input--adjuntar:hover .descargar {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input--adjuntar:hover .descargar {
   color: c_white;
 }
-.cnt-formulario .formulario form .cnt-form .cnt-input--adjuntar input {
+.container_formulario .cnt-formulario .formulario form .cnt-form .cnt-input--adjuntar input {
   cursor: pointer;
   position: absolute;
   left: 0;
