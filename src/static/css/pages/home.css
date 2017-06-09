@@ -106,8 +106,7 @@
 .home_banner .home_banner__slider_list span,
 .home_banner .home_banner__slider_list p {
   color: c_narana_ad;
-}
-.home_banner .home_banner__slider_list font-size 78px {
+  font-size: 78px;
   font-family: f_kaushan_r;
   display: block;
 }

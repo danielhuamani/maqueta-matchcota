@@ -92,6 +92,7 @@
   padding: 15px 0px;
   margin-bottom: 40px;
   margin-top: 25px;
+  overflow-y: auto;
 }
 .container_menu .menu_block .menu .icon-close {
   position: absolute;
@@ -631,7 +632,6 @@ footer .footer_top .facebook__slider__item ul li span {
     padding: 0;
     padding-top: 40px;
     padding-bottom: 20px;
-    overflow-y: auto;
   }
 }
 .home_banner {
@@ -742,8 +742,7 @@ footer .footer_top .facebook__slider__item ul li span {
 .home_banner .home_banner__slider_list span,
 .home_banner .home_banner__slider_list p {
   color: #ff4304;
-}
-.home_banner .home_banner__slider_list font-size 78px {
+  font-size: 78px;
   font-family: 'kaushan_scriptregular';
   display: block;
 }
@@ -1637,6 +1636,7 @@ footer .footer_top .facebook__slider__item ul li span {
   position: relative;
   opacity: 0;
   transition: 0.3s ease all;
+  box-sizign: border-box;
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_1:after {
   content: "";
@@ -1669,6 +1669,7 @@ footer .footer_top .facebook__slider__item ul li span {
   opacity: 1;
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_2 {
+  width: 198px;
   margin-left: 10px;
   padding-right: 20px;
   opacity: 0;

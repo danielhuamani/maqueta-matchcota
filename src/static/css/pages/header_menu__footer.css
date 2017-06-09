@@ -92,6 +92,7 @@
   padding: 15px 0px;
   margin-bottom: 40px;
   margin-top: 25px;
+  overflow-y: auto;
 }
 .container_menu .menu_block .menu .icon-close {
   position: absolute;
@@ -631,7 +632,6 @@ footer .footer_top .facebook__slider__item ul li span {
     padding: 0;
     padding-top: 40px;
     padding-bottom: 20px;
-    overflow-y: auto;
   }
 }
 
