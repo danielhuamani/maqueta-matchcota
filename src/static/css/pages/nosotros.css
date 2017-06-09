@@ -196,10 +196,11 @@
   justify-content: center;
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_1 {
-  padding-right: 110px;
+  width: 180px;
   position: relative;
   opacity: 0;
   transition: 0.3s ease all;
+  margin-right: 80px;
   box-sizign: border-box;
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_1:after {
@@ -208,7 +209,7 @@
   height: 51px;
   background-image: url("../img/nos_ani_2.png");
   position: absolute;
-  right: 30px;
+  left: 95%;
   top: 0;
   opacity: 0;
 }
@@ -504,9 +505,6 @@
   display: block;
 }
 @media screen and (max-width: 1800px) {
-  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_1 {
-    padding-right: 80px;
-  }
   .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_1:after {
     width: 80px;
     background-size: contain;
