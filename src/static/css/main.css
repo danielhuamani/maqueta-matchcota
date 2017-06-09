@@ -6784,7 +6784,8 @@ img
 }
 @media screen and (max-width: 1500px) {
   .matchcota-detalle .container .preview-img {
-    width: calc(45% - 60px);
+    width: calc(45% - 30px);
+    margin-right: 30px;
   }
   .matchcota-detalle .container .preview-img .main-img {
     max-height: 500px;
