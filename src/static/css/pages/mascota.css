@@ -75,6 +75,9 @@
 .list_mascotas {
   flex-wrap: wrap;
 }
+.page_mascotas .list_mascotas {
+  margin-top: 0;
+}
 @media screen and (max-width: 1500px) {
   .mascota_categorias .list_categorias ul li a {
     min-width: 175px;
