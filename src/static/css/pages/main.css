@@ -1886,6 +1886,9 @@ footer .footer_top .facebook__slider__item ul li span {
   min-width: 200px;
   display: block;
 }
+.nosotros_formulario .btn--nosotros-only {
+  margin-bottom: 0;
+}
 .nosotros_socios_estrategicos {
   margin-top: 35px;
 }
