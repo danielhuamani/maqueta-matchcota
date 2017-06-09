@@ -116,6 +116,11 @@
     margin-top: 20px;
   }
 }
+@media screen and (max-width: 480px) {
+  .page_mascotas .list_mascotas {
+    margin-top: 0px !important;
+  }
+}
 /*    .mascota_categorias
         .list_categorias ul li
             margin 10px

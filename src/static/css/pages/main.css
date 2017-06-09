@@ -605,7 +605,7 @@ footer .footer_top .facebook__slider__item ul li span {
     font-size: 30px;
   }
   footer .footer_top {
-    padding-top: 40px;
+    padding-top: 20px;
   }
   footer .footer_top .facebook .bx-wrapper .bx-viewport {
     height: 170px !important;
@@ -3217,6 +3217,11 @@ img
   }
   .mascota_categorias .list_categorias {
     margin-top: 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  .page_mascotas .list_mascotas {
+    margin-top: 0px !important;
   }
 }
 .page-enviado footer .footer_top {
