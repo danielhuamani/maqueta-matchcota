@@ -5622,6 +5622,7 @@ footer .footer_top .facebook__slider__item ul li span {
   -o-transition: 0.8s ease all;
   -ms-transition: 0.8s ease all;
   transition: 0.8s ease all;
+  width: 130px;
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_6:after {
   content: "";
