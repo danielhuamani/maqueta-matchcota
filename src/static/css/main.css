@@ -3431,16 +3431,15 @@ p {
 .container_menu .menu_block .menu {
   width: 100%;
   position: relative;
-  padding: 15px 0px;
+  padding: 25px 0px;
   margin-bottom: 40px;
-  margin-top: 25px;
   overflow-y: auto;
 }
 .container_menu .menu_block .menu .icon-close {
   position: absolute;
   right: 80px;
   cursor: pointer;
-  top: 0px;
+  top: 20px;
   display: inline-block;
   color: #ff4304;
   background: #fff;
