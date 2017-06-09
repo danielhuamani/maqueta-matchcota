@@ -385,6 +385,7 @@
   background-image: url("../img/nos_ani_11.png");
   width: 69px;
   height: 131px;
+  display: block;
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_6 figure {
   text-align: center;
