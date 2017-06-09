@@ -443,7 +443,7 @@
 }
 .home_nuestro_aliados,
 .home_mascotas {
-  margin-top: 60px;
+  margin-top: 20px;
 }
 .home_nuestro_aliados .bx-wrapper,
 .home_mascotas .bx-wrapper {
@@ -543,7 +543,7 @@
   }
   .home_conoce_mascota .full_container .bloque_picture.bloque_5 {
     right: 5px;
-    top: 10%;
+    top: 22%;
   }
   .home_conoce_mascota .full_container .bloque_picture.bloque_5 a:after,
   .home_conoce_mascota .full_container .bloque_picture.bloque_5 a:before {

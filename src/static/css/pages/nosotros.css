@@ -444,6 +444,7 @@
 .nosotros_formulario .btn--nosotros {
   text-align: center;
   margin: auto;
+  margin-bottom: 35px;
   min-width: 200px;
   display: block;
 }
@@ -613,6 +614,9 @@
         .bloque_5, .bloque_6, .bloque_7
             margin-top 40px*/
 @media screen and (max-width: 1200px) {
+  .nosotros_formulario .btn--nosotros {
+    margin-bottom: 10px;
+  }
   .nosotros_formulario {
     padding-bottom: 30px;
     background: c_formulario;

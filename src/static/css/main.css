@@ -964,11 +964,11 @@ p {
     margin-top: 56px;
   }
   .content_banner .text {
-    font-size: 12px;
+    font-size: 14px;
     margin-top: 8px;
   }
   .content_banner h2 {
-    font-size: 26px;
+    font-size: 30px;
   }
   .content_banner span.cuv_naran {
     font-size: 35px !important;
@@ -1721,6 +1721,7 @@ p {
 }
 .container_formulario .cnt-image figure.asesoria {
   max-width: 600px;
+  margin-top: 85px;
 }
 .container_formulario .cnt-image figure.dona {
   max-width: 620px;
@@ -3891,6 +3892,9 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 960px) {
+  footer .footer_top {
+    padding-top: 80px;
+  }
   footer .footer_top__contacto .links a.informacion {
     font-size: 32px;
   }
@@ -4670,7 +4674,7 @@ footer .footer_top .facebook__slider__item ul li span {
 }
 .home_nuestro_aliados,
 .home_mascotas {
-  margin-top: 60px;
+  margin-top: 20px;
 }
 .home_nuestro_aliados .bx-wrapper,
 .home_mascotas .bx-wrapper {
@@ -4788,7 +4792,7 @@ footer .footer_top .facebook__slider__item ul li span {
   }
   .home_conoce_mascota .full_container .bloque_picture.bloque_5 {
     right: 5px;
-    top: 10%;
+    top: 22%;
   }
   .home_conoce_mascota .full_container .bloque_picture.bloque_5 a:after,
   .home_conoce_mascota .full_container .bloque_picture.bloque_5 a:before {
@@ -5717,6 +5721,7 @@ footer .footer_top .facebook__slider__item ul li span {
 .nosotros_formulario .btn--nosotros {
   text-align: center;
   margin: auto;
+  margin-bottom: 35px;
   min-width: 200px;
   display: block;
 }
@@ -5903,6 +5908,9 @@ footer .footer_top .facebook__slider__item ul li span {
   }
 }
 @media screen and (max-width: 1200px) {
+  .nosotros_formulario .btn--nosotros {
+    margin-bottom: 10px;
+  }
   .nosotros_formulario {
     padding-bottom: 30px;
     background: #ebe7e2;
@@ -6791,9 +6799,9 @@ img
 }
 @media screen and (max-width: 1500px) {
   .matchcota-detalle .container .preview-img {
-    width: calc(50% - 2%);
+    width: calc(39% - 2%);
     margin-left: 0px;
-    margin-right: 2%;
+    margin-right: 4%;
   }
   .matchcota-detalle .container .preview-img .main-img {
     max-height: 500px;
