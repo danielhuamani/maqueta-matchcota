@@ -81,11 +81,20 @@
   }
 }
 @media screen and (max-width: 1200px) {
+  .mascota_categorias .list_categorias {
+    margin-top: 30px;
+  }
   .mascota_categorias .list_categorias ul li {
     margin: 10px 10px;
   }
   .mascota_categorias .list_categorias ul li a {
     padding: 8px 4px;
+  }
+  .page_mascotas {
+    padding-top: 20px !important;
+  }
+  .page_mascotas .list_mascotas {
+    margin-top: 0px !important;
   }
 }
 @media screen and (max-width: 1024px) {
@@ -94,14 +103,14 @@
   }
 }
 @media screen and (max-width: 768px) {
+  .page_mascotas .list_mascotas {
+    margin-top: 20px !important;
+  }
   .mascota_categorias {
     margin-top: 30px;
   }
   .mascota_categorias .list_categorias {
     margin-top: 20px;
-  }
-  .page_mascotas .list_mascotas {
-    margin-top: 20px !important;
   }
 }
 /*    .mascota_categorias
