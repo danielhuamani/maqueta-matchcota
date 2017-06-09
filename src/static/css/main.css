@@ -2704,10 +2704,10 @@ p {
   .page_mascotas .list_mascotas__mascota {
     margin: 8px !important;
   }
-  .list_mascotas__etiqueta h4 {
-    -webkit-background-size: contain;
-    -moz-background-size: contain;
-    background-size: contain;
+  .page_mascotas .list_mascotas__etiqueta h4 {
+    -webkit-background-size: cover !important;
+    -moz-background-size: cover !important;
+    background-size: cover !important;
   }
   .list_mascotas__mascota {
     width: 280px;
@@ -5095,16 +5095,19 @@ footer .footer_top .facebook__slider__item ul li span {
 }
 .nosotros_matchota_ideal .container figure.active-img {
   bottom: 0px !important;
+  opacity: 1;
+  -ms-filter: none;
+  filter: none;
 }
 .nosotros_matchota_ideal .container figure {
   position: relative;
   left: 0;
   bottom: -360px;
-  -webkit-transition: 1s ease all;
-  -moz-transition: 1s ease all;
-  -o-transition: 1s ease all;
-  -ms-transition: 1s ease all;
-  transition: 1s ease all;
+  -webkit-transition: 1.2s ease all;
+  -moz-transition: 1.2s ease all;
+  -o-transition: 1.2s ease all;
+  -ms-transition: 1.2s ease all;
+  transition: 1.2s ease all;
   z-index: 20;
   width: 357px;
   margin: 0;
@@ -5127,6 +5130,9 @@ footer .footer_top .facebook__slider__item ul li span {
   -ms-flex-align: end;
   -webkit-align-items: flex-end;
   align-items: flex-end;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
 }
 .nosotros_matchota_ideal .container figure img {
   display: block;

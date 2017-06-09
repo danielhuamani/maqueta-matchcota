@@ -1445,12 +1445,13 @@ footer .footer_top .facebook__slider__item ul li span {
 }
 .nosotros_matchota_ideal .container figure.active-img {
   bottom: 0px !important;
+  opacity: 1;
 }
 .nosotros_matchota_ideal .container figure {
   position: relative;
   left: 0;
   bottom: -360px;
-  transition: 1s ease all;
+  transition: 1.2s ease all;
   z-index: 20;
   width: 357px;
   margin: 0;
@@ -1458,6 +1459,7 @@ footer .footer_top .facebook__slider__item ul li span {
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
+  opacity: 0;
 }
 .nosotros_matchota_ideal .container figure img {
   display: block;
