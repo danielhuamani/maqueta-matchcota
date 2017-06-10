@@ -35,8 +35,8 @@ jQuery(document).ready(function($) {
 	   $(".overlay").removeClass('overlay--active-pop')
 	   $("body").removeClass('body-active')
 	});
-	$(".adopta_pop").click(function(event) {
-		/* Act on the event */
+/*	$(".adopta_pop").click(function(event) {
+
 		event.preventDefault();
 		$(".overlay").addClass('overlay--active-pop')
 		$(".cnt_pop_up_adopta").removeClass('cnt_pop_up_none')
@@ -44,17 +44,18 @@ jQuery(document).ready(function($) {
 	});
 
 	$(".apadrina_pop").click(function(event) {
-		/* Act on the event */
+
 		event.preventDefault();
 		$(".overlay").addClass('overlay--active-pop')
 		$(".cnt_pop_up_apadrina").removeClass('cnt_pop_up_none')
 		$("body").addClass('body-active')
-	});
-	$(".donar_pop").click(function(event) {
+	});*/
+	$(".open_pop").click(function(event) {
 		/* Act on the event */
 		event.preventDefault();
 		$(".overlay").addClass('overlay--active-pop')
-		$(".cnt_pop_up_dona").removeClass('cnt_pop_up_none')
+		var pop = $(this).attr("data-pop")
+		$("." + pop).removeClass('cnt_pop_up_none')
 		$("body").addClass('body-active')
 	});
 	$(".btn-tab").click(function(event) {
