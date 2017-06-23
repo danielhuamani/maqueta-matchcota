@@ -39,14 +39,13 @@
   flex-direction: column;
 }
 .nosotros_matchota_ideal .container .cnt-descripcion h2 {
-  max-width: 195px;
   position: relative;
   font-size: 28px;
   font-family: f_ventura_m;
   color: c_amarillo;
   padding-left: 27px;
   padding-right: 27px;
-  display: inline-block;
+  display: inline-table;
 }
 .nosotros_matchota_ideal .container .cnt-descripcion h2:after {
   content: "";
@@ -202,7 +201,7 @@
   position: relative;
   opacity: 0;
   transition: 0.3s ease all;
-  margin-right: 80px;
+  margin-right: 100px;
   box-sizign: border-box;
 }
 .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_1:after {
@@ -525,6 +524,9 @@
   .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_1 figure {
     margin: auto;
     width: 160px;
+  }
+  .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_1 {
+    margin-right: 80px;
   }
   .nosotros_linea_tiempo .container .cnt_linea_tiempo .bloque_2 {
     padding-right: 10px;
